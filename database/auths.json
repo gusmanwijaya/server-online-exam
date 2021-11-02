@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "616fd46da2a972f45b5ec953"
+  },
+  "nama": "Admin",
+  "iv": "Ull6ckpVRklBUWJzWFJUdA==",
+  "key": "MTYzNDcxODY4OWNGWVBxV3RldjYzV0xsclFLcTg3Tks=",
+  "password": "NTM5OGQxNTA0ZWRkODBhOWI5NGYxNGVjMmEyMTg0Zjc=",
+  "role": 1,
+  "nohp": 628985601122,
+  "status": 1,
+  "createdAt": "Wednesday, 20 October 2021 15:31:29",
+  "updatedAt": "Sunday, 24 October 2021 20:08:05",
+  "__v": 0,
+  "email": "onlineexams.superuser@gmail.com"
+}]
