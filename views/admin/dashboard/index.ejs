@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Dashboard</h1>
+        </div>
+      </header>
+      <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <% include ../../partials/alert.ejs %>
+          <!-- START: Content -->
+          <div class="alert">
+            <div class="flex-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#009688"
+                class="flex-shrink-0 w-6 h-6 mx-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                ></path>
+              </svg>
+              <label class="flex flex-col space-y-2">
+                <h4 class="mb-1">Petunjuk Penggunaan Aplikasi Ujian Online!</h4>
+                <ol class="text-sm text-base-content text-opacity-60">
+                  <li>
+                    <button
+                      class="
+                        bg-gray-700
+                        text-white
+                        px-3
+                        py-2
+                        rounded-md
+                        text-sm
+                        font-medium
+                        btn-disabled
+                      "
+                    >
+                      Data Master
+                    </button>
+                    <p class="mt-2">
+                      Menu data master ini merupakan menu untuk Anda mengelola
+                      data seperti Dosen, Kelas, Mahasiswa, Mata Kuliah dan
+                      Program Studi. Di menu ini Anda dapat menambahkan,
+                      mengubah atau menghapus data. Kelola lah data dengan
+                      sebaik mungkin!
+                    </p>
+                  </li>
+                  <li class="mt-4">
+                    <button
+                      class="
+                        bg-gray-700
+                        text-white
+                        px-3
+                        py-2
+                        rounded-md
+                        text-sm
+                        font-medium
+                        btn-disabled
+                      "
+                    >
+                      Bank Soal
+                    </button>
+                    <p class="mt-2">
+                      Menu bank soal ini merupakan menu sebagai tempat mengelola
+                      soal-soal ujian yang dibuat oleh Dosen. Anda dapat
+                      memantau data soal apa saja yang ada. Jagalah kerahasiaan
+                      soal ujian!
+                    </p>
+                  </li>
+                  <li class="mt-4">
+                    <button
+                      class="
+                        bg-gray-700
+                        text-white
+                        px-3
+                        py-2
+                        rounded-md
+                        text-sm
+                        font-medium
+                        btn-disabled
+                      "
+                    >
+                      Hasil Ujian
+                    </button>
+                    <p class="mt-2">
+                      Menu hasil ujian ini merupakan menu sebagai tempat
+                      mengelola hasil ujian yang telah dilaksanakan oleh
+                      Mahasiswa. Anda dapat melihat dan mengecek keaslian dari
+                      file hasil ujian yang ada!
+                    </p>
+                  </li>
+                </ol>
+              </label>
+            </div>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+  </body>
+</html>

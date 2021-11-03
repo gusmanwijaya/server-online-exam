@@ -7,7 +7,7 @@
 var app = require("../app");
 var debug = require("debug")("server-online-exam:server");
 var http = require("http");
-const db = require("../db");
+const database = require("../database");
 
 /**
  * Get port from environment and store in Express.
@@ -26,11 +26,11 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-db.on("error", () => {
+database.on("error", () => {
   console.log("Connection error: tidak bisa tersambung ke MongoDb");
 });
 
-db.on("open", () => {
+database.on("open", () => {
   server.listen(port);
   server.on("error", onError);
   server.on("listening", onListening);
