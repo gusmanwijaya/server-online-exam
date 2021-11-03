@@ -10,15 +10,15 @@
             <a
               href="/admin/dashboard"
               class="
-                bg-gray-900
-                text-white
+                <%= url === "dashboard" ? 
+                "bg-gray-900 text-white" : 
+                "text-gray-300 hover:bg-gray-700 hover:text-white" %>
                 px-3
                 py-2
                 rounded-md
                 text-sm
                 font-medium
               "
-              aria-current="page"
               >Dashboard</a
             >
 
@@ -26,8 +26,11 @@
               <div
                 tabindex="0"
                 class="
-                  text-gray-300
-                  hover:bg-gray-700 hover:text-white
+                  <% if (url === "dosen" || url === "kelas" || url === "mahasiswa" || url === "mata-kuliah" || url === "program-studi") { %>
+                    bg-gray-900 text-white
+                  <% } else { %>
+                    text-gray-300 hover:bg-gray-700 hover:text-white
+                  <% } %>
                   px-3
                   py-2
                   rounded-md
@@ -50,28 +53,29 @@
                 "
               >
                 <li>
-                  <a>Dosen</a>
+                  <a href="/admin/dosen">Dosen</a>
                 </li>
                 <li>
-                  <a>Kelas</a>
+                  <a href="/admin/kelas">Kelas</a>
                 </li>
                 <li>
-                  <a>Mahasiswa</a>
+                  <a href="/admin/mahasiswa">Mahasiswa</a>
                 </li>
                 <li>
-                  <a>Mata Kuliah</a>
+                  <a href="/admin/mata-kuliah">Mata Kuliah</a>
                 </li>
                 <li>
-                  <a>Program Studi</a>
+                  <a href="/admin/program-studi">Program Studi</a>
                 </li>
               </ul>
             </div>
 
             <a
-              href="#"
+              href="/admin/bank-soal"
               class="
-                text-gray-300
-                hover:bg-gray-700 hover:text-white
+                <%= url === "bank-soal" ? 
+                "bg-gray-900 text-white" : 
+                "text-gray-300 hover:bg-gray-700 hover:text-white" %>
                 px-3
                 py-2
                 rounded-md
@@ -82,10 +86,11 @@
             >
 
             <a
-              href="#"
+              href="/admin/hasil-ujian"
               class="
-                text-gray-300
-                hover:bg-gray-700 hover:text-white
+                <%= url === "hasil-ujian" ? 
+                "bg-gray-900 text-white" : 
+                "text-gray-300 hover:bg-gray-700 hover:text-white" %>
                 px-3
                 py-2
                 rounded-md

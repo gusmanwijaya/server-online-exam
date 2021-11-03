@@ -10,8 +10,9 @@
   <body>
     <div class="bg-gray-200 text-gray-700">
       <div class="flex h-screen">
-        <div class="m-auto text-center">
-          <div class="block md:hidden">
+        <div class="m-auto text-center py-4 md:py-0">
+          <!-- START: Illustration Mobile -->
+          <div class="flex flex-col justify-center items-center md:hidden">
             <svg
               width="333"
               height="300"
@@ -146,7 +147,12 @@
               </defs>
             </svg>
           </div>
-          <div class="hidden md:block">
+          <!-- END: Illustration Mobile -->
+
+          <!-- START: Illustration Desktop -->
+          <div
+            class="hidden md:flex md:flex-col md:justify-center md:items-center"
+          >
             <svg
               width="450"
               height="338"
@@ -281,17 +287,37 @@
               </defs>
             </svg>
           </div>
+          <!-- END: Illustration Desktop -->
           <div class="p-2 mb-4 mt-2">
             <span class="text-gray-600 text-4xl md:text-5xl">
               <%= error.status ?? "Oops! Ada yang salah" %>
             </span>
             <br />
             <p class="text-sm md:text-base text-gray-400 mt-2">
-              <%= message ?? "" %>
+              <!-- <%= message ?? "" %> -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              natus impedit expedita delectus provident repellendus quos,
+              recusandae sint voluptas sed magnam suscipit officia deleniti
+              soluta nihil dolor inventore cupiditate facilis. Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Unde assumenda dolor
+              officia similique, aspernatur nemo tenetur sed labore non
+              deleniti! Reiciendis quam quia recusandae vel reprehenderit eum
+              dolorem facere fuga! Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Totam illum temporibus nisi nesciunt labore, est
+              aliquam repellat quaerat cumque nobis quas delectus eos officiis
+              dignissimos architecto excepturi debitis dolor libero? Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Porro, commodi autem
+              exercitationem quia aliquid dolorum aperiam neque harum eos ex
+              quasi inventore error officia. Delectus voluptatem iste eveniet
+              iusto tempora. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Sunt iure consequatur quia. Nulla facere a placeat dolores
+              doloribus illum veritatis molestiae incidunt ipsum nostrum dicta
+              possimus magnam, iure quo? Tempora.
             </p>
           </div>
           <a
             href="#"
+            id="btn_back"
             type="button"
             class="
               bg-transparent
@@ -312,5 +338,14 @@
         </div>
       </div>
     </div>
+
+    <% include ./partials/script.ejs %>
+    <script>
+      $(document).ready(function () {
+        const btn = document.getElementById("btn_back");
+        btn.removeAttribute("href");
+        btn.setAttribute("href", `${document.referrer}`);
+      });
+    </script>
   </body>
 </html>

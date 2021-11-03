@@ -1,5 +1,5 @@
 <% if (alert.message != "") { %> <% if (alert.status == "success") { %>
-<div class="alert alert-success">
+<div class="alert alert-success mb-4">
   <div class="flex-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@
   </div>
 </div>
 <% } %> <% if (alert.status == "error") { %>
-<div class="alert alert-error">
+<div class="alert alert-error mb-4">
   <div class="flex-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"

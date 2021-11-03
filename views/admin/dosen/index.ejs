@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+
+    <link rel="stylesheet" href="/stylesheets/dataTable.css" />
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Data Dosen</h1>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <% include ../../partials/alert.ejs %>
+          <!-- START: Content -->
+          <div class="overflow-x-auto">
+            <table
+              id="tableDosen"
+              class="stripe hover"
+              style="width: 100%; padding-top: 1em; padding-bottom: 1em"
+            >
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Age</th>
+                  <th>Start date</th>
+                  <th>Salary</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
+                  <td>2011/04/25</td>
+                  <td>$320,800</td>
+                </tr>
+
+                <!-- Rest of your data (refer to https://datatables.net/examples/server_side/ for server side processing)-->
+
+                <tr>
+                  <td>Donna Snider</td>
+                  <td>Customer Support</td>
+                  <td>New York</td>
+                  <td>27</td>
+                  <td>2011/01/25</td>
+                  <td>$112,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+
+    <script>
+      $(document).ready(function () {
+        $("#tableDosen")
+          .DataTable({
+            responsive: true,
+          })
+          .columns.adjust()
+          .responsive.recalc();
+      });
+    </script>
+  </body>
+</html>

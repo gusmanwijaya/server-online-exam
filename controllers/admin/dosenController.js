@@ -1,5 +1,5 @@
 module.exports = {
-  dashboard: async (req, res) => {
+  dosen: async (req, res) => {
     try {
       const originalUrl = req.originalUrl.split("/");
 
@@ -11,15 +11,15 @@ module.exports = {
         message: alertMessage,
       };
 
-      res.render("admin/dashboard/index", {
+      res.render("admin/dosen/index", {
         alert,
         url: originalUrl[2],
-        title: "Dashboard",
+        title: "Dosen",
       });
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/dashboard");
+      res.redirect("/admin/dosen");
     }
   },
 };
