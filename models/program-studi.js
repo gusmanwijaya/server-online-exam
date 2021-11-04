@@ -5,6 +5,7 @@ const dateNow = new Date();
 let programStudiSchema = mongoose.Schema({
   nama: {
     type: String,
+    require: [true, "Nama program studi harus diisi!"],
   },
   createdAt: {
     type: String,

@@ -5,6 +5,7 @@ const dateNow = new Date();
 let kelasSchema = mongoose.Schema({
   nama: {
     type: String,
+    require: [true, "Nama kelas harus diisi!"],
   },
   createdAt: {
     type: String,

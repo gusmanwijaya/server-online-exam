@@ -17,25 +17,39 @@ let aesSchema = mongoose.Schema({
   },
 });
 
-let adminSchema = mongoose.Schema({
+let mahasiswaSchema = mongoose.Schema({
   nama: {
     type: String,
-    require: [true, "Nama admin harus diisi!"],
+    require: [true, "Nama mahasiswa harus diisi!"],
+  },
+  npm: {
+    type: String,
+    require: [true, "NPM mahasiswa harus diisi!"],
+    unique: true,
+  },
+  email: {
+    type: String,
+    require: [true, "Email mahasiswa harus diisi!"],
+    unique: true,
   },
   password: {
     type: aesSchema,
   },
-  email: {
-    type: String,
-    require: [true, "Email admin harus diisi!"],
-    unique: true,
-  },
   nohp: {
     type: Number,
   },
+  jenisKelamin: {
+    type: String,
+    require: [true, "Jenis kelamin mahasiswa harus diisi!"],
+    enum: ["L", "P"],
+  },
+  programStudi: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "ProgramStudi",
+  },
   role: {
     type: Number,
-    default: 1,
+    default: 2,
   },
   createdAt: {
     type: String,
@@ -47,10 +61,12 @@ let adminSchema = mongoose.Schema({
 });
 
 // START: Check email agar tidak boleh sama
-adminSchema.path("email").validate(
+mahasiswaSchema.path("email").validate(
   async function (value) {
     try {
-      const count = await this.model("Admin").countDocuments({ email: value });
+      const count = await this.model("Mahasiswa").countDocuments({
+        email: value,
+      });
       return !count;
     } catch (error) {
       throw error;
@@ -60,12 +76,30 @@ adminSchema.path("email").validate(
 );
 // END: Check email agar tidak boleh sama
 
+// START: Check npm agar tidak boleh sama
+mahasiswaSchema.path("npm").validate(
+  async function (value) {
+    try {
+      const count = await this.model("Mahasiswa").countDocuments({
+        npm: value,
+      });
+      return !count;
+    } catch (error) {
+      throw error;
+    }
+  },
+  (attr) => `${attr.value} sudah terdaftar!`
+);
+// END: Check npm agar tidak boleh sama
+
 // START: Enkripsi password dengan AES 256 mode CBC dan Base64
-adminSchema.pre("save", function (next) {
+mahasiswaSchema.pre("save", function (next) {
   const algorithm = "aes-256-cbc";
   const iv = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
   const key =
-    Math.floor(dateNow.getTime() / 1000).toString() + randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    Math.floor(dateNow.getTime() / 1000).toString() +
+    this.npm +
+    randomString.generate(13); //Harus 32 bytes atau setara 32 karakter
   const message = this.password.message;
 
   const cipher = crypto.createCipheriv(algorithm, key, iv);
@@ -80,4 +114,4 @@ adminSchema.pre("save", function (next) {
 });
 // END: Enkripsi password dengan AES 256 mode CBC dan Base64
 
-module.exports = mongoose.model("Admin", adminSchema);
+module.exports = mongoose.model("Mahasiswa", mahasiswaSchema);
