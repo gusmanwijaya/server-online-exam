@@ -1,10 +1,10 @@
-const Kelas = require("../../models/kelas");
+const ProgramStudi = require("../../models/program-studi");
 
 const dateAndTime = require("date-and-time");
 const dateNow = new Date();
 
 module.exports = {
-  kelas: async (req, res) => {
+  programStudi: async (req, res) => {
     try {
       const originalUrl = req.originalUrl.split("/");
 
@@ -16,40 +16,40 @@ module.exports = {
         message: alertMessage,
       };
 
-      const classes = await Kelas.find().sort({ nama: "asc" });
+      const programStudies = await ProgramStudi.find().sort({ nama: "asc" });
 
-      res.render("admin/kelas/index", {
+      res.render("admin/program-studi/index", {
         alert,
-        classes,
+        programStudies,
         url: originalUrl[2],
-        title: "Kelas",
+        title: "Program Studi",
       });
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/kelas");
+      res.redirect("/admin/program-studi");
     }
   },
-  storeKelas: async (req, res) => {
+  storeProgramStudi: async (req, res) => {
     try {
       const { nama } = req.body;
 
-      await Kelas.create({ nama });
+      await ProgramStudi.create({ nama });
 
       req.flash("alertStatus", "success");
-      req.flash("alertMessage", `Kelas ${nama} berhasil ditambahkan!`);
-      res.redirect("/admin/kelas");
+      req.flash("alertMessage", `Program studi ${nama} berhasil ditambahkan!`);
+      res.redirect("/admin/program-studi");
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/kelas");
+      res.redirect("/admin/program-studi");
     }
   },
-  updateKelas: async (req, res) => {
+  updateProgramStudi: async (req, res) => {
     try {
       const { id, nama } = req.body;
 
-      await Kelas.findOneAndUpdate(
+      await ProgramStudi.findOneAndUpdate(
         { _id: id },
         {
           nama,
@@ -58,15 +58,15 @@ module.exports = {
       );
 
       req.flash("alertStatus", "success");
-      req.flash("alertMessage", `Kelas berhasil diubah!`);
-      res.redirect("/admin/kelas");
+      req.flash("alertMessage", `Program studi berhasil diubah!`);
+      res.redirect("/admin/program-studi");
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/kelas");
+      res.redirect("/admin/program-studi");
     }
   },
-  destroyKelas: async (req, res) => {
+  destroyProgramStudi: async (req, res) => {
     try {
       const { valueList } = req.body;
 
@@ -76,19 +76,19 @@ module.exports = {
           "alertMessage",
           `Maaf, Anda harus memilih satu atau beberapa data untuk dihapus!`
         );
-        res.redirect("/admin/kelas");
+        res.redirect("/admin/program-studi");
       } else {
         const idArray = valueList.split(",");
-        await Kelas.remove({ _id: { $in: idArray } });
+        await ProgramStudi.remove({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
-        req.flash("alertMessage", `Kelas berhasil dihapus!`);
-        res.redirect("/admin/kelas");
+        req.flash("alertMessage", `Program studi berhasil dihapus!`);
+        res.redirect("/admin/program-studi");
       }
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/kelas");
+      res.redirect("/admin/program-studi");
     }
   },
 };

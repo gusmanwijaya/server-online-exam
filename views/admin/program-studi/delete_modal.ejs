@@ -1,5 +1,5 @@
 <label
-  for="modal-delete-kelas"
+  for="modal-delete-program-studi"
   class="btn btn-sm md:btn-md btn-error modal-button"
 >
   <svg
@@ -18,11 +18,11 @@
   </svg>
   Hapus
 </label>
-<input type="checkbox" id="modal-delete-kelas" class="modal-toggle" />
+<input type="checkbox" id="modal-delete-program-studi" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box">
     <form
-      action="/admin/destroy-kelas?_method=DELETE"
+      action="/admin/destroy-program-studi?_method=DELETE"
       name="form-delete"
       method="post"
     >
@@ -35,7 +35,7 @@
       <div class="modal-action">
         <input type="hidden" name="valueList" id="valueList" />
         <button type="submit" class="btn btn-error">Hapus</button>
-        <label for="modal-delete-kelas" class="btn">Tutup</label>
+        <label for="modal-delete-program-studi" class="btn">Tutup</label>
       </div>
     </form>
   </div>

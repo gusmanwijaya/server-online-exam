@@ -1,0 +1,42 @@
+<label
+  for="modal-create-program-studi"
+  class="btn btn-sm md:btn-md btn-primary modal-button text-xs md:text-base"
+  ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-4 md:h-6 w-4 md:w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+    />
+  </svg>
+  Tambah
+</label>
+<input type="checkbox" id="modal-create-program-studi" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <form action="/admin/store-program-studi" method="POST">
+      <div class="form-control">
+        <label class="label" for="nama">
+          <span class="label-text">Program Studi</span>
+        </label>
+        <input
+          type="text"
+          class="input input-primary input-bordered"
+          name="nama"
+          id="nama"
+          required
+        />
+      </div>
+      <div class="modal-action">
+        <button type="submit" class="btn btn-primary">Tambah</button>
+        <label for="modal-create-program-studi" class="btn">Tutup</label>
+      </div>
+    </form>
+  </div>
+</div>

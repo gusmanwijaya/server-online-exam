@@ -1,0 +1,50 @@
+<label
+  for="modal-edit-program-studi"
+  id="labelModalEditProgramStudi"
+  class="btn btn-sm md:btn-md btn-warning modal-button"
+  data-id="<%= programStudies[index]._id %>"
+  data-nama="<%= programStudies[index].nama %>"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-4 md:h-6 w-4 md:w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+    />
+  </svg>
+</label>
+<input type="checkbox" id="modal-edit-program-studi" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <form
+      action="/admin/update-program-studi?_method=PUT"
+      name="form-edit"
+      method="POST"
+    >
+      <div class="form-control">
+        <label class="label" for="nama">
+          <span class="label-text">Program Studi</span>
+        </label>
+        <input
+          type="text"
+          class="input input-primary input-bordered"
+          name="nama"
+          id="nama"
+          required
+        />
+      </div>
+      <div class="modal-action">
+        <input type="hidden" name="id" id="id" />
+        <button type="submit" class="btn btn-warning">Ubah</button>
+        <label for="modal-edit-program-studi" class="btn">Tutup</label>
+      </div>
+    </form>
+  </div>
+</div>

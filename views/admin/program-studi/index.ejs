@@ -12,7 +12,7 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Data Kelas</h1>
+          <h1 class="text-3xl font-bold text-gray-900">Data Program Studi</h1>
         </div>
       </header>
       <main data-aos="fade-in">
@@ -20,7 +20,7 @@
           <!-- START: Content -->
           <% include ../../partials/alert.ejs %> 
 
-          <% if (classes.length != 0) { %>
+          <% if (programStudies.length != 0) { %>
 
           <div class="flex flex-row items-center justify-between">
             <% include ./create_modal.ejs %>
@@ -30,26 +30,26 @@
 
           <div class="overflow-x-auto mt-6">
             <table
-              id="tableKelas"
+              id="tableProgramStudi"
               class="stripe hover"
               style="width: 100%; padding-top: 1em; padding-bottom: 1em"
             >
               <thead>
                 <tr>
                   <th></th>
-                  <th>Kelas</th>
+                  <th>Program Studi</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                <% for( let index = 0; index < classes.length; index++ ) { %>
+                <% for( let index = 0; index < programStudies.length; index++ ) { %>
                 <tr class="text-center">
                   <td>
                     <label>
-                      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= classes[index]._id %>" />
+                      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= programStudies[index]._id %>" />
                     </label>
                   </td>
-                  <td><%= classes[index].nama %></td>
+                  <td><%= programStudies[index].nama %></td>
                   <td class="flex flex-row justify-center items-center space-x-2">
                     <% include ./edit_modal.ejs %>
                   </td>
@@ -62,8 +62,8 @@
           <div class="flex flex-col justify-center items-center py-10 space-y-3">
             <img src="/images/404.png" alt="404 - Not Found" class="mb-4" />
             <p class="text-center font-light">
-              Ooppss, nampaknya data kelas saat ini kosong, <br />
-              silahkan tambahkan kelas.
+              Ooppss, nampaknya data program studi saat ini kosong, <br />
+              silahkan tambahkan program studi.
             </p>
             <% include ./create_modal.ejs %>
           <% } %>
@@ -77,7 +77,7 @@
     <script>
       $(document).ready(function () {
         // START: Show datatable
-        $("#tableKelas")
+        $("#tableProgramStudi")
           .DataTable({
             responsive: true,
           })
@@ -87,7 +87,7 @@
       // END: Show datatable
 
       // START: Show edit and value at modal
-      $("#tableKelas").on("click", "#labelModalEditKelas", function () {
+      $("#tableProgramStudi").on("click", "#labelModalEditProgramStudi", function () {
         let id = $(this).data("id");
         let nama = $(this).data("nama");
         document.forms["form-edit"]["id"].value = id;
@@ -114,7 +114,7 @@
       // END: Delete checkbox or multiple data
 
       // START: Delete only one data
-      // $("#tableKelas").on("click", "#labelModalDeleteKelas", function () {
+      // $("#tableProgramStudi").on("click", "#labelModalDeleteProgramStudi", function () {
       //   let id = $(this).data("id");
       //   document.forms["form-delete"]["id"].value = id;
       // });
