@@ -37,7 +37,7 @@ module.exports = {
   },
   storeMahasiswa: async (req, res) => {
     try {
-      const { nama, npm, email, password, nohp, jenisKelamin, programStudi } =
+      const { nama, npm, email, password, jenisKelamin, programStudi } =
         req.body;
 
       if (password.length < 10) {
@@ -55,7 +55,6 @@ module.exports = {
           password: {
             message: password,
           },
-          nohp,
           jenisKelamin,
           programStudi,
         });
@@ -72,12 +71,11 @@ module.exports = {
   },
   updateMahasiswa: async (req, res) => {
     try {
-      const { id, nohp, jenisKelamin } = req.body;
+      const { id, jenisKelamin } = req.body;
 
       await Mahasiswa.findOneAndUpdate(
         { _id: id },
         {
-          nohp,
           jenisKelamin,
           updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
         }

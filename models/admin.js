@@ -30,9 +30,6 @@ let adminSchema = mongoose.Schema({
     require: [true, "Email admin harus diisi!"],
     unique: true,
   },
-  nohp: {
-    type: Number,
-  },
   role: {
     type: Number,
     default: 1,

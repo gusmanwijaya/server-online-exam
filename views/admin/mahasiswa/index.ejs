@@ -40,7 +40,6 @@
                   <th>Nama</th>
                   <th>NPM</th>
                   <th>Email</th>
-                  <th>No HP</th>
                   <th>L/P</th>
                   <th>Prodi</th>
                   <th>Aksi</th>
@@ -57,10 +56,9 @@
                   <td><%= mahasiswas[index].nama %></td>
                   <td><%= mahasiswas[index].npm %></td>
                   <td><%= mahasiswas[index].email %></td>
-                  <td><%= mahasiswas[index].nohp ?? "-" %></td>
                   <td><%= mahasiswas[index].jenisKelamin %></td>
                   <td><%= mahasiswas[index].programStudi.nama %></td>
-                  <td class="flex flex-row justify-center items-center space-x-2">
+                  <td>
                     <% include ./edit_modal.ejs %>
                   </td>
                 </tr>
@@ -102,14 +100,12 @@
         let nama = $(this).data("nama");
         let npm = $(this).data("npm");
         let email = $(this).data("email");
-        let nohp = $(this).data("nohp");
         let jenisKelamin = $(this).data("jenis-kelamin");
         let programStudi = $(this).data("program-studi");
         document.forms["form-edit"]["id"].value = id;
         document.forms["form-edit"]["nama"].value = nama;
         document.forms["form-edit"]["npm"].value = npm;
         document.forms["form-edit"]["email"].value = email;
-        document.forms["form-edit"]["nohp"].value = nohp;
         document.forms["form-edit"]["jenisKelamin"].value = jenisKelamin;
         document.forms["form-edit"]["programStudi"].value = programStudi;
       });

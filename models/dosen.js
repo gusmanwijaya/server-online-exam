@@ -35,9 +35,6 @@ let dosenSchema = mongoose.Schema({
   password: {
     type: aesSchema,
   },
-  nohp: {
-    type: Number,
-  },
   jenisKelamin: {
     type: String,
     require: [true, "Jenis kelamin dosen harus diisi!"],

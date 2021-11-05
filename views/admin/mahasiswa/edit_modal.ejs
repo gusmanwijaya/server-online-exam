@@ -1,18 +1,17 @@
 <label
   for="modal-edit-mahasiswa"
   id="labelModalEditMahasiswa"
-  class="btn btn-sm md:btn-md btn-warning modal-button"
+  class="btn btn-sm lg:btn-md btn-warning modal-button"
   data-id="<%= mahasiswas[index]._id %>"
   data-nama="<%= mahasiswas[index].nama %>"
   data-npm="<%= mahasiswas[index].npm %>"
   data-email="<%= mahasiswas[index].email %>"
-  data-nohp="<%= mahasiswas[index].nohp %>"
   data-jenis-kelamin="<%= mahasiswas[index].jenisKelamin %>"
   data-program-studi="<%= mahasiswas[index].programStudi._id %>"
 >
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="h-4 md:h-6 w-4 md:w-6"
+    class="h-4 lg:h-6 w-4 lg:w-6"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -70,17 +69,6 @@
           id="email"
           required
           disabled
-        />
-      </div>
-      <div class="form-control">
-        <label class="label" for="nohp">
-          <span class="label-text">Nomor HP</span>
-        </label>
-        <input
-          type="tel"
-          class="input input-primary input-bordered"
-          name="nohp"
-          id="nohp"
         />
       </div>
       <div class="form-control">

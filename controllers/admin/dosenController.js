@@ -68,7 +68,6 @@ module.exports = {
         nip,
         email,
         password,
-        nohp,
         jenisKelamin,
         mataKuliah,
         programStudi,
@@ -89,7 +88,6 @@ module.exports = {
           password: {
             message: password,
           },
-          nohp,
           jenisKelamin,
           mataKuliah,
           programStudi,
@@ -140,12 +138,11 @@ module.exports = {
     try {
       const { id } = req.params;
 
-      const { nohp, jenisKelamin, mataKuliah } = req.body;
+      const { jenisKelamin, mataKuliah } = req.body;
 
       await Dosen.findOneAndUpdate(
         { _id: id },
         {
-          nohp,
           jenisKelamin,
           mataKuliah,
           updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),

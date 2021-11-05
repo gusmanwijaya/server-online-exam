@@ -12,7 +12,7 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Data MataKuliah</h1>
+          <h1 class="text-3xl font-bold text-gray-900">Data Mata Kuliah</h1>
         </div>
       </header>
       <main data-aos="fade-in">
@@ -66,7 +66,7 @@
                       </div> 
                     <% }) %>
                   </td>
-                  <td class="flex flex-row justify-center items-center space-x-2">
+                  <td>
                     <% include ./edit_modal.ejs %>
                   </td>
                 </tr>
@@ -112,7 +112,7 @@
         });
       })
       // END: Multiple select2
-
+      
       // START: Show edit and value at modal
       $("#tableMataKuliah").on("click", "#labelModalEditMataKuliah", function () {
         $(".select-multiple-edit-kelas").select2();
@@ -120,7 +120,7 @@
 
         var id = $(this).data("id");
         var nama = $(this).data("nama");
-
+        
         document.forms["form-edit"]["id"].value = id;
         document.forms["form-edit"]["nama"].value = nama;
       });

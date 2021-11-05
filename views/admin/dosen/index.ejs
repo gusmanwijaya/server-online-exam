@@ -5,6 +5,30 @@
     <% include ../../partials/header.ejs %>
 
     <link rel="stylesheet" href="/stylesheets/dataTable.css" />
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+    
+      @media (min-width: 640px) {
+        table {
+          display: inline-table !important;
+        }
+    
+        thead tr:not(:first-child) {
+          display: none;
+        }
+      }
+    
+      td:not(:last-child) {
+        border-bottom: 0;
+      }
+    
+      th:not(:last-child) {
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+      }
+    </style>
   </head>
   <body>
     <div class="min-h-full">
@@ -46,7 +70,6 @@
                   <th>Nama</th>
                   <th>NIP</th>
                   <th>Email</th>
-                  <th>No HP</th>
                   <th>L/P</th>
                   <th>Matkul</th>
                   <th>Prodi</th>
@@ -64,7 +87,6 @@
                   <td><%= dosens[index].nama %></td>
                   <td><%= dosens[index].nip %></td>
                   <td><%= dosens[index].email %></td>
-                  <td><%= dosens[index].nohp ?? "-" %></td>
                   <td><%= dosens[index].jenisKelamin %></td>
                   <td>
                     <% dosens[index].mataKuliah.forEach(dosenMatkul => { %>
@@ -72,9 +94,9 @@
                     <% }) %>
                   </td>
                   <td><%= dosens[index].programStudi.nama %></td>
-                  <td class="flex flex-row justify-center items-center space-x-2">
-                    <a href="/admin/edit-dosen/<%= dosens[index]._id %>" type="button" class="btn btn-sm md:btn-md btn-warning">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <td>
+                    <a href="/admin/edit-dosen/<%= dosens[index]._id %>" class="btn btn-sm lg:btn-md btn-warning">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                       </svg>
                     </a>
