@@ -49,17 +49,27 @@ module.exports = {
     try {
       const { id, nama } = req.body;
 
-      await ProgramStudi.findOneAndUpdate(
-        { _id: id },
-        {
-          nama,
-          updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
-        }
-      );
+      const checkProdiAtDb = await ProgramStudi.findOne({ nama: nama });
+      if (checkProdiAtDb) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Program studi ${nama} sudah terdaftar!`);
+        res.redirect("/admin/program-studi");
+      } else {
+        await ProgramStudi.findOneAndUpdate(
+          { _id: id },
+          {
+            nama,
+            updatedAt: dateAndTime.format(
+              dateNow,
+              "dddd, D MMMM YYYY HH:mm:ss"
+            ),
+          }
+        );
 
-      req.flash("alertStatus", "success");
-      req.flash("alertMessage", `Program studi berhasil diubah!`);
-      res.redirect("/admin/program-studi");
+        req.flash("alertStatus", "success");
+        req.flash("alertMessage", `Program studi berhasil diubah!`);
+        res.redirect("/admin/program-studi");
+      }
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);

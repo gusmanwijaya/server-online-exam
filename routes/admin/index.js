@@ -16,6 +16,12 @@ const {
   destroyMahasiswa,
 } = require("../../controllers/admin/mahasiswaController");
 const {
+  mataKuliah,
+  storeMataKuliah,
+  updateMataKuliah,
+  destroyMataKuliah,
+} = require("../../controllers/admin/mataKuliahController");
+const {
   programStudi,
   updateProgramStudi,
   destroyProgramStudi,
@@ -43,5 +49,10 @@ router.get("/mahasiswa", mahasiswa);
 router.post("/store-mahasiswa", storeMahasiswa);
 router.put("/update-mahasiswa", updateMahasiswa);
 router.delete("/destroy-mahasiswa", destroyMahasiswa);
+
+router.get("/mata-kuliah", mataKuliah);
+router.post("/store-mata-kuliah", storeMataKuliah);
+router.put("/update-mata-kuliah", updateMataKuliah);
+router.delete("/destroy-mata-kuliah", destroyMataKuliah);
 
 module.exports = router;

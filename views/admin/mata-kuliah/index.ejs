@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+
+    <link rel="stylesheet" href="/stylesheets/dataTable.css" />
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Data MataKuliah</h1>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
+          <!-- START: Content -->
+          <% include ../../partials/alert.ejs %> 
+
+          <% if (mataKuliahs.length != 0) { %>
+
+          <div class="flex flex-row items-center justify-between">
+            <% include ./create_modal.ejs %>
+
+            <% include ./delete_modal.ejs %>
+          </div>
+
+          <div class="overflow-x-auto mt-6">
+            <table
+              id="tableMataKuliah"
+              class="stripe hover"
+              style="width: 100%; padding-top: 1em; padding-bottom: 1em"
+            >
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Nama</th>
+                  <th>Kelas</th>
+                  <th>Prodi</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% for( let index = 0; index < mataKuliahs.length; index++ ) { %>
+                <tr class="text-center">
+                  <td>
+                    <label>
+                      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= mataKuliahs[index]._id %>" />
+                    </label>
+                  </td>
+                  <td><%= mataKuliahs[index].nama %></td>
+                  <td>
+                    <% mataKuliahs[index].kelas.forEach(matkulKelas => { %>
+                      <div class="badge badge-primary badge-outline">
+                        <%= matkulKelas.nama %>
+                      </div> 
+                    <% }) %>
+                  </td>
+                  <td>
+                    <% mataKuliahs[index].programStudi.forEach(matkulProdi => { %>
+                      <div class="badge badge-primary badge-outline">
+                        <%= matkulProdi.nama %>
+                      </div> 
+                    <% }) %>
+                  </td>
+                  <td class="flex flex-row justify-center items-center space-x-2">
+                    <% include ./edit_modal.ejs %>
+                  </td>
+                </tr>
+                <% } %>
+              </tbody>
+            </table>
+          </div>
+          <% } else { %>
+          <div class="flex flex-col justify-center items-center py-10 space-y-3">
+            <img src="/images/404.png" alt="404 - Not Found" class="mb-4" />
+            <p class="text-center font-light">
+              Ooppss, nampaknya data mata kuliah saat ini kosong, <br />
+              silahkan tambahkan mata kuliah.
+            </p>
+            <% include ./create_modal.ejs %>
+          <% } %>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+
+    <script>
+      $(document).ready(function () {
+        // START: Show datatable
+        $("#tableMataKuliah")
+          .DataTable({
+            responsive: true,
+          })
+          .columns.adjust()
+          .responsive.recalc();
+      });
+      // END: Show datatable
+
+      // START: Multiple select2
+      $("#labelModalCreateMataKuliah").on("click", function () {
+        $(".select-multiple-create-kelas").select2({
+          placeholder: "-Pilih Kelas-"
+        });
+        $(".select-multiple-create-program-studi").select2({
+          placeholder: "-Pilih Program Studi-"
+        });
+      })
+      // END: Multiple select2
+
+      // START: Show edit and value at modal
+      $("#tableMataKuliah").on("click", "#labelModalEditMataKuliah", function () {
+        $(".select-multiple-edit-kelas").select2();
+        $(".select-multiple-edit-program-studi").select2();
+
+        var id = $(this).data("id");
+        var nama = $(this).data("nama");
+
+        document.forms["form-edit"]["id"].value = id;
+        document.forms["form-edit"]["nama"].value = nama;
+      });
+      // START: Show edit and value at modal
+
+      // START: Delete checkbox or multiple data
+      var valueList = document.getElementById("valueList");
+      var listArray = [];
+      var checkboxes = document.querySelectorAll(".checkbox");
+
+      for (var checkbox of checkboxes) {
+        checkbox.addEventListener("click", function () {
+          if(this.checked == true) {
+            listArray.push(this.value);
+            document.forms["form-delete"]["valueList"].value = listArray;
+          }else{
+            listArray = listArray.filter(e => e !== this.value);
+            document.forms["form-delete"]["valueList"].value = listArray;
+          }
+        })
+      }
+      // END: Delete checkbox or multiple data
+
+      // START: Delete only one data
+      // $("#tableMataKuliah").on("click", "#labelModalDeleteMataKuliah", function () {
+      //   let id = $(this).data("id");
+      //   document.forms["form-delete"]["id"].value = id;
+      // });
+      // END: Delete only one data
+    </script>
+  </body>
+</html>

@@ -6,6 +6,7 @@ let kelasSchema = mongoose.Schema({
   nama: {
     type: String,
     require: [true, "Nama kelas harus diisi!"],
+    unique: true,
   },
   createdAt: {
     type: String,
@@ -15,5 +16,21 @@ let kelasSchema = mongoose.Schema({
     type: String,
   },
 });
+
+// START: Check nama agar tidak boleh sama
+kelasSchema.path("nama").validate(
+  async function (value) {
+    try {
+      const count = await this.model("Kelas").countDocuments({
+        nama: value,
+      });
+      return !count;
+    } catch (error) {
+      throw error;
+    }
+  },
+  (attr) => `${attr.value} sudah terdaftar!`
+);
+// END: Check nama agar tidak boleh sama
 
 module.exports = mongoose.model("Kelas", kelasSchema);

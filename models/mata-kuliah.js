@@ -2,12 +2,23 @@ const mongoose = require("mongoose");
 const dateAndTime = require("date-and-time");
 const dateNow = new Date();
 
-let programStudiSchema = mongoose.Schema({
+let mataKuliahSchema = mongoose.Schema({
   nama: {
     type: String,
-    require: [true, "Nama program studi harus diisi!"],
-    unique: true,
+    require: [true, "Nama mata kuliah harus diisi!"],
   },
+  kelas: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Kelas",
+    },
+  ],
+  programStudi: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "ProgramStudi",
+    },
+  ],
   createdAt: {
     type: String,
     default: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
@@ -18,10 +29,10 @@ let programStudiSchema = mongoose.Schema({
 });
 
 // START: Check nama agar tidak boleh sama
-programStudiSchema.path("nama").validate(
+mataKuliahSchema.path("nama").validate(
   async function (value) {
     try {
-      const count = await this.model("ProgramStudi").countDocuments({
+      const count = await this.model("MataKuliah").countDocuments({
         nama: value,
       });
       return !count;
@@ -33,4 +44,4 @@ programStudiSchema.path("nama").validate(
 );
 // END: Check nama agar tidak boleh sama
 
-module.exports = mongoose.model("ProgramStudi", programStudiSchema);
+module.exports = mongoose.model("MataKuliah", mataKuliahSchema);

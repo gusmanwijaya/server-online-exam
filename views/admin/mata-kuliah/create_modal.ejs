@@ -1,0 +1,77 @@
+<label
+  for="modal-create-mata-kuliah"
+  class="btn btn-sm md:btn-md btn-primary modal-button text-xs md:text-base"
+  id="labelModalCreateMataKuliah"
+  ><svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-4 md:h-6 w-4 md:w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+    />
+  </svg>
+  Tambah
+</label>
+<input type="checkbox" id="modal-create-mata-kuliah" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <form action="/admin/store-mata-kuliah" method="POST">
+      <div class="form-control">
+        <label class="label" for="nama">
+          <span class="label-text">Nama</span>
+        </label>
+        <input
+          type="text"
+          class="input input-bordered"
+          name="nama"
+          id="nama"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <label for="kelas" class="label">
+          <span class="label-text">Kelas</span>
+        </label>
+        <select
+          class="select-multiple-create-kelas w-full"
+          name="kelas"
+          id="kelas"
+          multiple="multiple"
+          required
+        >
+          <% classes.forEach(kelas => { %>
+          <option value="<%= kelas._id %>"><%= kelas.nama %></option>
+          <% }) %>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="programStudi" class="label">
+          <span class="label-text">Program Studi</span>
+        </label>
+        <select
+          class="select-multiple-create-program-studi w-full"
+          name="programStudi"
+          id="programStudi"
+          multiple="multiple"
+          required
+        >
+          <% programStudies.forEach(programStudi => { %>
+          <option value="<%= programStudi._id %>">
+            <%= programStudi.nama %>
+          </option>
+          <% }) %>
+        </select>
+      </div>
+      <div class="modal-action">
+        <button type="submit" class="btn btn-primary">Tambah</button>
+        <label for="modal-create-mata-kuliah" class="btn">Tutup</label>
+      </div>
+    </form>
+  </div>
+</div>

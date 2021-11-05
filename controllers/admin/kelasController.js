@@ -49,17 +49,28 @@ module.exports = {
     try {
       const { id, nama } = req.body;
 
-      await Kelas.findOneAndUpdate(
-        { _id: id },
-        {
-          nama,
-          updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
-        }
-      );
+      const checkNamaAtDb = await Kelas.findOne({ nama: nama });
 
-      req.flash("alertStatus", "success");
-      req.flash("alertMessage", `Kelas berhasil diubah!`);
-      res.redirect("/admin/kelas");
+      if (checkNamaAtDb) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Kelas ${nama} sudah terdaftar!`);
+        res.redirect("/admin/kelas");
+      } else {
+        await Kelas.findOneAndUpdate(
+          { _id: id },
+          {
+            nama,
+            updatedAt: dateAndTime.format(
+              dateNow,
+              "dddd, D MMMM YYYY HH:mm:ss"
+            ),
+          }
+        );
+
+        req.flash("alertStatus", "success");
+        req.flash("alertMessage", `Kelas berhasil diubah!`);
+        res.redirect("/admin/kelas");
+      }
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
