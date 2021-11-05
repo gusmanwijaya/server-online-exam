@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Data Dosen</h1>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
+          <!-- START: Content -->
+          <% include ../../partials/alert.ejs %>
+
+          <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+              <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                  <h3 class="text-lg font-medium leading-6 text-gray-900">
+                    Tambah Data Dosen
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-600">
+                    Silahkan isi kolom yang telah disediakan.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-5 md:mt-0 md:col-span-2">
+                <form action="/admin/store-dosen" method="POST">
+                  <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-white sm:p-6">
+                      <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="nama">
+                              <span class="label-text">Nama</span>
+                            </label>
+                            <input
+                              type="text"
+                              name="nama"
+                              id="nama"
+                              required
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="nip">
+                              <span class="label-text">NIP</span>
+                            </label>
+                            <input
+                              type="text"
+                              name="nip"
+                              id="nip"
+                              required
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="email">
+                              <span class="label-text">Email</span>
+                            </label>
+                            <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              required
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="password">
+                              <span class="label-text">Password</span>
+                            </label>
+                            <input
+                              type="password"
+                              name="password"
+                              id="password"
+                              required
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="nohp">
+                              <span class="label-text">No HP</span>
+                            </label>
+                            <input
+                              type="tel"
+                              name="nohp"
+                              id="nohp"
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="jenisKelamin">
+                              <span class="label-text">Jenis Kelamin</span>
+                            </label>
+                            <select
+                              class="select select-bordered w-full"
+                              name="jenisKelamin"
+                              id="jenisKelamin"
+                              required
+                            >
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                -Pilih Jenis Kelamin-
+                              </option>
+                              <option value="L">Laki-Laki</option>
+                              <option value="P">Perempuan</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label for="programStudi" class="label">
+                              <span class="label-text">Program Studi</span>
+                            </label>
+                            <select
+                              class="select select-bordered w-full"
+                              name="programStudi"
+                              id="programStudi"
+                              required
+                            >
+                              <option
+                                value=""
+                                disabled="disabled"
+                                selected="selected"
+                              >
+                                -Pilih Program Studi-
+                              </option>
+                              <% programStudies.forEach(programStudi => { %>
+                              <option value="<%= programStudi._id %>">
+                                <%= programStudi.nama %>
+                              </option>
+                              <% }) %>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label for="mataKuliah" class="label">
+                              <span class="label-text">Mata Kuliah</span>
+                            </label>
+                            <select
+                              class="select-multiple-mata-kuliah w-full"
+                              name="mataKuliah"
+                              id="mataKuliah"
+                              multiple="multiple"
+                              required
+                            >
+                              <% mataKuliahs.forEach(mataKuliah => { %>
+                              <option value="<%= mataKuliah._id %>">
+                                <%= mataKuliah.nama %>
+                              </option>
+                              <% }) %>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                      <a
+                        href="/admin/dosen"
+                        type="button"
+                        class="btn btn-sm md:btn-md btn-ghost"
+                      >
+                        Kembali
+                      </a>
+                      <button
+                        type="submit"
+                        class="btn btn-sm md:btn-md btn-primary"
+                      >
+                        Tambah
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+    <script>
+      $(document).ready(function () {
+        $(".select-multiple-mata-kuliah").select2();
+      });
+    </script>
+  </body>
+</html>

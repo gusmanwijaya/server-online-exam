@@ -16,10 +16,25 @@
         </div>
       </header>
       <main data-aos="fade-in">
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <% include ../../partials/alert.ejs %>
+        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
           <!-- START: Content -->
-          <div class="overflow-x-auto">
+          <% include ../../partials/alert.ejs %> 
+
+          <% if (dosens.length != 0) { %>
+
+          <div class="flex flex-row items-center justify-between">
+            <a href="/admin/create-dosen" type="button">
+              <button class="btn btn-sm md:btn-md btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg> Tambah
+              </button> 
+            </a>
+
+            <% include ./delete_modal.ejs %>
+          </div>
+
+          <div class="overflow-x-auto mt-6">
             <table
               id="tableDosen"
               class="stripe hover"
@@ -27,37 +42,63 @@
             >
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Position</th>
-                  <th>Office</th>
-                  <th>Age</th>
-                  <th>Start date</th>
-                  <th>Salary</th>
+                  <th></th>
+                  <th>Nama</th>
+                  <th>NIP</th>
+                  <th>Email</th>
+                  <th>No HP</th>
+                  <th>L/P</th>
+                  <th>Matkul</th>
+                  <th>Prodi</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Tiger Nixon</td>
-                  <td>System Architect</td>
-                  <td>Edinburgh</td>
-                  <td>61</td>
-                  <td>2011/04/25</td>
-                  <td>$320,800</td>
+                <% for( let index = 0; index < dosens.length; index++ ) { %>
+                <tr class="text-center">
+                  <td>
+                    <label>
+                      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= dosens[index]._id %>" />
+                    </label>
+                  </td>
+                  <td><%= dosens[index].nama %></td>
+                  <td><%= dosens[index].nip %></td>
+                  <td><%= dosens[index].email %></td>
+                  <td><%= dosens[index].nohp ?? "-" %></td>
+                  <td><%= dosens[index].jenisKelamin %></td>
+                  <td>
+                    <% dosens[index].mataKuliah.forEach(dosenMatkul => { %>
+                      <%= dosenMatkul.nama %>
+                    <% }) %>
+                  </td>
+                  <td><%= dosens[index].programStudi.nama %></td>
+                  <td class="flex flex-row justify-center items-center space-x-2">
+                    <a href="/admin/edit-dosen/<%= dosens[index]._id %>" type="button" class="btn btn-sm md:btn-md btn-warning">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                      </svg>
+                    </a>
+                  </td>
                 </tr>
-
-                <!-- Rest of your data (refer to https://datatables.net/examples/server_side/ for server side processing)-->
-
-                <tr>
-                  <td>Donna Snider</td>
-                  <td>Customer Support</td>
-                  <td>New York</td>
-                  <td>27</td>
-                  <td>2011/01/25</td>
-                  <td>$112,000</td>
-                </tr>
+                <% } %>
               </tbody>
             </table>
           </div>
+          <% } else { %>
+          <div class="flex flex-col justify-center items-center py-10 space-y-3">
+            <img src="/images/404.png" alt="404 - Not Found" class="mb-4" />
+            <p class="text-center font-light">
+              Ooppss, nampaknya data dosen saat ini kosong, <br />
+              silahkan tambahkan dosen.
+            </p>
+            <a href="/admin/create-dosen" type="button">
+              <button class="btn btn-sm md:btn-md btn-outline btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg> Tambah
+              </button> 
+            </a>
+          <% } %>
           <!-- END: Content -->
         </div>
       </main>
@@ -67,6 +108,7 @@
 
     <script>
       $(document).ready(function () {
+        // START: Show datatable
         $("#tableDosen")
           .DataTable({
             responsive: true,
@@ -74,6 +116,32 @@
           .columns.adjust()
           .responsive.recalc();
       });
+      // END: Show datatable
+
+      // START: Delete checkbox or multiple data
+      var valueList = document.getElementById("valueList");
+      var listArray = [];
+      var checkboxes = document.querySelectorAll(".checkbox");
+
+      for (var checkbox of checkboxes) {
+        checkbox.addEventListener("click", function () {
+          if(this.checked == true) {
+            listArray.push(this.value);
+            document.forms["form-delete"]["valueList"].value = listArray;
+          }else{
+            listArray = listArray.filter(e => e !== this.value);
+            document.forms["form-delete"]["valueList"].value = listArray;
+          }
+        })
+      }
+      // END: Delete checkbox or multiple data
+
+      // START: Delete only one data
+      // $("#tableDosen").on("click", "#labelModalDeleteMahasiswa", function () {
+      //   let id = $(this).data("id");
+      //   document.forms["form-delete"]["id"].value = id;
+      // });
+      // END: Delete only one data
     </script>
   </body>
 </html>

@@ -2,7 +2,14 @@ const express = require("express");
 const router = express.Router();
 
 const { dashboard } = require("../../controllers/admin/dashboardController");
-const { dosen } = require("../../controllers/admin/dosenController");
+const {
+  dosen,
+  createDosen,
+  storeDosen,
+  editDosen,
+  updateDosen,
+  destroyDosen,
+} = require("../../controllers/admin/dosenController");
 const {
   kelas,
   storeKelas,
@@ -34,6 +41,11 @@ router.use(isLogin);
 router.get("/dashboard", dashboard);
 
 router.get("/dosen", dosen);
+router.get("/create-dosen", createDosen);
+router.post("/store-dosen", storeDosen);
+router.get("/edit-dosen/:id", editDosen);
+router.put("/update-dosen/:id", updateDosen);
+router.delete("/destroy-dosen", destroyDosen);
 
 router.get("/kelas", kelas);
 router.post("/store-kelas", storeKelas);
