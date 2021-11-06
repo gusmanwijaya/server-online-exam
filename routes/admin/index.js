@@ -27,6 +27,7 @@ const {
   storeMataKuliah,
   updateMataKuliah,
   destroyMataKuliah,
+  editMataKuliah,
 } = require("../../controllers/admin/mataKuliahController");
 const {
   programStudi,
@@ -64,7 +65,8 @@ router.delete("/destroy-mahasiswa", destroyMahasiswa);
 
 router.get("/mata-kuliah", mataKuliah);
 router.post("/store-mata-kuliah", storeMataKuliah);
-router.put("/update-mata-kuliah", updateMataKuliah);
+router.get("/edit-mata-kuliah/:id", editMataKuliah);
+router.put("/update-mata-kuliah/:id", updateMataKuliah);
 router.delete("/destroy-mata-kuliah", destroyMataKuliah);
 
 module.exports = router;

@@ -54,20 +54,24 @@
                   <td><%= mataKuliahs[index].nama %></td>
                   <td>
                     <% mataKuliahs[index].kelas.forEach(matkulKelas => { %>
-                      <div class="badge badge-primary badge-outline">
+                      <div class="badge badge-primary badge-outline text-2xs whitespace-nowrap mb-1 lg:mb-0">
                         <%= matkulKelas.nama %>
                       </div> 
                     <% }) %>
                   </td>
                   <td>
                     <% mataKuliahs[index].programStudi.forEach(matkulProdi => { %>
-                      <div class="badge badge-primary badge-outline">
+                      <div class="badge badge-primary badge-outline text-2xs whitespace-nowrap mb-1 lg:mb-0">
                         <%= matkulProdi.nama %>
                       </div> 
                     <% }) %>
                   </td>
                   <td>
-                    <% include ./edit_modal.ejs %>
+                    <a href="/admin/edit-mata-kuliah/<%= mataKuliahs[index]._id %>" class="btn btn-sm lg:btn-md btn-warning">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                      </svg>
+                    </a>
                   </td>
                 </tr>
                 <% } %>
@@ -99,57 +103,37 @@
           })
           .columns.adjust()
           .responsive.recalc();
-      });
-      // END: Show datatable
-
-      // START: Multiple select2
-      $("#labelModalCreateMataKuliah").on("click", function () {
-        $(".select-multiple-create-kelas").select2({
-          placeholder: "-Pilih Kelas-"
         });
-        $(".select-multiple-create-program-studi").select2({
-          placeholder: "-Pilih Program Studi-"
-        });
-      })
-      // END: Multiple select2
-      
-      // START: Show edit and value at modal
-      $("#tableMataKuliah").on("click", "#labelModalEditMataKuliah", function () {
-        $(".select-multiple-edit-kelas").select2();
-        $(".select-multiple-edit-program-studi").select2();
+        // END: Show datatable
 
-        var id = $(this).data("id");
-        var nama = $(this).data("nama");
-        
-        document.forms["form-edit"]["id"].value = id;
-        document.forms["form-edit"]["nama"].value = nama;
-      });
-      // START: Show edit and value at modal
+        // START: Select2
+        $(".select2").select2();
+        // END: Select2
 
-      // START: Delete checkbox or multiple data
-      var valueList = document.getElementById("valueList");
-      var listArray = [];
-      var checkboxes = document.querySelectorAll(".checkbox");
+        // START: Delete checkbox or multiple data
+        var valueList = document.getElementById("valueList");
+        var listArray = [];
+        var checkboxes = document.querySelectorAll(".checkbox");
 
-      for (var checkbox of checkboxes) {
-        checkbox.addEventListener("click", function () {
-          if(this.checked == true) {
-            listArray.push(this.value);
-            document.forms["form-delete"]["valueList"].value = listArray;
-          }else{
-            listArray = listArray.filter(e => e !== this.value);
-            document.forms["form-delete"]["valueList"].value = listArray;
-          }
-        })
-      }
-      // END: Delete checkbox or multiple data
+        for (var checkbox of checkboxes) {
+          checkbox.addEventListener("click", function () {
+            if(this.checked == true) {
+              listArray.push(this.value);
+              document.forms["form-delete"]["valueList"].value = listArray;
+            }else{
+              listArray = listArray.filter(e => e !== this.value);
+              document.forms["form-delete"]["valueList"].value = listArray;
+            }
+          })
+        }
+        // END: Delete checkbox or multiple data
 
-      // START: Delete only one data
-      // $("#tableMataKuliah").on("click", "#labelModalDeleteMataKuliah", function () {
-      //   let id = $(this).data("id");
-      //   document.forms["form-delete"]["id"].value = id;
-      // });
-      // END: Delete only one data
+        // START: Delete only one data
+        // $("#tableMataKuliah").on("click", "#labelModalDeleteMataKuliah", function () {
+        //   let id = $(this).data("id");
+        //   document.forms["form-delete"]["id"].value = id;
+        // });
+        // END: Delete only one data
     </script>
   </body>
 </html>

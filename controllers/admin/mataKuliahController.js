@@ -46,8 +46,42 @@ module.exports = {
       await MataKuliah.create({ nama, kelas, programStudi });
 
       req.flash("alertStatus", "success");
-      req.flash("alertMessage", `MataKuliah ${nama} berhasil ditambahkan!`);
+      req.flash("alertMessage", `Mata Kuliah ${nama} berhasil ditambahkan!`);
       res.redirect("/admin/mata-kuliah");
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect("/admin/mata-kuliah");
+    }
+  },
+  editMataKuliah: async (req, res) => {
+    try {
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+      const { id } = req.params;
+      const mataKuliah = await MataKuliah.findOne({ _id: id })
+        .populate("kelas", "_id nama", "Kelas")
+        .populate("programStudi", "_id nama", "ProgramStudi")
+        .sort({ nama: "asc" });
+
+      const classes = await Kelas.find().sort({ nama: "asc" });
+      const programStudies = await ProgramStudi.find().sort({ nama: "asc" });
+
+      res.render("admin/mata-kuliah/edit", {
+        alert,
+        mataKuliah,
+        classes,
+        programStudies,
+        url: originalUrl[2],
+        title: "Mata Kuliah",
+      });
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
@@ -56,7 +90,8 @@ module.exports = {
   },
   updateMataKuliah: async (req, res) => {
     try {
-      const { id, nama, kelas, programStudi } = req.body;
+      const { id } = req.params;
+      const { nama, kelas, programStudi } = req.body;
 
       await MataKuliah.findOneAndUpdate(
         { _id: id },
@@ -69,7 +104,7 @@ module.exports = {
       );
 
       req.flash("alertStatus", "success");
-      req.flash("alertMessage", `MataKuliah berhasil diubah!`);
+      req.flash("alertMessage", `Mata Kuliah berhasil diubah!`);
       res.redirect("/admin/mata-kuliah");
     } catch (error) {
       req.flash("alertStatus", "error");
@@ -93,7 +128,7 @@ module.exports = {
         await MataKuliah.remove({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
-        req.flash("alertMessage", `MataKuliah berhasil dihapus!`);
+        req.flash("alertMessage", `Mata Kuliah berhasil dihapus!`);
         res.redirect("/admin/mata-kuliah");
       }
     } catch (error) {

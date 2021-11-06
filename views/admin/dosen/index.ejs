@@ -78,7 +78,7 @@
               </thead>
               <tbody>
                 <% for( let index = 0; index < dosens.length; index++ ) { %>
-                <tr class="text-center">
+                <tr class="text-center text-2xs lg:text-base">
                   <td>
                     <label>
                       <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= dosens[index]._id %>" />
@@ -90,10 +90,16 @@
                   <td><%= dosens[index].jenisKelamin %></td>
                   <td>
                     <% dosens[index].mataKuliah.forEach(dosenMatkul => { %>
-                      <%= dosenMatkul.nama %>
+                      <div class="badge badge-outline badge-primary text-2xs whitespace-nowrap mb-1 lg:mb-0">
+                        <%= dosenMatkul.nama %>
+                      </div>
                     <% }) %>
                   </td>
-                  <td><%= dosens[index].programStudi.nama %></td>
+                  <td>
+                    <div class="badge badge-outline badge-primary text-2xs whitespace-nowrap">
+                      <%= dosens[index].programStudi.nama %>
+                    </div>
+                  </td>
                   <td>
                     <a href="/admin/edit-dosen/<%= dosens[index]._id %>" class="btn btn-sm lg:btn-md btn-warning">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -114,8 +120,8 @@
               silahkan tambahkan dosen.
             </p>
             <a href="/admin/create-dosen" type="button">
-              <button class="btn btn-sm md:btn-md btn-outline btn-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <button class="btn btn-md btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
                 </svg> Tambah
               </button> 

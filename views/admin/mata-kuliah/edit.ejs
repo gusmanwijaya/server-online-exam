@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">Data Mata Kuliah</h1>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
+          <!-- START: Content -->
+          <% include ../../partials/alert.ejs %>
+
+          <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+              <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                  <h3 class="text-lg font-medium leading-6 text-gray-900">
+                    Ubah Data Mata Kuliah
+                  </h3>
+                  <p class="mt-1 text-sm text-gray-600">
+                    Silahkan isi kolom yang telah disediakan.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-5 md:mt-0 md:col-span-2">
+                <form action="/admin/update-mata-kuliah/<%= mataKuliah._id %>?_method=PUT" method="POST">
+                  <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-white sm:p-6">
+                      <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label class="label" for="nama">
+                              <span class="label-text">Nama</span>
+                            </label>
+                            <input
+                              type="text"
+                              name="nama"
+                              id="nama"
+                              required
+                              value="<%= mataKuliah.nama %>"
+                              class="input input-bordered w-full"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-span-3">
+                            <div class="form-control">
+                              <label for="kelas" class="label">
+                                <span class="label-text">Kelas</span>
+                              </label>
+                              <select
+                                class="select2 w-full"
+                                name="kelas"
+                                id="kelas"
+                                multiple="multiple"
+                                required
+                              >
+                                <% classes.forEach(kelas => { %>
+                                 <option value="<%= kelas._id %>" 
+                                    <% mataKuliah.kelas.forEach(matkulKelas => { %>
+                                     <%= kelas._id.toString() === matkulKelas._id.toString() ? "selected" : "" %>
+                                    <% }) %>
+                                    ><%= kelas.nama %></option>
+                                <% }) %>
+                              </select>
+                            </div>
+                        </div>
+
+                        <div class="col-span-3">
+                          <div class="form-control">
+                            <label for="programStudi" class="label">
+                              <span class="label-text">Program Studi</span>
+                            </label>
+                            <select
+                              class="select2 w-full"
+                              name="programStudi"
+                              id="programStudi"
+                              multiple="multiple"
+                              required
+                            >
+                              <% programStudies.forEach(prodi => { %>
+                               <option value="<%= prodi._id %>"
+                                <% mataKuliah.programStudi.forEach(matkulProdi => { %>
+                                 <%= prodi._id.toString() === matkulProdi._id.toString() ? "selected" : "" %>
+                                <% }) %>
+                                ><%= prodi.nama %></option>
+                              <% }) %>
+                            </select>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                      <a
+                        href="/admin/mata-kuliah"
+                        type="button"
+                        class="btn btn-sm md:btn-md btn-ghost"
+                      >
+                        Kembali
+                      </a>
+                      <button
+                        type="submit"
+                        class="btn btn-sm md:btn-md btn-warning"
+                      >
+                        Ubah
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+    <script>
+      $(document).ready(function () {
+        // START: Select2
+        $(".select2").select2();
+        // END: Select2
+      });
+    </script>
+  </body>
+</html>
