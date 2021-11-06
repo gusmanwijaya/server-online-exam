@@ -148,7 +148,7 @@
               "
             >
               <li>
-                <a>Profile</a>
+                <a href="/<%= payload.data.role === 1 ? "admin" : payload.data.role === 0 ? "dosen" : "" %>/profile">Profile</a>
               </li>
               <li>
                 <a href="/sign-out">Keluar</a>

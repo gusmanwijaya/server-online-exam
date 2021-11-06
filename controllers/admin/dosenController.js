@@ -4,10 +4,15 @@ const Dosen = require("../../models/dosen");
 
 const dateAndTime = require("date-and-time");
 const dateNow = new Date();
+const jwt_decode = require("jwt-decode");
+const { base64decode } = require("nodejs-base64");
 
 module.exports = {
   dosen: async (req, res) => {
     try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
       const originalUrl = req.originalUrl.split("/");
 
       const alertStatus = req.flash("alertStatus");
@@ -25,6 +30,7 @@ module.exports = {
       res.render("admin/dosen/index", {
         alert,
         dosens,
+        payload,
         url: originalUrl[2],
         title: "Dosen",
       });
@@ -36,6 +42,9 @@ module.exports = {
   },
   createDosen: async (req, res) => {
     try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
       const originalUrl = req.originalUrl.split("/");
 
       const alertStatus = req.flash("alertStatus");
@@ -52,6 +61,7 @@ module.exports = {
         alert,
         programStudies,
         mataKuliahs,
+        payload,
         url: originalUrl[2],
         title: "Dosen",
       });
@@ -105,6 +115,9 @@ module.exports = {
   },
   editDosen: async (req, res) => {
     try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
       const { id } = req.params;
       const originalUrl = req.originalUrl.split("/");
 
@@ -125,6 +138,7 @@ module.exports = {
         dosen,
         programStudies,
         mataKuliahs,
+        payload,
         url: originalUrl[2],
         title: "Dosen",
       });

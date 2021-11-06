@@ -2,10 +2,15 @@ const ProgramStudi = require("../../models/program-studi");
 
 const dateAndTime = require("date-and-time");
 const dateNow = new Date();
+const jwt_decode = require("jwt-decode");
+const { base64decode } = require("nodejs-base64");
 
 module.exports = {
   programStudi: async (req, res) => {
     try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
       const originalUrl = req.originalUrl.split("/");
 
       const alertStatus = req.flash("alertStatus");
@@ -23,6 +28,7 @@ module.exports = {
         programStudies,
         url: originalUrl[2],
         title: "Program Studi",
+        payload,
       });
     } catch (error) {
       req.flash("alertStatus", "error");

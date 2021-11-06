@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../partials/header.ejs %>
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">
+            <%= currentAdmin.nama %>
+          </h1>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <% include ../../partials/alert.ejs %>
+          <!-- START: Content -->
+          <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6">
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Informasi profile
+              </h3>
+              <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                Detail dari akun profile
+              </p>
+            </div>
+            <div class="border-t border-b border-gray-200">
+              <dl>
+                <form action="/admin/update-email?_method=PUT" method="post">
+                  <div
+                    class="
+                      bg-gray-50
+                      px-4
+                      py-5
+                      sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6
+                    "
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Alamat email
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                    <div class="form-control">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="input input-bordered"
+                        required
+                        value="<%= currentAdmin.email %>"
+                      />
+                    </div>
+                    </dd>
+                  </div>
+                </dl>
+            </div>
+            <button type="submit" class="btn btn-accent btn-block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
+                />
+              </svg>
+              Simpan
+            </button>
+            <a href="/admin/profile" class="btn btn-ghost btn-block">
+              Kembali
+            </a>
+            </form>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../partials/script.ejs %>
+  </body>
+</html>

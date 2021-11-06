@@ -58,9 +58,6 @@ module.exports = {
             {
               data: {
                 _id: admin._id,
-                nama: admin.nama,
-                email: admin.email,
-                nohp: admin.nohp,
                 role: admin.role,
               },
             },

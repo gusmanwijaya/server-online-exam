@@ -30,6 +30,14 @@ const {
   editMataKuliah,
 } = require("../../controllers/admin/mataKuliahController");
 const {
+  profile,
+  updateProfile,
+  ubahEmail,
+  updateEmail,
+  ubahPassword,
+  updatePassword,
+} = require("../../controllers/admin/profileController");
+const {
   programStudi,
   updateProgramStudi,
   destroyProgramStudi,
@@ -68,5 +76,12 @@ router.post("/store-mata-kuliah", storeMataKuliah);
 router.get("/edit-mata-kuliah/:id", editMataKuliah);
 router.put("/update-mata-kuliah/:id", updateMataKuliah);
 router.delete("/destroy-mata-kuliah", destroyMataKuliah);
+
+router.get("/profile", profile);
+router.put("/update-profile", updateProfile);
+router.get("/ubah-email", ubahEmail);
+router.put("/update-email", updateEmail);
+router.get("/ubah-password", ubahPassword);
+router.put("/update-password", updatePassword);
 
 module.exports = router;
