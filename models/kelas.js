@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
+let dateNow = new Date();
 
 let kelasSchema = mongoose.Schema({
   nama: {

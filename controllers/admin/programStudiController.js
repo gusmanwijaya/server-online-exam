@@ -1,7 +1,6 @@
 const ProgramStudi = require("../../models/program-studi");
 
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 
@@ -53,6 +52,8 @@ module.exports = {
   },
   updateProgramStudi: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { id, nama } = req.body;
 
       const checkProdiAtDb = await ProgramStudi.findOne({ nama: nama });

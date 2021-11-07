@@ -2,7 +2,6 @@ const Mahasiswa = require("../../models/mahasiswa");
 const ProgramStudi = require("../../models/program-studi");
 
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 
@@ -77,6 +76,8 @@ module.exports = {
   },
   updateMahasiswa: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { id, jenisKelamin } = req.body;
 
       await Mahasiswa.findOneAndUpdate(

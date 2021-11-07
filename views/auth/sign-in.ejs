@@ -2,14 +2,7 @@
 <html data-theme="light">
   <head>
     <title><%= title %> - Website Ujian Online</title>
-    <link rel="shortcut icon" href="/images/logo.svg" type="image/x-icon" />
-    <link rel="icon" href="/images/logo.svg" type="image/x-icon" />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <% include ../partials/header.ejs %>
   </head>
   <body>
     <div
@@ -23,8 +16,10 @@
         sm:px-6
         lg:px-8
       "
+      data-aos="fade-in"
     >
       <div class="max-w-md w-full space-y-8">
+        <% include ../partials/alert.ejs %>
         <div>
           <img
             class="mx-auto h-12 w-auto"
@@ -32,29 +27,55 @@
             alt="Workflow"
           />
           <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Kode Verifikasi
+            Website Ujian Online
           </h2>
           <p class="mt-2 text-center text-sm text-gray-600">
-            Kami telah mengirimkan kode verifikasi Anda ke
+            Masuk untuk
             <span class="font-medium text-indigo-600 hover:text-indigo-500">
-              gusman.w.jaya@gmail.com
+              memulai sesi Anda.
             </span>
           </p>
         </div>
-        <form class="mt-8 space-y-6" action="#" method="POST">
+        <form class="mt-8 space-y-6" action="/store" method="POST">
           <div class="rounded-md shadow-sm -space-y-px">
             <div class="form-control">
+              <label for="email" class="label">
+                <span class="label-text">Email address</span>
+              </label>
               <input
-                type="text"
-                maxlength="6"
-                name="kode"
-                id="kode"
-                class="input input-primary input-bordered text-center text-2xl"
+                type="email"
+                name="email"
+                id="email"
+                class="input input-primary input-bordered"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="password" class="label">
+                <span class="label-text">Password</span>
+              </label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="input input-primary input-bordered"
+                required
               />
             </div>
           </div>
 
-          <div class="space-y-4 flex flex-col items-center justify-center">
+          <div class="flex items-center justify-end">
+            <div class="text-sm">
+              <a
+                href="/lupa-password"
+                class="font-medium text-indigo-600 hover:text-indigo-500"
+              >
+                Lupa password Anda?
+              </a>
+            </div>
+          </div>
+
+          <div>
             <button
               type="submit"
               class="
@@ -80,26 +101,25 @@
             >
               <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+                    fill-rule="evenodd"
+                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                    clip-rule="evenodd"
                   />
                 </svg>
               </span>
-              Submit
+              Masuk
             </button>
-            <a href="/sign-in" class="text-indigo-500 text-sm">Keluar</a>
           </div>
         </form>
       </div>
     </div>
+    <% include ../partials/script.ejs %>
   </body>
 </html>

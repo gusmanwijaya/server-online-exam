@@ -3,7 +3,6 @@ const { base64encode, base64decode } = require("nodejs-base64");
 const crypto = require("crypto");
 const randomString = require("randomstring");
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 
 const Admin = require("../../models/admin");
 const Dosen = require("../../models/dosen");
@@ -42,6 +41,8 @@ module.exports = {
   },
   updateProfile: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { nama } = req.body;
 
       const token = req.session.user.token;
@@ -96,6 +97,8 @@ module.exports = {
   },
   updateEmail: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const token = req.session.user.token;
       const payload = jwt_decode(base64decode(token));
       const { email } = req.body;
@@ -164,6 +167,8 @@ module.exports = {
   },
   updatePassword: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const token = req.session.user.token;
       const payload = jwt_decode(base64decode(token));
       const { passwordBaru, ulangiPassword } = req.body;

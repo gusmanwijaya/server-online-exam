@@ -3,7 +3,6 @@ const Kelas = require("../../models/kelas");
 const ProgramStudi = require("../../models/program-studi");
 
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 
@@ -100,6 +99,8 @@ module.exports = {
   },
   updateMataKuliah: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { id } = req.params;
       const { nama, kelas, programStudi } = req.body;
 

@@ -3,7 +3,6 @@ const MataKuliah = require("../../models/mata-kuliah");
 const Dosen = require("../../models/dosen");
 
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 
@@ -150,6 +149,8 @@ module.exports = {
   },
   updateDosen: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { id } = req.params;
 
       const { jenisKelamin, mataKuliah } = req.body;

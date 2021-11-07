@@ -3,7 +3,7 @@ const { base64encode } = require("nodejs-base64");
 const dateAndTime = require("date-and-time");
 const crypto = require("crypto");
 const randomString = require("randomstring");
-const dateNow = new Date();
+let dateNow = new Date();
 
 let aesSchema = mongoose.Schema({
   iv: {

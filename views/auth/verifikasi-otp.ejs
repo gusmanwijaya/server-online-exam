@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../partials/header.ejs %>
+  </head>
+  <body>
+    <div
+      class="
+        min-h-full
+        flex
+        items-center
+        justify-center
+        py-12
+        px-4
+        sm:px-6
+        lg:px-8
+      "
+      data-aos="fade-in"
+    >
+      <div class="max-w-md w-full space-y-8">
+        <% include ../partials/alert.ejs %>
+
+        <div>
+          <img
+            class="mx-auto h-12 w-auto"
+            src="/images/logo.svg"
+            alt="Workflow"
+          />
+          <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            Kode Verifikasi
+          </h2>
+          <p class="mt-2 text-center text-sm text-gray-600">
+            Kami telah mengirimkan kode verifikasi Anda ke
+            <span class="font-medium text-indigo-600 hover:text-indigo-500">
+              <%= email %>
+            </span>
+          </p>
+        </div>
+        <form
+          class="mt-8 space-y-6"
+          action="/store-verifikasi-otp"
+          method="POST"
+        >
+          <div class="rounded-md shadow-sm -space-y-px">
+            <div class="form-control">
+              <input
+                type="text"
+                maxlength="6"
+                name="kodeOTP"
+                id="kodeOTP"
+                class="input input-primary input-bordered text-center text-2xl"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-1 flex flex-col items-center justify-center">
+            <button type="submit" class="btn btn-primary btn-block mb-2">
+              Kirim
+            </button>
+            <a href="/sign-out" class="btn btn-ghost btn-block">Sign Out</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <% include ../partials/script.ejs %>
+  </body>
+</html>

@@ -1,7 +1,6 @@
 const Kelas = require("../../models/kelas");
 
 const dateAndTime = require("date-and-time");
-const dateNow = new Date();
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 
@@ -53,6 +52,8 @@ module.exports = {
   },
   updateKelas: async (req, res) => {
     try {
+      let dateNow = new Date();
+
       const { id, nama } = req.body;
 
       const checkNamaAtDb = await Kelas.findOne({ nama: nama });
