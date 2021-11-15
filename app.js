@@ -13,6 +13,7 @@ const flash = require("connect-flash");
 // START: Router
 const authRouter = require("./routes/auth");
 const adminRouter = require("./routes/admin");
+const lecturerRouter = require("./routes/lecturer");
 // END: Router
 
 const app = express();
@@ -43,6 +44,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // START: Menggunakan router
 app.use("/", authRouter);
 app.use("/admin", adminRouter);
+app.use("/lecturer", lecturerRouter);
 // END: Menggunakan router
 
 // catch 404 and forward to error handler

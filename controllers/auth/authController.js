@@ -47,7 +47,6 @@ module.exports = {
       const admin = await Admin.findOne({ email: email });
       const dosen = await Dosen.findOne({ email: email });
 
-      // START: Sign In Admin
       if (admin) {
         const algorithm = "aes-256-cbc";
         const iv = base64decode(admin.password.iv);
@@ -82,15 +81,45 @@ module.exports = {
           req.flash("alertMessage", `Password Anda salah!`);
           res.redirect("/sign-in");
         }
+      } else if (dosen) {
+        const algorithm = "aes-256-cbc";
+        const iv = base64decode(dosen.password.iv);
+        const key = base64decode(dosen.password.key);
+        const message = base64decode(dosen.password.message);
+
+        const decipher = crypto.createDecipheriv(algorithm, key, iv);
+
+        let dataDecrypted = decipher.update(message, "hex", "utf-8");
+        const decrypted = dataDecrypted + decipher.final("utf-8");
+
+        if (decrypted === password) {
+          const token = jwt.sign(
+            {
+              data: {
+                _id: dosen._id,
+                role: dosen.role,
+              },
+            },
+            config.jwtKey
+          );
+
+          req.session.user = {
+            token: base64encode(token),
+          };
+
+          if (dosen.role === 0) {
+            res.redirect("/lecturer/dashboard");
+          }
+        } else {
+          req.flash("alertStatus", "error");
+          req.flash("alertMessage", `Password Anda salah!`);
+          res.redirect("/sign-in");
+        }
       } else {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `${email} tidak terdaftar pada sistem kami!`);
         res.redirect("/sign-in");
       }
-      // END: Sign In Admin
-
-      // START: Sign In Dosen
-      // END: Sign In Dosen
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);

@@ -39,6 +39,39 @@ module.exports = {
       res.redirect("/admin/dosen");
     }
   },
+  detailDosen: async (req, res) => {
+    const { id } = req.params;
+    try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+
+      const dosen = await Dosen.findOne({ _id: id })
+        .populate("mataKuliah")
+        .populate("programStudi", "_id nama", "ProgramStudi");
+
+      res.render("admin/dosen/detail", {
+        alert,
+        dosen,
+        payload,
+        url: originalUrl[2],
+        title: "Detail Dosen",
+      });
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect(`/admin/detail-dosen/${id}`);
+    }
+  },
   createDosen: async (req, res) => {
     try {
       const token = req.session.user.token;

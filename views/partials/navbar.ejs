@@ -8,7 +8,7 @@
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
             <a
-              href="/admin/dashboard"
+              href="/<%= payload.data.role === 1 ? "admin" : payload.data.role === 0 ? "lecturer" : "" %>/dashboard"
               class="
                 <%= url === "dashboard" ? 
                 "bg-gray-900 text-white" : 
@@ -22,83 +22,87 @@
               >Dashboard</a
             >
 
-            <div class="dropdown dropdown-hover">
-              <div
-                tabindex="0"
+            <% if (payload.data.role === 1) { %>
+              <div class="dropdown dropdown-hover">
+                <div
+                  tabindex="0"
+                  class="
+                    <% if (url === "dosen" || url === "kelas" || url === "mahasiswa" || url === "mata-kuliah" || url === "program-studi") { %>
+                      bg-gray-900 text-white
+                    <% } else { %>
+                      text-gray-300 hover:bg-gray-700 hover:text-white
+                    <% } %>
+                    px-3
+                    py-2
+                    rounded-md
+                    text-sm
+                    font-medium
+                  "
+                >
+                  Data Master
+                </div>
+                <ul
+                  tabindex="0"
+                  class="
+                    p-2
+                    shadow
+                    menu
+                    dropdown-content
+                    bg-base-100
+                    rounded-box
+                    w-52
+                  "
+                >
+                  <li>
+                    <a href="/admin/dosen">Dosen</a>
+                  </li>
+                  <li>
+                    <a href="/admin/kelas">Kelas</a>
+                  </li>
+                  <li>
+                    <a href="/admin/mahasiswa">Mahasiswa</a>
+                  </li>
+                  <li>
+                    <a href="/admin/mata-kuliah">Mata Kuliah</a>
+                  </li>
+                  <li>
+                    <a href="/admin/program-studi">Program Studi</a>
+                  </li>
+                </ul>
+              </div>
+            <% } %>
+
+            <% if (payload.data.role === 0) { %>
+              <a
+                href="/lecturer/bank-soal"
                 class="
-                  <% if (url === "dosen" || url === "kelas" || url === "mahasiswa" || url === "mata-kuliah" || url === "program-studi") { %>
-                    bg-gray-900 text-white
-                  <% } else { %>
-                    text-gray-300 hover:bg-gray-700 hover:text-white
-                  <% } %>
+                  <%= url === "bank-soal" ? 
+                  "bg-gray-900 text-white" : 
+                  "text-gray-300 hover:bg-gray-700 hover:text-white" %>
                   px-3
                   py-2
                   rounded-md
                   text-sm
                   font-medium
                 "
+                >Bank Soal</a
               >
-                Data Master
-              </div>
-              <ul
-                tabindex="0"
+  
+              <a
+                href="/lecturer/hasil-ujian"
                 class="
-                  p-2
-                  shadow
-                  menu
-                  dropdown-content
-                  bg-base-100
-                  rounded-box
-                  w-52
+                  <%= url === "hasil-ujian" ? 
+                  "bg-gray-900 text-white" : 
+                  "text-gray-300 hover:bg-gray-700 hover:text-white" %>
+                  px-3
+                  py-2
+                  rounded-md
+                  text-sm
+                  font-medium
                 "
+                >Hasil Ujian</a
               >
-                <li>
-                  <a href="/admin/dosen">Dosen</a>
-                </li>
-                <li>
-                  <a href="/admin/kelas">Kelas</a>
-                </li>
-                <li>
-                  <a href="/admin/mahasiswa">Mahasiswa</a>
-                </li>
-                <li>
-                  <a href="/admin/mata-kuliah">Mata Kuliah</a>
-                </li>
-                <li>
-                  <a href="/admin/program-studi">Program Studi</a>
-                </li>
-              </ul>
-            </div>
-
-            <a
-              href="/admin/bank-soal"
-              class="
-                <%= url === "bank-soal" ? 
-                "bg-gray-900 text-white" : 
-                "text-gray-300 hover:bg-gray-700 hover:text-white" %>
-                px-3
-                py-2
-                rounded-md
-                text-sm
-                font-medium
-              "
-              >Bank Soal</a
-            >
-
-            <a
-              href="/admin/hasil-ujian"
-              class="
-                <%= url === "hasil-ujian" ? 
-                "bg-gray-900 text-white" : 
-                "text-gray-300 hover:bg-gray-700 hover:text-white" %>
-                px-3
-                py-2
-                rounded-md
-                text-sm
-                font-medium
-              "
-              >Hasil Ujian</a
-            >
+            <% } %>
           </div>
         </div>
       </div>
@@ -148,7 +152,7 @@
               "
             >
               <li>
-                <a href="/<%= payload.data.role === 1 ? "admin" : payload.data.role === 0 ? "dosen" : "" %>/profile">Profile</a>
+                <a href="/<%= payload.data.role === 1 ? "admin" : payload.data.role === 0 ? "lecturer" : "" %>/profile">Profile</a>
               </li>
               <li>
                 <a href="/sign-out">Keluar</a>

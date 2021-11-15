@@ -4,6 +4,7 @@ const router = express.Router();
 const { dashboard } = require("../../controllers/admin/dashboardController");
 const {
   dosen,
+  detailDosen,
   createDosen,
   storeDosen,
   editDosen,
@@ -43,13 +44,14 @@ const {
   destroyProgramStudi,
   storeProgramStudi,
 } = require("../../controllers/admin/programStudiController");
-const { isLogin } = require("../../middlewares");
+const { isAdmin } = require("../../middlewares");
 
-router.use(isLogin);
+router.use(isAdmin);
 
 router.get("/dashboard", dashboard);
 
 router.get("/dosen", dosen);
+router.get("/detail-dosen/:id", detailDosen);
 router.get("/create-dosen", createDosen);
 router.post("/store-dosen", storeDosen);
 router.get("/edit-dosen/:id", editDosen);

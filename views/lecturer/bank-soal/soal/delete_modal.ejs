@@ -1,0 +1,42 @@
+<label
+  for="modal-delete-bank-soal"
+  class="btn btn-sm md:btn-md btn-error modal-button"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-4 md:h-6 w-4 md:w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+    />
+  </svg>
+  Hapus
+</label>
+<input type="checkbox" id="modal-delete-bank-soal" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    <form
+      action="/lecturer/bank-soal/destroy-bank-soal?_method=DELETE"
+      name="form-delete"
+      method="post"
+    >
+      <p class="text-lg font-normal">
+        Apakah Anda yakin ingin menghapus data ? <br />
+        <span class="text-xs text-red-500 font-extralight">
+          Data yang telah dihapus tidak dapat dikembalikan lagi.
+        </span>
+      </p>
+      <div class="modal-action">
+        <input type="hidden" name="valueList" id="valueList" />
+        <button type="submit" class="btn btn-error">Hapus</button>
+        <label for="modal-delete-bank-soal" class="btn">Tutup</label>
+      </div>
+    </form>
+  </div>
+</div>

@@ -69,9 +69,6 @@
                   <th></th>
                   <th>Nama</th>
                   <th>NIP</th>
-                  <th>Email</th>
-                  <th>L/P</th>
-                  <th>Matkul</th>
                   <th>Prodi</th>
                   <th>Aksi</th>
                 </tr>
@@ -86,21 +83,16 @@
                   </td>
                   <td><%= dosens[index].nama %></td>
                   <td><%= dosens[index].nip %></td>
-                  <td><%= dosens[index].email %></td>
-                  <td><%= dosens[index].jenisKelamin %></td>
                   <td>
-                    <% dosens[index].mataKuliah.forEach(dosenMatkul => { %>
-                      <div class="badge badge-outline badge-primary text-2xs whitespace-nowrap mb-1 lg:mb-0">
-                        <%= dosenMatkul.nama %>
-                      </div>
-                    <% }) %>
+                    <%= dosens[index].programStudi.nama %>
                   </td>
                   <td>
-                    <div class="badge badge-outline badge-primary text-2xs whitespace-nowrap">
-                      <%= dosens[index].programStudi.nama %>
-                    </div>
-                  </td>
-                  <td>
+                    <a href="/admin/detail-dosen/<%= dosens[index]._id %>" class="btn btn-sm lg:btn-md">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    </a>
                     <a href="/admin/edit-dosen/<%= dosens[index]._id %>" class="btn btn-sm lg:btn-md btn-warning">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
