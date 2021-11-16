@@ -36,7 +36,24 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Bank Soal - [Nama Mata Kuliah]</h1>
+          <div class="text-3xl font-bold text-gray-900 breadcrumbs">
+            <ul>
+              <li>
+                <a href="/lecturer/bank-soal">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                  </svg>
+                      Bank Soal
+                </a>
+              </li> 
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                </svg>
+                  <%= mataKuliah.nama %>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <main data-aos="fade-in">
@@ -47,7 +64,7 @@
           <% if (bankSoals.length != 0) { %>
 
           <div class="flex flex-row items-center justify-between">
-            <a href="/lecturer/bank-soal/<%= idMatkul %>/create-soal" type="button">
+            <a href="/lecturer/bank-soal/<%= mataKuliah._id %>/create-soal" type="button">
               <button class="btn btn-sm md:btn-md btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
@@ -67,42 +84,38 @@
               <thead>
                 <tr>
                   <th></th>
-                  <th>Dosen</th>
-                  <th>Mata Kuliah</th>
                   <th>Soal</th>
                   <th>Tanggal Dibuat</th>
                   <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
-                <% for( let index = 0; index < bankSoals.length; index++ ) { %>
-                <tr class="text-center text-2xs lg:text-base">
-                  <td>
-                    <label>
-                      <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= bankSoals[index]._id %>" />
-                    </label>
-                  </td>
-                  <td><%= bankSoals[index].dosen.nama %></td>
-                  <td><%= bankSoals[index].mataKuliah.nama %></td>
-                  <td>
-                    <%= bankSoals[index].soal %>
-                  </td>
-                  <td><%= bankSoals[index].createdAt %></td>
-                  <td>
-                    <a href="/lecturer/bank-soal/<%= idMatkul %>/detail-soal/<%= bankSoals[index]._id %>" class="btn btn-sm lg:btn-md">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                      </svg>
-                    </a>
-                    <a href="/lecturer/bank-soal/<%= idMatkul %>/edit-soal/<%= bankSoals[index]._id %>" class="btn btn-sm lg:btn-md btn-warning">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                      </svg>
-                    </a>
-                  </td>
-                </tr>
-                <% } %>
+                <% bankSoals.forEach(bankSoal => { %>
+                  <tr class="text-center text-2xs lg:text-base">
+                    <td>
+                      <label>
+                        <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= bankSoal._id %>" />
+                      </label>
+                    </td>
+                    <td>
+                      <%= bankSoal.soal.message %>
+                    </td>
+                    <td><%= bankSoal.createdAt %></td>
+                    <td>
+                      <a href="/lecturer/bank-soal/<%= mataKuliah._id %>/detail-soal/<%= bankSoal._id %>" class="btn btn-sm lg:btn-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                      </a>
+                      <a href="/lecturer/bank-soal/<%= mataKuliah._id %>/edit-soal/<%= bankSoal._id %>" class="btn btn-sm lg:btn-md btn-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                <% }) %>
               </tbody>
             </table>
           </div>
@@ -113,7 +126,7 @@
               Ooppss, nampaknya data soal saat ini kosong, <br />
               silahkan tambahkan soal.
             </p>
-            <a href="/lecturer/bank-soal/create-soal" type="button">
+            <a href="/lecturer/bank-soal/<%= mataKuliah._id %>/create-soal" type="button">
               <button class="btn btn-md btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />

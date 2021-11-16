@@ -10,9 +10,32 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">
-            Soal - <%= mataKuliah.nama %>
-          </h1>
+            <div class="text-3xl font-bold text-gray-900 breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="/lecturer/bank-soal">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                      </svg>
+                          Bank Soal
+                    </a>
+                  </li> 
+                  <li>
+                    <a href="/lecturer/bank-soal/<%= mataKuliah._id %>">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                          </svg>
+                            <%= mataKuliah.nama %>
+                    </a>
+                  </li>
+                  <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">                    
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>      
+                    </svg>
+                      Tambah Soal
+                  </li>
+                </ul>
+            </div>
         </div>
       </header>
       <main data-aos="fade-in">
@@ -33,7 +56,7 @@
                 </div>
               </div>
               <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="/lecturer/bank-soal/<%= mataKuliah._id %>/store-soal" method="POST">
+                <form action="/lecturer/bank-soal/<%= mataKuliah._id %>/store-soal" method="POST" enctype="multipart/form-data">
                   <div class="shadow-lg overflow-hidden sm:rounded-md">
                     <div class="px-4 py-5 bg-white sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
