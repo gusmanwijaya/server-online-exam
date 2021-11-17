@@ -31,11 +31,9 @@ let bankSoalSchema = mongoose.Schema({
     default: 0,
     require: [true, "Bobot soal harus diisi!"],
   },
-  soalGambar: [
-    {
-      type: String,
-    },
-  ],
+  soalGambar: {
+    type: String,
+  },
   soal: {
     type: aesSchema,
   },
@@ -54,31 +52,21 @@ let bankSoalSchema = mongoose.Schema({
   pilihanE: {
     type: aesSchema,
   },
-  pilihanGambarA: [
-    {
-      type: String,
-    },
-  ],
-  pilihanGambarB: [
-    {
-      type: String,
-    },
-  ],
-  pilihanGambarC: [
-    {
-      type: String,
-    },
-  ],
-  pilihanGambarD: [
-    {
-      type: String,
-    },
-  ],
-  pilihanGambarE: [
-    {
-      type: String,
-    },
-  ],
+  pilihanGambarA: {
+    type: String,
+  },
+  pilihanGambarB: {
+    type: String,
+  },
+  pilihanGambarC: {
+    type: String,
+  },
+  pilihanGambarD: {
+    type: String,
+  },
+  pilihanGambarE: {
+    type: String,
+  },
   kunciJawaban: {
     type: aesSchema,
   },
