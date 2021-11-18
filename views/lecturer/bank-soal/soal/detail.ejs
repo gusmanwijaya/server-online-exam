@@ -2,30 +2,83 @@
 <html data-theme="light">
   <head>
     <title><%= title %> - Website Ujian Online</title>
-    <% include ../../partials/header.ejs %>
+    <% include ../../../partials/header.ejs %>
   </head>
   <body>
     <div class="min-h-full">
-      <% include ../../partials/navbar.ejs %>
+      <% include ../../../partials/navbar.ejs %>
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">
-            Detail - <%= dosen.nama %>
-          </h1>
+          <div class="text-3xl font-bold text-gray-900 breadcrumbs">
+            <ul>
+              <li>
+                <a href="/lecturer/bank-soal">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 mr-2 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    ></path>
+                  </svg>
+                  Bank Soal
+                </a>
+              </li>
+              <li>
+                <a href="/lecturer/bank-soal/<%= mataKuliah._id %>">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 mr-2 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    ></path>
+                  </svg>
+                  <%= mataKuliah.nama %>
+                </a>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 mr-2 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  ></path>
+                </svg>
+                Detail
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
       <main data-aos="fade-in">
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          <% include ../../partials/alert.ejs %>
+          <% include ../../../partials/alert.ejs %>
           <!-- START: Content -->
           <div class="bg-white shadow overflow-hidden sm:rounded-lg">
             <div class="px-4 py-5 sm:px-6">
               <h3 class="text-lg leading-6 font-medium text-gray-900">
-                Informasi Detail
+                Informasi Detail Soal
               </h3>
               <p class="mt-1 max-w-2xl text-sm text-gray-500">
-                Personal detail dari data dosen.
+                Detail dari soal yang telah Anda buat.
               </p>
             </div>
             <div class="border-t border-gray-200">
@@ -41,9 +94,9 @@
                   <dt class="text-sm font-medium text-gray-500">
                     Nama lengkap
                   </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <%= dosen.nama %>
-                  </dd>
+                  <dd
+                    class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                  ></dd>
                 </div>
                 <div
                   class="
@@ -54,9 +107,9 @@
                   "
                 >
                   <dt class="text-sm font-medium text-gray-500">NIP</dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <%= dosen.nip %>
-                  </dd>
+                  <dd
+                    class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                  ></dd>
                 </div>
                 <div
                   class="
@@ -69,9 +122,9 @@
                   <dt class="text-sm font-medium text-gray-500">
                     Email address
                   </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <%= dosen.email %>
-                  </dd>
+                  <dd
+                    class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                  ></dd>
                 </div>
                 <div
                   class="
@@ -85,7 +138,6 @@
                     Jenis Kelamin
                   </dt>
                   <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <%= dosen.jenisKelamin === "L" ? "Laki-laki" : "Perempuan"
                     %>
                   </dd>
                 </div>
@@ -98,13 +150,7 @@
                   "
                 >
                   <dt class="text-sm font-medium text-gray-500">Mata Kuliah</dt>
-                  <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
-                    <% dosen.mataKuliah.forEach(matkul => { %>
-                    <div class="badge badge-primary badge-outline">
-                      <%= matkul.nama %>
-                    </div>
-                    <% }) %>
-                  </dd>
+                  <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2"></dd>
                 </div>
                 <div
                   class="
@@ -117,16 +163,16 @@
                   <dt class="text-sm font-medium text-gray-500">
                     Program Studi
                   </dt>
-                  <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    <%= dosen.programStudi.nama %>
-                  </dd>
+                  <dd
+                    class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                  ></dd>
                 </div>
               </dl>
             </div>
           </div>
 
           <a
-            href="/admin/dosen"
+            href="/lecturer/bank-soal/<%= mataKuliah._id %>"
             type="button"
             class="btn btn-md btn-block mt-2"
           >
@@ -137,6 +183,6 @@
       </main>
     </div>
 
-    <% include ../../partials/script.ejs %>
+    <% include ../../../partials/script.ejs %>
   </body>
 </html>

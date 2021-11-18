@@ -11,6 +11,7 @@ const {
   createSoal,
   storeSoal,
   destroySoal,
+  detailSoal,
 } = require("../../controllers/lecturer/bankSoalController");
 
 router.use(isLecturer);
@@ -31,6 +32,7 @@ router.post(
   ]),
   storeSoal
 );
+router.get("/bank-soal/:idMatkul/detail-soal/:idSoal", detailSoal);
 router.delete("/bank-soal/:id/destroy-soal", destroySoal);
 
 module.exports = router;

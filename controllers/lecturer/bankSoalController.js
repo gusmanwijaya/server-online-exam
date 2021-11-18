@@ -384,6 +384,104 @@ module.exports = {
       res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
     }
   },
+  detailSoal: async (req, res) => {
+    const { idMatkul, idSoal } = req.params;
+
+    try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+
+      const mataKuliah = await MataKuliah.findOne({ _id: idMatkul });
+      let bankSoals = await BankSoal.find({ mataKuliah: idMatkul, _id: idSoal })
+        .populate("dosen")
+        .populate("mataKuliah");
+
+      const abjads = ["A", "B", "C", "D", "E"];
+      for (let bankSoal of bankSoals) {
+        let algorithm = "aes-256-cbc";
+        let ivPilihan = "";
+        let keyPilihan = "";
+        let messagePilihan = "";
+
+        let ivSoal = base64decode(bankSoal.soal.iv);
+        let keySoal = base64decode(bankSoal.soal.key);
+        let messageSoal = base64decode(bankSoal.soal.message);
+
+        abjads.forEach((abjad) => {
+          ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
+          keyPilihan = base64decode(bankSoal["pilihan" + abjad].key);
+          messagePilihan = base64decode(bankSoal["pilihan" + abjad].message);
+        });
+
+        let ivKunciJawaban = base64decode(bankSoal.kunciJawaban.iv);
+        let keyKunciJawaban = base64decode(bankSoal.kunciJawaban.key);
+        let messageKunciJawaban = base64decode(bankSoal.kunciJawaban.message);
+
+        let decipherSoal = crypto.createDecipheriv(algorithm, keySoal, ivSoal);
+        let dataDecryptedSoal = decipherSoal.update(
+          messageSoal,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
+
+        let decipherPilihan = crypto.createDecipheriv(
+          algorithm,
+          keyPilihan,
+          ivPilihan
+        );
+        let dataDecryptedPilihan = decipherPilihan.update(
+          messagePilihan,
+          "hex",
+          "utf-8"
+        );
+        let decryptedPilihan =
+          dataDecryptedPilihan + decipherPilihan.final("utf-8");
+
+        let decipherKunciJawaban = crypto.createDecipheriv(
+          algorithm,
+          keyKunciJawaban,
+          ivKunciJawaban
+        );
+        let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
+          messageKunciJawaban,
+          "hex",
+          "utf-8"
+        );
+        let decryptedKunciJawaban =
+          dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+
+        bankSoal.soal.message = decryptedSoal;
+        abjads.forEach((abjad) => {
+          bankSoal["pilihan" + abjad].message = decryptedPilihan;
+        });
+        bankSoal.kunciJawaban.message = decryptedKunciJawaban;
+      }
+
+      res.render("lecturer/bank-soal/soal/detail", {
+        alert,
+        url: originalUrl[2],
+        title: "Detail Soal",
+        payload,
+        bankSoals,
+        mataKuliah,
+      });
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect(`/lecturer/bank-soal/${idMatkul}`);
+    }
+  },
   destroySoal: async (req, res) => {
     const { id } = req.params;
 
