@@ -1,5 +1,5 @@
 <label
-  for="modal-delete-bank-soal"
+  for="modal-delete-soal"
   class="btn btn-sm md:btn-md btn-error modal-button"
 >
   <svg
@@ -18,11 +18,11 @@
   </svg>
   Hapus
 </label>
-<input type="checkbox" id="modal-delete-bank-soal" class="modal-toggle" />
+<input type="checkbox" id="modal-delete-soal" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box">
     <form
-      action="/lecturer/bank-soal/destroy-bank-soal?_method=DELETE"
+      action="/lecturer/bank-soal/<%= mataKuliah._id %>/destroy-soal?_method=DELETE"
       name="form-delete"
       method="post"
     >
@@ -35,7 +35,7 @@
       <div class="modal-action">
         <input type="hidden" name="valueList" id="valueList" />
         <button type="submit" class="btn btn-error">Hapus</button>
-        <label for="modal-delete-bank-soal" class="btn">Tutup</label>
+        <label for="modal-delete-soal" class="btn">Tutup</label>
       </div>
     </form>
   </div>

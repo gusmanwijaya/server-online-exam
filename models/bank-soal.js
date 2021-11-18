@@ -33,7 +33,6 @@ let bankSoalSchema = mongoose.Schema({
   },
   soalGambar: {
     type: String,
-    default: "",
   },
   soal: {
     type: aesSchema,
@@ -55,23 +54,18 @@ let bankSoalSchema = mongoose.Schema({
   },
   pilihanGambarA: {
     type: String,
-    default: "",
   },
   pilihanGambarB: {
     type: String,
-    default: "",
   },
   pilihanGambarC: {
     type: String,
-    default: "",
   },
   pilihanGambarD: {
     type: String,
-    default: "",
   },
   pilihanGambarE: {
     type: String,
-    default: "",
   },
   kunciJawaban: {
     type: aesSchema,

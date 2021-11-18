@@ -137,7 +137,6 @@ module.exports = {
     try {
       const token = req.session.user.token;
       const payload = jwt_decode(base64decode(token));
-      const abjads = ["A", "B", "C", "D", "E"];
 
       const {
         soal,
@@ -150,205 +149,231 @@ module.exports = {
         bobot,
       } = req.body;
 
-      if (soal === "" || soal === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Soal ujian harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      if (pilihanA === "" || pilihanA === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Pilihan jawaban A harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      if (pilihanB === "" || pilihanB === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Pilihan jawaban B harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      if (pilihanC === "" || pilihanC === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Pilihan jawaban C harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      if (pilihanD === "" || pilihanD === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Pilihan jawaban D harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      if (pilihanE === "" || pilihanE === null) {
-        req.flash("alertStatus", "error");
-        req.flash("alertMessage", `Pilihan jawaban E harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-      }
-
-      let newBankSoal = {
+      let newBankSoal = await BankSoal({
         dosen: payload.data._id,
         mataKuliah: id,
         bobot,
+        soalGambar: "",
         soal: {
-          message: soal.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
         pilihanA: {
-          message: pilihanA.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
         pilihanB: {
-          message: pilihanB.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
         pilihanC: {
-          message: pilihanC.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
         pilihanD: {
-          message: pilihanD.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
         pilihanE: {
-          message: pilihanE.replace(/(<([^>]+)>)/gi, ""),
+          message: "",
         },
+        pilihanGambarA: "",
+        pilihanGambarB: "",
+        pilihanGambarC: "",
+        pilihanGambarD: "",
+        pilihanGambarE: "",
         kunciJawaban: {
-          message: kunciJawaban,
+          message: "",
         },
-      };
+      });
 
-      if (Object.keys(req.files).length === 0) {
-        await BankSoal.create(newBankSoal);
+      if (soal === "" && !req.files["soalGambar"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Soal ujian harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
-        for (const abjad of abjads) {
-          if (
-            req.files["soalGambar"] !== undefined &&
-            req.files[`pilihanGambar${abjad}`] !== undefined
-          ) {
-            const filePathSoalGambar = req.files["soalGambar"][0].path;
-            const originalExtensionSoalGambar =
-              req.files["soalGambar"][0].originalname.split(".")[
-                req.files["soalGambar"][0].originalname.split(".").length - 1
-              ];
-            const fileNameSoalGambar =
-              req.files["soalGambar"][0].filename +
-              "." +
-              originalExtensionSoalGambar;
-            const targetPathSoalGambar = path.resolve(
-              config.rootPath,
-              `public/uploads/soal-gambar/${fileNameSoalGambar}`
-            );
+        if (soal !== "") {
+          newBankSoal.soal.message = soal.replace(/(<([^>]+)>)/gi, "");
+        }
 
-            const srcSoalGambar = fs.createReadStream(filePathSoalGambar);
-            const destSoalGambar = fs.createWriteStream(targetPathSoalGambar);
+        if (req.files["soalGambar"]) {
+          const filePath = req.files["soalGambar"][0].path;
+          const originalExtension =
+            req.files["soalGambar"][0].originalname.split(".")[
+              req.files["soalGambar"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["soalGambar"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/soal-gambar/${fileName}`
+          );
 
-            srcSoalGambar.pipe(destSoalGambar);
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
 
-            const filePathPilihanGambar =
-              req.files[`pilihanGambar${abjad}`][0].path;
-            const originalExtensionPilihanGambar =
-              req.files[`pilihanGambar${abjad}`][0].originalname.split(".")[
-                req.files[`pilihanGambar${abjad}`][0].originalname.split(".")
-                  .length - 1
-              ];
-            const fileNamePilihanGambar =
-              req.files[`pilihanGambar${abjad}`][0].filename +
-              "." +
-              originalExtensionPilihanGambar;
-            const targetPathPilihanGambar = path.resolve(
-              config.rootPath,
-              `public/uploads/pilihan-gambar/${fileNamePilihanGambar}`
-            );
-
-            const srcPilihanGambar = fs.createReadStream(filePathPilihanGambar);
-            const destPilihanGambar = fs.createWriteStream(
-              targetPathPilihanGambar
-            );
-
-            srcPilihanGambar.pipe(destPilihanGambar);
-
-            srcPilihanGambar.on("end", async () => {
-              try {
-                newBankSoal["soalGambar"] = fileNameSoalGambar;
-                let key = `pilihanGambar${abjad}`;
-                newBankSoal[key] = fileNamePilihanGambar;
-                if (abjad === "E") {
-                  await BankSoal.create(newBankSoal);
-                }
-              } catch (error) {
-                req.flash("alertStatus", "error");
-                req.flash("alertMessage", `${error.message}`);
-                res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-              }
-            });
-          } else {
-            if (req.files["soalGambar"] !== undefined) {
-              const filePath = req.files["soalGambar"][0].path;
-              const originalExtension =
-                req.files["soalGambar"][0].originalname.split(".")[
-                  req.files["soalGambar"][0].originalname.split(".").length - 1
-                ];
-              const fileName =
-                req.files["soalGambar"][0].filename + "." + originalExtension;
-              const targetPath = path.resolve(
-                config.rootPath,
-                `public/uploads/soal-gambar/${fileName}`
-              );
-
-              const src = fs.createReadStream(filePath);
-              const dest = fs.createWriteStream(targetPath);
-
-              src.pipe(dest);
-
-              src.on("end", async () => {
-                try {
-                  if (abjad === "E") {
-                    newBankSoal["soalGambar"] = fileName;
-                    await BankSoal.create(newBankSoal);
-                  }
-                } catch (error) {
-                  req.flash("alertStatus", "error");
-                  req.flash("alertMessage", `${error.message}`);
-                  res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-                }
-              });
-            } else {
-              if (req.files[`pilihanGambar${abjad}`] !== undefined) {
-                const filePath = req.files[`pilihanGambar${abjad}`][0].path;
-                const originalExtension =
-                  req.files[`pilihanGambar${abjad}`][0].originalname.split(".")[
-                    req.files[`pilihanGambar${abjad}`][0].originalname.split(
-                      "."
-                    ).length - 1
-                  ];
-                const fileName =
-                  req.files[`pilihanGambar${abjad}`][0].filename +
-                  "." +
-                  originalExtension;
-                const targetPath = path.resolve(
-                  config.rootPath,
-                  `public/uploads/pilihan-gambar/${fileName}`
-                );
-
-                const src = fs.createReadStream(filePath);
-                const dest = fs.createWriteStream(targetPath);
-
-                src.pipe(dest);
-
-                src.on("end", async () => {
-                  try {
-                    let key = `pilihanGambar${abjad}`;
-                    newBankSoal[key] = fileName;
-                    if (abjad === "E") {
-                      await BankSoal.create(newBankSoal);
-                    }
-                  } catch (error) {
-                    req.flash("alertStatus", "error");
-                    req.flash("alertMessage", `${error.message}`);
-                    res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-                  }
-                });
-              }
-            }
-          }
+          src.pipe(dest);
+          newBankSoal.soalGambar = fileName;
         }
       }
+
+      if (pilihanA === "" && !req.files["pilihanGambarA"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Pilihan jawaban A harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        if (pilihanA !== "") {
+          newBankSoal.pilihanA.message = pilihanA.replace(/(<([^>]+)>)/gi, "");
+        }
+
+        if (req.files["pilihanGambarA"]) {
+          const filePath = req.files["pilihanGambarA"][0].path;
+          const originalExtension =
+            req.files["pilihanGambarA"][0].originalname.split(".")[
+              req.files["pilihanGambarA"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["pilihanGambarA"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/pilihan-gambar/${fileName}`
+          );
+
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
+
+          src.pipe(dest);
+          newBankSoal.pilihanGambarA = fileName;
+        }
+      }
+
+      if (pilihanB === "" && !req.files["pilihanGambarB"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Pilihan jawaban B harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        if (pilihanB !== "") {
+          newBankSoal.pilihanB.message = pilihanB.replace(/(<([^>]+)>)/gi, "");
+        }
+
+        if (req.files["pilihanGambarB"]) {
+          const filePath = req.files["pilihanGambarB"][0].path;
+          const originalExtension =
+            req.files["pilihanGambarB"][0].originalname.split(".")[
+              req.files["pilihanGambarB"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["pilihanGambarB"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/pilihan-gambar/${fileName}`
+          );
+
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
+
+          src.pipe(dest);
+          newBankSoal.pilihanGambarB = fileName;
+        }
+      }
+
+      if (pilihanC === "" && !req.files["pilihanGambarC"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Pilihan jawaban C harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        if (pilihanC !== "") {
+          newBankSoal.pilihanC.message = pilihanC.replace(/(<([^>]+)>)/gi, "");
+        }
+
+        if (req.files["pilihanGambarC"]) {
+          const filePath = req.files["pilihanGambarC"][0].path;
+          const originalExtension =
+            req.files["pilihanGambarC"][0].originalname.split(".")[
+              req.files["pilihanGambarC"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["pilihanGambarC"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/pilihan-gambar/${fileName}`
+          );
+
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
+
+          src.pipe(dest);
+          newBankSoal.pilihanGambarC = fileName;
+        }
+      }
+
+      if (pilihanD === "" && !req.files["pilihanGambarD"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Pilihan jawaban D harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        if (pilihanD !== "") {
+          newBankSoal.pilihanD.message = pilihanD.replace(/(<([^>]+)>)/gi, "");
+        }
+
+        if (req.files["pilihanGambarD"]) {
+          const filePath = req.files["pilihanGambarD"][0].path;
+          const originalExtension =
+            req.files["pilihanGambarD"][0].originalname.split(".")[
+              req.files["pilihanGambarD"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["pilihanGambarD"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/pilihan-gambar/${fileName}`
+          );
+
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
+
+          src.pipe(dest);
+          newBankSoal.pilihanGambarD = fileName;
+        }
+      }
+
+      if (pilihanE === "" && !req.files["pilihanGambarE"]) {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Pilihan jawaban E harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        if (pilihanE !== "") {
+          newBankSoal.pilihanE.message = pilihanE.replace(/(<([^>]+)>)/gi, "");
+        }
+
+        if (req.files["pilihanGambarE"]) {
+          const filePath = req.files["pilihanGambarE"][0].path;
+          const originalExtension =
+            req.files["pilihanGambarE"][0].originalname.split(".")[
+              req.files["pilihanGambarE"][0].originalname.split(".").length - 1
+            ];
+          const fileName =
+            req.files["pilihanGambarE"][0].filename + "." + originalExtension;
+          const targetPath = path.resolve(
+            config.rootPath,
+            `public/uploads/pilihan-gambar/${fileName}`
+          );
+
+          const src = fs.createReadStream(filePath);
+          const dest = fs.createWriteStream(targetPath);
+
+          src.pipe(dest);
+          newBankSoal.pilihanGambarE = fileName;
+        }
+      }
+
+      if (kunciJawaban === "") {
+        req.flash("alertStatus", "error");
+        req.flash("alertMessage", `Kunci jawaban ujian harus diisi!`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+      } else {
+        newBankSoal.kunciJawaban.message = kunciJawaban.replace(
+          /(<([^>]+)>)/gi,
+          ""
+        );
+      }
+
+      await newBankSoal.save();
 
       req.flash("alertStatus", "success");
       req.flash("alertMessage", `Soal berhasil ditambahkan!`);
@@ -357,6 +382,60 @@ module.exports = {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
       res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+    }
+  },
+  destroySoal: async (req, res) => {
+    const { id } = req.params;
+
+    try {
+      const { valueList } = req.body;
+
+      if (valueList.length === 0) {
+        req.flash("alertStatus", "error");
+        req.flash(
+          "alertMessage",
+          `Maaf, Anda harus memilih satu atau beberapa data untuk dihapus!`
+        );
+        res.redirect(`/lecturer/bank-soal/${id}`);
+      } else {
+        const idArray = valueList.split(",");
+        let currentImageSoalGambar = "";
+        let currentImagePilihanGambar = "";
+        const abjads = ["A", "B", "C", "D", "E"];
+
+        const bankSoals = await BankSoal.find({ _id: { $in: idArray } });
+        bankSoals.forEach((bankSoal) => {
+          if (bankSoal.soalGambar !== "") {
+            currentImageSoalGambar = `${config.rootPath}/public/uploads/soal-gambar/${bankSoal.soalGambar}`;
+            if (fs.existsSync(currentImageSoalGambar)) {
+              fs.unlinkSync(currentImageSoalGambar);
+            }
+          }
+
+          abjads.forEach((abjad) => {
+            if (bankSoal["pilihanGambar" + abjad] !== "") {
+              currentImagePilihanGambar = `${
+                config.rootPath
+              }/public/uploads/pilihan-gambar/${
+                bankSoal["pilihanGambar" + abjad]
+              }`;
+              if (fs.existsSync(currentImagePilihanGambar)) {
+                fs.unlinkSync(currentImagePilihanGambar);
+              }
+            }
+          });
+        });
+
+        await BankSoal.remove({ _id: { $in: idArray } });
+
+        req.flash("alertStatus", "success");
+        req.flash("alertMessage", `Soal berhasil dihapus!`);
+        res.redirect(`/lecturer/bank-soal/${id}`);
+      }
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect(`/lecturer/bank-soal/${id}`);
     }
   },
 };
