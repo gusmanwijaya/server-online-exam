@@ -213,52 +213,82 @@ module.exports = {
         },
       };
 
-      if (req.files) {
-        console.log("ini isi req.files = ", req.files);
-        if (req.files["soalGambar"] !== undefined) {
-          const filePath = req.files["soalGambar"][0].path;
-          const originalExtension =
-            req.files["soalGambar"][0].originalname.split(".")[
-              req.files["soalGambar"][0].originalname.split(".").length - 1
-            ];
-          const fileName =
-            req.files["soalGambar"][0].filename + "." + originalExtension;
-          const targetPath = path.resolve(
-            config.rootPath,
-            `public/uploads/${fileName}`
-          );
+      if (Object.keys(req.files).length === 0) {
+        await BankSoal.create(newBankSoal);
+      } else {
+        for (const abjad of abjads) {
+          if (
+            req.files["soalGambar"] !== undefined &&
+            req.files[`pilihanGambar${abjad}`] !== undefined
+          ) {
+            const filePathSoalGambar = req.files["soalGambar"][0].path;
+            const originalExtensionSoalGambar =
+              req.files["soalGambar"][0].originalname.split(".")[
+                req.files["soalGambar"][0].originalname.split(".").length - 1
+              ];
+            const fileNameSoalGambar =
+              req.files["soalGambar"][0].filename +
+              "." +
+              originalExtensionSoalGambar;
+            const targetPathSoalGambar = path.resolve(
+              config.rootPath,
+              `public/uploads/soal-gambar/${fileNameSoalGambar}`
+            );
 
-          const src = fs.createReadStream(filePath);
-          const dest = fs.createWriteStream(targetPath);
+            const srcSoalGambar = fs.createReadStream(filePathSoalGambar);
+            const destSoalGambar = fs.createWriteStream(targetPathSoalGambar);
 
-          src.pipe(dest);
+            srcSoalGambar.pipe(destSoalGambar);
 
-          src.on("end", async () => {
-            try {
-              newBankSoal["soalGambar"] = fileName;
-              await BankSoal.create(newBankSoal);
-            } catch (error) {
-              req.flash("alertStatus", "error");
-              req.flash("alertMessage", `${error.message}`);
-              res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
-            }
-          });
-        } else {
-          for (const abjad of abjads) {
-            if (req.files[`pilihanGambar${abjad}`] !== undefined) {
-              const filePath = req.files[`pilihanGambar${abjad}`][0].path;
+            const filePathPilihanGambar =
+              req.files[`pilihanGambar${abjad}`][0].path;
+            const originalExtensionPilihanGambar =
+              req.files[`pilihanGambar${abjad}`][0].originalname.split(".")[
+                req.files[`pilihanGambar${abjad}`][0].originalname.split(".")
+                  .length - 1
+              ];
+            const fileNamePilihanGambar =
+              req.files[`pilihanGambar${abjad}`][0].filename +
+              "." +
+              originalExtensionPilihanGambar;
+            const targetPathPilihanGambar = path.resolve(
+              config.rootPath,
+              `public/uploads/pilihan-gambar/${fileNamePilihanGambar}`
+            );
+
+            const srcPilihanGambar = fs.createReadStream(filePathPilihanGambar);
+            const destPilihanGambar = fs.createWriteStream(
+              targetPathPilihanGambar
+            );
+
+            srcPilihanGambar.pipe(destPilihanGambar);
+
+            srcPilihanGambar.on("end", async () => {
+              try {
+                newBankSoal["soalGambar"] = fileNameSoalGambar;
+                let key = `pilihanGambar${abjad}`;
+                newBankSoal[key] = fileNamePilihanGambar;
+                if (abjad === "E") {
+                  await BankSoal.create(newBankSoal);
+                }
+              } catch (error) {
+                req.flash("alertStatus", "error");
+                req.flash("alertMessage", `${error.message}`);
+                res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+              }
+            });
+          } else {
+            if (req.files["soalGambar"] !== undefined) {
+              const filePath = req.files["soalGambar"][0].path;
               const originalExtension =
-                req.files[`pilihanGambar${abjad}`][0].originalname.split(".")[
-                  req.files[`pilihanGambar${abjad}`][0].originalname.split(".")
-                    .length - 1
+                req.files["soalGambar"][0].originalname.split(".")[
+                  req.files["soalGambar"][0].originalname.split(".").length - 1
                 ];
               const fileName =
-                req.files[`pilihanGambar${abjad}`][0].filename +
-                "." +
-                originalExtension;
+                req.files["soalGambar"][0].filename + "." + originalExtension;
               const targetPath = path.resolve(
                 config.rootPath,
-                `public/uploads/${fileName}`
+                `public/uploads/soal-gambar/${fileName}`
               );
 
               const src = fs.createReadStream(filePath);
@@ -268,20 +298,56 @@ module.exports = {
 
               src.on("end", async () => {
                 try {
-                  let key = `pilihanGambar${abjad}`;
-                  newBankSoal[key] = fileName;
+                  if (abjad === "E") {
+                    newBankSoal["soalGambar"] = fileName;
+                    await BankSoal.create(newBankSoal);
+                  }
                 } catch (error) {
                   req.flash("alertStatus", "error");
                   req.flash("alertMessage", `${error.message}`);
                   res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
                 }
               });
+            } else {
+              if (req.files[`pilihanGambar${abjad}`] !== undefined) {
+                const filePath = req.files[`pilihanGambar${abjad}`][0].path;
+                const originalExtension =
+                  req.files[`pilihanGambar${abjad}`][0].originalname.split(".")[
+                    req.files[`pilihanGambar${abjad}`][0].originalname.split(
+                      "."
+                    ).length - 1
+                  ];
+                const fileName =
+                  req.files[`pilihanGambar${abjad}`][0].filename +
+                  "." +
+                  originalExtension;
+                const targetPath = path.resolve(
+                  config.rootPath,
+                  `public/uploads/pilihan-gambar/${fileName}`
+                );
+
+                const src = fs.createReadStream(filePath);
+                const dest = fs.createWriteStream(targetPath);
+
+                src.pipe(dest);
+
+                src.on("end", async () => {
+                  try {
+                    let key = `pilihanGambar${abjad}`;
+                    newBankSoal[key] = fileName;
+                    if (abjad === "E") {
+                      await BankSoal.create(newBankSoal);
+                    }
+                  } catch (error) {
+                    req.flash("alertStatus", "error");
+                    req.flash("alertMessage", `${error.message}`);
+                    res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
+                  }
+                });
+              }
             }
           }
-          await BankSoal.create(newBankSoal);
         }
-      } else {
-        await BankSoal.create(newBankSoal);
       }
 
       req.flash("alertStatus", "success");
