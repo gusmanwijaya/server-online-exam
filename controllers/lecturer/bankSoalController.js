@@ -402,38 +402,32 @@ module.exports = {
       };
 
       const mataKuliah = await MataKuliah.findOne({ _id: idMatkul });
-      let bankSoals = await BankSoal.find({ mataKuliah: idMatkul, _id: idSoal })
+      let bankSoal = await BankSoal.findOne({
+        mataKuliah: idMatkul,
+        _id: idSoal,
+      })
         .populate("dosen")
         .populate("mataKuliah");
 
       const abjads = ["A", "B", "C", "D", "E"];
-      for (let bankSoal of bankSoals) {
-        let algorithm = "aes-256-cbc";
-        let ivPilihan = "";
-        let keyPilihan = "";
-        let messagePilihan = "";
+      const urlSoalGambar = `${process.env.URL_IMG_SOAL}`;
+      const urlPilihanGambar = `${process.env.URL_IMG_PILIHAN}`;
+      let algorithm = "aes-256-cbc";
 
-        let ivSoal = base64decode(bankSoal.soal.iv);
-        let keySoal = base64decode(bankSoal.soal.key);
-        let messageSoal = base64decode(bankSoal.soal.message);
+      let ivSoal = base64decode(bankSoal.soal.iv);
+      let keySoal = base64decode(bankSoal.soal.key);
+      let messageSoal = base64decode(bankSoal.soal.message);
 
-        abjads.forEach((abjad) => {
-          ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
-          keyPilihan = base64decode(bankSoal["pilihan" + abjad].key);
-          messagePilihan = base64decode(bankSoal["pilihan" + abjad].message);
-        });
+      let decipherSoal = crypto.createDecipheriv(algorithm, keySoal, ivSoal);
+      let dataDecryptedSoal = decipherSoal.update(messageSoal, "hex", "utf-8");
+      let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
 
-        let ivKunciJawaban = base64decode(bankSoal.kunciJawaban.iv);
-        let keyKunciJawaban = base64decode(bankSoal.kunciJawaban.key);
-        let messageKunciJawaban = base64decode(bankSoal.kunciJawaban.message);
+      bankSoal.soal.message = decryptedSoal;
 
-        let decipherSoal = crypto.createDecipheriv(algorithm, keySoal, ivSoal);
-        let dataDecryptedSoal = decipherSoal.update(
-          messageSoal,
-          "hex",
-          "utf-8"
-        );
-        let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
+      abjads.forEach((abjad) => {
+        let ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
+        let keyPilihan = base64decode(bankSoal["pilihan" + abjad].key);
+        let messagePilihan = base64decode(bankSoal["pilihan" + abjad].message);
 
         let decipherPilihan = crypto.createDecipheriv(
           algorithm,
@@ -448,33 +442,38 @@ module.exports = {
         let decryptedPilihan =
           dataDecryptedPilihan + decipherPilihan.final("utf-8");
 
-        let decipherKunciJawaban = crypto.createDecipheriv(
-          algorithm,
-          keyKunciJawaban,
-          ivKunciJawaban
-        );
-        let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
-          messageKunciJawaban,
-          "hex",
-          "utf-8"
-        );
-        let decryptedKunciJawaban =
-          dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+        bankSoal["pilihan" + abjad].message = decryptedPilihan;
+      });
 
-        bankSoal.soal.message = decryptedSoal;
-        abjads.forEach((abjad) => {
-          bankSoal["pilihan" + abjad].message = decryptedPilihan;
-        });
-        bankSoal.kunciJawaban.message = decryptedKunciJawaban;
-      }
+      let ivKunciJawaban = base64decode(bankSoal.kunciJawaban.iv);
+      let keyKunciJawaban = base64decode(bankSoal.kunciJawaban.key);
+      let messageKunciJawaban = base64decode(bankSoal.kunciJawaban.message);
+
+      let decipherKunciJawaban = crypto.createDecipheriv(
+        algorithm,
+        keyKunciJawaban,
+        ivKunciJawaban
+      );
+      let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
+        messageKunciJawaban,
+        "hex",
+        "utf-8"
+      );
+      let decryptedKunciJawaban =
+        dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+
+      bankSoal.kunciJawaban.message = decryptedKunciJawaban;
 
       res.render("lecturer/bank-soal/soal/detail", {
         alert,
         url: originalUrl[2],
         title: "Detail Soal",
         payload,
-        bankSoals,
+        bankSoal,
         mataKuliah,
+        abjads,
+        urlSoalGambar,
+        urlPilihanGambar,
       });
     } catch (error) {
       req.flash("alertStatus", "error");
