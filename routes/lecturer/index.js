@@ -15,10 +15,16 @@ const {
   editSoal,
   updateSoal,
 } = require("../../controllers/lecturer/bankSoalController");
+const {
+  jadwalUjian,
+  createJadwalUjian,
+  storeJadwalUjian,
+} = require("../../controllers/lecturer/jadwalUjianController");
 
 router.use(isLecturer);
 
 router.get("/dashboard", dashboard);
+
 router.get("/bank-soal", bankSoal);
 router.get("/bank-soal/:id", soal);
 router.get("/bank-soal/:id/create-soal", createSoal);
@@ -49,5 +55,9 @@ router.put(
   updateSoal
 );
 router.delete("/bank-soal/:id/destroy-soal", destroySoal);
+
+router.get("/jadwal-ujian", jadwalUjian);
+router.get("/jadwal-ujian/create-jadwal-ujian", createJadwalUjian);
+router.post("/jadwal-ujian/store-jadwal-ujian", storeJadwalUjian);
 
 module.exports = router;
