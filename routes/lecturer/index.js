@@ -12,6 +12,8 @@ const {
   storeSoal,
   destroySoal,
   detailSoal,
+  editSoal,
+  updateSoal,
 } = require("../../controllers/lecturer/bankSoalController");
 
 router.use(isLecturer);
@@ -33,6 +35,19 @@ router.post(
   storeSoal
 );
 router.get("/bank-soal/:idMatkul/detail-soal/:idSoal", detailSoal);
+router.get("/bank-soal/:idMatkul/edit-soal/:idSoal", editSoal);
+router.put(
+  "/bank-soal/:idMatkul/update-soal/:idSoal",
+  multer({ dest: os.tmpdir() }).fields([
+    { name: "soalGambar" },
+    { name: "pilihanGambarA" },
+    { name: "pilihanGambarB" },
+    { name: "pilihanGambarC" },
+    { name: "pilihanGambarD" },
+    { name: "pilihanGambarE" },
+  ]),
+  updateSoal
+);
 router.delete("/bank-soal/:id/destroy-soal", destroySoal);
 
 module.exports = router;

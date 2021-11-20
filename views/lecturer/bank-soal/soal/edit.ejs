@@ -2,28 +2,53 @@
 <html data-theme="light">
   <head>
     <title><%= title %> - Website Ujian Online</title>
-    <% include ../../partials/header.ejs %>
+    <% include ../../../partials/header.ejs %>
   </head>
   <body>
     <div class="min-h-full">
-      <% include ../../partials/navbar.ejs %>
+      <% include ../../../partials/navbar.ejs %>
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold text-gray-900">Data Dosen</h1>
+          <div class="text-3xl font-bold text-gray-900 breadcrumbs">
+            <ul>
+              <li>
+                <a href="/lecturer/bank-soal">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                  </svg>
+                      Bank Soal
+                </a>
+              </li> 
+              <li>
+                <a href="/lecturer/bank-soal/<%= mataKuliah._id %>">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">          
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>                
+                      </svg>
+                        <%= mataKuliah.nama %>
+                </a>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="w-6 h-6 mr-2 stroke-current">                    
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>      
+                </svg>
+                  Ubah Soal
+              </li>
+            </ul>
+        </div>
         </div>
       </header>
       <main data-aos="fade-in">
         <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
           <!-- START: Content -->
-          <% include ../../partials/alert.ejs %>
+          <% include ../../../partials/alert.ejs %>
 
           <div class="mt-10 sm:mt-0">
             <div class="md:grid md:grid-cols-3 md:gap-6">
               <div class="md:col-span-1">
                 <div class="px-4 sm:px-0">
                   <h3 class="text-lg font-medium leading-6 text-gray-900">
-                    Ubah Data Dosen
+                    Ubah Data Soal
                   </h3>
                   <p class="mt-1 text-sm text-gray-600">
                     Silahkan isi kolom yang telah disediakan.
@@ -31,140 +56,239 @@
                 </div>
               </div>
               <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="/admin/update-dosen/<%= dosen._id %>?_method=PUT" method="POST">
-                  <div class="shadow overflow-hidden sm:rounded-md">
+                <form action="/lecturer/bank-soal/<%= mataKuliah._id %>/update-soal/<%= bankSoal._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                  <div class="shadow-lg overflow-hidden sm:rounded-md">
                     <div class="px-4 py-5 bg-white sm:p-6">
                       <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-3">
+
+                        <div class="col-span-6">
                           <div class="form-control">
-                            <label class="label" for="nama">
-                              <span class="label-text">Nama</span>
+                            <label class="label" for="soal">
+                              <span class="label-text font-semibold">Soal Ujian</span>
                             </label>
-                            <input
+                            <% if (bankSoal.soalGambar !== "") { %>
+                              <img
+                                src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar %>"
+                                class="max-w-sm rounded-lg mb-4"
+                                alt="Soal Gambar"
+                              />
+                            <% } %>
+                            <div class="bg-white p7 rounded w-full mx-auto">
+                              <div x-data="dataFileDnD()" class="relative flex flex-col p-4 text-gray-400 border border-gray-200 rounded mb-4">
+                                  <div x-ref="dnd"
+                                      class="relative flex flex-col text-gray-400 border border-gray-200 border-dashed rounded cursor-pointer">
+                                      <input accept="image/*" type="file" name="soalGambar" id="soalGambar"
+                                          class="absolute inset-0 z-50 w-full h-full p-0 m-0 outline-none opacity-0 cursor-pointer"
+                                          @change="addFiles($event)"
+                                          @dragover="$refs.dnd.classList.add('border-blue-400'); $refs.dnd.classList.add('ring-4'); $refs.dnd.classList.add('ring-inset');"
+                                          @dragleave="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
+                                          @drop="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
+                                          title="" />
+                              
+                                      <div class="flex flex-col items-center justify-center py-10 text-center">
+                                          <svg class="w-6 h-6 mr-1 text-current-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                              stroke="currentColor">
+                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                          </svg>
+                                          <p class="m-0">Tarik file Anda ke sini atau klik di area ini.</p>
+                                      </div>
+                                  </div>
+                              
+                                  <template x-if="files.length > 0">
+                                      <div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-6" @drop.prevent="drop($event)"
+                                          @dragover.prevent="$event.dataTransfer.dropEffect = 'move'">
+                                          <template x-for="(_, index) in Array.from({ length: files.length })">
+                                              <div class="relative flex flex-col items-center overflow-hidden text-center bg-gray-100 border rounded cursor-move select-none"
+                                                  style="padding-top: 100%;" @dragstart="dragstart($event)" @dragend="fileDragging = null"
+                                                  :class="{'border-blue-600': fileDragging == index}" draggable="true" :data-index="index">
+                                                  <button class="absolute top-0 right-0 z-50 p-1 bg-white rounded-bl focus:outline-none" type="button" @click="remove(index)">
+                                                      <svg class="w-4 h-4 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                          viewBox="0 0 24 24" stroke="currentColor">
+                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                      </svg>
+                                                  </button>
+                                                  <template x-if="files[index].type.includes('audio/')">
+                                                      <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                                      </svg>
+                                                  </template>
+                                                  <template x-if="files[index].type.includes('application/') || files[index].type === ''">
+                                                      <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                                      </svg>
+                                                  </template>
+                                                  <template x-if="files[index].type.includes('image/')">
+                                                      <img class="absolute inset-0 z-0 object-cover w-full h-full border-4 border-white preview"
+                                                          x-bind:src="loadFile(files[index])" />
+                                                  </template>
+                                                  <template x-if="files[index].type.includes('video/')">
+                                                      <video
+                                                          class="absolute inset-0 object-cover w-full h-full border-4 border-white pointer-events-none preview">
+                                                          <fileDragging x-bind:src="loadFile(files[index])" type="video/mp4">
+                                                      </video>
+                                                  </template>
+                              
+                                                  <div class="absolute bottom-0 left-0 right-0 flex flex-col p-2 text-xs bg-white bg-opacity-50">
+                                                      <span class="w-full font-bold text-gray-900 truncate"
+                                                          x-text="files[index].name">Loading</span>
+                                                      <span class="text-xs text-gray-900" x-text="humanFileSize(files[index].size)">...</span>
+                                                  </div>
+                              
+                                                  <div class="absolute inset-0 z-40 transition-colors duration-300" @dragenter="dragenter($event)"
+                                                      @dragleave="fileDropping = null"
+                                                      :class="{'bg-blue-200 bg-opacity-80': fileDropping == index && fileDragging != index}">
+                                                  </div>
+                                              </div>
+                                          </template>
+                                      </div>
+                                  </template>
+                              </div>
+                              </div>
+
+                            <textarea
                               type="text"
-                              name="nama"
-                              id="nama"
+                              name="soal"
+                              id="soal"
                               required
-                              value="<%= dosen.nama %>"
-                              class="input input-bordered w-full"
-                              disabled
-                            />
+                            ><%= bankSoal.soal.message %></textarea>
                           </div>
                         </div>
 
-                        <div class="col-span-3">
-                          <div class="form-control">
-                            <label class="label" for="nip">
-                              <span class="label-text">NIP</span>
-                            </label>
-                            <input
-                              type="text"
-                              name="nip"
-                              id="nip"
-                              required
-                              value="<%= dosen.nip %>"
-                              class="input input-bordered w-full"
-                              disabled
-                            />
-                          </div>
-                        </div>
+                        <% abjads.forEach(abjad => { %>
+                            <div class="col-span-6">
+                              <div class="form-control">
+                                <label class="label" for="pilihanA">
+                                  <span class="label-text font-semibold">Pilihan <%= abjad %></span>
+                                </label>
+                                <% if (bankSoal["pilihanGambar" + abjad] !== "") { %>
+                                  <img
+                                    src="<%= urlPilihanGambar %>/<%= bankSoal["pilihanGambar" + abjad] %>"
+                                    class="max-w-sm rounded-lg mb-4"
+                                    alt="Pilihan Gambar <%= abjad %>"
+                                  />
+                                <% } %>
+                                <div class="bg-white p7 rounded w-full mx-auto">
+                                  <div x-data="dataFileDnD()" class="relative flex flex-col p-4 text-gray-400 border border-gray-200 rounded mb-4">
+                                      <div x-ref="dnd"
+                                          class="relative flex flex-col text-gray-400 border border-gray-200 border-dashed rounded cursor-pointer">
+                                          <input accept="image/*" type="file" name="pilihanGambar<%= abjad %>" id="pilihanGambar<%= abjad %>"
+                                              class="absolute inset-0 z-50 w-full h-full p-0 m-0 outline-none opacity-0 cursor-pointer"
+                                              @change="addFiles($event)"
+                                              @dragover="$refs.dnd.classList.add('border-blue-400'); $refs.dnd.classList.add('ring-4'); $refs.dnd.classList.add('ring-inset');"
+                                              @dragleave="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
+                                              @drop="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
+                                              title="" />
+                                  
+                                          <div class="flex flex-col items-center justify-center py-10 text-center">
+                                              <svg class="w-6 h-6 mr-1 text-current-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                  stroke="currentColor">
+                                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                              </svg>
+                                              <p class="m-0">Tarik file Anda ke sini atau klik di area ini.</p>
+                                          </div>
+                                      </div>
+                                  
+                                      <template x-if="files.length > 0">
+                                          <div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-6" @drop.prevent="drop($event)"
+                                              @dragover.prevent="$event.dataTransfer.dropEffect = 'move'">
+                                              <template x-for="(_, index) in Array.from({ length: files.length })">
+                                                  <div class="relative flex flex-col items-center overflow-hidden text-center bg-gray-100 border rounded cursor-move select-none"
+                                                      style="padding-top: 100%;" @dragstart="dragstart($event)" @dragend="fileDragging = null"
+                                                      :class="{'border-blue-600': fileDragging == index}" draggable="true" :data-index="index">
+                                                      <button class="absolute top-0 right-0 z-50 p-1 bg-white rounded-bl focus:outline-none" type="button" @click="remove(index)">
+                                                          <svg class="w-4 h-4 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                              viewBox="0 0 24 24" stroke="currentColor">
+                                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                          </svg>
+                                                      </button>
+                                                      <template x-if="files[index].type.includes('audio/')">
+                                                          <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                  d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                                                          </svg>
+                                                      </template>
+                                                      <template x-if="files[index].type.includes('application/') || files[index].type === ''">
+                                                          <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
+                                                              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                                  d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                                          </svg>
+                                                      </template>
+                                                      <template x-if="files[index].type.includes('image/')">
+                                                          <img class="absolute inset-0 z-0 object-cover w-full h-full border-4 border-white preview"
+                                                              x-bind:src="loadFile(files[index])" />
+                                                      </template>
+                                                      <template x-if="files[index].type.includes('video/')">
+                                                          <video
+                                                              class="absolute inset-0 object-cover w-full h-full border-4 border-white pointer-events-none preview">
+                                                              <fileDragging x-bind:src="loadFile(files[index])" type="video/mp4">
+                                                          </video>
+                                                      </template>
+                                  
+                                                      <div class="absolute bottom-0 left-0 right-0 flex flex-col p-2 text-xs bg-white bg-opacity-50">
+                                                          <span class="w-full font-bold text-gray-900 truncate"
+                                                              x-text="files[index].name">Loading</span>
+                                                          <span class="text-xs text-gray-900" x-text="humanFileSize(files[index].size)">...</span>
+                                                      </div>
+                                  
+                                                      <div class="absolute inset-0 z-40 transition-colors duration-300" @dragenter="dragenter($event)"
+                                                          @dragleave="fileDropping = null"
+                                                          :class="{'bg-blue-200 bg-opacity-80': fileDropping == index && fileDragging != index}">
+                                                      </div>
+                                                  </div>
+                                              </template>
+                                          </div>
+                                      </template>
+                                  </div>
+                                  </div>
+    
+                                <textarea
+                                  type="text"
+                                  name="pilihan<%= abjad %>"
+                                  id="pilihan<%= abjad %>"
+                                  required
+                                ><%= bankSoal["pilihan" + abjad].message %></textarea>
+                              </div>
+                            </div>
+                        <% }) %>
 
-                        <div class="col-span-3">
+                        <div class="col-span-6">
                           <div class="form-control">
-                            <label class="label" for="email">
-                              <span class="label-text">Email</span>
+                            <label for="kunciJawaban" class="label">
+                              <span class="label-text font-semibold">Kunci Jawaban</span>
                             </label>
-                            <input
-                              type="email"
-                              name="email"
-                              id="email"
-                              required
-                              class="input input-bordered w-full"
-                              value="<%= dosen.email %>"
-                              disabled
-                            />
-                          </div>
-                        </div>
-
-                        <div class="col-span-3">
-                          <div class="form-control">
-                            <label class="label" for="jenisKelamin">
-                              <span class="label-text">Jenis Kelamin</span>
-                            </label>
-                            <select
-                              class="select select-bordered w-full"
-                              name="jenisKelamin"
-                              id="jenisKelamin"
-                              required
-                            >
-                              <option value="" disabled="disabled" selected="selected">
-                                -Pilih Jenis Kelamin-
-                              </option>
-                              <option value="L" <%= dosen.jenisKelamin === "L" ? "selected" : "" %> >Laki-Laki</option>
-                              <option value="P" <%= dosen.jenisKelamin === "P" ? "selected" : "" %> >Perempuan</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-span-3">
-                          <div class="form-control">
-                            <label for="programStudi" class="label">
-                              <span class="label-text">Program Studi</span>
-                            </label>
-                            <select
-                              class="select select-bordered w-full"
-                              name="programStudi"
-                              id="programStudi"
-                              required
-                              disabled
-                            >
-                              <option
-                                value=""
-                                disabled="disabled"
-                                selected="selected"
-                              >
-                                -Pilih Program Studi-
-                              </option>
-                              <% programStudies.forEach(programStudi => { %>
-                              <option value="<%= programStudi._id %>" <%= dosen.programStudi._id.toString() === programStudi._id.toString() ? "selected" : "" %>>
-                                <%= programStudi.nama %>
-                              </option>
+                            <select class="select select-bordered w-full" name="kunciJawaban" id="kunciJawaban" required>
+                              <option disabled="disabled" value="">-Pilih Kunci Jawaban-</option> 
+                              <% abjads.forEach(abjad => { %>
+                               <option value="<%= abjad %>" <%= abjad === bankSoal.kunciJawaban.message ? selected="selected" : "" %> ><%= abjad %></option>
                               <% }) %>
                             </select>
                           </div>
                         </div>
 
-                        <div class="col-span-3">
-                            <div class="form-control">
-                              <label for="mataKuliah" class="label">
-                                <span class="label-text">Mata Kuliah</span>
-                              </label>
-                              <select
-                                class="select-multiple-mata-kuliah w-full"
-                                name="mataKuliah"
-                                id="mataKuliah"
-                                multiple="multiple"
-                                required
-                              >
-                                <% mataKuliahs.forEach(mataKuliah => { %>
-                                <option value="<%= mataKuliah._id %>"
-                                  <% dosen.mataKuliah.forEach(dosenMatkul => { %>
-                                   <% if (dosenMatkul._id.toString() === mataKuliah._id.toString()) { %>
-                                    selected
-                                   <% } %>
-                                  <% }) %>
-                                  >
-                                  <%= mataKuliah.nama %>
-                                </option>
-                                <% }) %>
-                              </select>
-                            </div>
+                        <div class="col-span-6">
+                          <div class="form-control">
+                            <label for="bobot" class="label">
+                              <span class="label-text font-semibold">Bobot Soal</span>
+                            </label>
+                            <input type="number" min="0" class="input input-bordered" name="bobot" id="bobot" value="<%= bankSoal.bobot %>" required />
                           </div>
+                        </div>
+
                       </div>
                     </div>
                     <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
                       <a
-                        href="/admin/dosen"
+                        href="/lecturer/bank-soal/<%= mataKuliah._id %>"
                         type="button"
                         class="btn btn-sm md:btn-md btn-ghost"
                       >
@@ -187,11 +311,76 @@
       </main>
     </div>
 
-    <% include ../../partials/script.ejs %>
+    <% include ../../../partials/script.ejs %>
     <script>
-      $(document).ready(function () {
-        $(".select-multiple-mata-kuliah").select2();
-      });
+      CKEDITOR.replace("soal");
+      CKEDITOR.replace("pilihanA");
+      CKEDITOR.replace("pilihanB");
+      CKEDITOR.replace("pilihanC");
+      CKEDITOR.replace("pilihanD");
+      CKEDITOR.replace("pilihanE");
+
+      function dataFileDnD() {
+          return {
+              files: [],
+              fileDragging: null,
+              fileDropping: null,
+              humanFileSize(size) {
+                  const i = Math.floor(Math.log(size) / Math.log(1024));
+                  return (
+                      (size / Math.pow(1024, i)).toFixed(2) * 1 +
+                      " " +
+                      ["B", "kB", "MB", "GB", "TB"][i]
+                  );
+              },
+              remove(index) {
+                  let files = [...this.files];
+                  files.splice(index, 1);
+      
+                  this.files = createFileList(files);
+              },
+              drop(e) {
+                  let removed, add;
+                  let files = [...this.files];
+      
+                  removed = files.splice(this.fileDragging, 1);
+                  files.splice(this.fileDropping, 0, ...removed);
+      
+                  this.files = createFileList(files);
+      
+                  this.fileDropping = null;
+                  this.fileDragging = null;
+              },
+              dragenter(e) {
+                  let targetElem = e.target.closest("[draggable]");
+      
+                  this.fileDropping = targetElem.getAttribute("data-index");
+              },
+              dragstart(e) {
+                  this.fileDragging = e.target
+                      .closest("[draggable]")
+                      .getAttribute("data-index");
+                  e.dataTransfer.effectAllowed = "move";
+              },
+              loadFile(file) {
+                  const preview = document.querySelectorAll(".preview");
+                  const blobUrl = URL.createObjectURL(file);
+      
+                  preview.forEach(elem => {
+                      elem.onload = () => {
+                          URL.revokeObjectURL(elem.src); // free memory
+                      };
+                  });
+      
+                  return blobUrl;
+              },
+              addFiles(e) {
+                  const files = createFileList([...this.files], [...e.target.files]);
+                  this.files = files;
+                  this.form.formData.files = [...files];
+              }
+          };
+      }
     </script>
   </body>
 </html>
