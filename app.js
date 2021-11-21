@@ -8,15 +8,19 @@ const logger = require("morgan");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
+const cors = require("cors");
 // END: Library npm yang diinstall
 
 // START: Router
 const authRouter = require("./routes/auth");
 const adminRouter = require("./routes/admin");
 const lecturerRouter = require("./routes/lecturer");
+const apiRouter = require("./routes/api");
 // END: Router
 
 const app = express();
+
+app.use(cors());
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -46,6 +50,11 @@ app.use("/", authRouter);
 app.use("/admin", adminRouter);
 app.use("/lecturer", lecturerRouter);
 // END: Menggunakan router
+
+// START: Api router
+const URL = "/api";
+app.use(`${URL}`, apiRouter);
+// END: Api router
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
