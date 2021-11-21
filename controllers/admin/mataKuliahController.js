@@ -136,7 +136,7 @@ module.exports = {
         res.redirect("/admin/mata-kuliah");
       } else {
         const idArray = valueList.split(",");
-        await MataKuliah.remove({ _id: { $in: idArray } });
+        await MataKuliah.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Mata Kuliah berhasil dihapus!`);

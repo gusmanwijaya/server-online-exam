@@ -166,30 +166,107 @@ module.exports = {
           req.flash("alertStatus", "error");
           req.flash(
             "alertMessage",
-            `Jumlah soal yang Anda miliki hanya ${countSoalUjian} soal!`
+            `Jumlah soal yang Anda miliki untuk mata kuliah tersebut hanya ${countSoalUjian} soal!`
           );
           res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
         } else {
-          await JadwalUjian.create({
-            dosen: payload.data._id,
-            mataKuliah,
-            namaUjian,
-            jumlahSoal,
-            durasiUjian,
-            mulaiUjian: formatMulaiUjian,
-            terlambatUjian: formatTerlambatUjian,
-            token: tokenUjian.toUpperCase(),
-          });
+          const timeDateNow = new Date().getTime();
+          const timeMulaiUjian = new Date(mulaiUjian).getTime();
+          const timeTerlambatUjian = new Date(terlambatUjian).getTime();
 
-          req.flash("alertStatus", "success");
-          req.flash("alertMessage", `Jadwal ujian berhasil ditambahkan!`);
-          res.redirect("/lecturer/jadwal-ujian");
+          if (timeDateNow > timeMulaiUjian) {
+            req.flash("alertStatus", "error");
+            req.flash(
+              "alertMessage",
+              `Waktu yang Anda pilih untuk memulai ujian sudah berlalu!`
+            );
+            res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
+          } else {
+            if (timeDateNow > timeTerlambatUjian) {
+              req.flash("alertStatus", "error");
+              req.flash(
+                "alertMessage",
+                `Waktu yang Anda pilih untuk terlambat ujian sudah berlalu!`
+              );
+              res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
+            } else {
+              await JadwalUjian.create({
+                dosen: payload.data._id,
+                mataKuliah,
+                namaUjian,
+                jumlahSoal,
+                durasiUjian,
+                mulaiUjian: formatMulaiUjian,
+                terlambatUjian: formatTerlambatUjian,
+                token: tokenUjian.toUpperCase(),
+              });
+
+              req.flash("alertStatus", "success");
+              req.flash("alertMessage", `Jadwal ujian berhasil ditambahkan!`);
+              res.redirect("/lecturer/jadwal-ujian");
+            }
+          }
         }
       }
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
       res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
+    }
+  },
+  regenerateTokenJadwalUjian: async (req, res) => {
+    try {
+      const { id } = req.params;
+
+      const tokenUjian = randomString.generate({
+        length: 6,
+        charset: "alphabetic",
+      });
+
+      await JadwalUjian.findOneAndUpdate(
+        { _id: id },
+        {
+          token: tokenUjian.toUpperCase(),
+          updatedAt: dateAndTime.format(
+            new Date(),
+            "dddd, D MMMM YYYY HH:mm:ss"
+          ),
+        }
+      );
+
+      req.flash("alertStatus", "success");
+      req.flash("alertMessage", `Berhasil mendapatkan token ujian yang baru!`);
+      res.redirect("/lecturer/jadwal-ujian");
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect("/lecturer/jadwal-ujian");
+    }
+  },
+  destroyJadwalUjian: async (req, res) => {
+    try {
+      const { valueList } = req.body;
+
+      if (valueList.length === 0) {
+        req.flash("alertStatus", "error");
+        req.flash(
+          "alertMessage",
+          `Maaf, Anda harus memilih satu atau beberapa data untuk dihapus!`
+        );
+        res.redirect(`/lecturer/jadwal-ujian`);
+      } else {
+        const idArray = valueList.split(",");
+
+        await JadwalUjian.deleteMany({ _id: { $in: idArray } });
+
+        req.flash("alertStatus", "success");
+        req.flash("alertMessage", `Jadwal ujian berhasil dihapus!`);
+        res.redirect(`/lecturer/jadwal-ujian`);
+      }
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect("/lecturer/jadwal-ujian");
     }
   },
 };

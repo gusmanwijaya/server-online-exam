@@ -21,9 +21,16 @@
           <% include ../../partials/alert.ejs %> 
 
           <% if (jadwalUjians.length != 0) { %>
-
           <div class="flex flex-row items-center justify-between">
-            
+            <a href="/lecturer/jadwal-ujian/create-jadwal-ujian" type="button">
+              <button class="btn btn-sm md:btn-md btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg> Tambah
+              </button> 
+            </a>
+
+            <% include ./delete_modal.ejs %>
           </div>
 
           <div class="overflow-x-auto mt-6">
@@ -48,21 +55,22 @@
                   <tr>
                     <td>
                       <label>
-                        <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="" />
+                        <input type="checkbox" class="checkbox" name="checkbox" id="checkbox" value="<%= jadwalUjian._id %>" />
                       </label>
                     </td>
                     <td><%= jadwalUjian.mataKuliah.nama %></td>
                     <td><%= jadwalUjian.namaUjian %></td>
                     <td><%= jadwalUjian.jumlahSoal %></td>
                     <td><%= jadwalUjian.mulaiUjian %> (<%= jadwalUjian.durasiUjian %> Menit)</td>
-                    <td><%= jadwalUjian.token %></td>
+                    <td class="text-indigo-600 font-semibold"><%= jadwalUjian.token %></td>
                     <td>
-                      <!-- Di sini button untuk Generate Ulang Token -->
-                      <a href="/lecturer/jadwal-ujian/edit-jadwal-ujian/<%= jadwalUjian._id %>" class="btn btn-sm lg:btn-md btn-warning">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                        </svg>
-                      </a>
+                      <form action="/lecturer/jadwal-ujian/regenerate-token/<%= jadwalUjian._id %>?_method=PUT" method="post">
+                        <button type="submit" class="btn btn-ghost">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                          </svg>
+                        </button>
+                      </form>
                     </td>
                   </tr>
                 <% }) %>

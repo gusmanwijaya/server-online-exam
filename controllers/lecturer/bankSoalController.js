@@ -926,7 +926,7 @@ module.exports = {
           });
         });
 
-        await BankSoal.remove({ _id: { $in: idArray } });
+        await BankSoal.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Soal berhasil dihapus!`);

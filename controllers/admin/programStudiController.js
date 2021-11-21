@@ -96,7 +96,7 @@ module.exports = {
         res.redirect("/admin/program-studi");
       } else {
         const idArray = valueList.split(",");
-        await ProgramStudi.remove({ _id: { $in: idArray } });
+        await ProgramStudi.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Program studi berhasil dihapus!`);

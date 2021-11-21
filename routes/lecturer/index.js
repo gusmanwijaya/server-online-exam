@@ -19,6 +19,8 @@ const {
   jadwalUjian,
   createJadwalUjian,
   storeJadwalUjian,
+  destroyJadwalUjian,
+  regenerateTokenJadwalUjian,
 } = require("../../controllers/lecturer/jadwalUjianController");
 
 router.use(isLecturer);
@@ -59,5 +61,7 @@ router.delete("/bank-soal/:id/destroy-soal", destroySoal);
 router.get("/jadwal-ujian", jadwalUjian);
 router.get("/jadwal-ujian/create-jadwal-ujian", createJadwalUjian);
 router.post("/jadwal-ujian/store-jadwal-ujian", storeJadwalUjian);
+router.delete("/jadwal-ujian/destroy-jadwal-ujian", destroyJadwalUjian);
+router.put("/jadwal-ujian/regenerate-token/:id", regenerateTokenJadwalUjian);
 
 module.exports = router;

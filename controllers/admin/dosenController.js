@@ -219,7 +219,7 @@ module.exports = {
         res.redirect("/admin/dosen");
       } else {
         const idArray = valueList.split(",");
-        await Dosen.remove({ _id: { $in: idArray } });
+        await Dosen.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Dosen berhasil dihapus!`);

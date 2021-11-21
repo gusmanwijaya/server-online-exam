@@ -97,7 +97,7 @@ module.exports = {
         res.redirect("/admin/kelas");
       } else {
         const idArray = valueList.split(",");
-        await Kelas.remove({ _id: { $in: idArray } });
+        await Kelas.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Kelas berhasil dihapus!`);

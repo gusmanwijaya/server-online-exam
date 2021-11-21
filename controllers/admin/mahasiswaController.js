@@ -110,7 +110,7 @@ module.exports = {
         res.redirect("/admin/mahasiswa");
       } else {
         const idArray = valueList.split(",");
-        await Mahasiswa.remove({ _id: { $in: idArray } });
+        await Mahasiswa.deleteMany({ _id: { $in: idArray } });
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Mahasiswa berhasil dihapus!`);
