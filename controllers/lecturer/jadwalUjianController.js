@@ -24,7 +24,12 @@ module.exports = {
         message: alertMessage,
       };
 
-      const jadwalUjians = await JadwalUjian.find()
+      const dosen = await Dosen.findOne({ _id: payload.data._id }).populate(
+        "mataKuliah"
+      );
+      const jadwalUjians = await JadwalUjian.find({
+        mataKuliah: { $in: dosen.mataKuliah },
+      })
         .populate("dosen")
         .populate("mataKuliah");
 

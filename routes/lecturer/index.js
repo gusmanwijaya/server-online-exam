@@ -22,6 +22,13 @@ const {
   destroyJadwalUjian,
   regenerateTokenJadwalUjian,
 } = require("../../controllers/lecturer/jadwalUjianController");
+const {
+  profile,
+  ubahEmail,
+  updateEmail,
+  ubahPassword,
+  updatePassword,
+} = require("../../controllers/lecturer/profileController");
 
 router.use(isLecturer);
 
@@ -63,5 +70,11 @@ router.get("/jadwal-ujian/create-jadwal-ujian", createJadwalUjian);
 router.post("/jadwal-ujian/store-jadwal-ujian", storeJadwalUjian);
 router.delete("/jadwal-ujian/destroy-jadwal-ujian", destroyJadwalUjian);
 router.put("/jadwal-ujian/regenerate-token/:id", regenerateTokenJadwalUjian);
+
+router.get("/profile", profile);
+router.get("/ubah-email", ubahEmail);
+router.put("/update-email", updateEmail);
+router.get("/ubah-password", ubahPassword);
+router.put("/update-password", updatePassword);
 
 module.exports = router;
