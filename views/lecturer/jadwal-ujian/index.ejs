@@ -43,9 +43,11 @@
                 <tr>
                   <th></th>
                   <th>Mata Kuliah</th>
-                  <th>Nama Ujian</th>
+                  <th>Nama</th>
                   <th>Jumlah Soal</th>
-                  <th>Waktu</th>
+                  <th>Durasi</th>
+                  <th>Mulai</th>
+                  <th>Terlambat</th>
                   <th>Token</th>
                   <th>Aksi</th>
                 </tr>
@@ -61,7 +63,9 @@
                     <td><%= jadwalUjian.mataKuliah.nama %></td>
                     <td><%= jadwalUjian.namaUjian %></td>
                     <td><%= jadwalUjian.jumlahSoal %></td>
-                    <td><%= jadwalUjian.mulaiUjian %> (<%= jadwalUjian.durasiUjian %> Menit)</td>
+                    <td><%= jadwalUjian.durasiUjian %> Menit</td>
+                    <td><%= jadwalUjian.mulaiUjian %></td>
+                    <td><%= jadwalUjian.terlambatUjian %></td>
                     <td class="text-indigo-600 font-semibold"><%= jadwalUjian.token %></td>
                     <td>
                       <form action="/lecturer/jadwal-ujian/regenerate-token/<%= jadwalUjian._id %>?_method=PUT" method="post">
