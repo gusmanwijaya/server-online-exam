@@ -11,11 +11,9 @@ let hasilUjianSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Mahasiswa",
   },
-  listJawaban: [
-    {
-      type: String,
-    },
-  ],
+  listJawaban: {
+    type: String,
+  },
   jumlahBenar: {
     type: Number,
   },

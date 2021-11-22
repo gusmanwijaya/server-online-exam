@@ -1,4 +1,8 @@
 const Mahasiswa = require("../../models/mahasiswa");
+const JadwalUjian = require("../../models/jadwal-ujian");
+const HasilUjian = require("../../models/hasil-ujian");
+const BankSoal = require("../../models/bank-soal");
+const MataKuliah = require("../../models/mata-kuliah");
 
 const path = require("path");
 const fs = require("fs");
@@ -6,6 +10,7 @@ const config = require("../../config");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
 const { base64decode } = require("nodejs-base64");
+const dateAndTime = require("date-and-time");
 
 module.exports = {
   signIn: async (req, res, next) => {
@@ -69,12 +74,59 @@ module.exports = {
       next(error);
     }
   },
-  actionHasilUjian: async (req, res) => {
+  getJadwalUjian: async (req, res) => {
     try {
+      const matkulMahasiswa = await MataKuliah.find({
+        programStudi: req.mahasiswa.programStudi._id,
+      });
+
+      const jadwalUjian = await JadwalUjian.find({
+        mataKuliah: { $in: matkulMahasiswa },
+      })
+        .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+        .populate("mataKuliah", "_id nama", "MataKuliah");
+
+      res.status(200).json({
+        status: "success",
+        data: jadwalUjian,
+      });
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message,
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+      });
+    }
+  },
+  getSoalUjian: async (req, res) => {
+    try {
+      const { id } = req.params;
+      const { token } = req.body;
+
+      const jadwalUjian = await JadwalUjian.findOne({
+        _id: id,
+      });
+
+      if (jadwalUjian.token === token) {
+        const soalUjian = await BankSoal.find({
+          mataKuliah: jadwalUjian.mataKuliah._id,
+        })
+          .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+          .populate("mataKuliah", "_id nama", "MataKuliah");
+
+        res.status(200).json({
+          status: "success",
+          data: soalUjian,
+        });
+      } else {
+        res.status(400).json({
+          status: "error",
+          message: "Token yang Anda miliki tidak sesuai!",
+        });
+      }
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
