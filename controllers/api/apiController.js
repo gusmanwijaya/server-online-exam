@@ -106,22 +106,29 @@ module.exports = {
         _id: id,
       });
 
-      if (jadwalUjian.token === token) {
-        const soalUjian = await BankSoal.find({
-          mataKuliah: jadwalUjian.mataKuliah._id,
-        })
-          .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
-          .populate("mataKuliah", "_id nama", "MataKuliah");
-
-        res.status(200).json({
-          status: "success",
-          data: soalUjian,
+      if (!jadwalUjian) {
+        res.status(404).json({
+          status: "error",
+          message: "Jadwal ujian tidak ditemukan!",
         });
       } else {
-        res.status(400).json({
-          status: "error",
-          message: "Token yang Anda miliki tidak sesuai!",
-        });
+        if (jadwalUjian.token === token) {
+          const soalUjian = await BankSoal.find({
+            mataKuliah: jadwalUjian.mataKuliah._id,
+          })
+            .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+            .populate("mataKuliah", "_id nama", "MataKuliah");
+
+          res.status(200).json({
+            status: "success",
+            data: soalUjian,
+          });
+        } else {
+          res.status(400).json({
+            status: "error",
+            message: "Token yang Anda miliki tidak sesuai!",
+          });
+        }
       }
     } catch (error) {
       res.status(500).json({
