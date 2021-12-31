@@ -66,9 +66,9 @@
                             <label class="label" for="soal">
                               <span class="label-text font-semibold">Soal Ujian</span>
                             </label>
-                            <% if (bankSoal.soalGambar !== "") { %>
+                            <% if (bankSoal.soalGambar.message !== "") { %>
                               <img
-                                src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar %>"
+                                src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar.message %>"
                                 class="max-w-sm rounded-lg mb-4"
                                 alt="Soal Gambar"
                               />
@@ -166,9 +166,9 @@
                                 <label class="label" for="pilihanA">
                                   <span class="label-text font-semibold">Pilihan <%= abjad %></span>
                                 </label>
-                                <% if (bankSoal["pilihanGambar" + abjad] !== "") { %>
+                                <% if (bankSoal["pilihanGambar" + abjad].message !== "") { %>
                                   <img
-                                    src="<%= urlPilihanGambar %>/<%= bankSoal["pilihanGambar" + abjad] %>"
+                                    src="<%= urlPilihanGambar %>/<%= bankSoal["pilihanGambar" + abjad].message %>"
                                     class="max-w-sm rounded-lg mb-4"
                                     alt="Pilihan Gambar <%= abjad %>"
                                   />

@@ -32,7 +32,7 @@ let bankSoalSchema = mongoose.Schema({
     require: [true, "Bobot soal harus diisi!"],
   },
   soalGambar: {
-    type: String,
+    type: aesSchema,
   },
   soal: {
     type: aesSchema,
@@ -53,19 +53,19 @@ let bankSoalSchema = mongoose.Schema({
     type: aesSchema,
   },
   pilihanGambarA: {
-    type: String,
+    type: aesSchema,
   },
   pilihanGambarB: {
-    type: String,
+    type: aesSchema,
   },
   pilihanGambarC: {
-    type: String,
+    type: aesSchema,
   },
   pilihanGambarD: {
-    type: String,
+    type: aesSchema,
   },
   pilihanGambarE: {
-    type: String,
+    type: aesSchema,
   },
   kunciJawaban: {
     type: aesSchema,
@@ -82,6 +82,32 @@ let bankSoalSchema = mongoose.Schema({
 bankSoalSchema.pre("save", function (next) {
   let dateNow = new Date();
   const algorithm = "aes-256-cbc";
+
+  if (this.soalGambar.message !== "") {
+    // START: Enkripsi soalGambar dengan AES 256 mode CBC dan Base64
+    const ivSoalGambar = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keySoalGambar =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messageSoalGambar = this.soalGambar.message;
+
+    const cipherSoalGambar = crypto.createCipheriv(
+      algorithm,
+      keySoalGambar,
+      ivSoalGambar
+    );
+    let dataEncryptedSoalGambar = cipherSoalGambar.update(
+      messageSoalGambar,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedSoalGambar += cipherSoalGambar.final("hex");
+
+    this.soalGambar.iv = base64encode(ivSoalGambar);
+    this.soalGambar.key = base64encode(keySoalGambar);
+    this.soalGambar.message = base64encode(dataEncryptedSoalGambar);
+    // END: Enkripsi soalGambar dengan AES 256 mode CBC dan Base64
+  }
 
   if (this.soal.message !== "") {
     // START: Enkripsi soal dengan AES 256 mode CBC dan Base64
@@ -255,6 +281,136 @@ bankSoalSchema.pre("save", function (next) {
     this.kunciJawaban.key = base64encode(keyKunciJawaban);
     this.kunciJawaban.message = base64encode(dataEncryptedKunciJawaban);
     // END: Enkripsi kunciJawaban dengan AES 256 mode CBC dan Base64
+  }
+
+  if (this.pilihanGambarA.message !== "") {
+    // START: Enkripsi pilihanGambarA dengan AES 256 mode CBC dan Base64
+    const ivPilihanGambarA = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keyPilihanGambarA =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messagePilihanGambarA = this.pilihanGambarA.message;
+
+    const cipherPilihanGambarA = crypto.createCipheriv(
+      algorithm,
+      keyPilihanGambarA,
+      ivPilihanGambarA
+    );
+    let dataEncryptedPilihanGambarA = cipherPilihanGambarA.update(
+      messagePilihanGambarA,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedPilihanGambarA += cipherPilihanGambarA.final("hex");
+
+    this.pilihanGambarA.iv = base64encode(ivPilihanGambarA);
+    this.pilihanGambarA.key = base64encode(keyPilihanGambarA);
+    this.pilihanGambarA.message = base64encode(dataEncryptedPilihanGambarA);
+    // END: Enkripsi pilihanGambarA dengan AES 256 mode CBC dan Base64
+  }
+
+  if (this.pilihanGambarB.message !== "") {
+    // START: Enkripsi pilihanGambarB dengan AES 256 mode CBC dan Base64
+    const ivPilihanGambarB = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keyPilihanGambarB =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messagePilihanGambarB = this.pilihanGambarB.message;
+
+    const cipherPilihanGambarB = crypto.createCipheriv(
+      algorithm,
+      keyPilihanGambarB,
+      ivPilihanGambarB
+    );
+    let dataEncryptedPilihanGambarB = cipherPilihanGambarB.update(
+      messagePilihanGambarB,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedPilihanGambarB += cipherPilihanGambarB.final("hex");
+
+    this.pilihanGambarB.iv = base64encode(ivPilihanGambarB);
+    this.pilihanGambarB.key = base64encode(keyPilihanGambarB);
+    this.pilihanGambarB.message = base64encode(dataEncryptedPilihanGambarB);
+    // END: Enkripsi pilihanGambarB dengan AES 256 mode CBC dan Base64
+  }
+
+  if (this.pilihanGambarC.message !== "") {
+    // START: Enkripsi pilihanGambarC dengan AES 256 mode CBC dan Base64
+    const ivPilihanGambarC = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keyPilihanGambarC =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messagePilihanGambarC = this.pilihanGambarC.message;
+
+    const cipherPilihanGambarC = crypto.createCipheriv(
+      algorithm,
+      keyPilihanGambarC,
+      ivPilihanGambarC
+    );
+    let dataEncryptedPilihanGambarC = cipherPilihanGambarC.update(
+      messagePilihanGambarC,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedPilihanGambarC += cipherPilihanGambarC.final("hex");
+
+    this.pilihanGambarC.iv = base64encode(ivPilihanGambarC);
+    this.pilihanGambarC.key = base64encode(keyPilihanGambarC);
+    this.pilihanGambarC.message = base64encode(dataEncryptedPilihanGambarC);
+    // END: Enkripsi pilihanGambarC dengan AES 256 mode CBC dan Base64
+  }
+
+  if (this.pilihanGambarD.message !== "") {
+    // START: Enkripsi pilihanGambarD dengan AES 256 mode CBC dan Base64
+    const ivPilihanGambarD = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keyPilihanGambarD =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messagePilihanGambarD = this.pilihanGambarD.message;
+
+    const cipherPilihanGambarD = crypto.createCipheriv(
+      algorithm,
+      keyPilihanGambarD,
+      ivPilihanGambarD
+    );
+    let dataEncryptedPilihanGambarD = cipherPilihanGambarD.update(
+      messagePilihanGambarD,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedPilihanGambarD += cipherPilihanGambarD.final("hex");
+
+    this.pilihanGambarD.iv = base64encode(ivPilihanGambarD);
+    this.pilihanGambarD.key = base64encode(keyPilihanGambarD);
+    this.pilihanGambarD.message = base64encode(dataEncryptedPilihanGambarD);
+    // END: Enkripsi pilihanGambarD dengan AES 256 mode CBC dan Base64
+  }
+
+  if (this.pilihanGambarE.message !== "") {
+    // START: Enkripsi pilihanGambarE dengan AES 256 mode CBC dan Base64
+    const ivPilihanGambarE = randomString.generate(16); //Harus 16 bytes atau setara 16 karakter
+    const keyPilihanGambarE =
+      Math.floor(dateNow.getTime() / 1000).toString() +
+      randomString.generate(22); //Harus 32 bytes atau setara 32 karakter
+    const messagePilihanGambarE = this.pilihanGambarE.message;
+
+    const cipherPilihanGambarE = crypto.createCipheriv(
+      algorithm,
+      keyPilihanGambarE,
+      ivPilihanGambarE
+    );
+    let dataEncryptedPilihanGambarE = cipherPilihanGambarE.update(
+      messagePilihanGambarE,
+      "utf-8",
+      "hex"
+    );
+    dataEncryptedPilihanGambarE += cipherPilihanGambarE.final("hex");
+
+    this.pilihanGambarE.iv = base64encode(ivPilihanGambarE);
+    this.pilihanGambarE.key = base64encode(keyPilihanGambarE);
+    this.pilihanGambarE.message = base64encode(dataEncryptedPilihanGambarE);
+    // END: Enkripsi pilihanGambarE dengan AES 256 mode CBC dan Base64
   }
 
   next();

@@ -153,7 +153,9 @@ module.exports = {
         dosen: payload.data._id,
         mataKuliah: id,
         bobot,
-        soalGambar: "",
+        soalGambar: {
+          message: "",
+        },
         soal: {
           message: "",
         },
@@ -172,11 +174,21 @@ module.exports = {
         pilihanE: {
           message: "",
         },
-        pilihanGambarA: "",
-        pilihanGambarB: "",
-        pilihanGambarC: "",
-        pilihanGambarD: "",
-        pilihanGambarE: "",
+        pilihanGambarA: {
+          message: "",
+        },
+        pilihanGambarB: {
+          message: "",
+        },
+        pilihanGambarC: {
+          message: "",
+        },
+        pilihanGambarD: {
+          message: "",
+        },
+        pilihanGambarE: {
+          message: "",
+        },
         kunciJawaban: {
           message: "",
         },
@@ -185,7 +197,7 @@ module.exports = {
       if (soal === "" && !req.files["soalGambar"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Soal ujian harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (soal !== "") {
           newBankSoal.soal.message = soal.replace(/(<([^>]+)>)/gi, "");
@@ -208,14 +220,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.soalGambar = fileName;
+          newBankSoal.soalGambar.message = fileName;
         }
       }
 
       if (pilihanA === "" && !req.files["pilihanGambarA"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Pilihan jawaban A harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (pilihanA !== "") {
           newBankSoal.pilihanA.message = pilihanA.replace(/(<([^>]+)>)/gi, "");
@@ -238,14 +250,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.pilihanGambarA = fileName;
+          newBankSoal.pilihanGambarA.message = fileName;
         }
       }
 
       if (pilihanB === "" && !req.files["pilihanGambarB"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Pilihan jawaban B harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (pilihanB !== "") {
           newBankSoal.pilihanB.message = pilihanB.replace(/(<([^>]+)>)/gi, "");
@@ -268,14 +280,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.pilihanGambarB = fileName;
+          newBankSoal.pilihanGambarB.message = fileName;
         }
       }
 
       if (pilihanC === "" && !req.files["pilihanGambarC"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Pilihan jawaban C harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (pilihanC !== "") {
           newBankSoal.pilihanC.message = pilihanC.replace(/(<([^>]+)>)/gi, "");
@@ -298,14 +310,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.pilihanGambarC = fileName;
+          newBankSoal.pilihanGambarC.message = fileName;
         }
       }
 
       if (pilihanD === "" && !req.files["pilihanGambarD"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Pilihan jawaban D harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (pilihanD !== "") {
           newBankSoal.pilihanD.message = pilihanD.replace(/(<([^>]+)>)/gi, "");
@@ -328,14 +340,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.pilihanGambarD = fileName;
+          newBankSoal.pilihanGambarD.message = fileName;
         }
       }
 
       if (pilihanE === "" && !req.files["pilihanGambarE"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Pilihan jawaban E harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         if (pilihanE !== "") {
           newBankSoal.pilihanE.message = pilihanE.replace(/(<([^>]+)>)/gi, "");
@@ -358,14 +370,14 @@ module.exports = {
           const dest = fs.createWriteStream(targetPath);
 
           src.pipe(dest);
-          newBankSoal.pilihanGambarE = fileName;
+          newBankSoal.pilihanGambarE.message = fileName;
         }
       }
 
       if (kunciJawaban === "") {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Kunci jawaban ujian harus diisi!`);
-        res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+        res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
       } else {
         newBankSoal.kunciJawaban.message = kunciJawaban.replace(
           /(<([^>]+)>)/gi,
@@ -381,7 +393,7 @@ module.exports = {
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect(`/lecturer/bank-soal/${idMatkul}/edit-soal/${idSoal}`);
+      res.redirect(`/lecturer/bank-soal/${id}/create-soal`);
     }
   },
   detailSoal: async (req, res) => {
@@ -430,6 +442,27 @@ module.exports = {
         bankSoal.soal.message = decryptedSoal;
       }
 
+      if (bankSoal.soalGambar.message !== "") {
+        let ivSoalGambar = base64decode(bankSoal.soalGambar.iv);
+        let keySoalGambar = base64decode(bankSoal.soalGambar.key);
+        let messageSoalGambar = base64decode(bankSoal.soalGambar.message);
+
+        let decipherSoalGambar = crypto.createDecipheriv(
+          algorithm,
+          keySoalGambar,
+          ivSoalGambar
+        );
+        let dataDecryptedSoalGambar = decipherSoalGambar.update(
+          messageSoalGambar,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoalGambar =
+          dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
+
+        bankSoal.soalGambar.message = decryptedSoalGambar;
+      }
+
       abjads.forEach((abjad) => {
         if (bankSoal["pilihan" + abjad].message !== "") {
           let ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
@@ -452,6 +485,33 @@ module.exports = {
             dataDecryptedPilihan + decipherPilihan.final("utf-8");
 
           bankSoal["pilihan" + abjad].message = decryptedPilihan;
+        }
+
+        if (bankSoal["pilihanGambar" + abjad].message !== "") {
+          let ivPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].iv
+          );
+          let keyPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].key
+          );
+          let messagePilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].message
+          );
+
+          let decipherPilihanGambar = crypto.createDecipheriv(
+            algorithm,
+            keyPilihanGambar,
+            ivPilihanGambar
+          );
+          let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
+            messagePilihanGambar,
+            "hex",
+            "utf-8"
+          );
+          let decryptedPilihanGambar =
+            dataDecryptedPilihanGambar + decipherPilihanGambar.final("utf-8");
+
+          bankSoal["pilihanGambar" + abjad].message = decryptedPilihanGambar;
         }
       });
 
@@ -540,6 +600,27 @@ module.exports = {
         bankSoal.soal.message = decryptedSoal;
       }
 
+      if (bankSoal.soalGambar.message !== "") {
+        let ivSoalGambar = base64decode(bankSoal.soalGambar.iv);
+        let keySoalGambar = base64decode(bankSoal.soalGambar.key);
+        let messageSoalGambar = base64decode(bankSoal.soalGambar.message);
+
+        let decipherSoalGambar = crypto.createDecipheriv(
+          algorithm,
+          keySoalGambar,
+          ivSoalGambar
+        );
+        let dataDecryptedSoalGambar = decipherSoalGambar.update(
+          messageSoalGambar,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoalGambar =
+          dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
+
+        bankSoal.soalGambar.message = decryptedSoalGambar;
+      }
+
       abjads.forEach((abjad) => {
         if (bankSoal["pilihan" + abjad].message !== "") {
           let ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
@@ -562,6 +643,33 @@ module.exports = {
             dataDecryptedPilihan + decipherPilihan.final("utf-8");
 
           bankSoal["pilihan" + abjad].message = decryptedPilihan;
+        }
+
+        if (bankSoal["pilihanGambar" + abjad].message !== "") {
+          let ivPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].iv
+          );
+          let keyPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].key
+          );
+          let messagePilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].message
+          );
+
+          let decipherPilihanGambar = crypto.createDecipheriv(
+            algorithm,
+            keyPilihanGambar,
+            ivPilihanGambar
+          );
+          let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
+            messagePilihanGambar,
+            "hex",
+            "utf-8"
+          );
+          let decryptedPilihanGambar =
+            dataDecryptedPilihanGambar + decipherPilihanGambar.final("utf-8");
+
+          bankSoal["pilihanGambar" + abjad].message = decryptedPilihanGambar;
         }
       });
 
@@ -625,6 +733,119 @@ module.exports = {
         .populate("dosen")
         .populate("mataKuliah");
 
+      const abjads = ["A", "B", "C", "D", "E"];
+      const algorithm = "aes-256-cbc";
+
+      if (bankSoal.soal.message !== "") {
+        let ivSoal = base64decode(bankSoal.soal.iv);
+        let keySoal = base64decode(bankSoal.soal.key);
+        let messageSoal = base64decode(bankSoal.soal.message);
+
+        let decipherSoal = crypto.createDecipheriv(algorithm, keySoal, ivSoal);
+        let dataDecryptedSoal = decipherSoal.update(
+          messageSoal,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
+
+        bankSoal.soal.message = decryptedSoal;
+      }
+
+      if (bankSoal.soalGambar.message !== "") {
+        let ivSoalGambar = base64decode(bankSoal.soalGambar.iv);
+        let keySoalGambar = base64decode(bankSoal.soalGambar.key);
+        let messageSoalGambar = base64decode(bankSoal.soalGambar.message);
+
+        let decipherSoalGambar = crypto.createDecipheriv(
+          algorithm,
+          keySoalGambar,
+          ivSoalGambar
+        );
+        let dataDecryptedSoalGambar = decipherSoalGambar.update(
+          messageSoalGambar,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoalGambar =
+          dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
+
+        bankSoal.soalGambar.message = decryptedSoalGambar;
+      }
+
+      abjads.forEach((abjad) => {
+        if (bankSoal["pilihan" + abjad].message !== "") {
+          let ivPilihan = base64decode(bankSoal["pilihan" + abjad].iv);
+          let keyPilihan = base64decode(bankSoal["pilihan" + abjad].key);
+          let messagePilihan = base64decode(
+            bankSoal["pilihan" + abjad].message
+          );
+
+          let decipherPilihan = crypto.createDecipheriv(
+            algorithm,
+            keyPilihan,
+            ivPilihan
+          );
+          let dataDecryptedPilihan = decipherPilihan.update(
+            messagePilihan,
+            "hex",
+            "utf-8"
+          );
+          let decryptedPilihan =
+            dataDecryptedPilihan + decipherPilihan.final("utf-8");
+
+          bankSoal["pilihan" + abjad].message = decryptedPilihan;
+        }
+
+        if (bankSoal["pilihanGambar" + abjad].message !== "") {
+          let ivPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].iv
+          );
+          let keyPilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].key
+          );
+          let messagePilihanGambar = base64decode(
+            bankSoal["pilihanGambar" + abjad].message
+          );
+
+          let decipherPilihanGambar = crypto.createDecipheriv(
+            algorithm,
+            keyPilihanGambar,
+            ivPilihanGambar
+          );
+          let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
+            messagePilihanGambar,
+            "hex",
+            "utf-8"
+          );
+          let decryptedPilihanGambar =
+            dataDecryptedPilihanGambar + decipherPilihanGambar.final("utf-8");
+
+          bankSoal["pilihanGambar" + abjad].message = decryptedPilihanGambar;
+        }
+      });
+
+      if (bankSoal.kunciJawaban.message !== "") {
+        let ivKunciJawaban = base64decode(bankSoal.kunciJawaban.iv);
+        let keyKunciJawaban = base64decode(bankSoal.kunciJawaban.key);
+        let messageKunciJawaban = base64decode(bankSoal.kunciJawaban.message);
+
+        let decipherKunciJawaban = crypto.createDecipheriv(
+          algorithm,
+          keyKunciJawaban,
+          ivKunciJawaban
+        );
+        let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
+          messageKunciJawaban,
+          "hex",
+          "utf-8"
+        );
+        let decryptedKunciJawaban =
+          dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+
+        bankSoal.kunciJawaban.message = decryptedKunciJawaban;
+      }
+
       if (soal === "" && !req.files["soalGambar"]) {
         req.flash("alertStatus", "error");
         req.flash("alertMessage", `Soal ujian harus diisi!`);
@@ -650,12 +871,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/soal-gambar/${bankSoal.soalGambar}`;
+          let currentImage = `${config.rootPath}/public/uploads/soal-gambar/${bankSoal.soalGambar.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.soalGambar = fileName;
+          bankSoal.soalGambar.message = fileName;
         }
       }
 
@@ -688,12 +909,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarA}`;
+          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarA.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.pilihanGambarA = fileName;
+          bankSoal.pilihanGambarA.message = fileName;
         }
       }
 
@@ -726,12 +947,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarB}`;
+          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarB.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.pilihanGambarB = fileName;
+          bankSoal.pilihanGambarB.message = fileName;
         }
       }
 
@@ -764,12 +985,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarC}`;
+          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarC.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.pilihanGambarC = fileName;
+          bankSoal.pilihanGambarC.message = fileName;
         }
       }
 
@@ -802,12 +1023,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarD}`;
+          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarD.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.pilihanGambarD = fileName;
+          bankSoal.pilihanGambarD.message = fileName;
         }
       }
 
@@ -840,12 +1061,12 @@ module.exports = {
           const src = fs.createReadStream(filePath);
           const dest = fs.createWriteStream(targetPath);
 
-          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarE}`;
+          let currentImage = `${config.rootPath}/public/uploads/pilihan-gambar/${bankSoal.pilihanGambarE.message}`;
           if (fs.existsSync(currentImage)) {
             fs.unlinkSync(currentImage);
           }
           src.pipe(dest);
-          bankSoal.pilihanGambarE = fileName;
+          bankSoal.pilihanGambarE.message = fileName;
         }
       }
 
@@ -902,22 +1123,70 @@ module.exports = {
         let currentImageSoalGambar = "";
         let currentImagePilihanGambar = "";
         const abjads = ["A", "B", "C", "D", "E"];
+        const algorithm = "aes-256-cbc";
 
         const bankSoals = await BankSoal.find({ _id: { $in: idArray } });
+
         bankSoals.forEach((bankSoal) => {
-          if (bankSoal.soalGambar !== "") {
-            currentImageSoalGambar = `${config.rootPath}/public/uploads/soal-gambar/${bankSoal.soalGambar}`;
+          if (bankSoal.soalGambar.message !== "") {
+            let ivSoalGambar = base64decode(bankSoal.soalGambar.iv);
+            let keySoalGambar = base64decode(bankSoal.soalGambar.key);
+            let messageSoalGambar = base64decode(bankSoal.soalGambar.message);
+
+            let decipherSoalGambar = crypto.createDecipheriv(
+              algorithm,
+              keySoalGambar,
+              ivSoalGambar
+            );
+            let dataDecryptedSoalGambar = decipherSoalGambar.update(
+              messageSoalGambar,
+              "hex",
+              "utf-8"
+            );
+            let decryptedSoalGambar =
+              dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
+
+            bankSoal.soalGambar.message = decryptedSoalGambar;
+
+            currentImageSoalGambar = `${config.rootPath}/public/uploads/soal-gambar/${bankSoal.soalGambar.message}`;
             if (fs.existsSync(currentImageSoalGambar)) {
               fs.unlinkSync(currentImageSoalGambar);
             }
           }
 
           abjads.forEach((abjad) => {
-            if (bankSoal["pilihanGambar" + abjad] !== "") {
+            if (bankSoal["pilihanGambar" + abjad].message !== "") {
+              let ivPilihanGambar = base64decode(
+                bankSoal["pilihanGambar" + abjad].iv
+              );
+              let keyPilihanGambar = base64decode(
+                bankSoal["pilihanGambar" + abjad].key
+              );
+              let messagePilihanGambar = base64decode(
+                bankSoal["pilihanGambar" + abjad].message
+              );
+
+              let decipherPilihanGambar = crypto.createDecipheriv(
+                algorithm,
+                keyPilihanGambar,
+                ivPilihanGambar
+              );
+              let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
+                messagePilihanGambar,
+                "hex",
+                "utf-8"
+              );
+              let decryptedPilihanGambar =
+                dataDecryptedPilihanGambar +
+                decipherPilihanGambar.final("utf-8");
+
+              bankSoal["pilihanGambar" + abjad].message =
+                decryptedPilihanGambar;
+
               currentImagePilihanGambar = `${
                 config.rootPath
               }/public/uploads/pilihan-gambar/${
-                bankSoal["pilihanGambar" + abjad]
+                bankSoal["pilihanGambar" + abjad].message
               }`;
               if (fs.existsSync(currentImagePilihanGambar)) {
                 fs.unlinkSync(currentImagePilihanGambar);

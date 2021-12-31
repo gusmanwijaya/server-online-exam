@@ -74,24 +74,28 @@
           <!-- START: Content -->
           <div class="hero min-h-screen">
             <div class="flex-col hero-content lg:flex-row-reverse">
-              <% if (bankSoal.soalGambar !== "" && bankSoal.pilihanGambarA ===
-              "" && bankSoal.pilihanGambarB === "" && bankSoal.pilihanGambarC
-              === "" && bankSoal.pilihanGambarD === "" &&
-              bankSoal.pilihanGambarE === "") { %>
+              <% if (bankSoal.soalGambar.message !== "" &&
+              bankSoal.pilihanGambarA.message === "" &&
+              bankSoal.pilihanGambarB.message === "" &&
+              bankSoal.pilihanGambarC.message === "" &&
+              bankSoal.pilihanGambarD.message === "" &&
+              bankSoal.pilihanGambarE.message === "") { %>
               <img
-                src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar %>"
+                src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar.message %>"
                 class="max-w-sm rounded-lg shadow-2xl"
                 alt="Soal Gambar"
               />
               <% } %>
               <div>
-                <% if (bankSoal.soalGambar !== "" && bankSoal.pilihanGambarA !==
-                "" && bankSoal.pilihanGambarB !== "" && bankSoal.pilihanGambarC
-                !== "" && bankSoal.pilihanGambarD !== "" &&
-                bankSoal.pilihanGambarE !== "") { %>
+                <% if (bankSoal.soalGambar.message !== "" &&
+                bankSoal.pilihanGambarA.message !== "" &&
+                bankSoal.pilihanGambarB.message !== "" &&
+                bankSoal.pilihanGambarC.message !== "" &&
+                bankSoal.pilihanGambarD.message !== "" &&
+                bankSoal.pilihanGambarE.message !== "") { %>
                 <div class="flex flex-col justify-center items-center mb-20">
                   <img
-                    src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar %>"
+                    src="<%= urlSoalGambar %>/<%= bankSoal.soalGambar.message %>"
                     class="max-w-sm rounded-lg shadow-2xl mb-5"
                     alt="Soal Gambar"
                   />
@@ -101,12 +105,12 @@
                 </div>
                 <% abjads.forEach(abjad => { %>
                 <p class="mb-5 space-y-3">
-                  <%= abjad %>. &emsp; <% if (bankSoal["pilihanGambar" + abjad]
-                  !== "") { %> <%= bankSoal["pilihan" + abjad].message %> <img
-                  src="<%= urlPilihanGambar %>/<%= bankSoal["pilihanGambar" +
-                  abjad] %>" class="max-w-sm rounded-lg shadow-2xl mt-2"
-                  alt="Pilihan Jawaban" /> <% } else { %> <%= bankSoal["pilihan"
-                  + abjad].message %> <% } %>
+                  <%= abjad %>. &emsp; <% if (bankSoal["pilihanGambar" +
+                  abjad].message !== "") { %> <%= bankSoal["pilihan" +
+                  abjad].message %> <img src="<%= urlPilihanGambar %>/<%=
+                  bankSoal["pilihanGambar" + abjad].message %>" class="max-w-sm
+                  rounded-lg shadow-2xl mt-2" alt="Pilihan Jawaban" /> <% } else
+                  { %> <%= bankSoal["pilihan" + abjad].message %> <% } %>
                 </p>
                 <% }) %>
                 <p>
@@ -121,12 +125,12 @@
                 </h1>
                 <% abjads.forEach(abjad => { %>
                 <p class="mb-5">
-                  <%= abjad %>. &emsp; <% if (bankSoal["pilihanGambar" + abjad]
-                  !== "") { %> <%= bankSoal["pilihan" + abjad].message %> <img
-                  src="<%= urlPilihanGambar %>/<%= bankSoal["pilihanGambar" +
-                  abjad] %>" class="max-w-sm rounded-lg shadow-2xl mt-2"
-                  alt="Pilihan Jawaban" /> <% } else { %> <%= bankSoal["pilihan"
-                  + abjad].message %> <% } %>
+                  <%= abjad %>. &emsp; <% if (bankSoal["pilihanGambar" +
+                  abjad].message !== "") { %> <%= bankSoal["pilihan" +
+                  abjad].message %> <img src="<%= urlPilihanGambar %>/<%=
+                  bankSoal["pilihanGambar" + abjad].message %>" class="max-w-sm
+                  rounded-lg shadow-2xl mt-2" alt="Pilihan Jawaban" /> <% } else
+                  { %> <%= bankSoal["pilihan" + abjad].message %> <% } %>
                 </p>
                 <% }) %>
                 <p>

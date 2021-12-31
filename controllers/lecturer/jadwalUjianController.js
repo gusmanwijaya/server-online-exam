@@ -195,20 +195,29 @@ module.exports = {
               );
               res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
             } else {
-              await JadwalUjian.create({
-                dosen: payload.data._id,
-                mataKuliah,
-                namaUjian,
-                jumlahSoal,
-                durasiUjian,
-                mulaiUjian: formatMulaiUjian,
-                terlambatUjian: formatTerlambatUjian,
-                token: tokenUjian.toUpperCase(),
-              });
+              if (timeMulaiUjian > timeTerlambatUjian) {
+                req.flash("alertStatus", "error");
+                req.flash(
+                  "alertMessage",
+                  `Waktu terlambat ujian kurang dari waktu mulai ujian!`
+                );
+                res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
+              } else {
+                await JadwalUjian.create({
+                  dosen: payload.data._id,
+                  mataKuliah,
+                  namaUjian,
+                  jumlahSoal,
+                  durasiUjian,
+                  mulaiUjian: formatMulaiUjian,
+                  terlambatUjian: formatTerlambatUjian,
+                  token: tokenUjian.toUpperCase(),
+                });
 
-              req.flash("alertStatus", "success");
-              req.flash("alertMessage", `Jadwal ujian berhasil ditambahkan!`);
-              res.redirect("/lecturer/jadwal-ujian");
+                req.flash("alertStatus", "success");
+                req.flash("alertMessage", `Jadwal ujian berhasil ditambahkan!`);
+                res.redirect("/lecturer/jadwal-ujian");
+              }
             }
           }
         }
