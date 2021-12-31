@@ -124,7 +124,7 @@ module.exports = {
         if (dateNow < mulaiUjian) {
           res.status(403).json({
             status: "error",
-            message: "Belum waktunya untuk ujian, mohon tunggu dan bersabar!",
+            message: "Ujian belum mulai, mohon tunggu dan bersabar!",
           });
         } else {
           if (dateNow > terlambatUjian) {
