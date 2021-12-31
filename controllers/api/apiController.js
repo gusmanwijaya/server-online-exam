@@ -112,22 +112,45 @@ module.exports = {
           message: "Jadwal ujian tidak ditemukan!",
         });
       } else {
-        if (jadwalUjian.token === token) {
-          const soalUjian = await BankSoal.find({
-            mataKuliah: jadwalUjian.mataKuliah._id,
-          })
-            .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
-            .populate("mataKuliah", "_id nama", "MataKuliah");
-
-          res.status(200).json({
-            status: "success",
-            data: soalUjian,
+        let dateNow = new Date();
+        const terlambatUjian = dateAndTime.parse(
+          jadwalUjian.terlambatUjian,
+          "DD-MM-YYYY HH:mm"
+        );
+        const mulaiUjian = dateAndTime.parse(
+          jadwalUjian.mulaiUjian,
+          "DD-MM-YYYY HH:mm"
+        );
+        if (dateNow < mulaiUjian) {
+          res.status(403).json({
+            status: "error",
+            message: "Belum waktunya untuk ujian, mohon tunggu dan bersabar!",
           });
         } else {
-          res.status(400).json({
-            status: "error",
-            message: "Token yang Anda miliki tidak sesuai!",
-          });
+          if (dateNow > terlambatUjian) {
+            res.status(403).json({
+              status: "error",
+              message: "Maaf, Anda terlambat dan tidak bisa mengikuti ujian!",
+            });
+          } else {
+            if (jadwalUjian.token === token) {
+              const soalUjians = await BankSoal.find({
+                mataKuliah: jadwalUjian.mataKuliah._id,
+              })
+                .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+                .populate("mataKuliah", "_id nama", "MataKuliah");
+
+              res.status(200).json({
+                status: "success",
+                data: soalUjians,
+              });
+            } else {
+              res.status(400).json({
+                status: "error",
+                message: "Token yang Anda miliki tidak sesuai!",
+              });
+            }
+          }
         }
       }
     } catch (error) {

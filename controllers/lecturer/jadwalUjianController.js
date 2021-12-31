@@ -175,9 +175,9 @@ module.exports = {
           );
           res.redirect("/lecturer/jadwal-ujian/create-jadwal-ujian");
         } else {
-          const timeDateNow = new Date().getTime();
-          const timeMulaiUjian = new Date(mulaiUjian).getTime();
-          const timeTerlambatUjian = new Date(terlambatUjian).getTime();
+          let timeDateNow = new Date();
+          const timeMulaiUjian = new Date(mulaiUjian);
+          const timeTerlambatUjian = new Date(terlambatUjian);
 
           if (timeDateNow > timeMulaiUjian) {
             req.flash("alertStatus", "error");
