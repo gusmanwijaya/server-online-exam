@@ -97,6 +97,25 @@ module.exports = {
       });
     }
   },
+  getDetailJadwalUjian: async (req, res) => {
+    try {
+      const { id } = req.params;
+
+      const jadwalUjian = await JadwalUjian.findOne({ _id: id })
+        .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+        .populate("mataKuliah", "_id nama", "MataKuliah");
+
+      res.status(200).json({
+        status: "success",
+        data: jadwalUjian,
+      });
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+      });
+    }
+  },
   getSoalUjian: async (req, res) => {
     try {
       const { id } = req.params;

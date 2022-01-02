@@ -23,11 +23,6 @@ let hasilUjianSchema = mongoose.Schema({
   tanggalSelesai: {
     type: String,
   },
-  status: {
-    type: String,
-    enum: ["N", "Y"],
-    default: "N",
-  },
   createdAt: {
     type: String,
     default: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
