@@ -20,7 +20,10 @@ let hasilUjianSchema = mongoose.Schema({
   nilai: {
     type: Number,
   },
-  tanggalSelesai: {
+  masuk: {
+    type: String,
+  },
+  selesai: {
     type: String,
   },
   createdAt: {
