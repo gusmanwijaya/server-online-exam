@@ -24,7 +24,7 @@ let dosenSchema = mongoose.Schema({
   },
   nip: {
     type: String,
-    require: [true, "NPM dosen harus diisi!"],
+    require: [true, "NIP dosen harus diisi!"],
     unique: true,
   },
   email: {

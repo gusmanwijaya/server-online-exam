@@ -186,12 +186,13 @@ module.exports = {
 
       const { id } = req.params;
 
-      const { jenisKelamin, mataKuliah } = req.body;
+      const { jenisKelamin, programStudi, mataKuliah } = req.body;
 
       await Dosen.findOneAndUpdate(
         { _id: id },
         {
           jenisKelamin,
+          programStudi,
           mataKuliah,
           updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
         }
