@@ -54,7 +54,7 @@ module.exports = {
             } else {
               res.status(400).json({
                 status: "error",
-                message: "Password Anda salah!",
+                message: "Kata sandi Anda salah!",
               });
             }
           } else {
