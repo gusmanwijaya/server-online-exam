@@ -3,6 +3,7 @@ const { base64encode } = require("nodejs-base64");
 const dateAndTime = require("date-and-time");
 const crypto = require("crypto");
 const randomString = require("randomstring");
+const random = require("mongoose-simple-random");
 let dateNow = new Date();
 
 let aesSchema = mongoose.Schema({
@@ -415,5 +416,7 @@ bankSoalSchema.pre("save", function (next) {
 
   next();
 });
+
+bankSoalSchema.plugin(random);
 
 module.exports = mongoose.model("BankSoal", bankSoalSchema);
