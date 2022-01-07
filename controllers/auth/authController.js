@@ -78,7 +78,7 @@ module.exports = {
           }
         } else {
           req.flash("alertStatus", "error");
-          req.flash("alertMessage", `Password Anda salah!`);
+          req.flash("alertMessage", `Kata sandi Anda salah!`);
           res.redirect("/sign-in");
         }
       } else if (dosen) {
@@ -112,7 +112,7 @@ module.exports = {
           }
         } else {
           req.flash("alertStatus", "error");
-          req.flash("alertMessage", `Password Anda salah!`);
+          req.flash("alertMessage", `Kata sandi Anda salah!`);
           res.redirect("/sign-in");
         }
       } else {
@@ -144,7 +144,7 @@ module.exports = {
       if (req.session.user === null || req.session.user === undefined) {
         res.render("auth/lupa-password", {
           alert,
-          title: "Lupa Password",
+          title: "Lupa Kata Sandi",
         });
       } else {
         const payload = jwt_decode(base64decode(req.session.user.token));
@@ -203,7 +203,7 @@ module.exports = {
         const mailOptions = {
           from: `"Ujian Online 🖥️" <noreplay.onlineexams@gmail.com>`,
           to: `${email}`,
-          subject: "LUPA PASSWORD - Website Ujian Online",
+          subject: "LUPA KATA SANDI - Website Ujian Online",
           text: `Jangan berikan kode OTP kepada siapa pun, kode OTP: ${base64decode(
             dataLocalStorage.OTP
           )}. Kode OTP berlaku selama 2 menit`,
@@ -302,8 +302,8 @@ module.exports = {
           const mailOptions = {
             from: `"Ujian Online 🖥️" <noreplay.onlineexams@gmail.com>`,
             to: `${user.email}`,
-            subject: "PASSWORD AKUN ANDA - Website Ujian Online",
-            text: `Selamat, password Anda dapat kami temukan, jagalah kerahasiaan password Anda, jangan pernah berikan password ke siapa pun. Password Anda : ${decrypted}`,
+            subject: "KATA SANDI AKUN ANDA - Website Ujian Online",
+            text: `Selamat, kata sandi Anda dapat kami temukan, jagalah kerahasiaan kata sandi Anda, jangan pernah berikan kata sandi ke siapa pun. Kata sandi Anda : ${decrypted}`,
           };
 
           transporter.sendMail(mailOptions, function (error, info) {
@@ -317,7 +317,7 @@ module.exports = {
           req.flash("alertStatus", "success");
           req.flash(
             "alertMessage",
-            `Selamat, kami telah mengirimkan password Anda ke email : ${user.email}`
+            `Selamat, kami telah mengirimkan kata sandi Anda ke email : ${user.email}`
           );
           res.redirect(`/sign-in`);
           localStorage.clear();
