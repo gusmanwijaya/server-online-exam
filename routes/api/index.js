@@ -18,9 +18,9 @@ router.post("/sign-in", signIn);
 
 router.use(isMahasiswa);
 router.get("/jadwal-ujian", getJadwalUjian);
-router.get("/jadwal-ujian/:id", getDetailJadwalUjian);
-router.get("/:id/token-ujian", getTokenUjian);
-router.get("/:id/soal-ujian", getSoalUjian);
-router.get("/soal-ujian/:id", getOneSoalUjian);
+router.get("/jadwal-ujian/:idUjian", getDetailJadwalUjian);
+router.get("/:idUjian/token-ujian", getTokenUjian);
+router.get("/:idUjian/soal-ujian", getSoalUjian);
+router.get("/one-soal-ujian", getOneSoalUjian);
 
 module.exports = router;

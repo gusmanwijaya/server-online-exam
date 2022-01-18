@@ -29,10 +29,8 @@
                 </svg> Tambah
               </button> 
             </a>
-
             <% include ./delete_modal.ejs %>
           </div>
-
           <div class="overflow-x-auto mt-6">
             <table
               id="tableJadwalUjian"
@@ -114,12 +112,10 @@
           .responsive.recalc();
         // END: Show datatable
       });
-
       // START: Delete checkbox or multiple data
       var valueList = document.getElementById("valueList");
       var listArray = [];
       var checkboxes = document.querySelectorAll(".checkbox");
-
       for (var checkbox of checkboxes) {
         checkbox.addEventListener("click", function () {
           if(this.checked == true) {
