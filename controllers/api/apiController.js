@@ -562,4 +562,61 @@ module.exports = {
       });
     }
   },
+  getKunciJawaban: async (req, res) => {
+    try {
+      const { q } = req.query;
+
+      if (!q) {
+        res.status(400).json({
+          status: "error",
+          message: "Anda tidak memasukkan query params!",
+        });
+      } else {
+        const jawabanUjian = await BankSoal.find({
+          _id: { $in: q },
+        }).select("_id kunciJawaban");
+
+        let algorithm = "aes-256-cbc";
+
+        jawabanUjian.forEach((jwbUjian) => {
+          if (jwbUjian.kunciJawaban.message !== "") {
+            let ivKunciJawaban = base64decode(jwbUjian.kunciJawaban.iv);
+            let keyKunciJawaban = base64decode(jwbUjian.kunciJawaban.key);
+            let messageKunciJawaban = base64decode(
+              jwbUjian.kunciJawaban.message
+            );
+
+            let decipherKunciJawaban = crypto.createDecipheriv(
+              algorithm,
+              keyKunciJawaban,
+              ivKunciJawaban
+            );
+            let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
+              messageKunciJawaban,
+              "hex",
+              "utf-8"
+            );
+            let decryptedKunciJawaban =
+              dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+
+            jwbUjian.kunciJawaban.message = decryptedKunciJawaban;
+          }
+
+          delete jwbUjian.kunciJawaban._doc._id;
+          delete jwbUjian.kunciJawaban._doc.iv;
+          delete jwbUjian.kunciJawaban._doc.key;
+        });
+
+        res.status(200).json({
+          status: "success",
+          data: jawabanUjian,
+        });
+      }
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+      });
+    }
+  },
 };
