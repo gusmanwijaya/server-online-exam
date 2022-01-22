@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <title><%= title %> - Website Ujian Online</title>
+    <% include ../../../partials/header.ejs %>
+  </head>
+  <body>
+    <div class="min-h-full">
+      <% include ../../../partials/navbar.ejs %>
+
+      <header class="bg-white shadow">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <div class="text-3xl font-bold text-gray-900 breadcrumbs">
+            <ul>
+              <li>
+                <a href="/lecturer/hasil-ujian">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 mr-2 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    ></path>
+                  </svg>
+                  Hasil Ujian
+                </a>
+              </li>
+              <li>
+                <a href="/lecturer/hasil-ujian/<%= mataKuliah._id %>">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="w-6 h-6 mr-2 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                    ></path>
+                  </svg>
+                  <%= mataKuliah.nama %>
+                </a>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="w-6 h-6 mr-2 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                  ></path>
+                </svg>
+                Detail
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main data-aos="fade-in">
+        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
+          <!-- START: Content -->
+          <% include ../../../partials/alert.ejs %>
+
+          <div class="px-4 sm:px-0">
+            <div class="bg-white shadow-lg overflow-hidden sm:rounded-lg">
+              <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                  Detail Hasil Ujian
+                </h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                  Mata kuliah : <%= mataKuliah.nama %>
+                </p>
+              </div>
+              <div class="border-t border-gray-200">
+                <dl>
+                  <div
+                    class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Nama Ujian
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.jadwalUjian.namaUjian %>
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Mahasiswa (NPM)
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.mahasiswa.nama %> (<%=
+                      hasilUjian.mahasiswa.npm %>)
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      List Jawaban Mahasiswa
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.listJawaban.message %>
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Jumlah Benar
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.jumlahBenar.message %>
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">Nilai</dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.nilai.message %>
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Masuk Ujian
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.masuk %>
+                    </dd>
+                  </div>
+                  <div
+                    class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
+                  >
+                    <dt class="text-sm font-medium text-gray-500">
+                      Selesai Ujian
+                    </dt>
+                    <dd
+                      class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2"
+                    >
+                      <%= hasilUjian.selesai %>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <!-- END: Content -->
+        </div>
+      </main>
+    </div>
+
+    <% include ../../../partials/script.ejs %>
+  </body>
+</html>

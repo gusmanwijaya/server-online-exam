@@ -645,4 +645,112 @@ module.exports = {
       });
     }
   },
+  getHasilUjian: async (req, res) => {
+    try {
+      const { idJadwalUjian, idMahasiswa } = req.query;
+
+      if (!idJadwalUjian) {
+        res.status(400).json({
+          status: "error",
+          message: "Anda tidak memasukkan query params untuk id jadwal ujian!",
+        });
+      } else if (!idMahasiswa) {
+        res.status(400).json({
+          status: "error",
+          message: "Anda tidak memasukkan query params untuk id mahasiswa!",
+        });
+      } else {
+        let hasilUjian = await HasilUjian.findOne({
+          jadwalUjian: idJadwalUjian,
+          mahasiswa: idMahasiswa,
+        })
+          .populate("jadwalUjian", "_id namaUjian", "JadwalUjian")
+          .populate("mahasiswa", "_id nama npm", "Mahasiswa");
+
+        const algorithm = "aes-256-cbc";
+        let ivListJawaban = base64decode(hasilUjian.listJawaban.iv);
+        let keyListJawaban = base64decode(hasilUjian.listJawaban.key);
+        let messageListJawaban = base64decode(hasilUjian.listJawaban.message);
+
+        let decipherListJawaban = crypto.createDecipheriv(
+          algorithm,
+          keyListJawaban,
+          ivListJawaban
+        );
+
+        let dataDecryptedListJawaban = decipherListJawaban.update(
+          messageListJawaban,
+          "hex",
+          "utf-8"
+        );
+        let decryptedListJawaban =
+          dataDecryptedListJawaban + decipherListJawaban.final("utf-8");
+
+        hasilUjian.listJawaban.message = decryptedListJawaban;
+
+        let ivJumlahBenar = base64decode(hasilUjian.jumlahBenar.iv);
+        let keyJumlahBenar = base64decode(hasilUjian.jumlahBenar.key);
+        let messageJumlahBenar = base64decode(hasilUjian.jumlahBenar.message);
+
+        let decipherJumlahBenar = crypto.createDecipheriv(
+          algorithm,
+          keyJumlahBenar,
+          ivJumlahBenar
+        );
+
+        let dataDecryptedJumlahBenar = decipherJumlahBenar.update(
+          messageJumlahBenar,
+          "hex",
+          "utf-8"
+        );
+        let decryptedJumlahBenar =
+          dataDecryptedJumlahBenar + decipherJumlahBenar.final("utf-8");
+
+        hasilUjian.jumlahBenar.message = decryptedJumlahBenar;
+
+        let ivNilai = base64decode(hasilUjian.nilai.iv);
+        let keyNilai = base64decode(hasilUjian.nilai.key);
+        let messageNilai = base64decode(hasilUjian.nilai.message);
+
+        let decipherNilai = crypto.createDecipheriv(
+          algorithm,
+          keyNilai,
+          ivNilai
+        );
+
+        let dataDecryptedNilai = decipherNilai.update(
+          messageNilai,
+          "hex",
+          "utf-8"
+        );
+        let decryptedNilai = dataDecryptedNilai + decipherNilai.final("utf-8");
+
+        hasilUjian.nilai.message = decryptedNilai;
+
+        delete hasilUjian.listJawaban._doc._id;
+        delete hasilUjian.listJawaban._doc.iv;
+        delete hasilUjian.listJawaban._doc.key;
+
+        delete hasilUjian.jumlahBenar._doc._id;
+        delete hasilUjian.jumlahBenar._doc.iv;
+        delete hasilUjian.jumlahBenar._doc.key;
+
+        delete hasilUjian.nilai._doc._id;
+        delete hasilUjian.nilai._doc.iv;
+        delete hasilUjian.nilai._doc.key;
+
+        delete hasilUjian._doc.__v;
+
+        res.status(200).json({
+          status: "success",
+          data: hasilUjian,
+        });
+      }
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+      });
+    }
+  },
 };

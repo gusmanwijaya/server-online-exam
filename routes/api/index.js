@@ -13,6 +13,7 @@ const {
   getOneSoalUjian,
   getKunciJawaban,
   postHasilUjian,
+  getHasilUjian,
 } = require("../../controllers/api/apiController");
 const { isMahasiswa } = require("../../middlewares");
 
@@ -26,5 +27,6 @@ router.get("/:idUjian/soal-ujian", getSoalUjian);
 router.get("/one-soal-ujian", getOneSoalUjian);
 router.get("/kunci-jawaban", getKunciJawaban);
 router.post("/hasil-ujian", postHasilUjian);
+router.get("/hasil-ujian", getHasilUjian);
 
 module.exports = router;

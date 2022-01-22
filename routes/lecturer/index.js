@@ -29,6 +29,11 @@ const {
   ubahPassword,
   updatePassword,
 } = require("../../controllers/lecturer/profileController");
+const {
+  mataKuliahHasilUjian,
+  hasilUjian,
+  detailHasilUjian,
+} = require("../../controllers/lecturer/hasilUjianController");
 
 router.use(isLecturer);
 
@@ -70,6 +75,13 @@ router.get("/jadwal-ujian/create-jadwal-ujian", createJadwalUjian);
 router.post("/jadwal-ujian/store-jadwal-ujian", storeJadwalUjian);
 router.delete("/jadwal-ujian/destroy-jadwal-ujian", destroyJadwalUjian);
 router.put("/jadwal-ujian/regenerate-token/:id", regenerateTokenJadwalUjian);
+
+router.get("/hasil-ujian", mataKuliahHasilUjian);
+router.get("/hasil-ujian/:id", hasilUjian);
+router.get(
+  "/hasil-ujian/:idMatkul/detail-hasil-ujian/:idHasilUjian",
+  detailHasilUjian
+);
 
 router.get("/profile", profile);
 router.get("/ubah-email", ubahEmail);
