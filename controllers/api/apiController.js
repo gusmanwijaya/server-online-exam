@@ -619,4 +619,30 @@ module.exports = {
       });
     }
   },
+  postHasilUjian: async (req, res) => {
+    try {
+      const { jadwalUjian, listJawaban, jumlahBenar, nilai, masuk, selesai } =
+        req.body;
+
+      const data = await HasilUjian.create({
+        jadwalUjian,
+        mahasiswa: req.mahasiswa._id,
+        listJawaban,
+        jumlahBenar,
+        nilai,
+        masuk,
+        selesai,
+      });
+
+      res.status(200).json({
+        status: "success",
+        data,
+      });
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+      });
+    }
+  },
 };

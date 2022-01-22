@@ -12,6 +12,7 @@ const {
   getTokenUjian,
   getOneSoalUjian,
   getKunciJawaban,
+  postHasilUjian,
 } = require("../../controllers/api/apiController");
 const { isMahasiswa } = require("../../middlewares");
 
@@ -24,5 +25,6 @@ router.get("/:idUjian/token-ujian", getTokenUjian);
 router.get("/:idUjian/soal-ujian", getSoalUjian);
 router.get("/one-soal-ujian", getOneSoalUjian);
 router.get("/kunci-jawaban", getKunciJawaban);
+router.post("/hasil-ujian", postHasilUjian);
 
 module.exports = router;
