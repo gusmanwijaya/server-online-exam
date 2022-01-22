@@ -647,21 +647,15 @@ module.exports = {
   },
   getHasilUjian: async (req, res) => {
     try {
-      const { idJadwalUjian, idMahasiswa } = req.query;
+      const { idMahasiswa } = req.query;
 
-      if (!idJadwalUjian) {
-        res.status(400).json({
-          status: "error",
-          message: "Anda tidak memasukkan query params untuk id jadwal ujian!",
-        });
-      } else if (!idMahasiswa) {
+      if (!idMahasiswa) {
         res.status(400).json({
           status: "error",
           message: "Anda tidak memasukkan query params untuk id mahasiswa!",
         });
       } else {
         let hasilUjian = await HasilUjian.findOne({
-          jadwalUjian: idJadwalUjian,
           mahasiswa: idMahasiswa,
         })
           .populate("jadwalUjian", "_id namaUjian", "JadwalUjian")
