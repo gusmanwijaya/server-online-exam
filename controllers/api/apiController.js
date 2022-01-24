@@ -4,8 +4,6 @@ const HasilUjian = require("../../models/hasil-ujian");
 const BankSoal = require("../../models/bank-soal");
 const MataKuliah = require("../../models/mata-kuliah");
 
-const path = require("path");
-const fs = require("fs");
 const config = require("../../config");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
