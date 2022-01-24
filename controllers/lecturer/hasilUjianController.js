@@ -3,6 +3,7 @@ const HasilUjian = require("../../models/hasil-ujian");
 const Dosen = require("../../models/dosen");
 const MataKuliah = require("../../models/mata-kuliah");
 const JadwalUjian = require("../../models/jadwal-ujian");
+const Checksum = require("../../models/checksum");
 
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
@@ -11,6 +12,7 @@ const pdf = require("pdf-creator-node");
 const path = require("path");
 const fs = require("fs");
 const config = require("../../config");
+const sha256File = require("sha256-file");
 
 const options = require("../../helpers/options");
 
@@ -427,10 +429,29 @@ module.exports = {
       const mataKuliah = await MataKuliah.findOne({ _id: idMatkul });
 
       const fileName = `Hasil Ujian - ${mataKuliah.nama}.pdf`;
-      const checkFile = `${config.rootPath}/public/docs/${fileName}`;
+      const path = `${config.rootPath}/public/docs/${fileName}`;
 
-      if (fs.existsSync(checkFile)) {
-        const path = `${config.rootPath}/public/docs/${fileName}`;
+      if (fs.existsSync(path)) {
+        const anyChecksumFile = await Checksum.findOne({
+          namaFile: fileName,
+        });
+        if (!anyChecksumFile) {
+          await Checksum.create({
+            namaFile: fileName,
+            digest: {
+              message: sha256File(path),
+            },
+          });
+        } else {
+          await Checksum.findOneAndDelete({ namaFile: fileName });
+          await Checksum.create({
+            namaFile: fileName,
+            digest: {
+              message: sha256File(path),
+            },
+          });
+        }
+
         res.download(path);
       } else {
         req.flash("alertStatus", "error");
