@@ -36,6 +36,10 @@ const {
   generatePdf,
   downloadPdf,
 } = require("../../controllers/lecturer/hasilUjianController");
+const {
+  checksum,
+  storeChecksum,
+} = require("../../controllers/lecturer/checksumController");
 
 router.use(isLecturer);
 
@@ -86,6 +90,15 @@ router.get(
 );
 router.get("/hasil-ujian/:idMatkul/generate-pdf", generatePdf);
 router.get("/hasil-ujian/:idMatkul/download-pdf", downloadPdf);
+
+router.get("/checksum", checksum);
+router.post(
+  "/checksum/store",
+  multer({
+    dest: os.tmpdir(),
+  }).single("file"),
+  storeChecksum
+);
 
 router.get("/profile", profile);
 router.get("/ubah-email", ubahEmail);
