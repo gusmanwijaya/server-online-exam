@@ -61,6 +61,7 @@
           <!-- START: Content -->
           <% include ../../../partials/alert.ejs %> 
 
+          <% if (hasilUjians.length != 0) { %>
           <div class="flex flex-row items-start justify-start space-x-2">
             <a href="/lecturer/hasil-ujian/<%= mataKuliah._id %>/generate-pdf" type="button" class="btn btn-sm md:btn-md btn-error">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -75,7 +76,6 @@
             </a>
           </div>
 
-          <% if (hasilUjians.length != 0) { %>
           <div class="overflow-x-auto mt-6">
             <table
               id="tableHasilUjian"
