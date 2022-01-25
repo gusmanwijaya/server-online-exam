@@ -10,201 +10,53 @@
 
       <header class="bg-white shadow">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <div class="text-3xl font-bold text-gray-900 breadcrumbs">
-                Checksum
-            </div>
+          <h1 class="text-3xl font-bold text-gray-900">Checksum</h1>
         </div>
       </header>
       <main data-aos="fade-in">
-        <div class="max-w-7xl mx-auto py-6 px-6 md:px-8">
-          <!-- START: Content -->
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <% include ../../partials/alert.ejs %>
-
-          <div class="mt-10 sm:mt-0">
-            <div class="md:grid md:grid-cols-3 md:gap-6">
-              <div class="md:col-span-1">
-                <div class="px-4 sm:px-0">
-                  <h3 class="text-lg font-medium leading-6 text-gray-900">
-                    Checksum File Hasil Ujian
-                  </h3>
-                  <p class="mt-1 text-sm text-gray-600">
-                    Silahkan unggah file hasil ujian yang telah Anda unduh sebelumnya, format file .pdf
-                  </p>
+          <!-- START: Content -->
+          <% for( let index = 0; index < dosen.mataKuliah.length; index++ ) { %>
+          <a
+            href="/lecturer/checksum/<%= dosen.mataKuliah[index]._id %>"
+            type="button"
+            class="flex flex-col"
+          >
+            <div class="card bg-gray-800 shadow-lg mb-6">
+              <div class="card-body">
+                <div class="flex flex-row space-x-2 text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                    />
+                  </svg>
+                  <h2 class="card-title">
+                    <%= dosen.mataKuliah[index].nama %>
+                  </h2>
                 </div>
               </div>
-              <div class="mt-5 md:mt-0 md:col-span-2">
-                <form action="/lecturer/checksum/store" method="POST" enctype="multipart/form-data">
-                  <div class="shadow-lg overflow-hidden sm:rounded-md">
-                    <div class="px-4 py-5 bg-white sm:p-6">
-                      <div class="grid grid-cols-6 gap-6">
-
-                        <div class="col-span-6">
-                          <div class="form-control">
-                            <label class="label" for="file">
-                              <span class="label-text font-semibold">Unggah File</span>
-                            </label>
-                            <div class="bg-white p7 rounded w-full mx-auto">
-                              <div x-data="dataFileDnD()" class="relative flex flex-col p-4 text-gray-400 border border-gray-200 rounded mb-4">
-                                  <div x-ref="dnd"
-                                      class="relative flex flex-col text-gray-400 border border-gray-200 border-dashed rounded cursor-pointer">
-                                      <input accept="application/pdf" type="file" name="file" id="file"
-                                          class="absolute inset-0 z-50 w-full h-full p-0 m-0 outline-none opacity-0 cursor-pointer"
-                                          @change="addFiles($event)"
-                                          @dragover="$refs.dnd.classList.add('border-blue-400'); $refs.dnd.classList.add('ring-4'); $refs.dnd.classList.add('ring-inset');"
-                                          @dragleave="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
-                                          @drop="$refs.dnd.classList.remove('border-blue-400'); $refs.dnd.classList.remove('ring-4'); $refs.dnd.classList.remove('ring-inset');"
-                                          title="" />
-                              
-                                      <div class="flex flex-col items-center justify-center py-10 text-center">
-                                          <svg class="w-6 h-6 mr-1 text-current-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                              stroke="currentColor">
-                                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                          </svg>
-                                          <p class="m-0">Tarik file Anda ke sini atau klik di area ini.</p>
-                                      </div>
-                                  </div>
-                              
-                                  <template x-if="files.length > 0">
-                                      <div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-6" @drop.prevent="drop($event)"
-                                          @dragover.prevent="$event.dataTransfer.dropEffect = 'move'">
-                                          <template x-for="(_, index) in Array.from({ length: files.length })">
-                                              <div class="relative flex flex-col items-center overflow-hidden text-center bg-gray-100 border rounded cursor-move select-none"
-                                                  style="padding-top: 100%;" @dragstart="dragstart($event)" @dragend="fileDragging = null"
-                                                  :class="{'border-blue-600': fileDragging == index}" draggable="true" :data-index="index">
-                                                  <button class="absolute top-0 right-0 z-50 p-1 bg-white rounded-bl focus:outline-none" type="button" @click="remove(index)">
-                                                      <svg class="w-4 h-4 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                          viewBox="0 0 24 24" stroke="currentColor">
-                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                              d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                      </svg>
-                                                  </button>
-                                                  <template x-if="files[index].type.includes('audio/')">
-                                                      <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
-                                                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                                                      </svg>
-                                                  </template>
-                                                  <template x-if="files[index].type.includes('application/') || files[index].type === ''">
-                                                      <svg class="absolute w-12 h-12 text-gray-400 transform top-1/2 -translate-y-2/3"
-                                                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                              d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                                                      </svg>
-                                                  </template>
-                                                  <template x-if="files[index].type.includes('image/')">
-                                                      <img class="absolute inset-0 z-0 object-cover w-full h-full border-4 border-white preview"
-                                                          x-bind:src="loadFile(files[index])" />
-                                                  </template>
-                                                  <template x-if="files[index].type.includes('video/')">
-                                                      <video
-                                                          class="absolute inset-0 object-cover w-full h-full border-4 border-white pointer-events-none preview">
-                                                          <fileDragging x-bind:src="loadFile(files[index])" type="video/mp4">
-                                                      </video>
-                                                  </template>
-                              
-                                                  <div class="absolute bottom-0 left-0 right-0 flex flex-col p-2 text-xs bg-white bg-opacity-50">
-                                                      <span class="w-full font-bold text-gray-900 truncate"
-                                                          x-text="files[index].name">Loading</span>
-                                                      <span class="text-xs text-gray-900" x-text="humanFileSize(files[index].size)">...</span>
-                                                  </div>
-                              
-                                                  <div class="absolute inset-0 z-40 transition-colors duration-300" @dragenter="dragenter($event)"
-                                                      @dragleave="fileDropping = null"
-                                                      :class="{'bg-blue-200 bg-opacity-80': fileDropping == index && fileDragging != index}">
-                                                  </div>
-                                              </div>
-                                          </template>
-                                      </div>
-                                  </template>
-                              </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                      <button
-                        type="submit"
-                        class="btn btn-sm md:btn-md btn-primary"
-                      >
-                        Check
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
             </div>
-          </div>
+          </a>
+          <% } %>
           <!-- END: Content -->
         </div>
       </main>
     </div>
 
     <% include ../../partials/script.ejs %>
-    <script>
-      function dataFileDnD() {
-          return {
-              files: [],
-              fileDragging: null,
-              fileDropping: null,
-              humanFileSize(size) {
-                  const i = Math.floor(Math.log(size) / Math.log(1024));
-                  return (
-                      (size / Math.pow(1024, i)).toFixed(2) * 1 +
-                      " " +
-                      ["B", "kB", "MB", "GB", "TB"][i]
-                  );
-              },
-              remove(index) {
-                  let files = [...this.files];
-                  files.splice(index, 1);
-      
-                  this.files = createFileList(files);
-              },
-              drop(e) {
-                  let removed, add;
-                  let files = [...this.files];
-      
-                  removed = files.splice(this.fileDragging, 1);
-                  files.splice(this.fileDropping, 0, ...removed);
-      
-                  this.files = createFileList(files);
-      
-                  this.fileDropping = null;
-                  this.fileDragging = null;
-              },
-              dragenter(e) {
-                  let targetElem = e.target.closest("[draggable]");
-      
-                  this.fileDropping = targetElem.getAttribute("data-index");
-              },
-              dragstart(e) {
-                  this.fileDragging = e.target
-                      .closest("[draggable]")
-                      .getAttribute("data-index");
-                  e.dataTransfer.effectAllowed = "move";
-              },
-              loadFile(file) {
-                  const preview = document.querySelectorAll(".preview");
-                  const blobUrl = URL.createObjectURL(file);
-      
-                  preview.forEach(elem => {
-                      elem.onload = () => {
-                          URL.revokeObjectURL(elem.src); // free memory
-                      };
-                  });
-      
-                  return blobUrl;
-              },
-              addFiles(e) {
-                  const files = createFileList([...this.files], [...e.target.files]);
-                  this.files = files;
-                  this.form.formData.files = [...files];
-              }
-          };
-      }
-    </script>
   </body>
 </html>

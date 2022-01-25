@@ -39,6 +39,7 @@ const {
 const {
   checksum,
   storeChecksum,
+  checksumMataKuliah,
 } = require("../../controllers/lecturer/checksumController");
 
 router.use(isLecturer);
@@ -91,9 +92,10 @@ router.get(
 router.get("/hasil-ujian/:idMatkul/generate-pdf", generatePdf);
 router.get("/hasil-ujian/:idMatkul/download-pdf", downloadPdf);
 
-router.get("/checksum", checksum);
+router.get("/checksum", checksumMataKuliah);
+router.get("/checksum/:idMatkul", checksum);
 router.post(
-  "/checksum/store",
+  "/checksum/:idMatkul/store",
   multer({
     dest: os.tmpdir(),
   }).single("file"),

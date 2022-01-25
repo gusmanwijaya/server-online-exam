@@ -279,7 +279,7 @@ module.exports = {
       );
     }
   },
-  generatePdf: async (req, res, next) => {
+  generatePdf: async (req, res) => {
     const html = fs.readFileSync(
       path.join(__dirname, "../../views/pdf/template.html"),
       "utf-8"
@@ -422,7 +422,7 @@ module.exports = {
         res.redirect(`/lecturer/hasil-ujian/${idMatkul}`);
       });
   },
-  downloadPdf: async (req, res, next) => {
+  downloadPdf: async (req, res) => {
     const { idMatkul } = req.params;
 
     try {
@@ -432,26 +432,18 @@ module.exports = {
       const path = `${config.rootPath}/public/docs/${fileName}`;
 
       if (fs.existsSync(path)) {
-        const anyChecksumFile = await Checksum.findOne({
-          namaFile: fileName,
+        const anyPathChecksum = await Checksum.findOne({
+          mataKuliah: mataKuliah._id,
         });
-        if (!anyChecksumFile) {
-          await Checksum.create({
-            namaFile: fileName,
-            digest: {
-              message: sha256File(path),
-            },
-          });
-        } else {
-          await Checksum.findOneAndDelete({ namaFile: fileName });
-          await Checksum.create({
-            namaFile: fileName,
-            digest: {
-              message: sha256File(path),
-            },
-          });
+        if (anyPathChecksum) {
+          await Checksum.findOneAndDelete({ mataKuliah: mataKuliah._id });
         }
-
+        await Checksum.create({
+          mataKuliah: mataKuliah._id,
+          digest: {
+            message: sha256File(path),
+          },
+        });
         res.download(path);
       } else {
         req.flash("alertStatus", "error");

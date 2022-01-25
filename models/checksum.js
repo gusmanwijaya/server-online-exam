@@ -18,8 +18,9 @@ let aesSchema = mongoose.Schema({
 });
 
 let checksumSchema = mongoose.Schema({
-  namaFile: {
-    type: String,
+  mataKuliah: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "MataKuliah",
   },
   digest: {
     type: aesSchema,
