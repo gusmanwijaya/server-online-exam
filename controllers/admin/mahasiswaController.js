@@ -1,5 +1,6 @@
 const Mahasiswa = require("../../models/mahasiswa");
 const ProgramStudi = require("../../models/program-studi");
+const MataKuliah = require("../../models/mata-kuliah");
 
 const dateAndTime = require("date-and-time");
 const jwt_decode = require("jwt-decode");
@@ -24,12 +25,10 @@ module.exports = {
       const mahasiswas = await Mahasiswa.find()
         .populate("programStudi", "_id nama", "ProgramStudi")
         .sort({ npm: "asc" });
-      const programStudies = await ProgramStudi.find().sort({ nama: "asc" });
 
       res.render("admin/mahasiswa/index", {
         alert,
         mahasiswas,
-        programStudies,
         url: originalUrl[2],
         title: "Mahasiswa",
         payload,
@@ -40,10 +39,49 @@ module.exports = {
       res.redirect("/admin/mahasiswa");
     }
   },
+  createMahasiswa: async (req, res) => {
+    try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+
+      const programStudies = await ProgramStudi.find().sort({ nama: "asc" });
+      const mataKuliahs = await MataKuliah.find().sort({ nama: "asc" });
+
+      res.render("admin/mahasiswa/create", {
+        alert,
+        programStudies,
+        mataKuliahs,
+        url: originalUrl[2],
+        title: "Mahasiswa",
+        payload,
+      });
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect("/admin/mahasiswa/create");
+    }
+  },
   storeMahasiswa: async (req, res) => {
     try {
-      const { nama, npm, email, password, jenisKelamin, programStudi } =
-        req.body;
+      const {
+        nama,
+        npm,
+        email,
+        password,
+        jenisKelamin,
+        mataKuliah,
+        programStudi,
+      } = req.body;
 
       if (password.length < 10) {
         req.flash("alertStatus", "error");
@@ -51,7 +89,7 @@ module.exports = {
           "alertMessage",
           `Password harus lebih dari sama dengan (>=) 10 karakter!`
         );
-        res.redirect("/admin/mahasiswa");
+        res.redirect("/admin/mahasiswa/create");
       } else {
         await Mahasiswa.create({
           nama,
@@ -61,6 +99,7 @@ module.exports = {
             message: password,
           },
           jenisKelamin,
+          mataKuliah,
           programStudi,
         });
 
@@ -71,19 +110,61 @@ module.exports = {
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/mahasiswa");
+      res.redirect("/admin/mahasiswa/create");
+    }
+  },
+  editMahasiswa: async (req, res) => {
+    const { id } = req.params;
+
+    try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+
+      const mahasiswa = await Mahasiswa.findOne({ _id: id })
+        .populate("mataKuliah")
+        .populate("programStudi");
+      const programStudies = await ProgramStudi.find().sort({ nama: "asc" });
+      const mataKuliahs = await MataKuliah.find().sort({ nama: "asc" });
+
+      res.render("admin/mahasiswa/edit", {
+        alert,
+        mahasiswa,
+        programStudies,
+        mataKuliahs,
+        url: originalUrl[2],
+        title: "Mahasiswa",
+        payload,
+      });
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect(`/admin/mahasiswa/${id}/edit`);
     }
   },
   updateMahasiswa: async (req, res) => {
+    const { id } = req.params;
+
     try {
       let dateNow = new Date();
 
-      const { id, jenisKelamin } = req.body;
+      const { jenisKelamin, mataKuliah, programStudi } = req.body;
 
       await Mahasiswa.findOneAndUpdate(
         { _id: id },
         {
           jenisKelamin,
+          mataKuliah,
+          programStudi,
           updatedAt: dateAndTime.format(dateNow, "dddd, D MMMM YYYY HH:mm:ss"),
         }
       );
@@ -94,7 +175,41 @@ module.exports = {
     } catch (error) {
       req.flash("alertStatus", "error");
       req.flash("alertMessage", `${error.message}`);
-      res.redirect("/admin/mahasiswa");
+      res.redirect(`/admin/mahasiswa/${id}/edit`);
+    }
+  },
+  detailMahasiswa: async (req, res) => {
+    const { id } = req.params;
+
+    try {
+      const token = req.session.user.token;
+      const payload = jwt_decode(base64decode(token));
+
+      const originalUrl = req.originalUrl.split("/");
+
+      const alertStatus = req.flash("alertStatus");
+      const alertMessage = req.flash("alertMessage");
+
+      const alert = {
+        status: alertStatus,
+        message: alertMessage,
+      };
+
+      const mahasiswa = await Mahasiswa.findOne({ _id: id })
+        .populate("mataKuliah")
+        .populate("programStudi");
+
+      res.render("admin/mahasiswa/detail", {
+        alert,
+        mahasiswa,
+        url: originalUrl[2],
+        title: "Mahasiswa",
+        payload,
+      });
+    } catch (error) {
+      req.flash("alertStatus", "error");
+      req.flash("alertMessage", `${error.message}`);
+      res.redirect(`/admin/mahasiswa/${id}/detail`);
     }
   },
   destroyMahasiswa: async (req, res) => {

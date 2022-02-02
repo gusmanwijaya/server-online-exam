@@ -1,6 +1,5 @@
 const BankSoal = require("../../models/bank-soal");
 const Dosen = require("../../models/dosen");
-const MataKuliah = require("../../models/mata-kuliah");
 const JadwalUjian = require("../../models/jadwal-ujian");
 
 const dateAndTime = require("date-and-time");

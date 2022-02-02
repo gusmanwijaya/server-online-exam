@@ -23,7 +23,13 @@
           <% if (mahasiswas.length != 0) { %>
 
           <div class="flex flex-row items-center justify-between">
-            <% include ./create_modal.ejs %>
+            <a href="/admin/mahasiswa/create" type="button">
+              <button class="btn btn-sm md:btn-md btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg> Tambah
+              </button> 
+            </a>
 
             <% include ./delete_modal.ejs %>
           </div>
@@ -59,7 +65,17 @@
                   <td><%= mahasiswas[index].jenisKelamin %></td>
                   <td><%= mahasiswas[index].programStudi.nama %></td>
                   <td>
-                    <% include ./edit_modal.ejs %>
+                    <a href="/admin/mahasiswa/<%= mahasiswas[index]._id %>/detail" class="btn btn-sm lg:btn-md">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                    </a>
+                    <a href="/admin/mahasiswa/<%= mahasiswas[index]._id %>/edit" class="btn btn-sm lg:btn-md btn-warning">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 lg:h-6 w-4 lg:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                      </svg>
+                    </a>
                   </td>
                 </tr>
                 <% } %>
@@ -73,7 +89,13 @@
               Ooppss, nampaknya data mahasiswa saat ini kosong, <br />
               silahkan tambahkan mahasiswa.
             </p>
-            <% include ./create_modal.ejs %>
+            <a href="/admin/mahasiswa/create" type="button">
+              <button class="btn btn-sm md:btn-md btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 md:h-6 w-4 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg> Tambah
+              </button> 
+            </a>
           <% } %>
           <!-- END: Content -->
         </div>
@@ -93,23 +115,6 @@
           .responsive.recalc();
       });
       // END: Show datatable
-
-      // START: Show edit and value at modal
-      $("#tableMahasiswa").on("click", "#labelModalEditMahasiswa", function () {
-        let id = $(this).data("id");
-        let nama = $(this).data("nama");
-        let npm = $(this).data("npm");
-        let email = $(this).data("email");
-        let jenisKelamin = $(this).data("jenis-kelamin");
-        let programStudi = $(this).data("program-studi");
-        document.forms["form-edit"]["id"].value = id;
-        document.forms["form-edit"]["nama"].value = nama;
-        document.forms["form-edit"]["npm"].value = npm;
-        document.forms["form-edit"]["email"].value = email;
-        document.forms["form-edit"]["jenisKelamin"].value = jenisKelamin;
-        document.forms["form-edit"]["programStudi"].value = programStudi;
-      });
-      // START: Show edit and value at modal
 
       // START: Delete checkbox or multiple data
       var valueList = document.getElementById("valueList");

@@ -1,13 +1,9 @@
 const Checksum = require("../../models/checksum");
-const MataKuliah = require("../../models/mata-kuliah");
 const Dosen = require("../../models/dosen");
-const config = require("../../config");
 
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 const sha256File = require("sha256-file");
-const fs = require("fs");
-const path = require("path");
 const crypto = require("crypto");
 
 module.exports = {
@@ -88,7 +84,7 @@ module.exports = {
           req.flash("alertStatus", "error");
           req.flash(
             "alertMessage",
-            `File yang Anda unggah tidak terdaftar pada sistem kami, silahkan generate dan unduh file hasil ujian terlebih dahulu!`
+            `File hasil ujian untuk mata kuliah tersebut belum tersedia, silahkan generate dan unduh file hasil ujian terlebih dahulu!`
           );
           res.redirect(`/lecturer/checksum/${idMatkul}`);
         } else {
@@ -109,14 +105,14 @@ module.exports = {
             req.flash("alertStatus", "error");
             req.flash(
               "alertMessage",
-              `File yang Anda unggah tidak asli atau sudah mengalami perubahan!`
+              `File yang Anda unggah tidak terdaftar pada sistem kami!`
             );
             res.redirect(`/lecturer/checksum/${idMatkul}`);
           } else {
             req.flash("alertStatus", "success");
             req.flash(
               "alertMessage",
-              `File yang Anda unggah asli dan belum pernah terjadi perubahan sedikitpun!`
+              `File yang Anda unggah terdaftar pada sistem kami!`
             );
             res.redirect(`/lecturer/checksum/${idMatkul}`);
           }

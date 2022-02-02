@@ -40,6 +40,12 @@ let mahasiswaSchema = mongoose.Schema({
     require: [true, "Jenis kelamin mahasiswa harus diisi!"],
     enum: ["L", "P"],
   },
+  mataKuliah: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "MataKuliah",
+    },
+  ],
   programStudi: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "ProgramStudi",

@@ -22,6 +22,9 @@ const {
   storeMahasiswa,
   updateMahasiswa,
   destroyMahasiswa,
+  createMahasiswa,
+  editMahasiswa,
+  detailMahasiswa,
 } = require("../../controllers/admin/mahasiswaController");
 const {
   mataKuliah,
@@ -69,8 +72,11 @@ router.put("/update-program-studi", updateProgramStudi);
 router.delete("/destroy-program-studi", destroyProgramStudi);
 
 router.get("/mahasiswa", mahasiswa);
+router.get("/mahasiswa/create", createMahasiswa);
 router.post("/store-mahasiswa", storeMahasiswa);
-router.put("/update-mahasiswa", updateMahasiswa);
+router.get("/mahasiswa/:id/edit", editMahasiswa);
+router.put("/:id/update-mahasiswa", updateMahasiswa);
+router.get("/mahasiswa/:id/detail", detailMahasiswa);
 router.delete("/destroy-mahasiswa", destroyMahasiswa);
 
 router.get("/mata-kuliah", mataKuliah);

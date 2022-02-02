@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
 
-const multer = require("multer");
-const os = require("os");
-
 const {
   signIn,
   getJadwalUjian,

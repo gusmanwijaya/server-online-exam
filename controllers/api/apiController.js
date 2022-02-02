@@ -2,7 +2,6 @@ const Mahasiswa = require("../../models/mahasiswa");
 const JadwalUjian = require("../../models/jadwal-ujian");
 const HasilUjian = require("../../models/hasil-ujian");
 const BankSoal = require("../../models/bank-soal");
-const MataKuliah = require("../../models/mata-kuliah");
 
 const config = require("../../config");
 const jwt = require("jsonwebtoken");
@@ -16,6 +15,7 @@ module.exports = {
       const { email, password } = req.body;
 
       await Mahasiswa.findOne({ email: email })
+        .populate("mataKuliah")
         .populate("programStudi")
         .then((mahasiswa) => {
           if (mahasiswa) {
@@ -29,6 +29,14 @@ module.exports = {
             let dataDecrypted = decipher.update(message, "hex", "utf-8");
             const decrypted = dataDecrypted + decipher.final("utf-8");
 
+            let arrayMatkulMhs = [];
+            mahasiswa.mataKuliah.forEach((mahasiswaMatkul) => {
+              arrayMatkulMhs.push({
+                idMatkul: mahasiswaMatkul._id,
+                namaMatkul: mahasiswaMatkul.nama,
+              });
+            });
+
             if (decrypted === password) {
               const token = jwt.sign(
                 {
@@ -38,6 +46,7 @@ module.exports = {
                     npm: mahasiswa.npm,
                     email: mahasiswa.email,
                     jenisKelamin: mahasiswa.jenisKelamin,
+                    mataKuliah: arrayMatkulMhs,
                     programStudi: mahasiswa.programStudi.nama,
                     role: mahasiswa.role,
                   },
@@ -74,12 +83,8 @@ module.exports = {
   },
   getJadwalUjian: async (req, res) => {
     try {
-      const matkulMahasiswa = await MataKuliah.find({
-        programStudi: req.mahasiswa.programStudi._id,
-      });
-
       const jadwalUjian = await JadwalUjian.find({
-        mataKuliah: { $in: matkulMahasiswa },
+        mataKuliah: { $in: req.mahasiswa.mataKuliah },
       })
         .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
         .populate("mataKuliah", "_id nama", "MataKuliah");
