@@ -6,10 +6,61 @@ const BankSoal = require("../../models/bank-soal");
 const config = require("../../config");
 const jwt = require("jsonwebtoken");
 const crypto = require("crypto");
-const { base64decode } = require("nodejs-base64");
+const { base64encode, base64decode } = require("nodejs-base64");
 const dateAndTime = require("date-and-time");
+const sha256File = require("sha256-file");
 
 module.exports = {
+  getPengujianAlgoritmaAES256CBCandBase64: async (req, res) => {
+    try {
+      const plaintext = "LANadalah";
+      const iv = "abcdefghijklmnop";
+      const key = "abcdefghijklmnopqrstuvwxyz123456";
+
+      const algorithm = "aes-256-cbc";
+      const cipher = crypto.createCipheriv(algorithm, key, iv);
+      let encrypt = cipher.update(plaintext, "utf-8", "hex");
+      encrypt += cipher.final("hex");
+
+      res.status(200).json({
+        status: "success",
+        data: {
+          plaintext,
+          iv,
+          key,
+          ciphertext: encrypt,
+          ciphertextBase64: base64encode(encrypt),
+        },
+      });
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message,
+      });
+    }
+  },
+  getPengujianAlgoritmaSHA256: async (req, res) => {
+    try {
+      const fileName = "file-pengujian-sha-256";
+      const fileExt = ".pdf";
+      const locationFile = `${config.rootPath}/public/${fileName}${fileExt}`;
+      const getSHA256File = sha256File(locationFile);
+
+      res.status(200).json({
+        status: "success",
+        data: {
+          filename: `${fileName}${fileExt}`,
+          locationFile,
+          checksum: getSHA256File,
+        },
+      });
+    } catch (error) {
+      res.status(500).json({
+        status: "error",
+        message: error.message,
+      });
+    }
+  },
   signIn: async (req, res, next) => {
     try {
       const { email, password } = req.body;

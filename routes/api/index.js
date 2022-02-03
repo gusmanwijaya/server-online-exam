@@ -11,8 +11,16 @@ const {
   getKunciJawaban,
   postHasilUjian,
   getHasilUjian,
+  getPengujianAlgoritmaAES256CBCandBase64,
+  getPengujianAlgoritmaSHA256,
 } = require("../../controllers/api/apiController");
 const { isMahasiswa } = require("../../middlewares");
+
+router.get(
+  "/pengujian-aes-256-cbc-base-64",
+  getPengujianAlgoritmaAES256CBCandBase64
+);
+router.get("/pengujian-sha-256", getPengujianAlgoritmaSHA256);
 
 router.post("/sign-in", signIn);
 
