@@ -80,14 +80,6 @@ module.exports = {
             let dataDecrypted = decipher.update(message, "hex", "utf-8");
             const decrypted = dataDecrypted + decipher.final("utf-8");
 
-            let arrayMatkulMhs = [];
-            mahasiswa.mataKuliah.forEach((mahasiswaMatkul) => {
-              arrayMatkulMhs.push({
-                idMatkul: mahasiswaMatkul._id,
-                namaMatkul: mahasiswaMatkul.nama,
-              });
-            });
-
             if (decrypted === password) {
               const token = jwt.sign(
                 {
@@ -97,7 +89,6 @@ module.exports = {
                     npm: mahasiswa.npm,
                     email: mahasiswa.email,
                     jenisKelamin: mahasiswa.jenisKelamin,
-                    mataKuliah: arrayMatkulMhs,
                     programStudi: mahasiswa.programStudi.nama,
                     role: mahasiswa.role,
                   },
