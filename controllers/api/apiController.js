@@ -41,7 +41,7 @@ module.exports = {
   },
   getPengujianAlgoritmaSHA256: async (req, res) => {
     try {
-      const fileName = "file-pengujian-sha-256";
+      const fileName = "ori-file-pengujian-sha-256";
       const fileExt = ".pdf";
       const locationFile = `${config.rootPath}/public/${fileName}${fileExt}`;
       const getSHA256File = sha256File(locationFile);
