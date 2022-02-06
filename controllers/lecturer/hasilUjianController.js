@@ -449,7 +449,7 @@ module.exports = {
         req.flash("alertStatus", "error");
         req.flash(
           "alertMessage",
-          `File pdf belum tersedia, silahkan klik tombol regenerate pdf terlebih dahulu!`
+          `File pdf belum tersedia, silahkan klik tombol generate pdf terlebih dahulu!`
         );
         res.redirect(`/lecturer/hasil-ujian/${idMatkul}`);
       }
