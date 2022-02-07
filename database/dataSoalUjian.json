@@ -1,0 +1,2702 @@
+[
+  {
+    "_id": "61ffb4369259dce936eaa11d",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Internet mulai dipergunakan secara terbuka untuk umum pada tahun ..."
+    },
+    "pilihanA": {
+      "message": "1980"
+    },
+    "pilihanB": {
+      "message": "1982"
+    },
+    "pilihanC": {
+      "message": "1984"
+    },
+    "pilihanD": {
+      "message": "1986"
+    },
+    "pilihanE": {
+      "message": "1988"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb47e9259dce936eaa163",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Yang dimaksud dengan istilah penggunaan jaringan tidak terpandu ..."
+    },
+    "pilihanA": {
+      "message": "Wired"
+    },
+    "pilihanB": {
+      "message": "Hospot"
+    },
+    "pilihanC": {
+      "message": "STP"
+    },
+    "pilihanD": {
+      "message": "UTP"
+    },
+    "pilihanE": {
+      "message": "Coaxial cable"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb4c49259dce936eaa192",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Perangkat yang digunakan untuk jaringan Type PAN ..."
+    },
+    "pilihanA": {
+      "message": "STP"
+    },
+    "pilihanB": {
+      "message": "PDA"
+    },
+    "pilihanC": {
+      "message": "Repeater"
+    },
+    "pilihanD": {
+      "message": "Hospot"
+    },
+    "pilihanE": {
+      "message": "Coaxial cable"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb50c9259dce936eaa1ce",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "OSI terdiri dari 7 lapisan layer yang urutannya dari lapisan layer paling bawah sampai pada lapisan layer paling atas adalah ..."
+    },
+    "pilihanA": {
+      "message": "Physical layer, Network layer, Transport layer, Session layer, Data-link layer, Presentation layer, Application layer"
+    },
+    "pilihanB": {
+      "message": "Physical layer, Data-link layer, Network layer, Transport layer, Session layer, Application layer, Presentation layer"
+    },
+    "pilihanC": {
+      "message": "Physical layer, Data-link layer, Network layer, Transport layer, Session layer, Presentation layer, Application layer"
+    },
+    "pilihanD": {
+      "message": "Physical layer, Data-link layer, Transport layer, Network layer, Session layer, Presentation layer, Application layer"
+    },
+    "pilihanE": {
+      "message": "Physical layer, Network layer, Data-link layer, Transport layer, Session layer, Presentation layer, Application layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffb5589259dce936eaa217",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Permasalahan yang timbul pada jalur utama topologi bus adalah ..."
+    },
+    "pilihanA": {
+      "message": "Data tidak sampai tujuan"
+    },
+    "pilihanB": {
+      "message": "Terjadi tabrakan data (Collision)"
+    },
+    "pilihanC": {
+      "message": "Kecepatan transfer data rendah"
+    },
+    "pilihanD": {
+      "message": "Terjadinya kerusakan pada hub"
+    },
+    "pilihanE": {
+      "message": "Boros kabel"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb5da9259dce936eaa26d",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Protokol yang bertanggung jawab untuk meletakkan frame-frame jaringan diatas media jaringan yang digunakan adalah ..."
+    },
+    "pilihanA": {
+      "message": "Internetwork layer"
+    },
+    "pilihanB": {
+      "message": "Host-to-host layer"
+    },
+    "pilihanC": {
+      "message": "Application layer"
+    },
+    "pilihanD": {
+      "message": "Network interface layer"
+    },
+    "pilihanE": {
+      "message": "Internet layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb6219259dce936eaa2d0",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Protokol yang bertanggung jawab untuk melakukan pemetaan ( routing ) dan enkapsukasi paket-paket data jaringan menjadi paket-paket IP adalah ..."
+    },
+    "pilihanA": {
+      "message": "Internetwork layer"
+    },
+    "pilihanB": {
+      "message": "Host-to-host layer"
+    },
+    "pilihanC": {
+      "message": "Application layer"
+    },
+    "pilihanD": {
+      "message": "Network interface layer"
+    },
+    "pilihanE": {
+      "message": "Internet layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffb66c9259dce936eaa340",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Protokol yang berguna untuk membuat komunikasi menggunakan sesi koneksi yang bersifat connection-oriented atau broadast adalah ..."
+    },
+    "pilihanA": {
+      "message": "Internetwork layer"
+    },
+    "pilihanB": {
+      "message": "Host-to-host layer"
+    },
+    "pilihanC": {
+      "message": "Application layer"
+    },
+    "pilihanD": {
+      "message": "Network interface layer"
+    },
+    "pilihanE": {
+      "message": "Internet layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb6bb9259dce936eaa3bd",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Protokol yang bertanggung jawab untuk menyediakan akses terhadap jaringan TCP/IP adalah ..."
+    },
+    "pilihanA": {
+      "message": "Internetwork layer"
+    },
+    "pilihanB": {
+      "message": "Host-to-host layer"
+    },
+    "pilihanC": {
+      "message": "Application layer"
+    },
+    "pilihanD": {
+      "message": "Network interface layer"
+    },
+    "pilihanE": {
+      "message": "Internet layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffb72e9259dce936eaa447",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Sebuah jaringan komputer dimana setiap host dapat menjadi server dan juga menjadi cilent secara bersamaan adalah ..."
+    },
+    "pilihanA": {
+      "message": "Client server"
+    },
+    "pilihanB": {
+      "message": "Server"
+    },
+    "pilihanC": {
+      "message": "Packet"
+    },
+    "pilihanD": {
+      "message": "Peer-to-peer"
+    },
+    "pilihanE": {
+      "message": "Host-to-host"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb76d9259dce936eaa4de",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Lapisan OSI Layer yang paling bawah adalah ..."
+    },
+    "pilihanA": {
+      "message": "Physical layer"
+    },
+    "pilihanB": {
+      "message": "Data-link layer"
+    },
+    "pilihanC": {
+      "message": "Network layer"
+    },
+    "pilihanD": {
+      "message": "Transport layer"
+    },
+    "pilihanE": {
+      "message": "Application layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffb7ad9259dce936eaa582",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Tipe kabel ethernet yang berjenis 10BaseT yaitu ..."
+    },
+    "pilihanA": {
+      "message": "Unshielded Twisted Pair"
+    },
+    "pilihanB": {
+      "message": "Wireless"
+    },
+    "pilihanC": {
+      "message": "Thick coaxial"
+    },
+    "pilihanD": {
+      "message": "Thin coaxial"
+    },
+    "pilihanE": {
+      "message": "Fiber optic"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffb7e49259dce936eaa633",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Salah satu protocol yang bekerja pada lapisan Internetwork Layer adalah ..."
+    },
+    "pilihanA": {
+      "message": "HTTP"
+    },
+    "pilihanB": {
+      "message": "IP"
+    },
+    "pilihanC": {
+      "message": "TCP"
+    },
+    "pilihanD": {
+      "message": "Ethernet"
+    },
+    "pilihanE": {
+      "message": "DNS"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb80f9259dce936eaa6f1",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Salah satu protocol yang bekerja pada lapisan Host-to-host Layer adalah ..."
+    },
+    "pilihanA": {
+      "message": "HTTP"
+    },
+    "pilihanB": {
+      "message": "IP"
+    },
+    "pilihanC": {
+      "message": "TCP"
+    },
+    "pilihanD": {
+      "message": "Ethernet"
+    },
+    "pilihanE": {
+      "message": "DNS"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffb8339259dce936eaa7bc",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Salah satu protocol yang bekerja pada lapisan Application Layer adalah ..."
+    },
+    "pilihanA": {
+      "message": "HTTP"
+    },
+    "pilihanB": {
+      "message": "IP"
+    },
+    "pilihanC": {
+      "message": "TCP"
+    },
+    "pilihanD": {
+      "message": "Ethernet"
+    },
+    "pilihanE": {
+      "message": "UDP"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffb8669259dce936eaa894",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Salah satu protocol yang bekerja pada lapisan Network Interface Layer adalah ..."
+    },
+    "pilihanA": {
+      "message": "HTTP"
+    },
+    "pilihanB": {
+      "message": "IP"
+    },
+    "pilihanC": {
+      "message": "TCP"
+    },
+    "pilihanD": {
+      "message": "Ethernet"
+    },
+    "pilihanE": {
+      "message": "DNS"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb89d9259dce936eaa979",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Satuan informasi terkecil yang dikenal dalam komunikasi data adalah ..."
+    },
+    "pilihanA": {
+      "message": "Byte"
+    },
+    "pilihanB": {
+      "message": "Bit"
+    },
+    "pilihanC": {
+      "message": "Packet"
+    },
+    "pilihanD": {
+      "message": "Sector"
+    },
+    "pilihanE": {
+      "message": "Segment"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb8e59259dce936eaaa6b",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Proses pencampuran dua sinyal menjadi satu sinyal adalah ..."
+    },
+    "pilihanA": {
+      "message": "Routing"
+    },
+    "pilihanB": {
+      "message": "Gelombang radio"
+    },
+    "pilihanC": {
+      "message": "Switch"
+    },
+    "pilihanD": {
+      "message": "Modulasi"
+    },
+    "pilihanE": {
+      "message": "Half duplex"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb9099259dce936eaab6a",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Berikut protocol yang bekerja pada lapisan Internetwork Layer, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "IP"
+    },
+    "pilihanB": {
+      "message": "DNS"
+    },
+    "pilihanC": {
+      "message": "ARP"
+    },
+    "pilihanD": {
+      "message": "ICMP"
+    },
+    "pilihanE": {
+      "message": "IGMP"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb93f9259dce936eaac76",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Berikut protocol yang bekerja pada lapisan Network Interface Layer, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "Ethernet"
+    },
+    "pilihanB": {
+      "message": "HTTP"
+    },
+    "pilihanC": {
+      "message": "WiFi"
+    },
+    "pilihanD": {
+      "message": "ADSL Model"
+    },
+    "pilihanE": {
+      "message": "Token Ring"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffb96c9259dce936eaad8f",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Berikut protocol yang bekerja pada lapisan Application Layer, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "HTTP"
+    },
+    "pilihanB": {
+      "message": "DHCP"
+    },
+    "pilihanC": {
+      "message": "FTP"
+    },
+    "pilihanD": {
+      "message": "SMTP"
+    },
+    "pilihanE": {
+      "message": "IP"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffb9b29259dce936eaaeb5",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Bagaimana pengaruh terhadap computer lain apabila salah satu konektor BNC putus ?"
+    },
+    "pilihanA": {
+      "message": "Kecepatan transfer data meningkat"
+    },
+    "pilihanB": {
+      "message": "Kecepatan transfer data menurun"
+    },
+    "pilihanC": {
+      "message": "Tidak ada pengaruh"
+    },
+    "pilihanD": {
+      "message": "Tidak dapat terkoneksi ke jaringan"
+    },
+    "pilihanE": {
+      "message": "Terjadi kerusakan pada NIC"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffb9f59259dce936eaafe8",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Besar hambatan terminator yang digunakan pada topologi bus adalah ..."
+    },
+    "pilihanA": {
+      "message": "10 Ohm"
+    },
+    "pilihanB": {
+      "message": "25 Ohm"
+    },
+    "pilihanC": {
+      "message": "50 Ohm"
+    },
+    "pilihanD": {
+      "message": "75 Ohm"
+    },
+    "pilihanE": {
+      "message": "100 Ohm"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffba279259dce936eab128",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Central node pada topologi star berupa ..."
+    },
+    "pilihanA": {
+      "message": "Repeater"
+    },
+    "pilihanB": {
+      "message": "Switch/hub"
+    },
+    "pilihanC": {
+      "message": "Konektor"
+    },
+    "pilihanD": {
+      "message": "Router"
+    },
+    "pilihanE": {
+      "message": "Kabel"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffba739259dce936eab275",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Pada kabel UTP tujuan dililitkannya satu kabel dengan yang lain ( Twisted ) adalah untuk ..."
+    },
+    "pilihanA": {
+      "message": "Meminimalkan kehilangan data"
+    },
+    "pilihanB": {
+      "message": "Memaksimalkan transfer data"
+    },
+    "pilihanC": {
+      "message": "Memudahkan pemasangan"
+    },
+    "pilihanD": {
+      "message": "Mengurangi interferensi listrik"
+    },
+    "pilihanE": {
+      "message": "Meningkatkan kecepatan transfer data"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffbaad9259dce936eab3cf",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Alat bantu dalam pemasangan konektor RJ-45 ke kabel UTP, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "Crimping tools"
+    },
+    "pilihanB": {
+      "message": "LAN Taster"
+    },
+    "pilihanC": {
+      "message": "Gunting"
+    },
+    "pilihanD": {
+      "message": "Tang potong kabel"
+    },
+    "pilihanE": {
+      "message": "Akses poin"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbae49259dce936eab536",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "MAC (Medium Access Control) pada OSI Layer terdapat dalam lapisan ..."
+    },
+    "pilihanA": {
+      "message": "Data-link Layer"
+    },
+    "pilihanB": {
+      "message": "Aplication Layer"
+    },
+    "pilihanC": {
+      "message": "Transport Layer"
+    },
+    "pilihanD": {
+      "message": "Physical Layer"
+    },
+    "pilihanE": {
+      "message": "Session Layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbb2e9259dce936eab6aa",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Kecepatan maksimum kartu jaringan jenis ISA pada topologi star adalah ..."
+    },
+    "pilihanA": {
+      "message": "5 Mbps"
+    },
+    "pilihanB": {
+      "message": "10 Mbps"
+    },
+    "pilihanC": {
+      "message": "15 Mbps"
+    },
+    "pilihanD": {
+      "message": "20 Mbps"
+    },
+    "pilihanE": {
+      "message": "25 Mbps"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffbb6a9259dce936eab82b",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Memecah circuit kecepatan tinggi ke dalam beberapa circuit ( logical ) lebih rendah disebut ..."
+    },
+    "pilihanA": {
+      "message": "Akses poin"
+    },
+    "pilihanB": {
+      "message": "Multiplexing"
+    },
+    "pilihanC": {
+      "message": "Transmisi"
+    },
+    "pilihanD": {
+      "message": "Routing"
+    },
+    "pilihanE": {
+      "message": "Bandwidth"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffbbaa9259dce936eab9b9",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Kombinasi pengkabelan silang ( cross over ) pada jaringan komputer yang sesuai dengan standar internasional dengan salah satu ujung adalah ..."
+    },
+    "pilihanA": {
+      "message": "White green, green, white orange, blue, white blue, orange, white brown, brown"
+    },
+    "pilihanB": {
+      "message": "White green, green, orange, blue, white blue, blue, white orange, white brown, brown"
+    },
+    "pilihanC": {
+      "message": "Orange, white orange, green, white green, blue, white blue, white green, white orange, white brown, brown"
+    },
+    "pilihanD": {
+      "message": "White orange, orange, white green, blue, white blue, white green, white brown, brown"
+    },
+    "pilihanE": {
+      "message": "White green, green, white orange, white blue, blue, orange, white brown, brown"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbbdc9259dce936eabb54",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Repeater dipasang jika jarak kabel UTP sudah lebih dari ..."
+    },
+    "pilihanA": {
+      "message": "100 m"
+    },
+    "pilihanB": {
+      "message": "200 m"
+    },
+    "pilihanC": {
+      "message": "300 m"
+    },
+    "pilihanD": {
+      "message": "400 m"
+    },
+    "pilihanE": {
+      "message": "500 m"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbc159259dce936eabcfc",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Permasalahan yang mungkin terjadi pada kabel jenis UTS adalah berikut ini, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "Kabel bengkok"
+    },
+    "pilihanB": {
+      "message": "Konektor longgar"
+    },
+    "pilihanC": {
+      "message": "Crimping kabel kurang pas"
+    },
+    "pilihanD": {
+      "message": "Kabel terbuka"
+    },
+    "pilihanE": {
+      "message": "Kabel kependekan"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffbc529259dce936eabeb1",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "LLC (Logical Link Control) pada OSI Layer terdapat dalam lapisan ..."
+    },
+    "pilihanA": {
+      "message": "Data-link layer"
+    },
+    "pilihanB": {
+      "message": "Aplication Layer"
+    },
+    "pilihanC": {
+      "message": "Transport Layer"
+    },
+    "pilihanD": {
+      "message": "Physical Layer"
+    },
+    "pilihanE": {
+      "message": "Session Layer"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbc869259dce936eac073",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Fungsi dari Crimping Tools pada pemasangan kabel UTP adalah ..."
+    },
+    "pilihanA": {
+      "message": "Memotong kabel"
+    },
+    "pilihanB": {
+      "message": "Mengelupas kabel"
+    },
+    "pilihanC": {
+      "message": "Meratakan kabel"
+    },
+    "pilihanD": {
+      "message": "Mengunci konektor"
+    },
+    "pilihanE": {
+      "message": "Semua jawaban benar"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbcb99259dce936eac242",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Pada pemasangan kabel straight, pin yang digunakan untuk mengirim ( transmit ) data adalah ..."
+    },
+    "pilihanA": {
+      "message": "1 dan 2"
+    },
+    "pilihanB": {
+      "message": "6 dan 8"
+    },
+    "pilihanC": {
+      "message": "4 dan 5"
+    },
+    "pilihanD": {
+      "message": "3 dan 6"
+    },
+    "pilihanE": {
+      "message": "3 dan 8"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbcf89259dce936eac41e",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Pada pemasangan kabel straight, pin yang digunakan untuk mengirim ( transferring ) data adalah ..."
+    },
+    "pilihanA": {
+      "message": "1 dan 2"
+    },
+    "pilihanB": {
+      "message": "6 dan 8"
+    },
+    "pilihanC": {
+      "message": "4 dan 5"
+    },
+    "pilihanD": {
+      "message": "3 dan 6"
+    },
+    "pilihanE": {
+      "message": "3 dan 8"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbd389259dce936eac607",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Pada pemasangan kabel straight, pin yang digunakan untuk menerima ( receiving ) data adalah ..."
+    },
+    "pilihanA": {
+      "message": "1 dan 2"
+    },
+    "pilihanB": {
+      "message": "6 dan 8"
+    },
+    "pilihanC": {
+      "message": "4 dan 5"
+    },
+    "pilihanD": {
+      "message": "3 dan 6"
+    },
+    "pilihanE": {
+      "message": "3 dan 8"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffbd6a9259dce936eac7fd",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Pemasangan kabel secara straight pada kabel UTP digunakan untuk menghubungkan ..."
+    },
+    "pilihanA": {
+      "message": "Komputer dengan computer"
+    },
+    "pilihanB": {
+      "message": "Komputer dengan hub/switch"
+    },
+    "pilihanC": {
+      "message": "Switch dengan router"
+    },
+    "pilihanD": {
+      "message": "Hub dengan Repeater"
+    },
+    "pilihanE": {
+      "message": "Client dengan Server"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffbdac9259dce936eaca00",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Berapa kecepatan akses data pada access point yang memiliki standar kode IEEE 802_11b ?"
+    },
+    "pilihanA": {
+      "message": "20 Mbps"
+    },
+    "pilihanB": {
+      "message": "54 Mbps"
+    },
+    "pilihanC": {
+      "message": "10 Mbps"
+    },
+    "pilihanD": {
+      "message": "100 Mbps"
+    },
+    "pilihanE": {
+      "message": "11 Mbps"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbde69259dce936eacc10",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Apabila NIC sudah terinsall dengan baik, maka dapat dilihat melalui ..."
+    },
+    "pilihanA": {
+      "message": "Device manager dan Add/remove hardware"
+    },
+    "pilihanB": {
+      "message": "Control panel dan Add/remove windows component"
+    },
+    "pilihanC": {
+      "message": "Windows explorer dan regedit"
+    },
+    "pilihanD": {
+      "message": "Network connection dan device&nbsp; manager"
+    },
+    "pilihanE": {
+      "message": "My network places dan dxdiag"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbe1e9259dce936eace2d",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Kabel jaringan berikut yang paling cepat untuk transfer data adalah ..."
+    },
+    "pilihanA": {
+      "message": "UTP"
+    },
+    "pilihanB": {
+      "message": "STP"
+    },
+    "pilihanC": {
+      "message": "Fiber Optic"
+    },
+    "pilihanD": {
+      "message": "Coaxial"
+    },
+    "pilihanE": {
+      "message": "Thick Coaxial"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "C"
+    }
+  },
+  {
+    "_id": "61ffbe5d9259dce936ead272",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Mengapa alamat IP dengan octet pertama 127 tidak digunakan di kelas A ?"
+    },
+    "pilihanA": {
+      "message": "Merupakan IP LoopBack untuk untuk setiap computer yang ada"
+    },
+    "pilihanB": {
+      "message": "Sebagai cadangan untuk penelitian"
+    },
+    "pilihanC": {
+      "message": "Merupakan IP khusus yang hanya dimiliki oleh server"
+    },
+    "pilihanD": {
+      "message": "Merupakan IP yang digunakan untuk keperluan routing jaringan"
+    },
+    "pilihanE": {
+      "message": "Merupakan IP yang bersifat public untuk jaringan internet"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  },
+  {
+    "_id": "61ffbe969259dce936ead4a9",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Sebuah jaringan computer dengan jumlah computer 43. Maka subnet mask yang digunakan adalah ..."
+    },
+    "pilihanA": {
+      "message": "255.255.255.0"
+    },
+    "pilihanB": {
+      "message": "255.255.255.128"
+    },
+    "pilihanC": {
+      "message": "255.255.255.240"
+    },
+    "pilihanD": {
+      "message": "255.255.255.224"
+    },
+    "pilihanE": {
+      "message": "255.255.255.192"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbed49259dce936ead6ed",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Dalam pengalamatan IP Address, isian DNS berfungsi untuk ..."
+    },
+    "pilihanA": {
+      "message": "Koneksi ke jaringan"
+    },
+    "pilihanB": {
+      "message": "Menghubungkan dua workgroup"
+    },
+    "pilihanC": {
+      "message": "Koneksi dengan jaringan Client Server"
+    },
+    "pilihanD": {
+      "message": "Koneksi dengan /Hostpot"
+    },
+    "pilihanE": {
+      "message": "Menerjemahkan alamat IP ke alamat domain"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbefa9259dce936ead93e",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Jenis konektor yang digunakan jaringan topologi star adalah ..."
+    },
+    "pilihanA": {
+      "message": "RJ-11"
+    },
+    "pilihanB": {
+      "message": "RJ-45"
+    },
+    "pilihanC": {
+      "message": "TNC"
+    },
+    "pilihanD": {
+      "message": "BNC"
+    },
+    "pilihanE": {
+      "message": "NIC"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffbf349259dce936eaddeb",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Jenis konektor yang digunakan jaringan topologi bus adalah ..."
+    },
+    "pilihanA": {
+      "message": "RJ-11"
+    },
+    "pilihanB": {
+      "message": "RJ-45"
+    },
+    "pilihanC": {
+      "message": "TNC"
+    },
+    "pilihanD": {
+      "message": "BNC"
+    },
+    "pilihanE": {
+      "message": "NIC"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffbf789259dce936eae056",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Permasalahan yang mungkin terjadi pada software dalam koneksitas jaringan adalah berikut ini, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "Setting konfigurasi jaringan tidak benar"
+    },
+    "pilihanB": {
+      "message": "Kesalahan nama Workgroup pada komputer"
+    },
+    "pilihanC": {
+      "message": "Protokol yang tidak cocok"
+    },
+    "pilihanD": {
+      "message": "Network Interface Card (NIC) rusak/mati"
+    },
+    "pilihanE": {
+      "message": "Kesalahan service network"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "D"
+    }
+  },
+  {
+    "_id": "61ffbfbe9259dce936eae2ce",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Untuk mengetahui koneksi komputer ke switch / hub, dapat dilakukan dengan mengecek suatu hal yang berikut ini, kecuali ..."
+    },
+    "pilihanA": {
+      "message": "Lampu indikator switch / hub"
+    },
+    "pilihanB": {
+      "message": "Kabel LAN"
+    },
+    "pilihanC": {
+      "message": "Lampu indikator LAN Card"
+    },
+    "pilihanD": {
+      "message": "IP Address"
+    },
+    "pilihanE": {
+      "message": "Server"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "E"
+    }
+  },
+  {
+    "_id": "61ffbff39259dce936eae553",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Konektor yang digunakan oleh media kabel Coaxial adalah ..."
+    },
+    "pilihanA": {
+      "message": "RAID"
+    },
+    "pilihanB": {
+      "message": "BNC"
+    },
+    "pilihanC": {
+      "message": "PCMCIA"
+    },
+    "pilihanD": {
+      "message": "RJ-45"
+    },
+    "pilihanE": {
+      "message": "Bridge"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "B"
+    }
+  },
+  {
+    "_id": "61ffc02e9259dce936eae7e5",
+    "dosen": {
+      "_id": "61fa61f2c82d06f2470624ce",
+      "nama": "Funny Farady Coastera, S.Kom., M.T",
+      "nip": "198205172008121004",
+      "email": "ffcoastera@gmail.com",
+      "jenisKelamin": "L"
+    },
+    "mataKuliah": {
+      "_id": "61fa5766c82d06f247062301",
+      "nama": "Jaringan Komputer"
+    },
+    "bobot": 10,
+    "soalGambar": {
+      "message": ""
+    },
+    "soal": {
+      "message": "Untuk mengakses CDROM yang ada didrive E dengan Ip address 192.168.103.2 dari komputer orang lain yang sudah disharing, contoh isian di baris Open yang benar adalah ..."
+    },
+    "pilihanA": {
+      "message": "\\\\192.168.103.2\\E"
+    },
+    "pilihanB": {
+      "message": "\\\\Server\\E"
+    },
+    "pilihanC": {
+      "message": "//192.168.103.2/E"
+    },
+    "pilihanD": {
+      "message": "//SMKN JMTN/E"
+    },
+    "pilihanE": {
+      "message": "\\\\192.168.103.2/E"
+    },
+    "pilihanGambarA": {
+      "message": ""
+    },
+    "pilihanGambarB": {
+      "message": ""
+    },
+    "pilihanGambarC": {
+      "message": ""
+    },
+    "pilihanGambarD": {
+      "message": ""
+    },
+    "pilihanGambarE": {
+      "message": ""
+    },
+    "kunciJawaban": {
+      "message": "A"
+    }
+  }
+]
