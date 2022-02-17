@@ -13,25 +13,40 @@ const sha256File = require("sha256-file");
 module.exports = {
   getPengujianAlgoritmaAES256CBCandBase64: async (req, res) => {
     try {
-      const plaintext = "LANadalah";
-      const iv = "abcdefghijklmnop";
-      const key = "abcdefghijklmnopqrstuvwxyz123456";
-
+      const { plaintext, iv, key } = req.body;
       const algorithm = "aes-256-cbc";
-      const cipher = crypto.createCipheriv(algorithm, key, iv);
-      let encrypt = cipher.update(plaintext, "utf-8", "hex");
-      encrypt += cipher.final("hex");
 
-      res.status(200).json({
-        status: "success",
-        data: {
-          plaintext,
-          iv,
-          key,
-          ciphertext: encrypt,
-          ciphertextBase64: base64encode(encrypt),
-        },
-      });
+      if (plaintext === "") {
+        res.status(400).json({
+          status: "error",
+          message: "Plaintext harus diisi!",
+        });
+      } else if (iv === "") {
+        res.status(400).json({
+          status: "error",
+          message: "IV harus diisi!",
+        });
+      } else if (key === "") {
+        res.status(400).json({
+          status: "error",
+          message: "Key harus diisi!",
+        });
+      } else {
+        const cipher = crypto.createCipheriv(algorithm, key, iv);
+        let encrypt = cipher.update(plaintext, "utf-8", "hex");
+        encrypt += cipher.final("hex");
+
+        res.status(200).json({
+          status: "success",
+          data: {
+            plaintext,
+            iv,
+            key,
+            ciphertext: encrypt,
+            ciphertextBase64: base64encode(encrypt),
+          },
+        });
+      }
     } catch (error) {
       res.status(500).json({
         status: "error",
@@ -41,19 +56,21 @@ module.exports = {
   },
   getPengujianAlgoritmaSHA256: async (req, res) => {
     try {
-      const fileName = "ori-file-pengujian-sha-256";
-      const fileExt = ".pdf";
-      const locationFile = `${config.rootPath}/public/${fileName}${fileExt}`;
-      const getSHA256File = sha256File(locationFile);
-
-      res.status(200).json({
-        status: "success",
-        data: {
-          filename: `${fileName}${fileExt}`,
-          locationFile,
-          checksum: getSHA256File,
-        },
-      });
+      if (req.file) {
+        res.status(200).json({
+          status: "success",
+          data: {
+            filename: `${req.file.originalname}`,
+            locationFile: `${req.file.path}`,
+            checksum: sha256File(`${req.file.path}`),
+          },
+        });
+      } else {
+        res.status(400).json({
+          status: "error",
+          message: "Silahkan masukkan file!",
+        });
+      }
     } catch (error) {
       res.status(500).json({
         status: "error",

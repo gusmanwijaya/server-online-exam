@@ -1,6 +1,9 @@
 const express = require("express");
 const router = express.Router();
 
+const multer = require("multer");
+const os = require("os");
+
 const {
   signIn,
   getJadwalUjian,
@@ -18,9 +21,14 @@ const { isMahasiswa } = require("../../middlewares");
 
 router.get(
   "/pengujian-aes-256-cbc-base-64",
+  multer({ dest: os.tmpdir() }).single("file"),
   getPengujianAlgoritmaAES256CBCandBase64
 );
-router.get("/pengujian-sha-256", getPengujianAlgoritmaSHA256);
+router.get(
+  "/pengujian-sha-256",
+  multer({ dest: os.tmpdir() }).single("file"),
+  getPengujianAlgoritmaSHA256
+);
 
 router.post("/sign-in", signIn);
 
