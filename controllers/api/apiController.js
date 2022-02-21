@@ -723,84 +723,92 @@ module.exports = {
           .populate("jadwalUjian", "_id namaUjian", "JadwalUjian")
           .populate("mahasiswa", "_id nama npm", "Mahasiswa");
 
-        const algorithm = "aes-256-cbc";
-        let ivListJawaban = base64decode(hasilUjian.listJawaban.iv);
-        let keyListJawaban = base64decode(hasilUjian.listJawaban.key);
-        let messageListJawaban = base64decode(hasilUjian.listJawaban.message);
+        if (!hasilUjian) {
+          res.status(200).json({
+            status: "error",
+            message: "Hasil ujian tidak tersedia!",
+          });
+        } else {
+          const algorithm = "aes-256-cbc";
+          let ivListJawaban = base64decode(hasilUjian.listJawaban.iv);
+          let keyListJawaban = base64decode(hasilUjian.listJawaban.key);
+          let messageListJawaban = base64decode(hasilUjian.listJawaban.message);
 
-        let decipherListJawaban = crypto.createDecipheriv(
-          algorithm,
-          keyListJawaban,
-          ivListJawaban
-        );
+          let decipherListJawaban = crypto.createDecipheriv(
+            algorithm,
+            keyListJawaban,
+            ivListJawaban
+          );
 
-        let dataDecryptedListJawaban = decipherListJawaban.update(
-          messageListJawaban,
-          "hex",
-          "utf-8"
-        );
-        let decryptedListJawaban =
-          dataDecryptedListJawaban + decipherListJawaban.final("utf-8");
+          let dataDecryptedListJawaban = decipherListJawaban.update(
+            messageListJawaban,
+            "hex",
+            "utf-8"
+          );
+          let decryptedListJawaban =
+            dataDecryptedListJawaban + decipherListJawaban.final("utf-8");
 
-        hasilUjian.listJawaban.message = decryptedListJawaban;
+          hasilUjian.listJawaban.message = decryptedListJawaban;
 
-        let ivJumlahBenar = base64decode(hasilUjian.jumlahBenar.iv);
-        let keyJumlahBenar = base64decode(hasilUjian.jumlahBenar.key);
-        let messageJumlahBenar = base64decode(hasilUjian.jumlahBenar.message);
+          let ivJumlahBenar = base64decode(hasilUjian.jumlahBenar.iv);
+          let keyJumlahBenar = base64decode(hasilUjian.jumlahBenar.key);
+          let messageJumlahBenar = base64decode(hasilUjian.jumlahBenar.message);
 
-        let decipherJumlahBenar = crypto.createDecipheriv(
-          algorithm,
-          keyJumlahBenar,
-          ivJumlahBenar
-        );
+          let decipherJumlahBenar = crypto.createDecipheriv(
+            algorithm,
+            keyJumlahBenar,
+            ivJumlahBenar
+          );
 
-        let dataDecryptedJumlahBenar = decipherJumlahBenar.update(
-          messageJumlahBenar,
-          "hex",
-          "utf-8"
-        );
-        let decryptedJumlahBenar =
-          dataDecryptedJumlahBenar + decipherJumlahBenar.final("utf-8");
+          let dataDecryptedJumlahBenar = decipherJumlahBenar.update(
+            messageJumlahBenar,
+            "hex",
+            "utf-8"
+          );
+          let decryptedJumlahBenar =
+            dataDecryptedJumlahBenar + decipherJumlahBenar.final("utf-8");
 
-        hasilUjian.jumlahBenar.message = decryptedJumlahBenar;
+          hasilUjian.jumlahBenar.message = decryptedJumlahBenar;
 
-        let ivNilai = base64decode(hasilUjian.nilai.iv);
-        let keyNilai = base64decode(hasilUjian.nilai.key);
-        let messageNilai = base64decode(hasilUjian.nilai.message);
+          let ivNilai = base64decode(hasilUjian.nilai.iv);
+          let keyNilai = base64decode(hasilUjian.nilai.key);
+          let messageNilai = base64decode(hasilUjian.nilai.message);
 
-        let decipherNilai = crypto.createDecipheriv(
-          algorithm,
-          keyNilai,
-          ivNilai
-        );
+          let decipherNilai = crypto.createDecipheriv(
+            algorithm,
+            keyNilai,
+            ivNilai
+          );
 
-        let dataDecryptedNilai = decipherNilai.update(
-          messageNilai,
-          "hex",
-          "utf-8"
-        );
-        let decryptedNilai = dataDecryptedNilai + decipherNilai.final("utf-8");
+          let dataDecryptedNilai = decipherNilai.update(
+            messageNilai,
+            "hex",
+            "utf-8"
+          );
+          let decryptedNilai =
+            dataDecryptedNilai + decipherNilai.final("utf-8");
 
-        hasilUjian.nilai.message = decryptedNilai;
+          hasilUjian.nilai.message = decryptedNilai;
 
-        delete hasilUjian.listJawaban._doc._id;
-        delete hasilUjian.listJawaban._doc.iv;
-        delete hasilUjian.listJawaban._doc.key;
+          delete hasilUjian.listJawaban._doc._id;
+          delete hasilUjian.listJawaban._doc.iv;
+          delete hasilUjian.listJawaban._doc.key;
 
-        delete hasilUjian.jumlahBenar._doc._id;
-        delete hasilUjian.jumlahBenar._doc.iv;
-        delete hasilUjian.jumlahBenar._doc.key;
+          delete hasilUjian.jumlahBenar._doc._id;
+          delete hasilUjian.jumlahBenar._doc.iv;
+          delete hasilUjian.jumlahBenar._doc.key;
 
-        delete hasilUjian.nilai._doc._id;
-        delete hasilUjian.nilai._doc.iv;
-        delete hasilUjian.nilai._doc.key;
+          delete hasilUjian.nilai._doc._id;
+          delete hasilUjian.nilai._doc.iv;
+          delete hasilUjian.nilai._doc.key;
 
-        delete hasilUjian._doc.__v;
+          delete hasilUjian._doc.__v;
 
-        res.status(200).json({
-          status: "success",
-          data: hasilUjian,
-        });
+          res.status(200).json({
+            status: "success",
+            data: hasilUjian,
+          });
+        }
       }
     } catch (error) {
       res.status(500).json({
