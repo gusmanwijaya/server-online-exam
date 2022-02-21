@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "618624335a8c06bc6c1843f9"
+  },
+  "nama": "A",
+  "createdAt": "Saturday, 6 November 2021 13:01:53",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618624365a8c06bc6c1843fd"
+  },
+  "nama": "B",
+  "createdAt": "Saturday, 6 November 2021 13:01:53",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6186243b5a8c06bc6c184401"
+  },
+  "nama": "-",
+  "createdAt": "Saturday, 6 November 2021 13:01:53",
+  "__v": 0
+}]

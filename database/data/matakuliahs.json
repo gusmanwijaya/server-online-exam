@@ -1,0 +1,1221 @@
+[{
+  "_id": {
+    "$oid": "61fa5414c82d06f24706222e"
+  },
+  "nama": "Pengantar Teknologi Informasi dan Komunikasi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5425c82d06f247062236"
+  },
+  "nama": "Pancasila",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0,
+  "updatedAt": "Wednesday, 2 February 2022 16:51:47"
+},{
+  "_id": {
+    "$oid": "61fa545dc82d06f247062249"
+  },
+  "nama": "Sistem Digital",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa546fc82d06f247062251"
+  },
+  "nama": "Dasar Pemrograman",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa54a2c82d06f247062259"
+  },
+  "nama": "Fisika",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa54b4c82d06f247062261"
+  },
+  "nama": "Kalkulus",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa54d0c82d06f247062269"
+  },
+  "nama": "Pengantar Sistem Multimedia",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa54e4c82d06f247062271"
+  },
+  "nama": "Bahasa Inggris",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa54f1c82d06f247062279"
+  },
+  "nama": "Struktur Data dan Algoritma",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5501c82d06f247062281"
+  },
+  "nama": "Komunikasi Data",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5514c82d06f247062289"
+  },
+  "nama": "Manajemen Sistem Informasi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5523c82d06f247062291"
+  },
+  "nama": "Bahasa Indonesia",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5535c82d06f247062299"
+  },
+  "nama": "Kewarganegaraan",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5546c82d06f2470622a1"
+  },
+  "nama": "Agama",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5557c82d06f2470622a9"
+  },
+  "nama": "Bahasa Inggris Teknik",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5567c82d06f2470622b1"
+  },
+  "nama": "Kecerdasan Buatan",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5574c82d06f2470622b9"
+  },
+  "nama": "Basis Data",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5583c82d06f2470622c1"
+  },
+  "nama": "Rekayasa Perangkat Lunak",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5590c82d06f2470622c9"
+  },
+  "nama": "Statistik",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa559ec82d06f2470622d1"
+  },
+  "nama": "Aljabar Linier",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa55adc82d06f2470622d9"
+  },
+  "nama": "Kewirausahaan",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa572ec82d06f2470622e1"
+  },
+  "nama": "Matematika Diskrit",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa573cc82d06f2470622e9"
+  },
+  "nama": "Sistem Operasi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa574ac82d06f2470622f1"
+  },
+  "nama": "Pemrograman Internet dan E-Commerce",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5758c82d06f2470622f9"
+  },
+  "nama": "Pemrograman Berorientasi Objek",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "nama": "Jaringan Komputer",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5778c82d06f247062309"
+  },
+  "nama": "Grafika Komputer",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa578cc82d06f247062311"
+  },
+  "nama": "Teori Bahasa dan Automata",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5868c82d06f247062319"
+  },
+  "nama": "Metode Numerik",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5882c82d06f247062321"
+  },
+  "nama": "Riset Operasi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5892c82d06f247062329"
+  },
+  "nama": "Interaksi Manusia Komputer",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58a6c82d06f247062331"
+  },
+  "nama": "Kriptografi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58b7c82d06f247062339"
+  },
+  "nama": "Pengantar Cloud Computing",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58c9c82d06f247062341"
+  },
+  "nama": "Analisis dan Perancangan Sistem",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58dac82d06f247062349"
+  },
+  "nama": "Desain dan Analisis Algoritma",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58e7c82d06f247062351"
+  },
+  "nama": "Sistem Terdistribusi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa58f7c82d06f247062359"
+  },
+  "nama": "Etika Profesi",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5904c82d06f247062361"
+  },
+  "nama": "Jaringan Syaraf Tiruan",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa591ec82d06f247062369"
+  },
+  "nama": "Teknologi Antar Jaringan",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa592cc82d06f247062371"
+  },
+  "nama": "Teknik Kompresi",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5938c82d06f247062379"
+  },
+  "nama": "Komputer Forensik",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5947c82d06f247062381"
+  },
+  "nama": "Animasi Komputer 2D/3D",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5955c82d06f247062389"
+  },
+  "nama": "Metodologi Penelitian",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    },
+    {
+      "$oid": "618624b15a8c06bc6c184424"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0,
+  "updatedAt": "Wednesday, 2 February 2022 17:14:04"
+},{
+  "_id": {
+    "$oid": "61fa5962c82d06f247062391"
+  },
+  "nama": "Sistem Pendukung Keputusan",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa599cc82d06f2470623a4"
+  },
+  "nama": "Data Mining",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa59a8c82d06f2470623ac"
+  },
+  "nama": "Keamanan Jaringan",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa59b5c82d06f2470623b4"
+  },
+  "nama": "Organisasi dan Arsitektur Komputer",
+  "kelas": [
+    {
+      "$oid": "618624335a8c06bc6c1843f9"
+    },
+    {
+      "$oid": "618624365a8c06bc6c1843fd"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa59ddc82d06f2470623bc"
+  },
+  "nama": "Fuzzy Logic",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa59fbc82d06f2470623c4"
+  },
+  "nama": "Aplikasi Teori Graf",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a0ec82d06f2470623cc"
+  },
+  "nama": "Teknik Pemodelan dan Simulasi",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a29c82d06f2470623d4"
+  },
+  "nama": "Pengolahan Citra Digital",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a52c82d06f2470623e3"
+  },
+  "nama": "Sistem Temu Kembali Informasi",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a5ec82d06f2470623eb"
+  },
+  "nama": "Visi Komputer",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a71c82d06f2470623f3"
+  },
+  "nama": "Natural Language Processing",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5a83c82d06f2470623fb"
+  },
+  "nama": "Sistem Berbasis Pengetahuan",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5ab1c82d06f247062411"
+  },
+  "nama": "Wireless/Mobile Computing",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5abfc82d06f247062419"
+  },
+  "nama": "Sistem Real Time",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5acec82d06f247062421"
+  },
+  "nama": "Arsitektur Komputer Lanjut",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5b06c82d06f247062437"
+  },
+  "nama": "Pengajaran Berbantuan Komputer",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5b18c82d06f24706243f"
+  },
+  "nama": "Sistem Informasi Geografis",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5b24c82d06f247062447"
+  },
+  "nama": "Administrasi Sistem",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5b39c82d06f24706244f"
+  },
+  "nama": "Pemrograman Basis Data Client Server",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5b47c82d06f247062457"
+  },
+  "nama": "Perancangan Game",
+  "kelas": [
+    {
+      "$oid": "6186243b5a8c06bc6c184401"
+    }
+  ],
+  "programStudi": [
+    {
+      "$oid": "618624ad5a8c06bc6c184420"
+    }
+  ],
+  "createdAt": "Wednesday, 2 February 2022 14:34:59",
+  "__v": 0
+}]

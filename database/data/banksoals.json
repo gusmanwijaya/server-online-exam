@@ -1,0 +1,5251 @@
+[{
+  "_id": {
+    "$oid": "61ffb4369259dce936eaa11d"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa11e"
+    }
+  },
+  "soal": {
+    "message": "NGZlZjc2NTQ2ZmJkMWVkYmU2YTgwNjQzMzEyM2E5NWVhZDRkMGZkN2VkYmM5Y2ZjMGZhMjUzOWVjNTE2NmYzMDMyZDQyNzhlZjU2ZjM4YmE2NGE5YzBkMDI1YmIxNmY5YTE3MjAwYjg5MTY3ZmM5ZjdjYTUzY2I4ODlkNDUwNmI4OTA0NzlmOTE2MDRmZDM0NWNjMDIxZDRkOGIzYTM1Ng==",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa11f"
+    },
+    "iv": "aFcwdzNGa3R6ZjdsYmpLcg==",
+    "key": "MTY0NDE0Nzc2Nm1rOEQwdFI3WFVUUzlqU2JpajI1ZXE="
+  },
+  "pilihanA": {
+    "message": "YzMyYjc4NzA5NDM2ZGRlNDU2MDk5YjhmMzBhMjZmZmQ=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa120"
+    },
+    "iv": "SUVWcnZhSklJQUp1TnNZMQ==",
+    "key": "MTY0NDE0Nzc2NmJJalFRd0tldXJYUEZ4ZUk3RmlIZ00="
+  },
+  "pilihanB": {
+    "message": "MmM5YWE0N2VlNmJjNWI5NGM2NjNjZTdmOGIxMjI4MDQ=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa121"
+    },
+    "iv": "Q0ZMSDh6Yk5aU2tjeVhVTA==",
+    "key": "MTY0NDE0Nzc2NnlBb283NXRxVjd3bjA2dG5CVFRlM0Y="
+  },
+  "pilihanC": {
+    "message": "ZjZiMTlhMzUxYjY3ZGVlZmM2ZWUxYTk2ZDc5YmJiMjg=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa122"
+    },
+    "iv": "REQweWdPSEw4SHJ2NXBtZw==",
+    "key": "MTY0NDE0Nzc2NjN3ZXo3VHFIY0k3WGMxNmJGRk4wYlg="
+  },
+  "pilihanD": {
+    "message": "OTRkMDFjNTVhYzdiNjIzOTQ1ZTU0ZDE1OTA2YmRjMzk=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa123"
+    },
+    "iv": "WEZvck5ySmV1QUhqNFpNeg==",
+    "key": "MTY0NDE0Nzc2Nm5INHppRkFqYm1PUEk3YkY2dW8yang="
+  },
+  "pilihanE": {
+    "message": "OWRiMDkyMDMyYzE4Y2NiMDAwYjVlNjBlZTZlYTFjZWU=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa124"
+    },
+    "iv": "b00yRHRZcmdjcVlsYmh4Vw==",
+    "key": "MTY0NDE0Nzc2NnR2M3d1WlhZUEJMT0pZdXFiZUtTZXM="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa125"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa126"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa127"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa128"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa129"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MzY1MGZlYmFjNWU2ZGU5YWVkMWZkYTFhYTI4ZDI4MDU=",
+    "_id": {
+      "$oid": "61ffb4369259dce936eaa12a"
+    },
+    "iv": "R0ZYam1CZmJCd1NwMEFxcQ==",
+    "key": "MTY0NDE0Nzc2NmlxemV3Tk5HTmZua2hxRFZPaUd0d20="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb47e9259dce936eaa163"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa164"
+    }
+  },
+  "soal": {
+    "message": "NThhZTg0NWMzMGM5MDE1N2QzZjAyNGJjMGIzODczZDEwNzdmZmU1ZDQ4OTlhOGJjNjExMDg5ZjViMzYwNTUxYzAzZTMyMWM5OGE2NjZkZDVjMTMzZDFlYWJlNmJhNWFjN2Y3N2E2NTliYTBlZDk1YmUzY2UzMzEyYzk0ZmI1NjAxNWY0NDQ4NWJhMGQxNTdjNTA4MzcwMjYxMmJhZmM0Yw==",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa165"
+    },
+    "iv": "cG5YY0hISlVkVzZtZlRWUQ==",
+    "key": "MTY0NDE0NzgzOGNSZ2gyNVNVUGU2SHRtS2Q5ZlRlZm8="
+  },
+  "pilihanA": {
+    "message": "ZjU2ZGQ3NjMwNTMwZDhkY2FkZGJmYWI2NmM2N2I4Yzg=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa166"
+    },
+    "iv": "MmJvdElUcmFPWUN5a05CZQ==",
+    "key": "MTY0NDE0NzgzODZ6aTlHMGM4NWpOR3dxVEZhUDg2azc="
+  },
+  "pilihanB": {
+    "message": "YTE2OWM4NTI4YmM1NzI5YTMxYjhhYzU1OGU0MjgzNDk=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa167"
+    },
+    "iv": "RHl0WmlISUt3UTdlSWpIRw==",
+    "key": "MTY0NDE0NzgzODJkdGRrVEtZQ1ZYR3lKWGRjWFRCMXA="
+  },
+  "pilihanC": {
+    "message": "MjY0MDlmNDM1YWIwYWJjZDI1MmM5N2RiN2NkNTM4MzA=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa168"
+    },
+    "iv": "QXFmYW00S0pZazA3S3hYRQ==",
+    "key": "MTY0NDE0NzgzOHRUYko4VTNCMWNZU1VpdEFsVzFpdGw="
+  },
+  "pilihanD": {
+    "message": "MDJlYTM0MTQ3ZTY3ODNjMzQzYjFlYmY4NmQ0MTdhOTI=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa169"
+    },
+    "iv": "OXUwazBRTXpFcFJBdVA0aA==",
+    "key": "MTY0NDE0NzgzOHFZaU13Y0p0bzJhVmVGa1ByQ0tPMmc="
+  },
+  "pilihanE": {
+    "message": "YzVkYmE4NDRjOTMwNjNkNTk2NDAwODA2NTk4MTIyYmY=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16a"
+    },
+    "iv": "VFp3SnZKYkp0QjF1ckFrYw==",
+    "key": "MTY0NDE0NzgzOExlWWJoUmQ1aTc1eUwxMnVxNEhCcEQ="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16b"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16c"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16d"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16e"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa16f"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NDAxMzlmNjkwYjU2YjlmMjE5NDVhNmFhZjYxNGNjZmY=",
+    "_id": {
+      "$oid": "61ffb47e9259dce936eaa170"
+    },
+    "iv": "UUdiV1Q0SXcxRDVrS29WWg==",
+    "key": "MTY0NDE0NzgzOHRMZmZYOHI0ek5BcG02NUg3SFFENGc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb4c49259dce936eaa192"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa193"
+    }
+  },
+  "soal": {
+    "message": "YjhhMzJmZmUzMjljOTlkMTcxNzk0YWY3ZWRkNDAxZTU2Njc5ODQ5Y2ZjODQxMDEzM2Q3ODI3MWE4YjE2ZTY5YmVjZjdlMDU5MWI4YTg4ZTg1MjE0ZWRmMTQzZWM3MjgzMGY5NTVkZjcyNDY5ZDc2MjM1YzUxOWM0OTc0NGMyMzM=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa194"
+    },
+    "iv": "VWc2ZnlTZ0pmSUROOFB5eg==",
+    "key": "MTY0NDE0NzkwOEdWN291MHkwZFVlSTZWSGhQYU1aRmg="
+  },
+  "pilihanA": {
+    "message": "N2RlYjFjNjMwNzExNTFlODUzYWJjZGFiMGVhOGU1ODI=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa195"
+    },
+    "iv": "UGRTNDNzUUZ4ZXRFM0oyNg==",
+    "key": "MTY0NDE0NzkwOGtMVEs2MksyT1BvcnpHcmVxcWRuNUM="
+  },
+  "pilihanB": {
+    "message": "NzFjN2Q1OTJiNjlkNDdjMzM3ODk2YjBiNmI0N2FkOTI=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa196"
+    },
+    "iv": "UUw0OHlxbjZCSlpwYnRYZg==",
+    "key": "MTY0NDE0NzkwOE1QODJLY1IwYzFZUFFLSEFnMEdSRFI="
+  },
+  "pilihanC": {
+    "message": "NThkY2QxNzQ2OTVjMTQwMjhjN2ZjNTdiNmRiOWNkNmI=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa197"
+    },
+    "iv": "M3F2SnlpNjkzSmM5VXBKNw==",
+    "key": "MTY0NDE0NzkwOHk3SWZCcjBIZXRwU0ZoRmtxYkdnZkI="
+  },
+  "pilihanD": {
+    "message": "OTUyMzBjMGI4ZTc1NTFmMzRhZmVjNzNhNzE3NjFiNjk=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa198"
+    },
+    "iv": "VTkxRjdtWHlsaEtkYTRxSA==",
+    "key": "MTY0NDE0NzkwOGQwR1VWdnBCNnNNYVlzWjNQUVE1UnM="
+  },
+  "pilihanE": {
+    "message": "YTYxN2ExY2NkOTU3OGM0NGM2MzE4YjI5NzhlOTk3Nzc=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa199"
+    },
+    "iv": "Uk04MHpTVlBrVjNiRmtsdg==",
+    "key": "MTY0NDE0NzkwODlCV1k3R0JoVlNYTDVwcTJMeThuc00="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19a"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19b"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19c"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19d"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19e"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZDMzMWQwMzA3ZjA0ZTgwYzBkMzk1YTZiZmQ2NmMxZjU=",
+    "_id": {
+      "$oid": "61ffb4c49259dce936eaa19f"
+    },
+    "iv": "NXdMczc0ekQ0MllpaDdBeA==",
+    "key": "MTY0NDE0NzkwOHIzRnJ0NWhZZDNDd2M5c2IzVWI1dHY="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb50c9259dce936eaa1ce"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1cf"
+    }
+  },
+  "soal": {
+    "message": "NDg1OWNmNmQ4ZmZmZTIwMjY5ODNlMzMzNzNjMjE4NzBhYTZkYzdmODg2MTM2YTc0YjM2NjgwNWE4MDJiNGY2OWRhMjAyNmI4OWIxMGE4YzU1ZjNhYzgwNDA3ZDhkZDI2NmY1ZTI1Yzk5NzM1YmQ1ZDlmMzY2NWQ5YTM4NTk0MThkZWY5ZWIxNTc3MTQ2ZGUxZWEzNWJhM2YxOTkyNTVlM2JmN2EwMWRhMWMzOTk1MmQ1YTZkOWIzNTg0OGMzNTNmZjdjN2Y0MjA4YWJmZWE2M2MwYTM3NDQxNjBjN2EyNTk5YTM4M2Y3MGFhNjU4MjQ4NDkxNDExODY5ZTcwODQ4MDFjZGE4ZDMzZTgxOTI0MmRhNWY0MmM2YmQxODYzMjQx",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d0"
+    },
+    "iv": "M2dMaFVLbmk2Nzdja2N1Sg==",
+    "key": "MTY0NDE0Nzk4MFVyRmpnTHkxTkFRZmtLdzh2VGtQV2c="
+  },
+  "pilihanA": {
+    "message": "ZWFmODc0MDYyNTE1ZWVkNjdlMTQ4YmNlMjk2MDk2ODdmOTg1NDc3MWEyMzI0N2ZlMDA4Y2QxYmM3MTEzOWY2OTkzYjQ2NzAzN2MzOTNiODZmODVhN2JiMDQwYWRjMThlZDlkMzY5ZGMzMTc4ZDE1OWVhMTU0NTliN2VhMjYxZDU5NzMyMWM3MWM3MDk1ZmVjMWE3YWNiNTU2ZjUyYjVjMTYxNTdlMGE3N2IyNWVjYmRmNmJhMDAwMWM4MzgxMDQxZDEyM2Y5NGZkMzdjNTU2NWMzMmNiMjExMDBmY2Q4MzhjZWE2ZjZlODA5MjQwZTg2ZjAzNjk0MTYyNjk2NWFmMg==",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d1"
+    },
+    "iv": "REttZGZTckVmbHU4TXF2cA==",
+    "key": "MTY0NDE0Nzk4MGNib01EVURuT1Z1M3BiYkFWc0xMVUI="
+  },
+  "pilihanB": {
+    "message": "NGJlNTFiYmNkNzRiOTc2MTM3ZjYyYWQ5YWRhMWRmZTMwNWVlNjFkYjEzYjU1ZmMyYWI5OTk3ZmZiMTgzZTUzNjRmZWNiNTMxMDhmNDBjNDQxZTliOGE2NmJhNDZiNjgyNjFlOTk2MTdlOWYwODYwYjVjZDM2N2ZlYTRiNWRhNDMwMDI5ZGFmZGYwMzhmMDgwY2JhNzQ3ODBjZGU3MDExMmEwMDc5MTNmNTdkMWJkNWY3M2Q0ZWNjOWJiNWZjYzhkNWJkZTM0NzFmNTgzNjI2YTM2ODE3NWE5NjAzYjQwMDk2ZDJlMWNjNmI2MmRhN2FmODY4NzhiY2M1NmVhM2U5Mw==",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d2"
+    },
+    "iv": "Z2hjUW8wYTJ3Vkt2QWQ1UA==",
+    "key": "MTY0NDE0Nzk4MDNDanpjMnZ4NnRKN1lGODJDQWxEQUw="
+  },
+  "pilihanC": {
+    "message": "ODFlZjM1Mzg5ZDVlOWIxOTY1MTFjNzI5NWRmNTZjN2M5OWFlMDgwY2VmN2VjNzNiM2YwZTE0MWRlNDAxM2YzMWIzZjgwNGE2YTNjZTNhNWRhNjUxZGE4MGEyY2M3ODAyNWQ5MWQwZTc1ZWUyNjM3OTlmNzg2ZGMyY2Q2MzQ2NTU4Mzg4YTU1YzE3YWI4ZTkwYzdkOTJlZjhjMzRkYzZkYzI5NTRkZWVjODJhYjJmNzBkZmFmOTZlM2YyZDA1Y2RjY2EyYTEyNzQxYzMxMThhNzVhNjMxOTM1ODEzMjYzMmNlZDdiODI1NTNjYTI4MzcxZTU5NDliZTQ3ZjJiOTExYQ==",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d3"
+    },
+    "iv": "SkExajhRdEM3M3Z2cWNyUw==",
+    "key": "MTY0NDE0Nzk4MHFYNDVuSG9VWWVSeVRGUm1RNUc4MjU="
+  },
+  "pilihanD": {
+    "message": "Y2RiZDA5MzgzNTZhOTQ0MWI0OGJmYWI1NmM2Mzk5ODI1MjAyNzgyODBmNGJjNTMwYTcyMTJiN2Q1MjZmNjE5Njc3NTFiMGYzNDBiZmJjMWM4ZDkyOTg3NDhjMWYxMzY1NzYyYzRkNmY3ZDYwNmEzOTExOTExMmRjNGE5NzRhZTQ0YWJkNDNlNmE3MzM0ZjViODA5YTc4YjRlYjM1YzU4MjcyYjA4MzI1MDU3Yjk0NzM2NWFlZjVjNzVmOTE3ZGEyNGQ2MjNiNWM0NWViNmJjMTQ2ZTYwOGFiZjE2YTBkMjZhOGU2ZjQ4ZWRjNTBjM2E5ZDIyN2YwNzMyNDgyODk0NA==",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d4"
+    },
+    "iv": "a2l6czY2aFhGTEp2SGxwZw==",
+    "key": "MTY0NDE0Nzk4MEJGdHNqWHVXU1pnSHN4R0FsYTU5cDA="
+  },
+  "pilihanE": {
+    "message": "ZDdiYzYzOTJlZTYwZWZkYTk3ZTM2YzkzOGVhZTE4ZTQwMmNkODg4MzFlZTNiMDgyNDBiNWEzZjA4OGYyNWI4YzdjZTlhYmI4NGM1YjhlZDg1ZmJhNGI4YzgzNDA1ZWI4NmE0YWYzNzhlOGE3OThkNGIzMTI0OWY0Y2Y2NjJlNTE0MDFhMmJmZTI3YjQyMDJjYjAzZDZkMWRiM2QwNjY2NDhmOWViYzg5Y2E3ZjgzY2ZjZDU1ODkyODc3MzZkZDA2YTliOWZkMTk3MWM2YWU2OGViZDUyMjI4YzM0YTQwOGFkYjQ2MTlkZjY3ZDY4NWU5MWI2ODUwNWYxNTRhNjM1OQ==",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d5"
+    },
+    "iv": "YUpRTmk3cklvQXAyd3VaNQ==",
+    "key": "MTY0NDE0Nzk4ME9nY1kwd0RRMEx5alFZOHZRZ3B5a1I="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d6"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d7"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d8"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1d9"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1da"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MmI3NDU0ODQwMjk0MDVjNTIxNzFiMDUxMzNhNTc3OTc=",
+    "_id": {
+      "$oid": "61ffb50c9259dce936eaa1db"
+    },
+    "iv": "aGI5VUJDRmVyekZpaHM5cw==",
+    "key": "MTY0NDE0Nzk4MDFqNTRFUDJzT1JrdU9Cb3p6ZzlaT2E="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb5589259dce936eaa217"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa218"
+    }
+  },
+  "soal": {
+    "message": "OGU5NjEzODdkOTNhOWU1ODViOTkyZWM3YTlkMzFiZTc0MjdiMjFmOWQwZjk2M2IzMGQ4YmJlYzQ0OWE2MjVlYmVmNmE1ZWFhZGRjYjQwNTc3NzhkMzFiMDA3ZWY0MWM1OWJmYTJiMjJhMmYwZTYwY2ZmZTM0MTIzYWI0OWJjNWQ5YTNjNGZhNWVhNjkzNDkxN2RjOTVjZGY0ZmM2YzZjYw==",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa219"
+    },
+    "iv": "MG9YQ0JxaGVDdTJrdUxybA==",
+    "key": "MTY0NDE0ODA1NkczS2lTSEE3WmFPcjlIbUhwNnRCRUc="
+  },
+  "pilihanA": {
+    "message": "NjE2MmM3NmQyMTEwNzg3NWUzOGNkMDA2OTJkMzQ3ZThkNmQwMTdhOGJmYmVhMmFjMTdlZDhiMzFiNDAxNTQyMw==",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21a"
+    },
+    "iv": "ZFBnSHhPT2hqMG5PejZ2Zw==",
+    "key": "MTY0NDE0ODA1NllJRUVHd3MycW44Ym5NSFl0UmtRRG4="
+  },
+  "pilihanB": {
+    "message": "MTNlZjRjN2UzMTRmYmRhOThlYzc5YmFkYmE5MmZmYzQ5ZjJhYjQ1ZWRkYWI3N2ZmMzBmYTMzMDY4ZTUwNzIzNmJjY2VhMzAyNDExMjRmMmRmZTUyNGNiYzU5MDdmY2E0",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21b"
+    },
+    "iv": "V3FMZXR5YXpYTENiZjI0Yg==",
+    "key": "MTY0NDE0ODA1NkppOFhQU0REMHZ4bENsQjZOTzFwNEY="
+  },
+  "pilihanC": {
+    "message": "NjQ3MDUwYjcyMTRlYjVmN2Q2ZTQ1YzNhY2EyYThhYmJhYjgwYWIxMDVkYjBlNTViZGFiNDM4OWY1MTA1NWZmYzI5MTA3ZGFkNzBkZjA2NThmMTM5NmYzYTUwMjRkMWI3",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21c"
+    },
+    "iv": "RUZta2pvTmNxb21SMFcwUw==",
+    "key": "MTY0NDE0ODA1NjZabnBUbWQ4Rk1EWDV6c1IxYXJyMGc="
+  },
+  "pilihanD": {
+    "message": "ZGFiY2UyMjI5YjBjM2RiNzhkMDY0NGIwOGY1YjkwNGY4NDE2Y2NlOTk4MDY5YTk3YTg3NmYwZjIzYzExYmFjZA==",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21d"
+    },
+    "iv": "V2FsYVRJTHlYY0pYWEhOcg==",
+    "key": "MTY0NDE0ODA1NlJSYUhIM3FDUkNxVWNBcXRDeGNHNnc="
+  },
+  "pilihanE": {
+    "message": "YTU2OWYxMjZjZDMyZGEyZTU2ZDljNmFhYjBkODIyNWE=",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21e"
+    },
+    "iv": "cDNCaVhGWnpFU1BJUXk1Tg==",
+    "key": "MTY0NDE0ODA1Njc4MVhOcUd6RHFndjQ3OUZVVlRvY1M="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa21f"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa220"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa221"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa222"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa223"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MTIyMjNiYzFiNmM2NmM5OTg0YzJjNjE3OWNjNDBjMzU=",
+    "_id": {
+      "$oid": "61ffb5589259dce936eaa224"
+    },
+    "iv": "eFc0MndhZkFDU1lSVGhwUQ==",
+    "key": "MTY0NDE0ODA1NkRpWHdUa3h5VHQ0Z29iMjMweHVKUEw="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb5da9259dce936eaa26d"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa26e"
+    }
+  },
+  "soal": {
+    "message": "ZDg4Y2U1YTEwZjk0MDgzNDUyOTkyMTQ1MTg1ZGU2MjRlZTUzNTM1MWUzNGY4MjJjMDg4MjkxYmNiYzA2ZmZkZTFiYjNkYjc2YWI5OTQ2MGQyYTcxNThmMTZjNzI4ZTMyMjA4ZDY1ZGY0ZDhjMzQzMzNlZTJiYWViOGNkMjg3YTQyZjdhYmUwODUyNGRmMjY3OTNlNDAxOGFhODFmZDVjMzNlYTAwODc5NDc2MWI5NmFhYzk5M2E1MmM4YjlhYzJkYjcyYjQwZmI5NzEzYzJlOWE0NTlkOTdjYTA1OTEyMzZhOWRiZDEyN2JhMTE0NzgzYWUwZTBmM2ZlOWNjMjc5NQ==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa26f"
+    },
+    "iv": "T1ZwU0plZXRnTkFzQVZkVw==",
+    "key": "MTY0NDE0ODE4Nk8wWGR1NUYzbDh1YVdOZDhiRmhXUmk="
+  },
+  "pilihanA": {
+    "message": "NWEyZjBmZGZlYjQ4MjhiZDQzZGE2NzQ3ZGI5MzhmYzQxZWEwNTA0NWIyMGFjNWVjMTA2ZWNjZjQ1MGU0OGUxZg==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa270"
+    },
+    "iv": "RkJ4SHdVMlEyYnlEeGF3NQ==",
+    "key": "MTY0NDE0ODE4NjNEWXVuNUF0MmY0cklSbHRwQXBzYVU="
+  },
+  "pilihanB": {
+    "message": "NjYyYmUwY2Y3NDZhZTQ5OGU3NzFhMDgzMDZiYWRmMjdmNTc2MTFjODkyYjQ2ZWM1OGUwNmU3ODVmYjI2MzFiMA==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa271"
+    },
+    "iv": "d0dEYUlnaXJUdEpuWDZYMA==",
+    "key": "MTY0NDE0ODE4NlN1OFhkakkxaER6NTFYZ0x2ZHBSNEs="
+  },
+  "pilihanC": {
+    "message": "MzJlNjgzOTA3ZDU5NmU3MmY3YWZkMmM4MTNiOWFhOWQ0YTE3NjgzZDNkNzc4ODFiODJkNGQ2MzhlMWE3YTZhZg==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa272"
+    },
+    "iv": "ekU5NW5PekRySkh0MFl5Mw==",
+    "key": "MTY0NDE0ODE4Nng1bjJRZ2pOeXlpUGI2WlpJZHN4cU0="
+  },
+  "pilihanD": {
+    "message": "NjkzYWRkYWEyM2ZhNGE5ZmI1MTI5NjY0OWQ2ZTJkMjRiYjU2MGNmMDRlYmVjODVhMmMwZDliYjMzN2YzMDk3Yg==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa273"
+    },
+    "iv": "YndqY3drOEJzVk4ySnhrbg==",
+    "key": "MTY0NDE0ODE4NmVuNlBvRHRpNXZLdk03WHlmTk1Ub1I="
+  },
+  "pilihanE": {
+    "message": "N2ViODQ2ZTM5NmEyNjg5ZWZkOTk1OTY1YTJmYmYxMjZmNWJlMzhjNmI0ZmY2ZWI3YWFkZWNmODQyNjJiZjVjNQ==",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa274"
+    },
+    "iv": "REtqdVRJWFZPMGwxQ2JqVw==",
+    "key": "MTY0NDE0ODE4NlNlSE9VV04yRUJ1WkRac3pGdjMyTTU="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa275"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa276"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa277"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa278"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa279"
+    }
+  },
+  "kunciJawaban": {
+    "message": "YTZlMjcxYzM2NDYyMmVmMzViZTJlZGU4ODgwMDdiZjE=",
+    "_id": {
+      "$oid": "61ffb5da9259dce936eaa27a"
+    },
+    "iv": "TDhVdUJoRE96bWhWVjBHSQ==",
+    "key": "MTY0NDE0ODE4NkNXWjBzdkhLUkd4M0dlVnlURDBOQ0k="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb6219259dce936eaa2d0"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d1"
+    }
+  },
+  "soal": {
+    "message": "ZTYzZWVjY2RmY2FmOTAzNjg1ZTdiOWIxODQ1MmVhYmIzZjNmNzBkMWJhODBlNjU3NWI0NjcyYWUwYzNhMzU2N2VjNDYwN2I2N2Y5ZGY2ZjM4MDk1YzQwY2I3NzBhN2M3NGQyMGExNDZiYjEwZmVhYjY5ZDc0OGJiNWIzZmQzYzRkNWE5OGJlOGE3YzBhNmYzN2RjNzEzYmFlMDRhMmZjYWQ3NmY2NmVmY2Q3OTZmMDFmY2NhOWU5OWRiMjU0YTc3ZDhmMmEyMzMyYmEzMDQ4Zjc4Y2M0OGNlN2U1NzlhYjllMDYyMDAwMTlkNGVjZjdjZDU5MzAyNWFmMzcxOTRkZTMzZTU3NTIxNzRiODY4ZmQ3YzRkMTJhMjgxMjQyMmMxMjBkN2MzYmU5YjY2ZTFjYzg4Y2U3M2RhMmY1NTQzMDQ=",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d2"
+    },
+    "iv": "VnVwNEt3VGFkM0Npb1BjMA==",
+    "key": "MTY0NDE0ODI1N25yTld4Tjc3a0tlUnVDTktMbGRpSm8="
+  },
+  "pilihanA": {
+    "message": "MjMzNDY2MmRjNzJhOTI0OTg3MGU0OTdlMTA4ZjRhNjJlYTdmZTAzYjBmNGViZDMwNGYwNWM4MDlhN2ZjYjI0Zg==",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d3"
+    },
+    "iv": "UjVlYnFsTUJsV3NlZ3d0ag==",
+    "key": "MTY0NDE0ODI1N0VUUEZhbUVvNXdMV2VjVlBVaFNPWVI="
+  },
+  "pilihanB": {
+    "message": "YTA1OWExZTMxZjI2Yzc5ZDdlNTM2ODE2OTdhNWZmYzJhN2Y2MGJjNDFhMGFjNjFlMmQyMzQyY2I2YTE5MmM1Nw==",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d4"
+    },
+    "iv": "MzVPNlpZOXdaRlNmeFFkZA==",
+    "key": "MTY0NDE0ODI1NzlGcW9pak5RR3NyNmR1UUlYYmptWkc="
+  },
+  "pilihanC": {
+    "message": "YWEyNjc3NmNjYzk1MWY0MGQwODUwMjBlZjc3YmZhOTRlMTBhNDcwMDk4ZTEwMGRmM2JlMzk4ZmQ4NGI3Y2Q3Mg==",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d5"
+    },
+    "iv": "cWxTbmNiMXNtSjNTSHphdA==",
+    "key": "MTY0NDE0ODI1N1BtYXhJWG9RV1JNd3pPWlZsN09VbFE="
+  },
+  "pilihanD": {
+    "message": "MzlhOWNlYWQ2MGU5NWQ4NjkyNmY5MzJiNjFlMGI5NjhmNzBkNmFhMjQ0NzkwYWE0OTY1OWVhOTQyZWY1N2YxNw==",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d6"
+    },
+    "iv": "VWdOa1h0SmRuYU40ZGlCTQ==",
+    "key": "MTY0NDE0ODI1N0QwNG1zaDZFRkFqWEdwUFNTckZMaVk="
+  },
+  "pilihanE": {
+    "message": "MGI4Mjc1OGI0ZWRmY2U3NWU4YTRiZDNkY2ZjOGRkN2ZmYjc0ZDEyYjNlMjBmZDBlNTdjMjJkZDJiYTA4MjZiOQ==",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d7"
+    },
+    "iv": "OXlJSXNvNWRmdHM2elNHUw==",
+    "key": "MTY0NDE0ODI1N3FrQU9CQVMyc2N4VmdubG5vUVhZQWo="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d8"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2d9"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2da"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2db"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2dc"
+    }
+  },
+  "kunciJawaban": {
+    "message": "YTllMTJhYjNlNjlmN2I2YjUyOWYzMzAwNTllMzFmZDE=",
+    "_id": {
+      "$oid": "61ffb6219259dce936eaa2dd"
+    },
+    "iv": "cEk0M1JHYzN4WUt1NWgzWA==",
+    "key": "MTY0NDE0ODI1NzlCVmQ4VUo2UEE3RmRDa0laVGJLcDg="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb66c9259dce936eaa340"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa341"
+    }
+  },
+  "soal": {
+    "message": "M2JlNGFkN2NjZTNjYTIxZWU2NmQ2OWY4NmYxMzAyNjQ4Y2IxZDJlYjMzOTVhY2U3ZTU2NDkxYTY2YjUxMDY2ZDhhMTFmZTQ5MDY5ZDJlMWU1NmYxN2ZhYTY0ODAxOWFiMGQ3NzRjM2UwYmY2MDVhYzdkMDFjMDZhOTRjMzFmMzNmYzZkZmQ2ZTlhYzUzYmRlMDYyM2ZiYmNkN2YxYmY1NGJlNTBjNTg5ZTQ1MmU2YWVmZDk1MDUzZmRlYjAxMjExZGFlYTFjZWY4NDNhNTdhOGIxZjlmODgyNWQ4OTUxZWJjMzdhYWY2NTQxY2E3OGZkNTFjMzQzYWFlMGVjMDQ3YzllM2IzOWMyNzU3OTkxZDk2MWFjMDYwOTAyZTgxNTcw",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa342"
+    },
+    "iv": "YUtuT2RLeERFRk5FOHhISA==",
+    "key": "MTY0NDE0ODMzMjdIVGZmNnpoRFJSU0ZRcEpUWG5ScFc="
+  },
+  "pilihanA": {
+    "message": "MTViYWVlNWM5NWYxYjA2Y2UzYTFiYmEwMDQyYjg3MzU4MzhmMmE3MDJlYzljMTJmMGJlMTljMWFhZmVjMGE2MA==",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa343"
+    },
+    "iv": "Mlh3QjNteUtydkdpRVpZVA==",
+    "key": "MTY0NDE0ODMzMnVtWVFkcGwwQ0FwOWp0SzNHR3JWTVM="
+  },
+  "pilihanB": {
+    "message": "OGVhN2Y1MjA5YTgwZTZiNWY1MzgxYTZjOTRiNGYxYTMzYmY1YzEwY2I3NzVhNGZlOWQ2ODM2M2MwZjdmYTgxOQ==",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa344"
+    },
+    "iv": "UFpiaUpwdTlHd2c3N21DWg==",
+    "key": "MTY0NDE0ODMzMlZZdkVoM3FSODVGQzA3VEFhRkF2eVA="
+  },
+  "pilihanC": {
+    "message": "MWZiODg0ZGJkYmU4Yjg3MThkNjQ0ZTg2NTM2ZGE2MDA4YjFkZDE1YzY5NWFiNjdkZTE2ZGNjZThiYTZiNmMyZQ==",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa345"
+    },
+    "iv": "SGRnNlRRVHIwS0lsZEpuaQ==",
+    "key": "MTY0NDE0ODMzMmlHMFZnaVFWSGJVVFVLalBqTlc2aGk="
+  },
+  "pilihanD": {
+    "message": "NDBjN2JhZGI2MjM3NGViMTYwYTM4MzA3ZTU0MGE0MmU3MTQyNTVkMjhiNjY5MmE3ZmQwNjkzZGU3NGQ4ZTE0ZA==",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa346"
+    },
+    "iv": "djhhT0k1TktMM1JFWHZxbQ==",
+    "key": "MTY0NDE0ODMzMng2YnZDeU83RG1iZTd3VEhRaWRjS2s="
+  },
+  "pilihanE": {
+    "message": "ZDc1OWFhNGVmMTc1ZWNhNjNiODk2MTA4ZWZhYWRlZmQ4NmEzMzZiNDEwMWU5ZmMxZTM1ZGUxMmU2OGVkM2NiNw==",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa347"
+    },
+    "iv": "Mk5LM0VUUGVLd1BRcE1PTw==",
+    "key": "MTY0NDE0ODMzMk1LM2FqT0xOYzJmUW1ZR2F6Y2phd0k="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa348"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa349"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa34a"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa34b"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa34c"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MzY5MjY2MmExZDllOWRkYzY2MGI1YTczODM5MjU0M2I=",
+    "_id": {
+      "$oid": "61ffb66c9259dce936eaa34d"
+    },
+    "iv": "Zjk5anUyVWd5TnhxOGQ0Qw==",
+    "key": "MTY0NDE0ODMzMjh4UWZTT1dhNFBacm9leUtrVk9ZR2M="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb6bb9259dce936eaa3bd"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3be"
+    }
+  },
+  "soal": {
+    "message": "NGVhYjhjYzk1MDdhNWE4NGU0YTZkMzNjM2RkNWQ0YzAyODQxODVhNWQ2ZWJhNWQ1YWIyMzdmMjIxYzAxOGVkY2Y3MzRhMjk4NzQ1M2Y5YmE5ZjQ1MGY2OWI3YjIyZTJiOTQyZDg0OGMyMThlYjE0MWNlOTlhMWRmNGRlM2FjNDJmZDk4YjVjZDE0YWM2NjBkN2JkNDkyOTEyYmJmMWE5YmE0MWFiNjE3OGM5MTlhZGNiM2YyMDBmOGYzZDJlYTY1",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3bf"
+    },
+    "iv": "UlBTdjVtS0FKbkkyNzdzWg==",
+    "key": "MTY0NDE0ODQxMVV2cDJKOWFUNjhrYkJuTDNwN0tESHk="
+  },
+  "pilihanA": {
+    "message": "NjkyZmJjMTI5Y2QyNzNhZDJhODdiNmJmNDRjZjg1NjI1YWZhOTkwOWJkMGNiMTlkYzk4MDRhYjJkZGJjMjQ3OQ==",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c0"
+    },
+    "iv": "NDU5cGxDbzVpOHdkQzNYTQ==",
+    "key": "MTY0NDE0ODQxMXVaemZkVlRMZW5kVUk5RnVBWHdHMmc="
+  },
+  "pilihanB": {
+    "message": "YjQ0ZTMyZjdmOTJkZjZmYTQ2YzdiZDE0OGFjY2Y4NjE1OTQwY2U3Y2RlZGVjNmU5OTgwYjA0YjlhYzI5Mzc1Mw==",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c1"
+    },
+    "iv": "b0xtOGR6dFNIejk4RExIOQ==",
+    "key": "MTY0NDE0ODQxMWd0bkN2UG5kQmJLOWRQZWpxdjJUczI="
+  },
+  "pilihanC": {
+    "message": "MWYyNDc1OGRkMTYxNjAzNWM4ZjU0ZGQ2YjRkNDJkYTNkYmFkMmVjNjQ0MGU4MjUwZjE4NjQ5YTcxYTliMTU3Zg==",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c2"
+    },
+    "iv": "VjZvelU0UE1xT3FPdGt6Qw==",
+    "key": "MTY0NDE0ODQxMXZrS25oS1BpSXh4V0xoaDdQckQwdWQ="
+  },
+  "pilihanD": {
+    "message": "ZGQ1MmVjZGQxYmNmNGZjMTg3YWFlMjg5Y2MwMGZlMzcyYTljNzc0MmM1ODhmNDc5OGI0NzI5NzA2MzRhODkxYg==",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c3"
+    },
+    "iv": "c1BjYmN0NlF2Zmc5ZTdwTA==",
+    "key": "MTY0NDE0ODQxMUhxWGdrTTZwNEJWNmxOY1F5dTc2S0Y="
+  },
+  "pilihanE": {
+    "message": "MmJjZGJiMTg0NzA2YzFhMDYwNmYyNDllYjUwYmU1NGRkMmQwZmVlM2I0ODVjNGEwN2RkYjQ5MWQ0MmRmOGY2MA==",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c4"
+    },
+    "iv": "MWF3ZGNiTERMOW9wNGNRRA==",
+    "key": "MTY0NDE0ODQxMUdrNVVjWkpxdHpSOGZzbHkzVUNoSDM="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c5"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c6"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c7"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c8"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3c9"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NDA0YzRmZmQzMDVkOWI0Y2IwNjAwZDI1MDBkZmYxMTA=",
+    "_id": {
+      "$oid": "61ffb6bb9259dce936eaa3ca"
+    },
+    "iv": "NTZSWHM1ZVI5VzBHUUZwUA==",
+    "key": "MTY0NDE0ODQxMTg5WUppeVNLUkZyR0tnSmg1Zm9MNnY="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb72e9259dce936eaa447"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa448"
+    }
+  },
+  "soal": {
+    "message": "Mzc0YzM1YmM1MWU3ZmU4YWFkNWZlM2UzZDVkMGJjZjkxZWYyOTYyZTRkZWU4ODFjYWMwZTVjODFjZmRhM2FmOTRkMjI1ODZmYjc5ZjBmMTMzYTJiYzllNWFmYmExNDhiYjIyOWM3MDFiMmZkYjFkN2YwNTc5NjFhZWZkZGY1YzMyNjk3OGIxNjAxY2M2MmVhYTZiYTgyNjRjNDZhMmZiZDZhMDY5NDRmYWEyZTQ1MGJjNTM5NTUzNjJhNTllMDBmNjczZjc4MjY2MmZhNDMwZTFlMTkyMmQ0OGU1N2E1NTFjYzQzM2I0ZjAwMDBkMTA0OWU1ZGI5NWE0ZWMwY2QyMg==",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa449"
+    },
+    "iv": "TVZJRnoyU2swbmFLUDk2Ng==",
+    "key": "MTY0NDE0ODUyNnZqeTRIa1plaVd6eW1Cc3Q3Q2RUWHg="
+  },
+  "pilihanA": {
+    "message": "ZTJmNTVkZTY3ZDhiMDg1YWJlOGQ5MDE1NDIwNzgwZGU=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44a"
+    },
+    "iv": "bFNMWE1EUExaeDFDSFhiTQ==",
+    "key": "MTY0NDE0ODUyNlppWVJOVXBZenhqVVhCOUdpRXQ3VGw="
+  },
+  "pilihanB": {
+    "message": "OWY1ODQzNzk2N2MxNzEwMTZmNjU2M2IzNWQyNzYyOGE=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44b"
+    },
+    "iv": "aUdFeGw1WlhIYmszUlZHNg==",
+    "key": "MTY0NDE0ODUyNnJaWXZmQjhkQ0hXb1VOMTdGeTYycTM="
+  },
+  "pilihanC": {
+    "message": "ODAzMTliMTZhMGJlNTQ3OTk3NGY1YWMwYjMwYTljNDA=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44c"
+    },
+    "iv": "NHdPMUpVMnQ3dVJqcWt1VQ==",
+    "key": "MTY0NDE0ODUyNk4wek5NZmZ2am52SjVUaGNCcmhzdng="
+  },
+  "pilihanD": {
+    "message": "ZDA1YWJhMTk4NzQxNDk0NDRkYzIwYmNkOWViYTVlYjU=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44d"
+    },
+    "iv": "WXVyS3hyUXo5WHhZdGwxMA==",
+    "key": "MTY0NDE0ODUyNmNJNGF6eWFkZ1ZCM3B2dGpNMFhBdWM="
+  },
+  "pilihanE": {
+    "message": "ZTA5MDRmYWQzYmExMGJjOThlYjI4MDZmOTZhODlmODE=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44e"
+    },
+    "iv": "NlM3bGY5aUdLZ1RTYUZOYw==",
+    "key": "MTY0NDE0ODUyNm1tWGp3QXBReGFJTkhWSWtITzJKT0g="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa44f"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa450"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa451"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa452"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa453"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZTg3NGMwMDY0MDllOWI2YmYyOTEyY2ZmZWExN2ZhNjg=",
+    "_id": {
+      "$oid": "61ffb72e9259dce936eaa454"
+    },
+    "iv": "MnVtaTlHbW52THJ0U0hNaQ==",
+    "key": "MTY0NDE0ODUyNkdra2Y4TGI4MlNnQlptTnZPU1A4Smg="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb76d9259dce936eaa4de"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4df"
+    }
+  },
+  "soal": {
+    "message": "NWVmZjQ1ZGM2NzNmNzVmNGMzMjgyMjRlM2VlN2Q3MDliOWI0MjY1MGU0NTM1ZTJkN2NiZTc4ODAwNTZjYWRjYmI4NWY0NjYyMTAzYzk3NDA4ZGQxNTZhZDgyNWUxNmEwMTIxMmQyM2NiODhiYzZlY2JhMGVhNDE0NTUyNTc3YTU=",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e0"
+    },
+    "iv": "Rm5DWVVrR2JWV1hrSEMwRg==",
+    "key": "MTY0NDE0ODU4OW02YUF4YlNYOGRWbWpGNFQ1SDZKb2E="
+  },
+  "pilihanA": {
+    "message": "YWI5YmQwNjlhZjUyYzEyOWRiZmViMThjZGM0ZmVkMDkwYTQzZTcwODhmOTAzYTUyMTdjMTA1NGQ1N2U3OGZkYw==",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e1"
+    },
+    "iv": "S0doeFZNc2JKb1NoVE1pMQ==",
+    "key": "MTY0NDE0ODU4OW8xZ3lZZnl1YTFPenplMUw4OTN5Rmo="
+  },
+  "pilihanB": {
+    "message": "YTBmZjI2MzRkZjNlYjU5YWU4M2Y4MDAxMDEwYjA0Njc4NjNmMjczN2I5ZGYyNmI4Mzg4ZjFjYzhkNzBhN2VlOQ==",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e2"
+    },
+    "iv": "U2hGdEpwcVNrT0lRVkdEdQ==",
+    "key": "MTY0NDE0ODU4OUVuNnBheVpRVUREU1ZZcWlCeGdVR2Y="
+  },
+  "pilihanC": {
+    "message": "ODhmNjNjZjkwZTM0MDA2MThhZTg1MTM3OWI1N2U2YWQ=",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e3"
+    },
+    "iv": "bksycFhEa1ZzZ05tNTJyeg==",
+    "key": "MTY0NDE0ODU4OUZjVW1NQmFuWFNVdmFhcFBMRWlxUnM="
+  },
+  "pilihanD": {
+    "message": "NjE0ZTczZmRjN2FhNTk2MzIyNTA2MmFmMjFkOWQ1OTdmNDZkMDM3MzdiODUxZTEyMjEyMmU3YzM2ZTNlNjc4Mg==",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e4"
+    },
+    "iv": "eFA3cjJ6eUExVjhpMGEyRQ==",
+    "key": "MTY0NDE0ODU4OW9tRGFMRUlzNXYwWjI1R1VsRnRYT28="
+  },
+  "pilihanE": {
+    "message": "NmZmZmNlYTQ5Mzc1NGRlMTRkNzJhMzQwMWI2ODI4NmYyMWI3ZDVmYmFlOGY3NDhjNjg5N2NkMDQ3ZGM1Y2IyOA==",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e5"
+    },
+    "iv": "WEU5eGFsdm5Td29paEJINw==",
+    "key": "MTY0NDE0ODU4OU1RdVJsVmVsNGFQZkhBVEl2c0FSUXE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e6"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e7"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e8"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4e9"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4ea"
+    }
+  },
+  "kunciJawaban": {
+    "message": "N2QzZjRhNjRhNzc5YzJhNjM5M2M0ZWU0YjdmNjI5YmI=",
+    "_id": {
+      "$oid": "61ffb76d9259dce936eaa4eb"
+    },
+    "iv": "MENjR0dabkVLM3VBczFZRw==",
+    "key": "MTY0NDE0ODU4OUl0azZBT0ZQRWdYUndxaWZWWm1XaHI="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb7ad9259dce936eaa582"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa583"
+    }
+  },
+  "soal": {
+    "message": "MTIzNTBjZjc5MjJmYjJkMDE4ZWU0ZTgyYzAxMWQ3MWQ4MDkwMDA5OTFkMjgxNDNlMTk5OTJiOTI4YTIzYjkwODk5NTFkYzY1Yzk5OTQyMmM3OTNhMWFhOTQ0MDE0M2I4NGFhZjI2M2FkYzA1NzZkYThjYWQ2MGVhY2Q2ZjZmZGM=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa584"
+    },
+    "iv": "d0hqNnJPT3VvSDhwR3UzdA==",
+    "key": "MTY0NDE0ODY1M1ViMGFpeXFlMTJ6MFJFM3FSWktIQXU="
+  },
+  "pilihanA": {
+    "message": "MTA0YWQ1ODU4ZGJlYmRiZTQ1Yjg1ZjBiY2ZhY2NmMTU4ZTNlYTI4ZDNiNjAyZjY2MzdkOGEwMTUyYjBjNWQ4MA==",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa585"
+    },
+    "iv": "Rm9idlBjT0xpeEQwRTRUMw==",
+    "key": "MTY0NDE0ODY1M1JGU0RCMlZLd2pyV1NVRzhqQVd1d24="
+  },
+  "pilihanB": {
+    "message": "MGFmOTlmMjhjMDAwNWIxOTdhODVhYzE2NzkxMmI2MDQ=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa586"
+    },
+    "iv": "bTdCTEh3dG8xQ0szeFQyeg==",
+    "key": "MTY0NDE0ODY1M3c4SkRjajlqaGZxUDZ4cXRTNlZjOG8="
+  },
+  "pilihanC": {
+    "message": "ZjZhNDVlMWRjNWM0ZTM5YmJkYmQ3M2NjYmJmZGU3MTU=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa587"
+    },
+    "iv": "OURNYVJyWWhzdEVnQVJ3Uw==",
+    "key": "MTY0NDE0ODY1M1dHM2pGQWJiVENOTWkwWTljeFhvZmk="
+  },
+  "pilihanD": {
+    "message": "YzdlZWU1ZDQxMTcyZGU3YjE1OWI5NGMwZmUzMjgwMWI=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa588"
+    },
+    "iv": "ZndNWUZqNkpTUG5aMVhIVA==",
+    "key": "MTY0NDE0ODY1MzRyOVBoOXB6NTFvOXRsUHZFeElvT3I="
+  },
+  "pilihanE": {
+    "message": "NjQwMmUyOWMwNzQ5ZjExZDdmNzIwNTIwOWFiMjI3OTU=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa589"
+    },
+    "iv": "NjJFUlR2NzJhVnFLU3hIOQ==",
+    "key": "MTY0NDE0ODY1M2JZV1FVSWhqVEJWU09oMWNqOVYxbUo="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58a"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58b"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58c"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58d"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58e"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NmQzOTEyMTk0NmIxZDJiZjUzZmFiODg0OWNlZWI1ZjE=",
+    "_id": {
+      "$oid": "61ffb7ad9259dce936eaa58f"
+    },
+    "iv": "em1XS1hBTGMxbjdHTENCUQ==",
+    "key": "MTY0NDE0ODY1M0V1TklmNmdmaFZtWmc2NnRVVmttUW8="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb7e49259dce936eaa633"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa634"
+    }
+  },
+  "soal": {
+    "message": "NmVmZmNiNmJmNGU5ZDhjMjFkMjkwNGE1ZjZmODdkMzlhYzM0MDA4OGM3NDY4MTFmYjlkMGQ1ZTU5YTJhNzg0M2VkN2FmZjU4ZjcxMGFkMjIwMmY0NTcyNzA3YWVjMmQ0NmUwMDJlNmVmZTQ3ZGZiZDhlOTMyYTAxNDdlMTBkNDQwMjdhMDlhZDY5NDMxMTc5NDY0NDE5NDc3YThhNmNiYg==",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa635"
+    },
+    "iv": "OUFkSDlhalBBRVlFbFA3bw==",
+    "key": "MTY0NDE0ODcwOEFpYXBxYVo1RUpxeGNUS2pheHhmVHY="
+  },
+  "pilihanA": {
+    "message": "YWU2YTAwYWE4NzdkYzQ5ODg2MDYyYWUwNGVhMDBjOTA=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa636"
+    },
+    "iv": "ZHhXR1pLZ0VaaExLQXdVbA==",
+    "key": "MTY0NDE0ODcwOGczR3NIcUlYNUxNb3B2aE9GdG1DdmI="
+  },
+  "pilihanB": {
+    "message": "ZTc4N2I5YjkyZDU3YjdhYjQ0ZDE2ZGVmY2Y3MWI5MmE=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa637"
+    },
+    "iv": "SFM0VzR4OUdrOXlJUTBBcw==",
+    "key": "MTY0NDE0ODcwOHRLSWtHYUxONGY5STJXZFR3WElMbDQ="
+  },
+  "pilihanC": {
+    "message": "OTUyYzI3Y2UwZWYwZDY1OWI3YjQwMzVhM2E5OWRiN2E=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa638"
+    },
+    "iv": "d1Flb2U2dWtRdTVWU0VJTg==",
+    "key": "MTY0NDE0ODcwOE9ZZXo2Y2ZPWWp0aG5LR0lxY29PMnA="
+  },
+  "pilihanD": {
+    "message": "N2QyZmNiNmM3ZmMxNmJlNTI0NmZkY2RmNWJkMjUwZTI=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa639"
+    },
+    "iv": "VFJRMk55MFo2RFN3b1lBVw==",
+    "key": "MTY0NDE0ODcwOHVkS2xTS2cxSlhmaDVCRVFoTmRrYUk="
+  },
+  "pilihanE": {
+    "message": "YmE4MzZlM2FiYjU3OTc3YjBhZTg4MjEyYWFhMzY4NDQ=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63a"
+    },
+    "iv": "T2hqWjZldVBCVEJJNUxJOQ==",
+    "key": "MTY0NDE0ODcwODJKNXJyb0VENE9ycWpJQW1GekJRcEg="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63b"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63c"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63d"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63e"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa63f"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MGMyYTc2MzUyNzJjNTE3M2JlZDNlZmU0MjA1ODY1ZDA=",
+    "_id": {
+      "$oid": "61ffb7e49259dce936eaa640"
+    },
+    "iv": "VnRlZ1hKQjZqbTR0dldjNA==",
+    "key": "MTY0NDE0ODcwOHlKekF0Y3JnMW5tSDJCbUFyUjRkdFc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb80f9259dce936eaa6f1"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f2"
+    }
+  },
+  "soal": {
+    "message": "N2IyMDMzY2RmOWFkM2Y1YWJjODVjMTMyYjg2YTc1NjZjMDUxMTNjODI4ZTNlZjM2NzY1OWM1OTEzYjc4NWZhYTkzM2JhN2NlZDUzMzQyNThkYWI1OTEzYjMzMjA4NTFkODcyYmU2ZDE1NjMwOWQxNWZiYjBlMTRlNjkyYTNhMWExYjJmZDM1MWViYTg1ZDNiNzU2MWQwZjY4YmZkOTU2MQ==",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f3"
+    },
+    "iv": "OWFJc2o2dnA2YVF2VE1Edg==",
+    "key": "MTY0NDE0ODc1MUU0czJvVUhpaWZJd1NzVEtWalBDNjQ="
+  },
+  "pilihanA": {
+    "message": "ZTM1Mzc0ODNkNjFiNDBlMDQzMzViYTdjZTBhODRmODg=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f4"
+    },
+    "iv": "NER2eTVXc3RQSDR6U0ZhbA==",
+    "key": "MTY0NDE0ODc1MUVtWjV1dWZ5dEJYMWc2eVRNSk9mcEg="
+  },
+  "pilihanB": {
+    "message": "MzQ1ZWFiNWJmZTZhNDQwMjRmYjI4NTMyOTA2NGNkM2Y=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f5"
+    },
+    "iv": "V2tVZ2d4bTI0Q3FUdkRDaA==",
+    "key": "MTY0NDE0ODc1MU1NdjZBUEhNV3VBMzdTMDd0RVl6d2s="
+  },
+  "pilihanC": {
+    "message": "ZTgyYmNkMjYwYmYwNDdjM2FiNWQyZWNjNTUzYjliOGI=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f6"
+    },
+    "iv": "VUFJY3lla3ZjaFFkMnBsaQ==",
+    "key": "MTY0NDE0ODc1MUd0d1lHc2lWajF5ZklCNTZZWWx3UVo="
+  },
+  "pilihanD": {
+    "message": "ZjE1YTFkZDlkYmIwZGI2M2FjZmU0ZWFhMGY5YTE3ZTc=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f7"
+    },
+    "iv": "RTIyeEdZYVNvR0lPZ0JRRg==",
+    "key": "MTY0NDE0ODc1MXQwSTBJdGFQRU1OTEtRNGVWNGJLZnQ="
+  },
+  "pilihanE": {
+    "message": "NWQ0NTAwZWU3MjczMzE1ZmVlMWNjNmM1MWU0MWU2ODM=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f8"
+    },
+    "iv": "R3ZXTjlPUGZRUkU4M3pEQg==",
+    "key": "MTY0NDE0ODc1MTN5NGdJb2NNWG5DT1hoa1AyU3RWMWg="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6f9"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6fa"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6fb"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6fc"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6fd"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZmQ3MzEzZGNhNDQzODkxOGJjMTAwNDVmZmI4MzA2YWY=",
+    "_id": {
+      "$oid": "61ffb80f9259dce936eaa6fe"
+    },
+    "iv": "YVpQb3JvZHZXS0xOcW5Zdw==",
+    "key": "MTY0NDE0ODc1MTZZQndCdEljelozQXRIZ2hzSmdHT0c="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb8339259dce936eaa7bc"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7bd"
+    }
+  },
+  "soal": {
+    "message": "MGVkZWY2NjdlZDNmMDI1ZmYyOWNiMzlhNWE1M2MxM2ZlY2U3OTA4ZGIzYTNjNDVhYjdjZDgwYjQ4NDM5NWQ5MDQ1MWMxMjUwZDIxYzdjZTZiODI0OWI4MTllYmM2Y2UxYjhiNzVlYTU3MzQ1NGY0NTg2YThiYmZiOTI2YTEwMmMxZGIyZmM2NzA0NjU3NGFiZTg2ZDFlNjM4MTJiYTc2YQ==",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7be"
+    },
+    "iv": "TFhZSWNOakZxQmI3NjM4MA==",
+    "key": "MTY0NDE0ODc4N1VqemFlczJUYm9TRzgzanp0djlMdDU="
+  },
+  "pilihanA": {
+    "message": "Mjk1ZDg4MmU5MGVlYzg2NGIwYWNkZjMzOWFjODRlNDU=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7bf"
+    },
+    "iv": "azNNUVdYQ2RhVFBBZ0xhOA==",
+    "key": "MTY0NDE0ODc4NzdWeFpYUks5WTFBMzkxZmhJYUh2UVg="
+  },
+  "pilihanB": {
+    "message": "ZGMzZGI2MDI1NTg3YjY0ZWRhZDVlMmU2OTU0OTY5Nzk=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c0"
+    },
+    "iv": "eTY1ZXJLanplUENMTEV5Mw==",
+    "key": "MTY0NDE0ODc4N2JEZXUxdFpBRndKckpqNjZTYlRLNHc="
+  },
+  "pilihanC": {
+    "message": "NDhkOTk0MzcwZGE1YTg3NjlhOTBhYjg4NzczNWY4ZTk=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c1"
+    },
+    "iv": "YVE5cWlSR0tuYmhFdU1ITg==",
+    "key": "MTY0NDE0ODc4N1Q4QWo1ZUYxUklLWVN6NzdDZGhvbTQ="
+  },
+  "pilihanD": {
+    "message": "NDQwZmQ3YmQyMmI1OWExYWFjZTRkMjBjNDFiNWM1YjY=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c2"
+    },
+    "iv": "aG9VcHFBaVdCTDd2THdBaA==",
+    "key": "MTY0NDE0ODc4N2kxcXZ6Nm13c05iRElmbEJlc2U1RHQ="
+  },
+  "pilihanE": {
+    "message": "ZjUzY2Q4ZWJkYTQyOTZmODM2ZWI5NmRjNTkzMGUxMzU=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c3"
+    },
+    "iv": "U0tHY1VaZktudnE0T3Rwbg==",
+    "key": "MTY0NDE0ODc4N0RFcjdEZjBLR3dFV01weWNVajQ0cko="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c4"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c5"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c6"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c7"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c8"
+    }
+  },
+  "kunciJawaban": {
+    "message": "YmY5YmM0MWRmYTRlMTc4YjU1ZmVjYjNkZjBmMTkyZWI=",
+    "_id": {
+      "$oid": "61ffb8339259dce936eaa7c9"
+    },
+    "iv": "VHZhQjJwTmFlZnFGVFdkTg==",
+    "key": "MTY0NDE0ODc4NzkyRDNTRnlXTkZrRFdsMnRlOThxWUQ="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb8669259dce936eaa894"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa895"
+    }
+  },
+  "soal": {
+    "message": "OWUyMGM5OTY1YzY3NjVhNGQyMTgxYzkwODQ2OThmMTJkZDk5NTU5YzQyY2YyMjA0YzRjMTQ4YTk1MjVjZGMyZDQyZDQwODEwYjJlMGQ1Yjc4ZjEzODNlMDc2OTA3MTE5ZWFiNzYwYTdmODJhMTBhOTk4YWZkOTMxZDg2ZDU5OTQ1ZGVhYjBkNWRkN2FjZDU3NDQ4ZWU0OGU4YTZhMjczMTJhMDI2OGU4NmU2ZmY2MjYxZmMzODI0MGJjNTQ5NTI1",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa896"
+    },
+    "iv": "UURWM2JsYUZHanhHZ2kwNw==",
+    "key": "MTY0NDE0ODgzOFI3d3FRMFJYaGY2YUJvRFVWb3M0ZFM="
+  },
+  "pilihanA": {
+    "message": "YWUzYWEzZjNmN2VjNTA2M2U0NTIxNTRkMThmOWRlMTc=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa897"
+    },
+    "iv": "NVh1OWhwRFRSQmxPc0x5Zg==",
+    "key": "MTY0NDE0ODgzOFNxTnRxYXRIWXA2ejhqZG5iUzBVVDI="
+  },
+  "pilihanB": {
+    "message": "ZjBiMzM1MzdiNjE0M2U0ZGFlNjk4YzgzMzg5MmM3ZTc=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa898"
+    },
+    "iv": "SlBmNU9CNkpwTVowRFZuZA==",
+    "key": "MTY0NDE0ODgzOHZwenlkM216TFM0MHRwRllaVjhoMUE="
+  },
+  "pilihanC": {
+    "message": "Yjg2MTlkYjRlMmMxZjIwOTQwNjkwMDJiZDc4ODU3Mjg=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa899"
+    },
+    "iv": "QzFkeWptdTVsMnVjU1JZdg==",
+    "key": "MTY0NDE0ODgzOGJrbmxDT2g2Sm83cnY0b1ZxemU2UTE="
+  },
+  "pilihanD": {
+    "message": "Yzg1NWVmYTA3MTA3M2I5MGViNzIwMDQ4ZjMxZTg2ODE=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89a"
+    },
+    "iv": "VFhRZk1OUVp0bmZPbXg2eA==",
+    "key": "MTY0NDE0ODgzOFFxVlo3SlpMMGdEeG9uRTNFTmszS3A="
+  },
+  "pilihanE": {
+    "message": "NTNjN2M4MDgzMzBhN2Q3YzUxYjBmYTgxMzA1NjRhZTU=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89b"
+    },
+    "iv": "V3ljU0t0TzIwejJtcTl4Mg==",
+    "key": "MTY0NDE0ODgzOE03NFk5dmhnQ0ZQd0xkbTRSRnltYzY="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89c"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89d"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89e"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa89f"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa8a0"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MjkzZDk4M2RhOWRlMDZmZjVjNjlkNDY2YThjN2U2ZmY=",
+    "_id": {
+      "$oid": "61ffb8669259dce936eaa8a1"
+    },
+    "iv": "ZllFcTUyNVFqUHl0MVlNdA==",
+    "key": "MTY0NDE0ODgzOHlhSmNiVlhQbE5ad09ReTdlTGZMdWc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb89d9259dce936eaa979"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97a"
+    }
+  },
+  "soal": {
+    "message": "ZmViYTMxMjUwYTE1ZTQyMDY1MzViODk3MGY2NTEwYzM2MDkxY2NiYTFiOTgyNTBkY2QxYzhlNThiNTQ5MTk4ZTU0OTYzYTE0ZGI3ZTg0N2ViMGQ0NzQ0ZjI0NGUxNjU1NWY5MDliNjA3MzVjNDMwZjFiMGRmNWNiYTI0ZGQ1OGIzNzQ5YWQ1M2E5YmNjZDY4ZGRhNmVjYTNjY2Q0OTI1YQ==",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97b"
+    },
+    "iv": "UDFnUWltb2RNelZTTGRadQ==",
+    "key": "MTY0NDE0ODg5M1ZadUNVVW9NUUZoOXRsMFVlaThlVkg="
+  },
+  "pilihanA": {
+    "message": "MzAxNDI2NTg2MjQwOTc3ZWVjMzAwOWIxNTBjNTFlYjM=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97c"
+    },
+    "iv": "MnFlUjFaU3dVa3R0VHplZg==",
+    "key": "MTY0NDE0ODg5M2x2eW9Ea0ZxMDlRbW1EaVZTZnFrb1Q="
+  },
+  "pilihanB": {
+    "message": "NzBlMzFhZWRkNGRlNTNmZGVkNWJlZWVmMzE2ZTZjZmQ=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97d"
+    },
+    "iv": "bmlFU1dFSFJlQlRrTXZhSw==",
+    "key": "MTY0NDE0ODg5M3I1c1VxdThNVWV2SnVZUVVub0tVUm8="
+  },
+  "pilihanC": {
+    "message": "YWI4OWRkNDJkZjg3ZmY5MzljNWRlMzgzZDAzMzcwYzc=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97e"
+    },
+    "iv": "b2VxMHRNMGZ6b0RRdjRqMQ==",
+    "key": "MTY0NDE0ODg5M3loREpnaEhFVTMyWmxuaDBidlBmcjY="
+  },
+  "pilihanD": {
+    "message": "Njc4OGVkNzI1MTlmNzFhZTI5YjMzMGU0ZTVlOWM3ZDA=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa97f"
+    },
+    "iv": "c1NGVE9PTEJHMTVPakhUNg==",
+    "key": "MTY0NDE0ODg5M3dHUmxPcjgyMDBLaFJra2wwZlppS0Q="
+  },
+  "pilihanE": {
+    "message": "MTA4ZTIxNDMzMDViMGQyNzQ1MTg1NGI5NDRkZDYzZjU=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa980"
+    },
+    "iv": "ak5oVEtBVWRJNDg1SEhseg==",
+    "key": "MTY0NDE0ODg5M3RMZHVveXczV0lTNTlqNVlpV1o1c1g="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa981"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa982"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa983"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa984"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa985"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MDU5MzUxMWYwZDFjY2ZjZDY3NTQ3YWY1YTgxZDQyMDk=",
+    "_id": {
+      "$oid": "61ffb89d9259dce936eaa986"
+    },
+    "iv": "UWNsdVBDS2pUbkpDNGJJRg==",
+    "key": "MTY0NDE0ODg5M3VGQmlKcVFITTdUTE9CUXZXdjhIYW8="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb8e59259dce936eaaa6b"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa6c"
+    }
+  },
+  "soal": {
+    "message": "ZWUxZDI2OTM2N2QxNWI3ZGE5MDlmYTZjYWY2YjNhNGVlYzk3NDYzNGFmNjEwYTA2ZjIyMjdmNWUxNjBhMzRlNjk0M2ExMjNmMWZkMDJiZGRhYjE3MjRiYWRmNTgzYzkzMGJkNjk3NDA2OTFjMWJhNmU1MTY1NDk2ZjM4MGVmZTQ=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa6d"
+    },
+    "iv": "c2ZMYnRSZTBRbHgyazlvOQ==",
+    "key": "MTY0NDE0ODk2NTRrVFVRUGpWU3czQWVUWXFFNURQajg="
+  },
+  "pilihanA": {
+    "message": "YTUxNzY4YTBmYWViMTg4NTcyMWFlMGZmYzNiMzcwZDE=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa6e"
+    },
+    "iv": "OUpZc1RkTTdXVnZFTENvUg==",
+    "key": "MTY0NDE0ODk2NURUb09Tb0xzem5LNW9kWkxEaWZvdVg="
+  },
+  "pilihanB": {
+    "message": "MzU1YmIzYzRhOTUwYTVjZjkyNWVkMzY5ODJhMmUyZDIzYTJhNzI5YmY1NzM5YzRkMWM2MmNmMGY5ZjI0NmM0Yw==",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa6f"
+    },
+    "iv": "M1Y5UzNJRndBQ2Jvd0tQYQ==",
+    "key": "MTY0NDE0ODk2NWRaM0hKT1pkNlJrYTVaVjF0TnZnYng="
+  },
+  "pilihanC": {
+    "message": "MzAzODhkNWM4NTg3OWZjNzJmZWZjZTZkNmY0MTAzZDQ=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa70"
+    },
+    "iv": "YVI5djQzV1BxdExZUjRWbA==",
+    "key": "MTY0NDE0ODk2NTFNM0RKU0dJUER6ZVVxdldMSnphRmo="
+  },
+  "pilihanD": {
+    "message": "NWU4OGJhOTU2NTA4OTNjNWQ0OGY3ODdiOTY1YmQ4ZTI=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa71"
+    },
+    "iv": "SXB6ang0dXFPMThZNVllSQ==",
+    "key": "MTY0NDE0ODk2NUwyNTk3M2lJanVrd2doenRFS2kwUXI="
+  },
+  "pilihanE": {
+    "message": "ZTI3NzVlZDg0ZTgxMzM1MTYxMjQ5ODI1NjdjMTQ1OGU=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa72"
+    },
+    "iv": "U2VCOVE3MWZhZFFIYXFhRQ==",
+    "key": "MTY0NDE0ODk2NU16cGNGQzhOVlBsMktoWlR6R1Q5cTI="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa73"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa74"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa75"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa76"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa77"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MjRjOTk4M2Y0MDUwMGE4OGY3OWQyZTI5ZWNjYzhhZjQ=",
+    "_id": {
+      "$oid": "61ffb8e59259dce936eaaa78"
+    },
+    "iv": "M1ozQlA0T29PQkdhUzJQWA==",
+    "key": "MTY0NDE0ODk2NXNoeDBHZ0E1UmltZm1hRFVvemlhb1g="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb9099259dce936eaab6a"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab6b"
+    }
+  },
+  "soal": {
+    "message": "MmRlMmY4NTAzYTliNWRkOWI4YjI2MTYyMzY3MTQ2NzM1MzI1ZWE0MjFjNjU0Zjg5YjRlYzJiMGFhOTdkMTkxYTljZTRmZDE1ZWMwYTVjZjFmYzAwNDQyNDg5ZWNkNzhkZjk3YjZlMjkzMGI1OWI2ZmEzYjdmYjQwYTdjMTc2MjZkZWY4ODZkYTI1MmMwOTMwMjIxODFhMTIxZmU0YTE4ZQ==",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab6c"
+    },
+    "iv": "TmJodVRJWllDVGpKUU5GOA==",
+    "key": "MTY0NDE0OTAwMXhnd2dVOWkwWHRTMmRQVWtjZ0VDZHo="
+  },
+  "pilihanA": {
+    "message": "YjU2ODU2YjFjMTI2Yjg3NzBiMjk3ZWQyOGFlZmJmY2I=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab6d"
+    },
+    "iv": "SGwxVlJPUFVtUEhZdzJ1Qg==",
+    "key": "MTY0NDE0OTAwMXdlOHVWdGpIVkwzVWlPTFp3bVRrTmM="
+  },
+  "pilihanB": {
+    "message": "YjUyM2I0MDlmMjQ3NDdmMDFkOGMyNzJhNWM4YzFjYWM=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab6e"
+    },
+    "iv": "UlZrTmJWWW5wZU13ajhIRg==",
+    "key": "MTY0NDE0OTAwMU9HYnFKSGUxbjhYdzVSTEFneHpSSEg="
+  },
+  "pilihanC": {
+    "message": "ODVhYzEyYWE3YjRiM2Q4MGZkZGFlNjVjYzhlODQxNTI=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab6f"
+    },
+    "iv": "ZnVmOFRDNHdNR0hxcWJ0eQ==",
+    "key": "MTY0NDE0OTAwMXVCYmJRcnpjVFZtenViTHRuTndrTUY="
+  },
+  "pilihanD": {
+    "message": "MWUyOGM2ZThkY2FhYWM3ZDU4NWU3ZGE0ZmJlYWZjMzc=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab70"
+    },
+    "iv": "UG1YblJMNGhFNTFzYU9BTA==",
+    "key": "MTY0NDE0OTAwMXBrN2xEQTlwU2w5TkxqUEVJSVNOOGk="
+  },
+  "pilihanE": {
+    "message": "YWY1ZGVmYjRjMGNlMzE5ZTdiNzAyZDk3ZjUwNmFmMzc=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab71"
+    },
+    "iv": "ZXBlYlJaMEdoMHp3TFJqNQ==",
+    "key": "MTY0NDE0OTAwMXBoQmFDZDlSaHphYWdMUTZjTjE3NHI="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab72"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab73"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab74"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab75"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab76"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MGUzNDA0MWViM2EwNmE2NTc2Zjk0MDA2NDg1YTQxZmM=",
+    "_id": {
+      "$oid": "61ffb9099259dce936eaab77"
+    },
+    "iv": "b0dlWmdSVnEwaUNKcUhuZQ==",
+    "key": "MTY0NDE0OTAwMVJQRkFwTkwzUXVYSkhjN2JQalRna0Y="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb93f9259dce936eaac76"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac77"
+    }
+  },
+  "soal": {
+    "message": "Njc5ZTgyZjYwMTFiYmMzYzU1OTViOGJlYzA4ZDJkMDZmMGYyYzY2Njg3NWM1YzVjNDQ4ZWQzM2I1YTliZDQ3ZWRlM2YzMzU2NGIxZmJjMTgyNDdiMTQ5N2VmMjhhMTRlMzgzNjg2NTNjMzU0OTEyZmI3MzY5NmMxNzYyZTExMzQ5ZWRhNjMwZGM5OGRlNWM3NTNlZDBlMjhiMWUyZDE1YjIxYzhiZjZjNDM3YTU5NGYyOTBhYjY5NTg2ZTdkZDVj",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac78"
+    },
+    "iv": "b3dYUURKYVhCbHdxTVc0Uw==",
+    "key": "MTY0NDE0OTA1NXkwNFlTckVVSzlSTEZpdXJtTnFnTDg="
+  },
+  "pilihanA": {
+    "message": "M2M0YTVmNTQyMjY0MDRlNjRjZjBjMjg5Njk5OTI0OTQ=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac79"
+    },
+    "iv": "bkhlemppaEc5aGNWRDdPdg==",
+    "key": "MTY0NDE0OTA1NUp6WnVJUDJyeFA2RXVCVXVVYTlsanY="
+  },
+  "pilihanB": {
+    "message": "YzhlYTc5MjNhNzVkZmRjZDI3NzlmOTJmNDdkOGMwZWU=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7a"
+    },
+    "iv": "emZNRHYzU2RyVllrazdlRA==",
+    "key": "MTY0NDE0OTA1NVE3Ynd0WmFGV3RSSEkzbFpDa2djUUg="
+  },
+  "pilihanC": {
+    "message": "YjQxNzk5ZWUyZjkwZjQxNzExMTE4M2E5YzQ1ZjEzZjM=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7b"
+    },
+    "iv": "N0NzZzRjTXlhZU9ldXBDTw==",
+    "key": "MTY0NDE0OTA1NUdlOXBoTTdXVjN6QU9ZN0JDTnl1Q2o="
+  },
+  "pilihanD": {
+    "message": "MWIzYjJiOGM2ODhkNjU0ODFlYzA1ZDdiZTVjMmEyNDM=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7c"
+    },
+    "iv": "b0pOWUdpc2hVSmRrMUNldA==",
+    "key": "MTY0NDE0OTA1NWNBbEJoaVVzSzlPUkt4VVpFdjM4Sm0="
+  },
+  "pilihanE": {
+    "message": "ZWM2MmUyNGQ0MTVkNmE2YjdmZTNjZGQyZWI2MWEwN2I=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7d"
+    },
+    "iv": "SlplUG1adjJ5aGlUT2FPSw==",
+    "key": "MTY0NDE0OTA1NTh1U0JSdnNudDlmWVdTVWU3VldmYmk="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7e"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac7f"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac80"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac81"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac82"
+    }
+  },
+  "kunciJawaban": {
+    "message": "OTMzMDk0NWQxZDI2YzUwNTdiODIzMDc4YzkwYWNjN2Y=",
+    "_id": {
+      "$oid": "61ffb93f9259dce936eaac83"
+    },
+    "iv": "cTlLcE1Nc1FuTnNvZTZRdQ==",
+    "key": "MTY0NDE0OTA1NTdyTWJTYzhpTXNBVE4zUkpGNkpXVXY="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb96c9259dce936eaad8f"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad90"
+    }
+  },
+  "soal": {
+    "message": "ODFmMzNkMTM0YTEyYzkxNjAzNmRkOTc2ZjZiNDc4NDIwNmIxMTRiMDYyMzBiZmQ1ZmVlYjY5ZDZlOWM0NDRkN2FhNmFjNzA4YzQ2Yzg5MGE5YjY4MDQyOGE4Y2RkNTJiZDg1YWI5ZWVkZjEwMzE3ZGIxNmQ5OTI2ZGE1ODVlYjkxYzAwNzM2M2E1ZGQ3MDU1NDE2ODc2OWZlZjcwMWViYQ==",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad91"
+    },
+    "iv": "RGtsRG5RT0lpU25Rc0NRRA==",
+    "key": "MTY0NDE0OTEwME5NeFJnb05XSG5KdExTY0NmZnI2N2Y="
+  },
+  "pilihanA": {
+    "message": "MmIxNmJmMjdlYzZlYzA2OWY4OTgyNDkxYmVjYWM5ZDY=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad92"
+    },
+    "iv": "Qnp2dTI3S1h1RXRubmhNZw==",
+    "key": "MTY0NDE0OTEwMFZOQXBhWHE3ZW01OVVSN05JVUNTS3A="
+  },
+  "pilihanB": {
+    "message": "YmVmYjRkZTEzODI4MDRlNWNkNTk2MGJmZTg0NWJjYWI=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad93"
+    },
+    "iv": "djVaZ1E0ZGFOQkRKNFlCcA==",
+    "key": "MTY0NDE0OTEwMFgwRGszMHVIZzlUVGpZMlVXdTZ6RXg="
+  },
+  "pilihanC": {
+    "message": "ZDE3NWU0YzQ3OTE4NmU3MjlhZDA1Zjg4NGMwNDMxMWE=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad94"
+    },
+    "iv": "NDZFaTNoMFJ2cVpadWxNTw==",
+    "key": "MTY0NDE0OTEwMGg5MWNpZWRBM294WldZTEc4QUF0d0c="
+  },
+  "pilihanD": {
+    "message": "YjEwNmYzMDc0YjgyMzdjOWNjMjM4OTM4OGY5MTgzNDc=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad95"
+    },
+    "iv": "YWhYQVY5Q3MyZ2ZkaFlJaQ==",
+    "key": "MTY0NDE0OTEwMHlGT1p3QUtJWnlRa2NCaXBIV3pJS3A="
+  },
+  "pilihanE": {
+    "message": "NDY1Mzc3NjQ4YWRkYjY3NDkyNTFiZjEyOTNjMTFiZGM=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad96"
+    },
+    "iv": "bW1TQkd2UjZRbHYzc0ZkcA==",
+    "key": "MTY0NDE0OTEwMDhHUUt5ZWw1SGJjMjRuR0l5RlU1OGw="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad97"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad98"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad99"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad9a"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad9b"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NTBmNzcxYTE1NjkyYzA5ZjQ4NGY1NTBhMDg2YmFmOTU=",
+    "_id": {
+      "$oid": "61ffb96c9259dce936eaad9c"
+    },
+    "iv": "UTRibEpvVnRMamtCU0tLTg==",
+    "key": "MTY0NDE0OTEwMFp2YlRndTdYRTF0T1BXdkI2UGtYZmo="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb9b29259dce936eaaeb5"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaeb6"
+    }
+  },
+  "soal": {
+    "message": "MTIzNWVjNDQ3YTMzOTAxOWVkNTI4YmJjMDMxNjVmMmIyMjQ0NDk1ZWQzODg0MmVlMjhhNWYzYzk1NDRhYzRlMjQ0ZjVmOWY0NGVmMmI0NzYwZjRkZTBhNzBhZTgxODZlMzY3ZDY4Y2FlZWMxNzc0MTliNmNkYjJjNjY4ZjM4ZmYzOWQwZTYwYWMxYjE4YWMwYTIwMDgwY2IwYzY0OTViNTlhNTAwZmM4MjIwYzU1YTFlNDlkNzZiODQ3OWI1YTQ2",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaeb7"
+    },
+    "iv": "VjVEUTFvNkZaZkRBYWVyZw==",
+    "key": "MTY0NDE0OTE3MHhMamZTQlI2V1E5c0JzeGJERXd5eVg="
+  },
+  "pilihanA": {
+    "message": "Mjk1MjA4ZDM1NGRhOTNkYzU5Y2I4YTVlN2Y3NDYwYzUzY2UxOTg1NDY4ZTFhMGZiNDA4N2MxMWI3ZGExMTEwMThlMGNhNWY0NGQ2NjBkMDUzZTZlZmU0NjhkNGMxNWFj",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaeb8"
+    },
+    "iv": "OUk4cjFUNUVMb3BYeWE2Zw==",
+    "key": "MTY0NDE0OTE3MEd2d0NDYWJvUXRzc2gxMTE1ZzBGM0Q="
+  },
+  "pilihanB": {
+    "message": "ZDVlMTU0ODZhYmQ0ZDc2N2JhN2QxNjg4ZmY5ZTA1YTE2Mzk3NjdkZmE3ODE3ODg3ZDU1ZTExYzAzYzIzZTc0YzdmOGQyYjViZTMwYmVjY2VkMDFjZjg4Y2QxMzhmMWFk",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaeb9"
+    },
+    "iv": "TmFMbmhhcGZPa2JXeGZRbQ==",
+    "key": "MTY0NDE0OTE3MG85VXdUYlFKanBZYVBGNEdUUG1URGg="
+  },
+  "pilihanC": {
+    "message": "YWY5YmM4ZWM5ZTBiZjEyNDQyMjE0NjZkY2FkYTA4MmQ2NTVmMTUyY2I0MGViNTRhZThmMGIzNmMxMGI0MGI1Mw==",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaeba"
+    },
+    "iv": "b2VvZkd1a1RCR2Y0SU1LUg==",
+    "key": "MTY0NDE0OTE3MEtueHhZOWR2QldvaWNlVG5YYVU0YzU="
+  },
+  "pilihanD": {
+    "message": "NjQyYjlmNTZmZjZlOGYwMWQxYWE4OGY0NmM4NDZmNGUzMmI5YWIzOTdiYTA2MGIzMGFhYTE0ODdlMjMxNjNhYzc3NDlkZTExODRlOTBlYmQzMWNlODVjNWU5OWExMDZl",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaebb"
+    },
+    "iv": "T3NudU5tSE5yWjQybUlzOA==",
+    "key": "MTY0NDE0OTE3MG1iZk1DR3g3VXdaN2toNWxEVWU1aEI="
+  },
+  "pilihanE": {
+    "message": "MDljY2VhY2FhYjIyMGIwOWI1NDM5Zjc1MWFlNWI5NzM1ZmQ1NzNjOTMzODRiZjlmODM5NjIyOTU2NWU2NDhiYQ==",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaebc"
+    },
+    "iv": "TWxLc2hrcnpIRzdNRXN2eQ==",
+    "key": "MTY0NDE0OTE3MGIyUDRsVlVkSUdpUkcwcWo0ckxPck4="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaebd"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaebe"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaebf"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaec0"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaec1"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MmUyMTI5MjMyMDM4ODdjMDM0OThjMjUzZjcyZDI0Yjc=",
+    "_id": {
+      "$oid": "61ffb9b29259dce936eaaec2"
+    },
+    "iv": "VjNxbXRWaU1oanV5bWhhUw==",
+    "key": "MTY0NDE0OTE3MFBFenp5NjRkTGtJTElNUTF4bkRpaWU="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffb9f59259dce936eaafe8"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafe9"
+    }
+  },
+  "soal": {
+    "message": "ZDQwNDkwOWRlZWM0MDRiM2ZiY2Q4MTZjMTEzNWFiMmM1NzU1MmNiNjI0ODVjYTg3NjAxM2ZjMmVjNmVjN2JhNWYzNmE4NDA2YmMyOTgzMzIzNDg1NDNjZTY2MjY2ZTljOTA2YzhkYjY3Y2NkOGYxM2QyODg2ZDEyYWYyN2U1MGMyNmNkZGMzNDg3NGRlM2YxNmI3Y2JiYWVkZjQ4Y2ZjOA==",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafea"
+    },
+    "iv": "U3dyVFFIV09HeEl0eGMwZw==",
+    "key": "MTY0NDE0OTIzN0ZuNVJ3aUZ0Y05WODRtc0ZqdFpLS3A="
+  },
+  "pilihanA": {
+    "message": "OTYzYTRjMzE4NzRkNmY2MDVkNGM1ZWQ2ZTg3NWQzNjg=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafeb"
+    },
+    "iv": "NEMwZXg4N3hHa0tpcWxuSQ==",
+    "key": "MTY0NDE0OTIzN0JoaldUNHJSQ0pUbzcxV1BnQUFmMFg="
+  },
+  "pilihanB": {
+    "message": "ZWNlZjU1ZTU4OWI0MTY5MzUzOTY4NWQ5MWRhOTlhYjI=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafec"
+    },
+    "iv": "aWtjMnI0SjBKdUdXUHhMYw==",
+    "key": "MTY0NDE0OTIzN3ppTk9hWFU3b2IwVDZ1VHFxY2JacG8="
+  },
+  "pilihanC": {
+    "message": "Y2ZmOTRjMDg5ODEyYTNhMDAxOGJhZGRlYTdhYzVmODc=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafed"
+    },
+    "iv": "cTV0bHY4VjhiczVXS1NlZA==",
+    "key": "MTY0NDE0OTIzN29HSHJJazlwb2pqSVYyMTZMdHVVT3U="
+  },
+  "pilihanD": {
+    "message": "NDkyYjkyYjRmMmNmZmJhNGE2MjJiZDIwNTU0NWVmY2Q=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafee"
+    },
+    "iv": "aGRjeGpPTkRWNEJTUDlDaA==",
+    "key": "MTY0NDE0OTIzN1pZbE1mTEJkQzNlZkZYdWt5bm5DaUk="
+  },
+  "pilihanE": {
+    "message": "ZjFjNzNiZTZmMjc3ZTg2NDkzNTM3NjI4Y2E1Y2Q4N2Y=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaafef"
+    },
+    "iv": "UFMxQzRlSGUzazBzbkpNZw==",
+    "key": "MTY0NDE0OTIzN1FFU2hDSFZGd0IzYzZxMWFIV3l2MXM="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff0"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff1"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff2"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff3"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff4"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MmFjMTJjODU0MzZmNjFhOTgxNjU0YzZkZmY2NzViZWE=",
+    "_id": {
+      "$oid": "61ffb9f59259dce936eaaff5"
+    },
+    "iv": "MlNQVTF6dEtNcFpuZFp3YQ==",
+    "key": "MTY0NDE0OTIzNzdIWUdXOTAzbjBHVkZ3eHVyeWtNZDA="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffba279259dce936eab128"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab129"
+    }
+  },
+  "soal": {
+    "message": "YTI5M2I0NGUyY2Y1OWZkOGVmMGRhNTI5ODIyNzNiNzhhNjRhNjFhZDAxMDJiZTI3NTM3MDgzZjA3YmZlMTQ4NmFmODc3ZGIzNDg0ZjRkMzZmODM4YzM3ZDJhM2U5ZDE1",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12a"
+    },
+    "iv": "UGZmSVF1Sk5ya3FtdVRIcg==",
+    "key": "MTY0NDE0OTI4NzljOEx0Mzd6eXdPS1h0NmRLTHVwdVc="
+  },
+  "pilihanA": {
+    "message": "ZjMyM2I1YmUxYmMwZWE5NmYzMDczNzZjZWMxMzUzZjI=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12b"
+    },
+    "iv": "Q3ZxaWhRYlVBMjM0YWpGVA==",
+    "key": "MTY0NDE0OTI4N3NuMFlDcjZzNEFpeHgyb2sxMlpuWnQ="
+  },
+  "pilihanB": {
+    "message": "NDYzOGM1YzZmYTc5YmVhMGFiYzk0YzEwZTY5OGRkMjU=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12c"
+    },
+    "iv": "eVVTbWZ6SVRWTGY4OFhJTw==",
+    "key": "MTY0NDE0OTI4NzN1YVhqZlFjcUtMU2M5MlZJYkZ1dTA="
+  },
+  "pilihanC": {
+    "message": "ZTc5MWRkZjBkZDg0MDZiNzFmNzlmNGFiOTk4NzRlMjg=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12d"
+    },
+    "iv": "SWRDTUhmbFRiR1B2dzhoOA==",
+    "key": "MTY0NDE0OTI4N3dJZEFIQXlPTm0wUzJVOG5HamhhM2k="
+  },
+  "pilihanD": {
+    "message": "ODdlYzY2NjFiNDM0NWZhOWRjZTg0OTljNDMyMjk5MjU=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12e"
+    },
+    "iv": "MTVWcmprYVNNTldQemg5eQ==",
+    "key": "MTY0NDE0OTI4NzMzOThDU0g1VFNkMTUzSGw0UmRjcHg="
+  },
+  "pilihanE": {
+    "message": "NDI0YmIwNTI0NzEzMTBjY2ZlMTZlYzk1NDIwNDQ2ZTY=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab12f"
+    },
+    "iv": "T3oxdm1nSTIzRTNRUGJGcQ==",
+    "key": "MTY0NDE0OTI4NzI2ZkZSVWFQZmlFRHdUUjVoZmxNTnE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab130"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab131"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab132"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab133"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba279259dce936eab134"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NGMwN2UwZWRiM2VlOGJlYThhNThmZTM2ZjgxYzFmNjY=",
+    "_id": {
+      "$oid": "61ffba279259dce936eab135"
+    },
+    "iv": "UFJZZ2tSclFmV2tlV2oyMQ==",
+    "key": "MTY0NDE0OTI4N0l2b0NERWJJTGtiN09PaEdKUVVPcVg="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffba739259dce936eab275"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab276"
+    }
+  },
+  "soal": {
+    "message": "YTY3ZDBkYjY3MmI1MWQ3NzU1NWM3YzM1MjIwMjAyMDRjMmJmMDc2YmYxNGQ1NTBmY2E2OTIwMTc2MDc4ZmQ4NjU2MmU3ZTBhMjEzYWEzNWJmYTU3NmMyZDBmMDUyMDA0ZTRlYTdlNWNmZWUxMjY4ZDk2NjcxODU0MTM5YTFlMjBlMTgwYTk1OTFjMGM2NWRhNzg2YTNlZTgyYzFhY2NkNWIxZTBhMDA3YTZhZDY0ZmE0ZTA5YTMyOWYzNzg2ODJk",
+    "_id": {
+      "$oid": "61ffba739259dce936eab277"
+    },
+    "iv": "RUh3UXBURVlmSWtjZWJWYg==",
+    "key": "MTY0NDE0OTM2MzJ6djdIbEF4TXhuM0dvOEhXN0hFTm8="
+  },
+  "pilihanA": {
+    "message": "ZjIwZDJlZmNmNWRmMjRiMzc2NTI5MWY5ZGIyNGFhOWVkNDg2Yjc5MjVlMTE0MjNkMGMwOGFiOTMwYjk3ZjYyOQ==",
+    "_id": {
+      "$oid": "61ffba739259dce936eab278"
+    },
+    "iv": "ejY3MURqNno4VUMzYXE5dg==",
+    "key": "MTY0NDE0OTM2M3dkNGp5SmlnYWpMd2VrVEN6RW1uc3g="
+  },
+  "pilihanB": {
+    "message": "MjkyYWJmMjE5YzhlZjM2YjhkODY5ZTczYTc0MzFlNmY1ZTdkNzIyNDUwMGE4MGJiOTZmY2FiZjk4MjA2ODFjMw==",
+    "_id": {
+      "$oid": "61ffba739259dce936eab279"
+    },
+    "iv": "V1FGUEl2eTNRRWRLcW15VQ==",
+    "key": "MTY0NDE0OTM2M296NEE4OFJ4TjVFandSZWhMdVFCV2M="
+  },
+  "pilihanC": {
+    "message": "NjYwMjczZTFlNGE2NmQ4ZjRhZTI3OWYxMWM5MmI0NjY1YzQ4NjQxNGVlMGU4ODk5ZDYxMGIxYzY2YTVmNDMzNw==",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27a"
+    },
+    "iv": "eXlFazJra0RWeW9MRXhSZw==",
+    "key": "MTY0NDE0OTM2M0VJV3lhdkhmOVhuemNERmZ4OFQzT3k="
+  },
+  "pilihanD": {
+    "message": "ODA3YjkyZTYwZWE0Yzk1NzdhN2MxMDYyOTNlZGIzZDUxNjc2ZDM2MmEwMWJmMDJhYzQwMDQ5Y2Y1YmNlZjM2OGU1YzkzMGExNmQ0ZWE0ZGIzZjdmMDM3ZDAxODhjOGE4",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27b"
+    },
+    "iv": "T3R1Vld2a1NWbGt2b0cxag==",
+    "key": "MTY0NDE0OTM2MzZwaDRrdlBuam9ia2d6MWk2TGJ3aFA="
+  },
+  "pilihanE": {
+    "message": "NjBmODM2NjEwYmJhODA0ZjgzZDhiODRlNDYyZmVhNjdiMTZmNGNhZGYxZDljNGE5YTg1NDlhN2U2M2FiNmY2M2UxYmU2ZDE3MGFjNDA3YTlmZDQ1YjRkOGNhNjcxOTIw",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27c"
+    },
+    "iv": "MjJqa210MzBiemtWdXZjMg==",
+    "key": "MTY0NDE0OTM2M1o0NHBSdmpwR0Q5QkczZ1BmM2RBZ2U="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27d"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27e"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab27f"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab280"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffba739259dce936eab281"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MGVhNDFiZjA5ODkyMDNkZGI1YjE0OTMxZWRiMTk1MzU=",
+    "_id": {
+      "$oid": "61ffba739259dce936eab282"
+    },
+    "iv": "WDdOQlczYng2UllUMWZHdw==",
+    "key": "MTY0NDE0OTM2M3NkaHN6cnNGTkVLZjg3V1FrNFpkNWc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbaad9259dce936eab3cf"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d0"
+    }
+  },
+  "soal": {
+    "message": "NTkzOGJkMGY1Zjg2MGQ1NjBkMzY2Y2JhYzA0YjBjOTgyYzY2YmU4MDgxNDhkZjBiN2YwZjE4MGI2N2ZjMzUzMzhlMGU2ZmIxOWUyYjM5MzlkMTdhMzZmMDFkMzJlODI0YjhmMzkyMDU0OTdiYzdkZWVjNzU2NDM4YzdhY2JlY2ViYzllZmJkZTQ5Mzc4ZWQ4NDc4NTllMTdmMTExOWJiMQ==",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d1"
+    },
+    "iv": "aEtBMko0eXNKMEdNRlU1Mg==",
+    "key": "MTY0NDE0OTQyMWxmSUJhdzlUeXBBVTV0aVI5MnpsQWI="
+  },
+  "pilihanA": {
+    "message": "NTQ1YmFjNWVmNmRlZjkzMzRiY2NmMDc0ZGZhNDBhMTYyZTI2MDFiNGM2NjEyZTljOTJkNzYwMjBjOWEwYmZkNg==",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d2"
+    },
+    "iv": "YkVNaUl3Q1A2T2RDZE9Ncg==",
+    "key": "MTY0NDE0OTQyMTJlMURJNHdMRU5waEV2SjVXOEt5YjA="
+  },
+  "pilihanB": {
+    "message": "M2I2YTc4OWY1OGY3ZmJkY2Y0MThmYjNiNjNiYTQ1Y2M=",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d3"
+    },
+    "iv": "cnlaS0pnaFlDT0VxdmNFNQ==",
+    "key": "MTY0NDE0OTQyMWZzb0NVSkdsTWI1SmVybWJUeTdQcjg="
+  },
+  "pilihanC": {
+    "message": "NjZiZWVjNzhjZjk1NDczNTg5ZDQ4YTk2NTYzNzcxOGI=",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d4"
+    },
+    "iv": "MGpmN2kwWjc3RmlWR0F0Wg==",
+    "key": "MTY0NDE0OTQyMVo0Y21qSnZTYkFXbmQwN1RIeDd6M2I="
+  },
+  "pilihanD": {
+    "message": "MWU1ZGUxZDdkOWY0Y2Q1NTM3ZjdhYjY1Mzg3N2Y5MDMzYWJiNzRlNzg1ZWY0ODk1Yzc1NTYxZWQ5MTcwOTZmOQ==",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d5"
+    },
+    "iv": "UEhhTVNYS3MzUExRRzI5eA==",
+    "key": "MTY0NDE0OTQyMVlJM3l3Nndicm43VTZCV2lHNUJyMzc="
+  },
+  "pilihanE": {
+    "message": "YzFkOGYyNjYxNmY0MWQ1MDc1MzI1ZTliOGVlNWM3N2U=",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d6"
+    },
+    "iv": "ODZJZGxVNVBNMTVFMVUyWA==",
+    "key": "MTY0NDE0OTQyMWlXekZoN0p2Zm84SDV5NFVudzluR0M="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d7"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d8"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3d9"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3da"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3db"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NmZhMjllN2IxYWVlOTFiZTE2ZTU5NGY3MTZmZWE4ZDU=",
+    "_id": {
+      "$oid": "61ffbaad9259dce936eab3dc"
+    },
+    "iv": "bktCNDRzSDl1TFRGYnB0Tw==",
+    "key": "MTY0NDE0OTQyMWZkY0xkSkVJV05weTI4eTdaRDFldVM="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbae49259dce936eab536"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab537"
+    }
+  },
+  "soal": {
+    "message": "NmU4OTg5MzIyZGM4ZDdkY2FiZGU2ZDFhOTM1YTY3MjRiMmVkMzFjODVkNGM0MGNlMWZmYTdiZWViNGY3MGY1YzgwYjhhNmVlODEyMmQ2MTFlYmY1YWE4YTQ1MjRmNzZiMDI5NzRkODgwNWRkOTI3OTFhMmY4ZTcwODg3YTE3ODVmYTg1MDQ2ZWJiNWQxYzU0ZDc0YTUxNTQ5NWE1MTg0ZA==",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab538"
+    },
+    "iv": "bDFNd1ZDYmg5enpwNWcyWA==",
+    "key": "MTY0NDE0OTQ3Nlp4TkhIZXVtbEEwekJ5SHdnOGUwMUM="
+  },
+  "pilihanA": {
+    "message": "MzMxMjExN2QzZTI5ZjU0NjhmZGZlODEwNjMzYzE5ZTczOTQ5OTA5NTdlMzg0YWNmODc0OWRhNzk1ZjliYTA1Zg==",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab539"
+    },
+    "iv": "U2JkVzd4a3dpbVBhYVlRcA==",
+    "key": "MTY0NDE0OTQ3NlRPV1Jka2hGUTI1R2RvNTUzcFNGSG8="
+  },
+  "pilihanB": {
+    "message": "MGNkYTM5YzRiZjIyOGIzNzg3Nzk3NTdmNDRlNjYzYTRhNjE3NTA4OTc4MDJhYWNlNTQ0NmRmYmZiZjBiOTliYw==",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53a"
+    },
+    "iv": "d1Z6QWhIbGlkZWtaTnNwaA==",
+    "key": "MTY0NDE0OTQ3NmV5V0UxVzk3UFdEV1JVcFNyemxaWHo="
+  },
+  "pilihanC": {
+    "message": "YmMyNDg3OGIyZmMzNTViODQ0NWMyNjkyNmNjZTNmYjJkZDJjY2JlN2RkZjBkNzU0OWY0ZTdiZDk2YTMwMGJhNA==",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53b"
+    },
+    "iv": "VEZaQ0hYeFl1T09aaFZDaw==",
+    "key": "MTY0NDE0OTQ3Nmt0blhHOW1wRGs4c0xFRnVhYmR3Nm4="
+  },
+  "pilihanD": {
+    "message": "ODQwNmU3N2MwOWFjZWZjY2ExYTI5ZjZhMzYzMzJhOWVmNzNiMzY3NmIxMjE4ZWZjMDAyZWE0NjFiMTQ4YmY5Yw==",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53c"
+    },
+    "iv": "dXdHZ3dwMElVNjBNUW5sOQ==",
+    "key": "MTY0NDE0OTQ3NmVmeHB5UXhic0RtbGhOVWtHUzU4VnU="
+  },
+  "pilihanE": {
+    "message": "MWZlN2Q2Zjk2MWM5ZDUzMWMzODIzOGZiZjg1MmMyYjA=",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53d"
+    },
+    "iv": "NUVDRmVFdER0ZjFvbU1ENg==",
+    "key": "MTY0NDE0OTQ3NmFjakRZTVU5UWRtNkZUYllheEFFUmE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53e"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab53f"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab540"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab541"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab542"
+    }
+  },
+  "kunciJawaban": {
+    "message": "Y2EwNjdkZGRjOGRiYzBjNTg0NjUwN2JhMjA5NmJlMjA=",
+    "_id": {
+      "$oid": "61ffbae49259dce936eab543"
+    },
+    "iv": "Tnl5eXBoMDBoR1hkZmZ2Zg==",
+    "key": "MTY0NDE0OTQ3NkJRNWVYSG04Q3BhUFh5d2FnZThOTFA="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbb2e9259dce936eab6aa"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6ab"
+    }
+  },
+  "soal": {
+    "message": "NGEzZGVjOTExNzYzYTQ4ZmU5MTZjMjkyNmRjODAzMzAzZTE5YmU1ZmQ1ZjRiMmE0ZWQ1MTM0NzMxZTI4Njg2YTIwYjVjNmFkYTJjY2I5OGRmMjE1OGEzMzBjNTdiYzE2ODgyNmEwNjUxMGMxYmQzYmE5YTY2MjI3MDIyNjFhOGJiZWJmZjQyZDgxZjBkMjJiY2Q3ZjlmOGRmNzNkZjBmZA==",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6ac"
+    },
+    "iv": "RGFiYWQ1YzBsUTlwSGVrWA==",
+    "key": "MTY0NDE0OTU1MExRU25JeTg4dE9jWmliM2JUQ1RLNzQ="
+  },
+  "pilihanA": {
+    "message": "OWE3ZGRjMDM2YjdiZTc2NWVkYzRmZTQwNWRlYTQ4NDk=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6ad"
+    },
+    "iv": "V0dIN05qVUpLbEUzOWZqag==",
+    "key": "MTY0NDE0OTU1MGVMNHpkdHF6SUlWUHFDTXU0SFY3TFg="
+  },
+  "pilihanB": {
+    "message": "ODVhMTU3YWUxOTljMDExNjc3MzAwMWZlYjZiZWRkNmQ=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6ae"
+    },
+    "iv": "WUNkbHNhSThPMXFyV2xhZQ==",
+    "key": "MTY0NDE0OTU1MDZQQzhLSFNxdWtHdzRSYWpLOXdWSXY="
+  },
+  "pilihanC": {
+    "message": "ZjBjMjk4YTU2MjQwNmFlNWVhMmI4YjY1YzE2OGEzODQ=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6af"
+    },
+    "iv": "QkllVXBwM0lzeDI2ZzZWaw==",
+    "key": "MTY0NDE0OTU1MG9PdWNmUEhWSks0THBrdkRwU09KQnQ="
+  },
+  "pilihanD": {
+    "message": "YzY4YjVjYTU4NjMzNmE5MWNiMzQzZGVhOGJjOThhY2E=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b0"
+    },
+    "iv": "TjhMMVdPeGdUMzREVHgyZQ==",
+    "key": "MTY0NDE0OTU1MGpLZjBTeEZsZEM0M2F4a1RzZDg5dDk="
+  },
+  "pilihanE": {
+    "message": "M2ZjZTkzZjRlZmJmOTVhY2ZlY2E1MTU1YWZhNzQxZDc=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b1"
+    },
+    "iv": "T1ZScGpNNDZqTGZ0a2lpNg==",
+    "key": "MTY0NDE0OTU1MEswUmRmYWVBNjJiMnEzbFZkUkgyb0s="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b2"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b3"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b4"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b5"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b6"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NjYyNDU5MGM0YjkyM2M0OGQyMzQ2ZTMyMmZhOWVjZTY=",
+    "_id": {
+      "$oid": "61ffbb2e9259dce936eab6b7"
+    },
+    "iv": "OTRBSW9zcWlFQk10WmhuTA==",
+    "key": "MTY0NDE0OTU1MGRET3FMdEJBbkExeGdxYnhyTzZNWEs="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbb6a9259dce936eab82b"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab82c"
+    }
+  },
+  "soal": {
+    "message": "MWNkYTkzZWU4Njc4NzFhZDU4YzA4MzQ0NTc0YzQwNmM1OWY2MmRlZTU4YmYyZjBhNWJmM2M2MmYxZWFhMjg2ZTUwMjYyOGM4M2E3ZGFmYzRiYjQ0YmNkM2Y4NjBjYjg0ZTVjMGEwY2Q3OWNjOWJlNTE0ZDk4MzExZWQ5Njg0YmY5YjhiMGFiNzYwMDJjYWY4NTE4YzBlMTY4NTk5ZjQ4YTkxMDUzMDU5OGVhOWMzMjg0OTVlZTZiMzdjZWQxN2FjYzRkOTZmMmY3MDVjNTE3NmE4Y2U1YjA4N2E5ODNkZjE=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab82d"
+    },
+    "iv": "VDdxcXA4aWVSTG5IdUxDeQ==",
+    "key": "MTY0NDE0OTYxMDlqUmFZcnh6R3RBeUlIdkpSYVh6c0o="
+  },
+  "pilihanA": {
+    "message": "YmMzMDBlOWQ1MGQ1ZGYxYWM5NTQwNDc0YjNiMzAyODI=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab82e"
+    },
+    "iv": "NXk2TXV4ZndMVkFZeTZXVg==",
+    "key": "MTY0NDE0OTYxMEpLRWZIakMyOW1EUzhkYlBWcXJSYkw="
+  },
+  "pilihanB": {
+    "message": "ODkxMmQxNTgxMmEyYzE1ZjM1NWJmMzJhMTAxYzdlZTA=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab82f"
+    },
+    "iv": "d2FWN0c1TVhKODJOZXdPUw==",
+    "key": "MTY0NDE0OTYxMFlYNnFhdmNJcHhuR1FwaE5hU0pPdWQ="
+  },
+  "pilihanC": {
+    "message": "OGU4ZDY1ZWE1ZGNiNTk1MjZhZjA4NWM5ZWRjNWY3YTA=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab830"
+    },
+    "iv": "N3UwV3E0VUdoeDBUQXFlSw==",
+    "key": "MTY0NDE0OTYxMGdOd1hOdjM3SnhoYmJSbExvSjc1ZDU="
+  },
+  "pilihanD": {
+    "message": "N2UyYWYxYWZhMzQ2NGVlYzJiMmU2OWQxYjdkZWI3NmY=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab831"
+    },
+    "iv": "V3pWTmY1VWE4Z2hFaWE2cQ==",
+    "key": "MTY0NDE0OTYxME10U0N4eER2bWVrWDV6alczS1hLdGQ="
+  },
+  "pilihanE": {
+    "message": "MjQ1NjVlNjU5ZmE3MzMwY2RhM2NmMmVmYzBjOWIyYmI=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab832"
+    },
+    "iv": "eGdHbGhlNGdPUTRXSmNqSg==",
+    "key": "MTY0NDE0OTYxMFFJaU5FOUFUNjRwNE5BbHgyU2laQlo="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab833"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab834"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab835"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab836"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab837"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NTY4NmZkMGI1OGU1Zjk5YmNlNTVlNjU3MzMzMzI5MzI=",
+    "_id": {
+      "$oid": "61ffbb6a9259dce936eab838"
+    },
+    "iv": "SUxTbXRpQzBwNFpuNnpYbQ==",
+    "key": "MTY0NDE0OTYxMEFxZFh6b05aSFF0MXB5d0NZUWVFNDI="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbbaa9259dce936eab9b9"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9ba"
+    }
+  },
+  "soal": {
+    "message": "YmVmZGE4MDA1YzhiYjFiYTdjNmFkNmY3ODNjYThhZmRkZmE4OWQ3OGJhYjAzN2FmOTg4MWNlZDMzMGVmYzRhODIzZWJjM2Y5N2U4NTFmZTcyY2JlNjIwMzkyY2VkMjc0NjdkNzdkMDUxYzhhMzhkOGJmNzkyMDZmYWUzN2M5YWRlODU0YzhhN2FiZDUyYTNlZDQyMDg3NDNlZmY5ZmU3MzA0M2I2N2JmYjdjYjA0ODZmMWE1ZmE5OWMyMzExMWUzOWZjMTFmYjllNWZlM2M5ZWFkMjUwM2FjNjY1YzQ0NDRhM2RkNzFlZTA0NzkxMGNlOTZjMjBjZTNhMzJjYWQwNzE3ZmFiMWUzMTE1MmEzMTBjMDU2OThmM2I4OWQ3NjBmMzQwMmIzNzkxMzEyZWMxYjIyNDcwNTlkZDBjNGUxMmE=",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9bb"
+    },
+    "iv": "SXc0em5lUExITjlOWXUxSA==",
+    "key": "MTY0NDE0OTY3NHFhb0tncmlMVm5md3pWTkVvaGNGUFo="
+  },
+  "pilihanA": {
+    "message": "YTU2MzYwZTYwYTU1NGY4OWM5YzI3YWEyMDk3ZmZmMzE4YWEwM2IwMDg4ZTM0YjcxMmRjNmE2NGQzMjQzNzAzN2VhNGZiMDM2OTc0MjhjNGI2NWQ4MTU2ZjE4MTE2N2JmMWUxOTJmYjdlZmNkOTM2NDBjMmNjYTAyMzUzNTcyNjQ3MjhkMTZiNGE1OWVlN2ViZDM1YTk1Njc0NmI0MzVkYTIyOWE0OWZhYmQyYjVmOTRhNjM2Yjc4OGY1ZDAxYmFj",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9bc"
+    },
+    "iv": "OE1ENmhhWG5nSnZOR290Vg==",
+    "key": "MTY0NDE0OTY3NGVFbW5FbzZYSmF6NVdDZnd2bTc4bk4="
+  },
+  "pilihanB": {
+    "message": "MzM1MGE5ZjczMWNhMDU0MDc4NWRmMzU0YmZmYmM3MDdkNzE2OGRlNTI1MGJkY2RmNjlkNGJlZDFhMzEwNjA3NTdlY2JmZjRiM2VjZDY0MDE4OThkOGMxZmVmNDgyN2M4ZTNkNjlmNjIwMWFjZjA2NzNhMzRjZWMxOWM1N2ViYzVmNGNkNjkxMjMyNGJkMDdmZGU1NDVkOTM1MjJmYWU4MjEzODY5NDhiZDJhZTE2NDAxNjM3ZDE3NGY3YTA1OTll",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9bd"
+    },
+    "iv": "eE1hUVhjV1ZoMFE4WmpLZA==",
+    "key": "MTY0NDE0OTY3NDBGUlc1b3h4OFc5NTZ5TFBIcWlPU1Y="
+  },
+  "pilihanC": {
+    "message": "YWViNzg5N2M3YjBlN2E3OWM5MGZjNjJkMDdiNDNmM2IzYzQ3ZDFiMDg2MzRkMjE1ODljY2FiY2I2NGMyYjBhN2E0YzRkODY3ZTM4ZTJjMmM3NDIxMzVlNzA2OWZjNTQ4YWQ4NGZkYmQzMmE2NzQyM2QzNjk1ZDk2NjVmOGMyZDk3MjczOGY0ZWUxY2QzMTAwYTRmMGNlYWExYjIyZTI4YzA3NWY2YmJmZjYxMjMzNTM1MmM5MjhhZDQ3ZTlhZmU1MDU1Y2ZmZjliMjI4MDE1NWJiOThkMzVlMjQ0MzYzYWU=",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9be"
+    },
+    "iv": "bnI4ZTVmREw5SlZmRTJVNA==",
+    "key": "MTY0NDE0OTY3NFl6UUc2cUxsM04zZEgzcXh1QTNFNkE="
+  },
+  "pilihanD": {
+    "message": "MDc5NThlMThmYzk3MmZkMWM2NDdlNzY5OTBkOWI5ZDlmYWVlYTQxMGJlNWYxMTQ3NmUyOTA0NDdiZmJlYzg1ZTliMTgzNzg1ZGNiMWFjNDQ4MjNkMWNiOTViYTkwMjdkMDU1MTk1YjlkOWI0YWUwYjE4MDNmZGUxYTA2MmIzZjFiMTBhMTY1NDBjNGVlYWJiZjM2NjViZWE5Y2NiODUwMWM0YTU5NTVmYzU0NjNmMDgzMWQ0MjYzNDNkODE0N2Fl",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9bf"
+    },
+    "iv": "VFBLb2VXTmp3eTFTVW9RSw==",
+    "key": "MTY0NDE0OTY3NHRQWE1mRXpLVXhnWVV3OElnNDd1MEE="
+  },
+  "pilihanE": {
+    "message": "ODQ3ZDJlM2JlYjc5N2VhZWZkNzYxYzk1ZDEwZmVlYWFlYWM1ZDUwNjZlYjM5MTA5YjU2YzZhNDhhYmZhOGI1ZGZhNzM2YmYwYmNkNzAzYmQ0ZTY3YmQzMGZlYjhjMjU1YTg1YzQ0OGM3MzExMGNlNzQxZjMwNDAyY2E4ZjAwOTVmZGE1ODlmZmU5NDQxNmI5ODRiNWYyZWZhYTQ5YmE0Mzg5MDcxZWQ1N2JmZjZhZGFlNDcxZGRmMWZkZTJlYzkw",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c0"
+    },
+    "iv": "YklOQnI1V1pmWXVMM2NwRA==",
+    "key": "MTY0NDE0OTY3NG5zcmxLdFFkRkphekpTMzdGSEhWRk8="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c1"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c2"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c3"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c4"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c5"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MTcyMmE1MmJkMGY4NDg4MzhhMzAyYThhM2Q3Mzk0NzE=",
+    "_id": {
+      "$oid": "61ffbbaa9259dce936eab9c6"
+    },
+    "iv": "bDNRdVpvdkpSMTNyb0Z4cg==",
+    "key": "MTY0NDE0OTY3NHMxWXhQNk42SlcxOFZJTFBoMzYwWXk="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbbdc9259dce936eabb54"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb55"
+    }
+  },
+  "soal": {
+    "message": "NGIxOWNlOGIyYmM5MTZlM2EwZDNiZGQ2Y2MzNGU3YTZkMDYxY2Y5NDI0YmZhZjU2MzRhZTBlNzk5YTdlODkyYmNjZjFiYWJlNTkyMGY3YzEwZmFlMWI4NTcxZWI5Y2I5NWQ2Y2U3ZWRiMmUyNjhlNTFlYjI4Y2M1ZWI2ZWRiZDk=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb56"
+    },
+    "iv": "aWh1Rk1QRTBVaHVjSmVkMA==",
+    "key": "MTY0NDE0OTcyNHh0TDBHbTExcXh0eUFOS3JJTnlNdlQ="
+  },
+  "pilihanA": {
+    "message": "YTFiNmY1MDkwY2VhNmNkMTVmYjJkNDg1Mjc1OWExODc=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb57"
+    },
+    "iv": "OUJzNWRHSHdyQzdVSTYwZQ==",
+    "key": "MTY0NDE0OTcyNHU3c0ZHNGtwVnpwZVczRUJRUGRaVkQ="
+  },
+  "pilihanB": {
+    "message": "MDBiOTU4MzdlZjAyMjFjYTk4YTEyNTgzOTE5NDlhOWE=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb58"
+    },
+    "iv": "Wk1HY0FoWkMwTkdyUURHUg==",
+    "key": "MTY0NDE0OTcyNFZKeHlhdktJMUN6VGZTZzZKT0thdng="
+  },
+  "pilihanC": {
+    "message": "NDE2MTU3ZjBjZGYzM2Q0YjBmMjU2ZmQ1MTY0NDkwYTk=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb59"
+    },
+    "iv": "Zk9ERmdvdXpqQlNoT2k3Zg==",
+    "key": "MTY0NDE0OTcyNDFhR0V5TWc4c0c0bjd5TEJ4bUdiVjI="
+  },
+  "pilihanD": {
+    "message": "YWI1NTRlNjRiZDI3NWI4NjQwOTRjY2YwNWU0NTJlZDU=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5a"
+    },
+    "iv": "MnltOFJMSWRqcUozbjRIWQ==",
+    "key": "MTY0NDE0OTcyNHRaMnNSMFp4S21qOWpvVTVrMlhOVUQ="
+  },
+  "pilihanE": {
+    "message": "NGVlYzZiMzFjNDUwMGQzYmUzN2IyYWY0YjA5OTMzNjU=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5b"
+    },
+    "iv": "eExIeXRHRnVEbkxQdkphVA==",
+    "key": "MTY0NDE0OTcyNEY1aXJPc0pjS2xmUHV3YjdXZ2t1cXU="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5c"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5d"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5e"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb5f"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb60"
+    }
+  },
+  "kunciJawaban": {
+    "message": "Y2IzZTAzODRhNjNlZjI4YjIwMjg2NTg1Mzc1YWM1YTY=",
+    "_id": {
+      "$oid": "61ffbbdc9259dce936eabb61"
+    },
+    "iv": "cHJqR1U0a1VTWUdvWG95QQ==",
+    "key": "MTY0NDE0OTcyNGI3WlhQejNoZ056c1k1ek9DWDZrOVc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbc159259dce936eabcfc"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabcfd"
+    }
+  },
+  "soal": {
+    "message": "YjczYTA1NDMyM2I4MmEzYWIzMGY2Y2IyOTc3Yjk0Yzg2OTVkYjMwMjVhMjJkNzMzMDc3MjZlZWIzOGM1ZGQ5NTRiMmExOTQ1OGIwOTNlN2QzNmUxZmI0Zjc2YzM1ZDUwYmRmYzA1MGI0ZGZiYTQxZTEzNDY2NTcxZWI2Mzk5NTJlYjViN2I5MDVhYWIxNjg1MTk3Y2QyMmMwZTJmYjMxYmNmYjgwNThhYTNjNGJlMjY1OTNkOGQ5ZDE4YWM5MTdh",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabcfe"
+    },
+    "iv": "UEJsYWJNczdVUVFsMDFmQw==",
+    "key": "MTY0NDE0OTc4MWgyZndsSlMyZ05FdnZQTkx2N2JkcWU="
+  },
+  "pilihanA": {
+    "message": "MWJkMzY2YTFlM2ExM2Y5MjhmNTY0NjAyYjk5MTQwNzc=",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabcff"
+    },
+    "iv": "ZFNyYWVpVTVjSzVlRFdOSw==",
+    "key": "MTY0NDE0OTc4MVlwV3BJa001c2liaFhNalFsVFVZQjc="
+  },
+  "pilihanB": {
+    "message": "MDgwZjRkZmFmYTQyMjJhMjRjMTA4ZWE1MzY2MjMyYzYyYTljN2U2NDMwNGZhNGI0YmExMzI1YTA2MTM0Yzc5NA==",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd00"
+    },
+    "iv": "MXB2THlJcU9YQVVjcWNwWQ==",
+    "key": "MTY0NDE0OTc4MUVvWXRxTExONzhuOEQxQkFRNnI1MTg="
+  },
+  "pilihanC": {
+    "message": "ODcwNGU0NGYzMmY3MWE5YjQ3Yzk0MDQ4OWRiZWM4MDgwMjRlYjY0OTA1Y2IzNzM5ZmI5YzA3N2E2NGVmMzhmNw==",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd01"
+    },
+    "iv": "Wjh5UWJ2a0tyNXUxWm5DZg==",
+    "key": "MTY0NDE0OTc4MWNXTDR2aEdyVHgwR3lhWEpVRGpYYXE="
+  },
+  "pilihanD": {
+    "message": "ZWZlMjBlN2JjMDA0Mzc4MDI0YjhkYTY0MWQ1ZjExNmQ=",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd02"
+    },
+    "iv": "eGlCTmNVYWJNam5VZ09iTQ==",
+    "key": "MTY0NDE0OTc4MU5vMzA3RnBKQmNVb3pRQjBmU2VhUUw="
+  },
+  "pilihanE": {
+    "message": "NWMxMzliZTlmYzFkZmM4N2Y2ZjBjYjgzZTEwNzY4N2IwYTgyYmQ1ZjdiYjI0YThlZTRhZmY0MWY0N2ExZTkwNg==",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd03"
+    },
+    "iv": "eVRjN3laUEo5aFg1andiMQ==",
+    "key": "MTY0NDE0OTc4MUMxV0p0ZmVLVVpSMllkTkhrT1ROM0Q="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd04"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd05"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd06"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd07"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd08"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MTU4YjEwZDFhNzM0Zjg0YTIxODMxOTMzYWVhOWNlMzA=",
+    "_id": {
+      "$oid": "61ffbc159259dce936eabd09"
+    },
+    "iv": "UUZ0bWc3Z0FOcGNVZlBSWQ==",
+    "key": "MTY0NDE0OTc4MVdaY0JVdFVIa3h5amRMUXZ1b1hwczE="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbc529259dce936eabeb1"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb2"
+    }
+  },
+  "soal": {
+    "message": "NzA4ODA3YTM3YzNjZDMwNWZmZGU2ZTViMDNmZTRkM2E5ZTBkMTM5NWViNzMzM2ZjMjRlYjMzYzYxYjFkYTMyNmNiYTljYmY3Njk1Y2M0MGE1ZDYwNmJjMWRhNjc2Mzk0NTk5NTU1N2NjNzU3ODk2NDBmYzliOWRlY2NiYmQzYWE1MjFiYTI2ZThiNTY3ZDkzZTdmNzI5ZGEyYjMzYTcwNQ==",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb3"
+    },
+    "iv": "b291a3FlRGk1U2Y1cmg2NA==",
+    "key": "MTY0NDE0OTg0MlNyQmRGMkRyYWsxdGk2Z2lCWFM0QzI="
+  },
+  "pilihanA": {
+    "message": "Y2E0ODljMWUzZjdlMmRiMjkyYmJhMDIzZWEzMGRlZTg2MmZmNTY3YzczNzllZGYzNDg2M2E3NDcwMThhOGI4ZA==",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb4"
+    },
+    "iv": "ZXEyRDJhNjhlWEFKTWxUZQ==",
+    "key": "MTY0NDE0OTg0MllvVkJvNUc3UGpMaGlyazAxSDdQQmI="
+  },
+  "pilihanB": {
+    "message": "ZWYxMjg2NjIyZjVmZDU2MGI1OTM1ZjhlMzQ1ODEzZWViMWQ4MmNlNzNiODg4MDY4M2UwM2M0N2EzNTBhNjNiOA==",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb5"
+    },
+    "iv": "QWFWZjFGbGNacDFmNTZNWA==",
+    "key": "MTY0NDE0OTg0MlFyU1FrSmJFeWRhUW1OWTExUnhXaGk="
+  },
+  "pilihanC": {
+    "message": "Y2VjZGNjM2RhMGY3ZWVhNzNjOTJlMTA5NGJhMDNjZDdlMDg3MWY0NmVjYjJkMzc4NTk5Y2Y0NGQyMjdiZDViNQ==",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb6"
+    },
+    "iv": "cVBGZ3NhbFlWQXJUaHp1Sg==",
+    "key": "MTY0NDE0OTg0Mlh0ODZCejlGdzFEZm1HaVZFM0VaeXY="
+  },
+  "pilihanD": {
+    "message": "YjMwZWQ5OWVhNmFjZjQ1OTFjNTk2YzU4OGFjZjdhZjc1MWUyYzBiYTJiZTM2MTY2N2FkM2YxOTQ3MzdkZmQ0Ng==",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb7"
+    },
+    "iv": "bTBOOGxCMmxPMVk5Z2RXZA==",
+    "key": "MTY0NDE0OTg0Mmx0M3BobVNwNHhxNUg5dFp5Vks4VGs="
+  },
+  "pilihanE": {
+    "message": "OGRhNDg3MDEzNzkwZGNhMGRkNTZjZDMwYWEzMGZlN2Q=",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb8"
+    },
+    "iv": "QUV1WllKUnMxRGlhQzN1Wg==",
+    "key": "MTY0NDE0OTg0MjltTEZQQ3NXaFVMWkZ4eFRjS0dOSXg="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeb9"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabeba"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabebb"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabebc"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabebd"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NGE2OGRhMzc2NTg5NzFmY2YxMDIyNjVhYmU3MGZkZGE=",
+    "_id": {
+      "$oid": "61ffbc529259dce936eabebe"
+    },
+    "iv": "Y1pvektTU0JHbUlBQ3Eydg==",
+    "key": "MTY0NDE0OTg0MlZvOHFhMTgxWG1pVkVLZjJ4QUZ1QjA="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbc869259dce936eac073"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac074"
+    }
+  },
+  "soal": {
+    "message": "MmZhMDQ2YTc0NGVkMjQyODk5NmM5Zjg4MzU0YzBhNGE3MzhlN2IxOTQ2OTBkMzgxNGMyMWRhMWY3OTJjODc2ZWQ3M2I0Mzg3OWY4ZmFlODFjYTFjNDk5ZTVhYmMzNjMxZGMyNGM2NDMxM2I5YmU0YjVmMjRlMjcyNWE3MmJlMzY1MGQ2YWViNWNiNGIyYjNmNDA4NzhiNzFiNjdlOGY2YQ==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac075"
+    },
+    "iv": "RWIxMUw3VGE5Zk10Mm1pcg==",
+    "key": "MTY0NDE0OTg5NFZVekplN28xSGRPUzhUeE5BT0FTcHk="
+  },
+  "pilihanA": {
+    "message": "OWQwOTZhMzU1YzczMTIyYjk1YTQxOWZiY2RhNTg5ZDUxODhlNTUwYzg0NjcwMzczNDQ5N2NkZTlmNDdlOGM2OA==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac076"
+    },
+    "iv": "b0ltd1dkMldiWVVFelpkdA==",
+    "key": "MTY0NDE0OTg5NDhZSVpENDV3ak40aGtOYnBOd3EwVUI="
+  },
+  "pilihanB": {
+    "message": "MDczMGMzNTEyNjE0ZGIyNzE1OWIyNGEwY2RlYWFkZGFiYmM2Zjc2NTJkODdiYzU4Y2FiYjYzYmJmODYzYjYwNg==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac077"
+    },
+    "iv": "bGJjb3dSaFc5NWtCbkZNZA==",
+    "key": "MTY0NDE0OTg5NFdqdTA5YzhObms0cjloSndkeTFYcWw="
+  },
+  "pilihanC": {
+    "message": "MTRmODRjYzUzYjJhM2ExOTY2ZDFiNGUyZjM3YjYxZDViZjA0ZmUyNWIzNGJlOTJiODRlOWRiM2ZmN2E2NTA2Yg==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac078"
+    },
+    "iv": "dEhYR2o5Z1lrSGJIYkNBUw==",
+    "key": "MTY0NDE0OTg5NHFXdE92QlVwZTEyaUJaVVJxNXBYYWU="
+  },
+  "pilihanD": {
+    "message": "NGQ0YjA4ZWU3ODM4ZDM0ZTdiZjhjYTZlOWIyYTRjMTExMjJhM2M2YTA3NGIzOWIxNTkzYjVmNTg4OTBiZWFkYw==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac079"
+    },
+    "iv": "TlZjOGVtU2JOYUxMSkZ6NA==",
+    "key": "MTY0NDE0OTg5NDlaTThWSkJWM05JcWRxTFRXNE1CUHE="
+  },
+  "pilihanE": {
+    "message": "MzRmYTNhNzk3NzZkNjI5NTY2MjhmYjcyZjg4OGFjN2Y2NDk5MDkwYTI3ZDExYzgwMGIxY2Q3NWYwZDQ2NzczYg==",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07a"
+    },
+    "iv": "WG9pZHltTmh6VGJYTjhZcQ==",
+    "key": "MTY0NDE0OTg5NGI2YTIwcUVpZlduT0NwS0Mwd1YxenM="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07b"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07c"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07d"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07e"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac07f"
+    }
+  },
+  "kunciJawaban": {
+    "message": "OGFkZTVhOWMxNjVhYjUyNWE4MTZlNjg3MmQwMmJlMzg=",
+    "_id": {
+      "$oid": "61ffbc869259dce936eac080"
+    },
+    "iv": "WUFtMTNpa3Vud3EyT3F6eQ==",
+    "key": "MTY0NDE0OTg5NHlBWTZXNVI3ZElTWnpwQ0dYeVNFQWU="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbcb99259dce936eac242"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac243"
+    }
+  },
+  "soal": {
+    "message": "OWVkZWU4YmZkYWIyZjJmMWI4NzExOTdiNzFlMjVkYzZlOTU5ZTJiYjAxZjQwYjkwNDA0NzQ3ZWI4MWViZTc0OWM1MWUxN2IyYmU4ZTQxMGFkYTQyYTE1YjE0Mjk1ZjJmOWNkOWI5NmViM2ZhMjllNzUzMzk3NDYzMjBmNTE1MTFiODIyNWE5ODgzZTEwYTc5NzY2NGE3ZmExN2QxZmMxNDJjNWY0NjBiNjk4NjM5Y2JkZGM5MGM1MTA4ZGNmMmVhNTk0NmQ5MDY3ZTE4ZTdhZjE2ODc4NmQ0NDBiMGE2NTc=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac244"
+    },
+    "iv": "MXM1MklocHpaY1VUNTZJSQ==",
+    "key": "MTY0NDE0OTk0NVRTM3N2VVl0aDFkZkhoblI0cWIwTEc="
+  },
+  "pilihanA": {
+    "message": "OWE2ZDYzNjBjZmM4ZjA3NTAxZmZhZTMxZTllNDVjZTI=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac245"
+    },
+    "iv": "aE5ETWtJOXNzd2U1MHpHcA==",
+    "key": "MTY0NDE0OTk0NTRrTFIwVDdEWkNtbFRmQUF3V0xDYjg="
+  },
+  "pilihanB": {
+    "message": "YzE5ZDRjODAxNmQ3ZGNlNTQ1Mjk2ZTMzYTc3ZTBmNGQ=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac246"
+    },
+    "iv": "M3lHNGJKOHY4RDFXMW1BTw==",
+    "key": "MTY0NDE0OTk0NWV0Y1ZwbXZGc0lCT09FZ3ZqODhqYjE="
+  },
+  "pilihanC": {
+    "message": "NTI2ZTg5OGY2YzcyYjViOTYwOTJjMmM2NWM4MGFiNTA=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac247"
+    },
+    "iv": "UFFXdW9IaE5STHVEUFNBVg==",
+    "key": "MTY0NDE0OTk0NTZCS1RGeXlkVVZoWU9rS01xZDJBdDc="
+  },
+  "pilihanD": {
+    "message": "YWUzYzVmMjhiODMyNmViNWE2NjQzYTQyMTU5YTdiN2I=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac248"
+    },
+    "iv": "TGoyNlRlNk1OMWkwWUZTdA==",
+    "key": "MTY0NDE0OTk0NXFyZGc5aG5mN1huUzE5OGpTT01hMk0="
+  },
+  "pilihanE": {
+    "message": "Njg5MDEyMzIxYmQzNjQxZjRhMmY4NjY3ODBkMmVmMWI=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac249"
+    },
+    "iv": "c1luOUp3NmV4aWxJTVVZZA==",
+    "key": "MTY0NDE0OTk0NU1lVENPWVpyOUg0Nm40c3Y0cEVJaHo="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24a"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24b"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24c"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24d"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24e"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MDA2N2YzOTkzYjdkODdkZmIzNTU2ZGJkODgwZTdkNmM=",
+    "_id": {
+      "$oid": "61ffbcb99259dce936eac24f"
+    },
+    "iv": "VFZZRW5DRHZsYW1JTFZhcg==",
+    "key": "MTY0NDE0OTk0NWRLWmpkN2NLVFRpdHRHbWd1Sk9PQnI="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbcf89259dce936eac41e"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac41f"
+    }
+  },
+  "soal": {
+    "message": "OWE0M2E5NGZiMzc5ZDcyMGY5Y2MwNWE3OTAzNmE3Yjg5NDkwYzFiYTQzMWZhNDk5MDI3ZTJiMjA1MzliZmJlNmRkMDMxMTcwNDIzNTAzZjAyMDgwNTQxNmYxNzdkNTM0MzdmZjA2ZTkyMGQ0ODZiMzdhODQ4NmZhNWFlOThmZDU0ZWViNjAyNzBlMDU3ZWRmYzMyZWQ5YWFjODQzNTg2NjhhOTY1NmUwMTMyMWEzYWQ0OWQ1YWNiMDI4ODMwNzc4NjlhMzk0ZTBjNmQ3YjMxY2ZkMjIxYzc3MWQ1ZjFmOTI=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac420"
+    },
+    "iv": "T0g3YmZWdE9QaVpvR1h4dQ==",
+    "key": "MTY0NDE1MDAwOEpDNkFlMEdNUzdQREhNREpnVGtjR28="
+  },
+  "pilihanA": {
+    "message": "YTI2ZGI3MTc5NzYzMzU0OWUwYzgxNTUyNWQ1ODIyOTY=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac421"
+    },
+    "iv": "R2h5WXhyS2JrUFZQbzVMWg==",
+    "key": "MTY0NDE1MDAwOHY3WU40NVJ1TEVqTWJENDdqMzdNNnM="
+  },
+  "pilihanB": {
+    "message": "ZDdlNzJjMmIzZWEwOWQ0M2ExMmYwNDEyZTU2OTEyYTg=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac422"
+    },
+    "iv": "NWI4S0tud29tQ3JDb2s0Rg==",
+    "key": "MTY0NDE1MDAwOGFQMXAwemtIMlNicldaWGlOOFNac1M="
+  },
+  "pilihanC": {
+    "message": "NWU0NmUwMDdmOTBmYWQwZTllNDQ4ZDY0YTNiNmZmNTg=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac423"
+    },
+    "iv": "V2dkSTc5VnhPSnMxQ3BrdQ==",
+    "key": "MTY0NDE1MDAwOFB4TTAwcjdRTHF1OFVCc3dWdjB6NDY="
+  },
+  "pilihanD": {
+    "message": "NzQxOTUxODE4YzkyNGY0NWI2N2JhYTRlYzIyNDhmMmQ=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac424"
+    },
+    "iv": "TndCbDFIMG9GQkZmcmNyQQ==",
+    "key": "MTY0NDE1MDAwOGRJbG5ocGxxOHFyWm1DTHhOeTNzT3g="
+  },
+  "pilihanE": {
+    "message": "YzE1ZGE5M2Q3NWU5OGY2NzlmNzQ0MTQ0MGZiMTNmNzE=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac425"
+    },
+    "iv": "SjFhU0xneGw3Uk96TGpnTw==",
+    "key": "MTY0NDE1MDAwOGJIQk1ZamdpNXVYYkphM3R6N0Z5UDY="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac426"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac427"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac428"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac429"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac42a"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZjNlYzU5ZTEyNzdlOTQ4Y2U0YzgwZmJlODMyNTVhYWM=",
+    "_id": {
+      "$oid": "61ffbcf89259dce936eac42b"
+    },
+    "iv": "MlFtT0RVaFpVTjVYQ0h0Nw==",
+    "key": "MTY0NDE1MDAwOFJSdGZFSXBFOWlkWldhMGpKVm9BQmE="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbd389259dce936eac607"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac608"
+    }
+  },
+  "soal": {
+    "message": "ZWRmYjJkMDY1YzVlMTkzZmE2MjU0MzkzOGU2YjgzYmVlZGM2YzUyZmZmMDRiNGRkZmIyZDVjMDY3ZTZlY2E3MmUzOTQ4Y2MxOTUyZWU0NzNhZjlkYTM3N2Y5OTVkZTg3NDBiZmMxOWJkOTYyMDRmMzIxMDQyNDU0MDI5NzhjNzNkZjlhN2ZiNjQzZDEwNDNmODRmMjVkMGQxZjUwZjZiNjQ4M2EzNDE2MjI4MjZkN2IxOTI5MTU4NmZlOGE1OGEzM2QxNTUzNDVmZjIzZmVhMzdlNzk2ZDA0YTViMmQwMzk=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac609"
+    },
+    "iv": "NHRIQXJlOEl2dW16bFhEaQ==",
+    "key": "MTY0NDE1MDA3MmRCeXE3am9FMEVKc2Q3RWFteENjMFc="
+  },
+  "pilihanA": {
+    "message": "NTc4MDZjYjk5Mjg1M2ZiOTFjMzhiYTBlNzk3ZWIzNzM=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60a"
+    },
+    "iv": "UjEzQ29rVjlaaEIxMU5lQg==",
+    "key": "MTY0NDE1MDA3Mm56REppTDdFemZvV1VTbTIxWGZtbkY="
+  },
+  "pilihanB": {
+    "message": "NDAwMmExODRkZmNkOWZhZmM0YzVmNDI2MDQ3OTc2MTY=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60b"
+    },
+    "iv": "ODVaSjdDN1Vvb3RIRWpGeA==",
+    "key": "MTY0NDE1MDA3MmNSWXBtQ0plZExiOThkeVNVeWVmaDc="
+  },
+  "pilihanC": {
+    "message": "MTdlMjNjMGJkMzBhYzJmNjg1NjBkNDg4MDA3MDJjZDk=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60c"
+    },
+    "iv": "YVZzR0lNN25RZ1lsWWQ5cw==",
+    "key": "MTY0NDE1MDA3Mnh0Umc3UFF6Zm9NR0dKYWpIZlZqV1o="
+  },
+  "pilihanD": {
+    "message": "OWJjN2M2M2ZiYTkxYzZmMjcyYWMwNjI4ZDFkNTBmYWE=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60d"
+    },
+    "iv": "VHh5dTlIaGNSUGVmdzZuWQ==",
+    "key": "MTY0NDE1MDA3MmxMN0Q4c2E0dXZZUnBwcVBJUkh6czE="
+  },
+  "pilihanE": {
+    "message": "MGFlODQ3M2I2ZmIxZDBhMjMwNDkxMDNkYmNiNDE3MjI=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60e"
+    },
+    "iv": "Wks0YWwzanBLdDdDTURyQw==",
+    "key": "MTY0NDE1MDA3MlZ6eUMxRkxRZGdBWnVnU0Z4MzQ0OUc="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac60f"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac610"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac611"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac612"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac613"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NzdiYzAwYWEzMmQ2OTAyYTQ3NmY4NzRlMDAzZTIzZjY=",
+    "_id": {
+      "$oid": "61ffbd389259dce936eac614"
+    },
+    "iv": "N2hud2ZwdDV3eE1yanlaTA==",
+    "key": "MTY0NDE1MDA3MlpYdHNGRUQ3OFpHSG1SUHVmU2JEUUI="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbd6a9259dce936eac7fd"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac7fe"
+    }
+  },
+  "soal": {
+    "message": "OTc0MGQ2N2RkODk4OTk2MjEzMTZjYzA5YzE0N2FjNzdiMjc3OWVjNjJjMmVjMzViNDBkYzQ5YjYxZWQzNjdhZjkyZDJiZDNmYzNkMzU2ZjZmYTI2ZjJlM2NmMDEwZjgxOTU1MWFjYmRjZWFiOGI2YTg4OTY0YjMwNGQwNTliNTUwY2JjZGUwNWZiMmE5NTI2NmVhZWJkMjE5MWJiY2Y2NTQ1ZmI2NGRjNzgzOGFhNWQwZjZjZWI0YTAzMjEwMDYz",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac7ff"
+    },
+    "iv": "MEN6M003WTJyWklhQ3pHaw==",
+    "key": "MTY0NDE1MDEyMkZQeUxnM3Z1SzNOS29xVlhBZVl0TmM="
+  },
+  "pilihanA": {
+    "message": "YzQ5ZjU0ODQ5MTk2NTljNTE1MTY1MmQ4NGMyNTFiYzlhMTIxODAyMDJkYzQ1ZDg0Yjk2YjNiYWQ1ODE5ODViZQ==",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac800"
+    },
+    "iv": "YXRoaWJpQzVWbnIwa2FQVw==",
+    "key": "MTY0NDE1MDEyMnY0MkF3bUZuaVFwbXpzRHhaTk9XdkE="
+  },
+  "pilihanB": {
+    "message": "MmM2NGZlY2FmMjFiNjgwZDFjYTgzMmMzZTBjZGU4Y2RiNTNlZGNhNmNkM2ZiNjUyMDM4NTkwODEyNjNkYjY3Zg==",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac801"
+    },
+    "iv": "d3ZZcGM1MndQSnNzR096Zg==",
+    "key": "MTY0NDE1MDEyMnMxdXZ4NmlzRDFqU2RRNEgzMm9Bckc="
+  },
+  "pilihanC": {
+    "message": "MGVkMzY3OTQ0OTU3Yzc1MDhhZmIwMmE2MTNkY2YyNDkxNDJlMjY3OGIyNDM5YmE5MTA0NTMxMDEyMTEyZmMzYg==",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac802"
+    },
+    "iv": "bkxSQ3ZNc2hqZVUxaGxFVg==",
+    "key": "MTY0NDE1MDEyMmp6cGJ0WHNXSXZ4R1pyd2JQU1RRWDM="
+  },
+  "pilihanD": {
+    "message": "ZTUxODY1YTJkNDFlOTliMDlmNWQwMjI4NjJlM2U4Y2I5NmU2NDc4NThmNWY1M2ViZWQzZmY4MWUwODYxNDI0Nw==",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac803"
+    },
+    "iv": "bGNodnNTS29UY2hNZ2JvbA==",
+    "key": "MTY0NDE1MDEyMkVEakdVeUc0UmxISzJ3SEptaGczS2Q="
+  },
+  "pilihanE": {
+    "message": "NzUzZTM1MTQzZmUzNGFjYTU0NzdkOGViMmJiYjczMjdhMGI1YWY3YjE0NDFhYjY1YjZkOWE2ZGE2NTdhNDkzMA==",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac804"
+    },
+    "iv": "blVEWGN0djI0NUowenJxNA==",
+    "key": "MTY0NDE1MDEyMjBuMjVKT0FMZWUwMHYwTEZwc3YzYWk="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac805"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac806"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac807"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac808"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac809"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ODE4MGExOTYyOGM5NzhlNTA0NzU0YjUxNGIxNzVkNTk=",
+    "_id": {
+      "$oid": "61ffbd6a9259dce936eac80a"
+    },
+    "iv": "YXVLbjBMQUhQVkY4bXE4Zw==",
+    "key": "MTY0NDE1MDEyMlo5N0p6b0hIV3FqNm96VFdKRVFqT3Y="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbdac9259dce936eaca00"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca01"
+    }
+  },
+  "soal": {
+    "message": "YTVhN2M5Mzg1MTcwODJhMDc4NDRkMzA2NGQyMTdkNzIxYWJmYzQwYWFkOTViMGY5YzAwYzIwNWQzYzI5ODdiOGMwMmFiOGYzNTRlYTk5OGY2MDA1ZTFkMDZjMjk0MTUxMTU5Yjc3ZDUzMzhkZmRmMGYzZDk5OWIzYTYyZjA5YmFhMDljZmU2ZTY1OGM3ZWI1MTcxNTA4NmE2ZWI5NmMxMTFlNzUyYjU2ZDFiMmNlYjRlYzZhZjg2MzAwYWI5ZmVl",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca02"
+    },
+    "iv": "Q2dJcms4QzBLcXdmNENRZQ==",
+    "key": "MTY0NDE1MDE4OFpkQXdSc1ZIU3dlR0NaQjF1b3hYUms="
+  },
+  "pilihanA": {
+    "message": "OGJhNTc4YmZjNzgxMmQ5OGE3MDg3YzU0YzkyYjljNTI=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca03"
+    },
+    "iv": "WkJhRkl5VVd4VzdIa0Q3OA==",
+    "key": "MTY0NDE1MDE4OGd5ZVd5RDVBdkdvdDVlQ0xielh1RTg="
+  },
+  "pilihanB": {
+    "message": "ZTZmZGEwMjQxZDg1MmJkN2QyMGE4M2Q5MDA1NjczODU=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca04"
+    },
+    "iv": "c0FxME1zV2xSWk93MktFSw==",
+    "key": "MTY0NDE1MDE4OGxqaU81Y0RZblhwMTRhZU9KTkV0TE4="
+  },
+  "pilihanC": {
+    "message": "Y2I3NzRlZjRlYTc5OTYxYzE3OTY2MmU1OTVhNDBiZTc=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca05"
+    },
+    "iv": "ZXJndVRwT3NHbDJsRnlidg==",
+    "key": "MTY0NDE1MDE4OFFVMjFzdjQ1NzdxZzU5QVFTSUxJTmU="
+  },
+  "pilihanD": {
+    "message": "MjM5YTNlNDRmMzY2NWRkNjgxYTNlOTg2MmIwMzc1YWM=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca06"
+    },
+    "iv": "SllsZk9QYm5McGtiNDZoWg==",
+    "key": "MTY0NDE1MDE4ODR4SmJTdEhaTjhJbTRTTFQ5VVREVUY="
+  },
+  "pilihanE": {
+    "message": "NzdhMzlmZWVlM2RiNmFjNWQ1NzZiYjk0YjhlYjExYjU=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca07"
+    },
+    "iv": "OVY2aUt5bWFPblMxa3hPNQ==",
+    "key": "MTY0NDE1MDE4OEtwS3ZJNjVoblZuZWFqVzJEeW02clE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca08"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca09"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca0a"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca0b"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca0c"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NTQxYmU3ZTZjNWQ0MzI4MjNiNzMyYjVjODMyMDUyNDM=",
+    "_id": {
+      "$oid": "61ffbdac9259dce936eaca0d"
+    },
+    "iv": "eGNYdmFTUEhSOE1aMFk2Yg==",
+    "key": "MTY0NDE1MDE4OEFweWwxREZnZ055TUMwcmVIWGxzZWY="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbde69259dce936eacc10"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc11"
+    }
+  },
+  "soal": {
+    "message": "ZGM1NDY3ODBmMWM5MjM5MjY1NmRlYTg1Y2VjMWQ3ZTNjZjA4Njg0YzVhMmNiOWUyNWUxODY1NTlmOWQ2OTYxZmViZDUyMWM5NzI2YTg3MTljMTAxZDZmMzc3MDAzMDY2ZjE4ZmViYzkzNTQ2NDllYWQzNjkxZWM1OTU3NDExYWQxZjkxZmNlZDk5ZDE4M2IyZTNiYWEzNGI3NDhmMzc0Mg==",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc12"
+    },
+    "iv": "NFZna1hxemRiS1hWV2N5dQ==",
+    "key": "MTY0NDE1MDI0NlBUNmNkYUN6bVJaWkVrSjFXamxlSmk="
+  },
+  "pilihanA": {
+    "message": "NTYyNDUzN2E3NzMwYWYzNWNkZmJjNzljM2RjMjA2OWJkODEyMWQ2MWRiOTkxZDlmZjc2OGUwZGMwODU4MWE5ZDRkYjVlMzEzOTIyMjE2OTdmYmZjOGM0MGU2Y2UzNTcx",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc13"
+    },
+    "iv": "eFh5bllzMUZGek9WOHAwYg==",
+    "key": "MTY0NDE1MDI0NnFocmdBdkpzWHNaQXhzUnVCb1dRbGg="
+  },
+  "pilihanB": {
+    "message": "MDZkNDAzYjkxN2QxYTU0ZGQzMGNiNjMzOTI3YTJlMmNjYjY3NTVlZjAzMTVhZTU4Mzc3MWZhYTg0ZjgyMDUzNDI2Y2ZmNDY3MmFlYmVmMmY5MjRiNWJiY2UwN2Y0YmVlZGFkMGJhNWVlNDk3YmVjZGYzNDVmZWI3NTdkYjAyNjk=",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc14"
+    },
+    "iv": "TnpoMmxuRHlIeklqcjVleQ==",
+    "key": "MTY0NDE1MDI0NmdSalF1MXd6cXh3TEhiVlJtZmZuUXQ="
+  },
+  "pilihanC": {
+    "message": "ZDliZDE5YTgwOTFkMTc4YzgyNjE2OTRjYzA2YjVlZmZjZjIwNDc1YTJlM2VkMDZlMzE3YTM2ZjI4YzM2NTU1Zg==",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc15"
+    },
+    "iv": "SzI4VWVDSjVPS2cwZjF4Ug==",
+    "key": "MTY0NDE1MDI0NlpnWFBoNVBYdFkxU29NcEZ1RGVVVnc="
+  },
+  "pilihanD": {
+    "message": "OWVkZGM0ZDFlYzY0NGExMDE1NDQ2NjY1NWFkMmE3MDA4MzQ3ZTQzNTIyMGRjMGFjZmIwNDE4YmMxOTUwM2E2YmJiYzMwYTE4N2Y1M2FhYTUyMjU1MDQ3ZDFiYmJkODQ3",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc16"
+    },
+    "iv": "a1kzUlJFVVZLMEJ3TzNHNw==",
+    "key": "MTY0NDE1MDI0NnJHc09hQlBteHFjT25ROWlYd3BkaVg="
+  },
+  "pilihanE": {
+    "message": "MDkxNzRkNzRiZjliNGIyNDA3ODE0ZjBkMTAxYTU0NDhhODQ4NGVhMDY3ZjE4ODc0ZTk0ZjNjNDNhYzljYzVkYw==",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc17"
+    },
+    "iv": "V1RXQU56cWU4MUQzd3Y5dg==",
+    "key": "MTY0NDE1MDI0NlppZndZQ3RoQ3MxcDlZU2pjMHlsYmM="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc18"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc19"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc1a"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc1b"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc1c"
+    }
+  },
+  "kunciJawaban": {
+    "message": "NmUyMWVhOWM3MWU2YjM1MGI0ZGYyM2QzYWNkYzc1OTY=",
+    "_id": {
+      "$oid": "61ffbde69259dce936eacc1d"
+    },
+    "iv": "RHF1a3c0dGpyTVU2VTZxNw==",
+    "key": "MTY0NDE1MDI0NjZrWDc3ME1PYlN5eDZsNjBaMFlhYnQ="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbe1e9259dce936eace2d"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace2e"
+    }
+  },
+  "soal": {
+    "message": "NzVkYTAxNmJjYmQ1NWEyOTAwNThkZDk2ZWE1ODE0NzYxOGI4ZDhhNjUzMmFhZTc1ZDZjYjM3NGIzZDA1ODA5M2Q4MDQ5NjFhMDI3OWIwNTU1ZDIzNWU1MDI4MzcxOTMyMzgzODE4ZmRjYjVmY2MyZWQ0NmU4YTVhOGViMDFjYjU1ZTI2Mjg5YmY0NjZhMzVhZjcxNWY4OGMzZjVhYzQ1NA==",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace2f"
+    },
+    "iv": "bXpEWUJiTkZQWEVlZ2xETA==",
+    "key": "MTY0NDE1MDMwMmJxTTFYQkJYT2xpcDRjMDRJaVg2djk="
+  },
+  "pilihanA": {
+    "message": "OTlmNzdjNzhkMDUxY2M3ZjU4MjFjZGQ0YzhiYTI2NWE=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace30"
+    },
+    "iv": "WjgzNGt6MEpCMm5sSlhkSw==",
+    "key": "MTY0NDE1MDMwMjFibXBzQnBJMWhsTjJIaGJwNjJ4NFg="
+  },
+  "pilihanB": {
+    "message": "OWNkMDNlNWFmZTM2ZGQ4ZTI0ODgzZjczNDM5NDc0ZDQ=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace31"
+    },
+    "iv": "ZWR3YVBaR1JUUm1uV2ZxNg==",
+    "key": "MTY0NDE1MDMwMklpZEozT2p3a2d0V1ZzdEllYlZqMEk="
+  },
+  "pilihanC": {
+    "message": "MTFiMGMwOTA1ZjY2NGVlOTBiMGU1YWVlOGY0MzBiMmU=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace32"
+    },
+    "iv": "ZXRhdkg3NjZjTWFxemxtdA==",
+    "key": "MTY0NDE1MDMwMndEeWRFOVIwTTRTRklkWkFZUUJzalY="
+  },
+  "pilihanD": {
+    "message": "YTgyN2ViMzA3ODEyZDY4NWI1Nzg4Mzg1MWM1MjEzOGY=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace33"
+    },
+    "iv": "M1lXZTAwdGpCVk96VjJlbA==",
+    "key": "MTY0NDE1MDMwMkh0ZWFsVlFiN1F0ZGFoMjdpRmJjQXI="
+  },
+  "pilihanE": {
+    "message": "NDljZjgxYzY0Y2M4NmFhMTI4NDkzMWMxNWI5Yjk4Zjg=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace34"
+    },
+    "iv": "MTdGVDlmYTgxRjJub0lvRA==",
+    "key": "MTY0NDE1MDMwMnd1UmtlYTdCeDNteGNWSGJYNDdRdWY="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace35"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace36"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace37"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace38"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace39"
+    }
+  },
+  "kunciJawaban": {
+    "message": "Njk2M2EwNzBlNzUxMzk3YmM3OTQ4NjQwNjRjY2EyYzA=",
+    "_id": {
+      "$oid": "61ffbe1e9259dce936eace3a"
+    },
+    "iv": "eFZyM0JtbnFZRFNpSmFQSg==",
+    "key": "MTY0NDE1MDMwMm9IY1h6V0h1RHQ4WlRJck9vYTVNdFo="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbe5d9259dce936ead272"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead273"
+    }
+  },
+  "soal": {
+    "message": "YTJkNTdhYTFlMWU1MDdjNTU0ZTg0ZDFkNGRkMmU5ZTk1ZTI0NWExZWZmYzgxNjBiYTgyYWViMTU4M2UzYzAwOWM3ZDk1OWE0ZGI2YTE3MTFjMTlmYzk4OTZkZDA2MTdkMjM4YjEwNWE4MzlkY2M0OWM5ODllMTI4ZmU5Njc1YmFjOWIwZjMyZjZjM2YxODBlNzEyZDg0ZjA2Zjk5OTMyZg==",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead274"
+    },
+    "iv": "QXlDejJrSFZ0U0FzRWU0UQ==",
+    "key": "MTY0NDE1MDM2NXEwSEJKeVNSbVpXYzZZd1dYZERTM1c="
+  },
+  "pilihanA": {
+    "message": "MjdhZjE2NmE3NjM4MDQ2Mjk0MWNmNmEwZjRjZGJiM2U5MDJhMzZlMmUyNGNhYjEwZDU2YTY2ODUyOTMyYzIwMjBhN2E0MTk2ZGQ4ZjMwN2E4MjE3MGEwZDhmYTMyODJkMWEwNDQ0NDEwOTNmNmEzMWZjZDdiNjBlOGY3YjE0YWU=",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead275"
+    },
+    "iv": "ZjByd2Z2U1JYV1lKc05BUw==",
+    "key": "MTY0NDE1MDM2NW9waHNab3N2ME9ia1FaSFVNV0dHUGE="
+  },
+  "pilihanB": {
+    "message": "NjQ1NzUzZTk4NmU1MDYwOTE2ZTE0MWY1OGEyNGY2NTJkOWRiNDg3YjI3MmM0MjY3ZDQ1NzNjMzM1NDQ1MjkyMGVlNzcyYWQwMzliMjhiOTAwYWRjOGMzYWM1MzNiYWIy",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead276"
+    },
+    "iv": "Y2lVa0psSFdZZ2pEZzZFSw==",
+    "key": "MTY0NDE1MDM2NWIyejRHU1p2VjRjSzhnSnlSSkNEa0s="
+  },
+  "pilihanC": {
+    "message": "N2IwODQ5YzlmOTQ4ODUzODIzOTVmMTcxMzQxNjk2ZDY0OWIzZjBlZDM0OTQ0MjM5MzA4YTlhODA3ZDA3OTgyNTYyODE4YzRiNTdmODY0OWI4MDBiNjkwNjUzNzU4YWFmN2E0MzMwMDEwMDE3MjYwMzU4ZWNmODYzZjhhMjZhOTg=",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead277"
+    },
+    "iv": "RncwQktIdkt4TzhuN2J1cQ==",
+    "key": "MTY0NDE1MDM2NXFyWnBmVTlnMjRCOGJ4Rno5dTZFQzE="
+  },
+  "pilihanD": {
+    "message": "ZWMwNDYzMDQ3YjliZDNmMDJjMTY4YjgxZjEwYTkzMzExZDM2OGNkYTNkZmNlZmYxMmFiYmEzYzBiMWJhZjc3ZGRmMDBjODQyNzFiZmVjMDM5OGE0ZDBiMTAwZGI1NTBmZGQzMGM4Y2VhODY5Zjk0Njg5YTVkNGU3NjM4YTU3NGY=",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead278"
+    },
+    "iv": "bzRQVU5VTllTOUJ0MUY4ZQ==",
+    "key": "MTY0NDE1MDM2NUhXQkdMOGhhSlNIWkM0THRubG9XOGQ="
+  },
+  "pilihanE": {
+    "message": "MWM2ZDhiNTg2ZjMxNjNhY2FhYzhmZmVhNzBlZTkzM2ZlZThkMWNkNjVjMTNkNGZkM2FiNjA1NmIwMGU4ZTU2NDA3MzQ1ZDJjNjIyOTlkN2Q2MDI1YjYwMDM5MjlmZGU3NjBmOWZlNTU4ZGFlYzVkZWM3ZDQ1OWZlM2M0ZTYzNjI=",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead279"
+    },
+    "iv": "SDhYYVRPeUxQNERMOXdxSg==",
+    "key": "MTY0NDE1MDM2NXRtdW50aTBwZ3p0UEJDZjBKMHBsTmk="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27a"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27b"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27c"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27d"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27e"
+    }
+  },
+  "kunciJawaban": {
+    "message": "OWE5ZTc4ZWJlNDk4MzEyYTEzYjhmOGY3ZWE4M2RkYmY=",
+    "_id": {
+      "$oid": "61ffbe5d9259dce936ead27f"
+    },
+    "iv": "OGNlTkJxSGdsSkJUY0xGTg==",
+    "key": "MTY0NDE1MDM2NWY1V2Z2V2pyOEdMMjJlSmxrUEJUSFc="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbe969259dce936ead4a9"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4aa"
+    }
+  },
+  "soal": {
+    "message": "MzliNzAzNjNhMDM2Y2VjNzIxNWIwOTJiMzQyYzU3ZDNiYjhhYTIyZDlmMzdiZjc1ZDNhODY5NWUyOThjYWFmNjI5NjFmZWNjYTQ4M2I3YzhiN2NmODhkN2RiYzkwNDQ4YTg3OTQ4YjY4NTk2ZmE5YzdhMGY4ZGE5ZjIzZDhjZDRiNjNhMjA2ZjUwNWE5MWU1ZGU0MDhiZjYzMTQ3MjY1OWFiNWIzZWRlMTcxMDMxYTc3NTA4ODljYmVlOTIwYmYyNzQ0ZDNhMDgwMTk4NGE4NDE5OWE1Y2ZmZmMzOTdkZGQ=",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4ab"
+    },
+    "iv": "OFMxZUtSbVh5OUI4QjR5dg==",
+    "key": "MTY0NDE1MDQyMk1KbFBMVGRzSG5wQXpRY25qdzdSUFo="
+  },
+  "pilihanA": {
+    "message": "N2NhNDQyMmRkZWE1NGE2YjdhZDZlOTBkZmU3YzBkYTY=",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4ac"
+    },
+    "iv": "WjQ4clowc1M3N2FsREhZRA==",
+    "key": "MTY0NDE1MDQyMm45aUpsS2FmeDR2eWt2VTVYYjlvSmw="
+  },
+  "pilihanB": {
+    "message": "YzQ1NTcxNGExYWI1MjA1NmMxYjE0Zjg2NDMzYWVlMDAwYTFlNWQ1MTNiZDYzMTE5ZGJkZWMyZGI5NTA4YTRlZQ==",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4ad"
+    },
+    "iv": "Nm9MV2tvRWp3bFVFdzBMVw==",
+    "key": "MTY0NDE1MDQyMlJKSzhpSUZDM25GRDE5NUZFa0RSV2Q="
+  },
+  "pilihanC": {
+    "message": "MGU0MTQ5MTAxMjExM2QwZDQyM2U5N2RlZmVhZjc1OWRmM2Y3NzNlNjc4YTQxMWM0NjVjNWVmNDFiZTVmMDlkNQ==",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4ae"
+    },
+    "iv": "R2k0TklVdTdCZ055aHJvcQ==",
+    "key": "MTY0NDE1MDQyMkkwV0REdWd2Ykg1SnVZdXBwWlB3Nlg="
+  },
+  "pilihanD": {
+    "message": "YjNiM2MyZjI2MmU4Njc1NjQzMTA4ODlmOTNmMGYxZjgzNTQzNzg4M2QwYmUxZjM0NmRhODEzZjUwZTk3NTUzYQ==",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4af"
+    },
+    "iv": "SkpMMnFBVlM0SzZsRHFheA==",
+    "key": "MTY0NDE1MDQyMnZLM1ZZTmwxdDZzc1Z6NzljZENLSDY="
+  },
+  "pilihanE": {
+    "message": "Y2MzZWU0ZjM1M2NjZTllMTI0M2JiMjhiMWM1Y2QxNGE2ZDE0YjFmZmQyMjNhMjc0MzA2MjE5MTNhNWIyYTcyMg==",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b0"
+    },
+    "iv": "alFGS05ZakdmREVyOW15Mw==",
+    "key": "MTY0NDE1MDQyMjgzZ2lUOVlXR05taEltV2RlYjVCNWo="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b1"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b2"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b3"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b4"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b5"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MjdkOTQ5NTIwYjQ3ZDFiZWM0ZjRhMDNiNDE0NGJmNGM=",
+    "_id": {
+      "$oid": "61ffbe969259dce936ead4b6"
+    },
+    "iv": "RkFVTmM3eFdHZEphMFJxbg==",
+    "key": "MTY0NDE1MDQyMkR6R1hpa21jTzl2WHIyRkQ5VkJ3b2Q="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbed49259dce936ead6ed"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6ee"
+    }
+  },
+  "soal": {
+    "message": "NDBlZGM1MmE4MGJhNmE3NGE4NTZkNTM5NjZmZmIyYjE1NzM0M2Q1MjgwOGNjZmYyZmQyNGNiN2Q5MDFkZjFiZjE0MWM5YWM5MzhmOWYyMTBhOWFhY2E3OWY5YjlmYWNlOTRmY2NlODNiNDQ5YjQ2OGQ2YTQzYTBkNTkyNzU3NTc=",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6ef"
+    },
+    "iv": "U0JyWXE2djY5ODNQaXN5Nw==",
+    "key": "MTY0NDE1MDQ4NEhTcnhyaFpkTjNxRkRHbk1zMFI5WUU="
+  },
+  "pilihanA": {
+    "message": "Yjk3ZGRkMGVkZWNmY2ExYTE0YzQ4MzgzYzFmNDAxYjEwY2NiMjI0MTZjNDNiY2FiY2M4NWVhZWQ3ZjZiMWNhMw==",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f0"
+    },
+    "iv": "TjZKb292VXB5d3F1R1hHbQ==",
+    "key": "MTY0NDE1MDQ4NGdCanBjMUlZczAydzR2aVM4c1dxMTQ="
+  },
+  "pilihanB": {
+    "message": "YmYzZTZjN2QxODAyZDdiYmM1N2RmMzVkOTg1ODg3ZjI0MWZlZmU4NGIwNGI5Njc3YmMzODgyMmQ0NGM4NWE2NQ==",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f1"
+    },
+    "iv": "RElTcGN0NXZnSFp5M3NSeQ==",
+    "key": "MTY0NDE1MDQ4NE84clpFMjNQaUtJSzJIY21wWlVFZTA="
+  },
+  "pilihanC": {
+    "message": "ZDNjYzg5OGU1OGY4MTA5YzZhYmRiNjY2YzM2NzUyMjU2MDZmZGJiNGRjZTc4YjA1ZjFmN2IxYzg5ZjhhMTRkZDdjMGY0NWM3ZjhlZGUxMDQ4YzVkODM0ZjM2MmM4MjY0",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f2"
+    },
+    "iv": "NXNtQ3dlelFVYmNjeDZ6RQ==",
+    "key": "MTY0NDE1MDQ4NFd6Z05ORmthOEV4OXJoOVJmNHkwTlk="
+  },
+  "pilihanD": {
+    "message": "OTAxM2Q1NDM2MGJjMGQyYmQwOTk0YmM4ZmE4ZDY3ZWNhMzVlYTM0OGU0NGYzODhlZGIwZDAzODlmODMxNGIyZg==",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f3"
+    },
+    "iv": "TGJVUlNWYnJPdUxWbFFoSw==",
+    "key": "MTY0NDE1MDQ4NGxKdHhJWUxwV1A5RWhSWWN5bG1QQTI="
+  },
+  "pilihanE": {
+    "message": "MzlmNjdlMzgzOTljMDcyYTQzZmE0MTIwMjIzYTYwZTc4ZmU4ZWNkODU2ODlmMjdhMzgzYTI3MWQxNTBlNWRjMDZlNGExMGFlOWMwYTczODJlMWQ5MzdlODk2MjZmYmE3",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f4"
+    },
+    "iv": "OUIwckcyWE96VU03Skw0SQ==",
+    "key": "MTY0NDE1MDQ4NDRTUmhWOTdKOTU1aWpaTzUwYVB4ZXE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f5"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f6"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f7"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f8"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6f9"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZmY5YjlmNDkwMDljMWM0MGJmYWU0NjFmMTk5MzA1ZDg=",
+    "_id": {
+      "$oid": "61ffbed49259dce936ead6fa"
+    },
+    "iv": "bXF1QlVReE5iNWVEOEhBUg==",
+    "key": "MTY0NDE1MDQ4NEk4b3Z5c1QxNktZcFY5WE9HS2xGTG4="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbefa9259dce936ead93e"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead93f"
+    }
+  },
+  "soal": {
+    "message": "NWViOTMzMzNmZTY1NzlmNThhM2YwZjNiZGNkZDBhNzY0NmMwNGJlYzJhMjRhNDg3MzYxNzNiYWEyMmEyYWI2MjI4MmQxY2IzYWJjYzIwOGM2ZWJjNzRlMzYwODUxZGUyNGIzNTYwYTU0ODk3NmNiYzY5OTNhMjdmNWU4Mzk1ZmZkNTA2MzFhOTNmMGQyZTY3OTNhOWZmMzllZTI1MDYxMw==",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead940"
+    },
+    "iv": "eXNJR1JWMTJ1enltUEIzcQ==",
+    "key": "MTY0NDE1MDUyMlpiVUpWZmU4clcyT0Mxdmw4ZjZwM2Y="
+  },
+  "pilihanA": {
+    "message": "MDhhMDdmYzMxMTBhZTFjMGY3OTEwYjczNjkyMzg1ZGI=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead941"
+    },
+    "iv": "R090Q3BvWW1FOU44ak1OZw==",
+    "key": "MTY0NDE1MDUyMkpYdlVtbUxpZjNKVlpxSml3UkE4cEE="
+  },
+  "pilihanB": {
+    "message": "NGYzNTUwMjQwNTJkMzIxYjNkOTIxZWJkZDdjNDcxMTM=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead942"
+    },
+    "iv": "UU1ia2FnbXlHVXBzZmRjYw==",
+    "key": "MTY0NDE1MDUyMk1yNGVCNWM0SDhQNlhaWHJZb2FWdHU="
+  },
+  "pilihanC": {
+    "message": "MzFkYzE2MTNiYWMyNWM5NWUzNjViZmRjMThiMGI3MGY=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead943"
+    },
+    "iv": "SnByT1p5TWNMSldMTkNONQ==",
+    "key": "MTY0NDE1MDUyMnVtUEVoTks2a09sM3VoSGZoRHNwWXo="
+  },
+  "pilihanD": {
+    "message": "YjY4MDM2N2U4ODgzMmJjMTdiMzNlMWY5YTViNDE5NzE=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead944"
+    },
+    "iv": "Y1FBWERWVmtnOTFLS0o5Mg==",
+    "key": "MTY0NDE1MDUyMk9EM2ZaWHZkVnU3U2lPT0lBMVo5SlA="
+  },
+  "pilihanE": {
+    "message": "Mzc2NzhiZGI5ZjA3YTNjOGFiZTkwZmYyMmJhNTczZDE=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead945"
+    },
+    "iv": "RDZKYzZReDFHRkVkY09pSg==",
+    "key": "MTY0NDE1MDUyMkJ5eVFKRUlqMjc4Rlc1dVZVM1F5a3Y="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead946"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead947"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead948"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead949"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead94a"
+    }
+  },
+  "kunciJawaban": {
+    "message": "OTZhMzU2NTJmN2I4ZGZlYmJkNDliMjUxZWZmMTZiMDg=",
+    "_id": {
+      "$oid": "61ffbefa9259dce936ead94b"
+    },
+    "iv": "UzJmN2lHY2lRbHNvNm4yTQ==",
+    "key": "MTY0NDE1MDUyMmh2eUE5eXFHa1BXSUpLaXo4cmJtREI="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbf349259dce936eaddeb"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddec"
+    }
+  },
+  "soal": {
+    "message": "Mjg0MDc3MjgyYTVjZTI0OTU4ZWU3N2RkYWQwODA4Y2IxN2UwYTZkZDRiZmJkZGNjMjE4NmE4Zjg3N2Y2YTg4NTFkODc1MmIzNjAxYWU2NjU5MzQzZDc4NzU4ZTFkYTUzMzZjMzk3NDIyNGE1NWYwNDgyMGU3ZTFiNzI4MjdkNWYwYjRjMWUxMzc1NGQ2NGE1ZjgwZjZjY2EzNmM5Nzg3NQ==",
+    "_id": {
+      "$oid": "61ffbf349259dce936eadded"
+    },
+    "iv": "UmhmRkVvQWdhWE41RHM5Wg==",
+    "key": "MTY0NDE1MDU4MGNPcXhsR3dLc3A5YVRuWmtHb1FNVk4="
+  },
+  "pilihanA": {
+    "message": "YTFjNDY5NTBjYWVkZDYxMWZiZTZlNjM5ZDYwYWViN2M=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddee"
+    },
+    "iv": "RFc2TWo1Y3ljcWJwVk5pRw==",
+    "key": "MTY0NDE1MDU4MFc3TTU1SWhrS2o1azNHd0cxZWZXWlg="
+  },
+  "pilihanB": {
+    "message": "ZDQ3M2E0ZmFlNGZmNzFkOTAwOWYxZTQ0OTEwM2E3ZmU=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddef"
+    },
+    "iv": "b1ZQdW9FT1VjRGFsbVFmZQ==",
+    "key": "MTY0NDE1MDU4MGhHYWRLVEQ3TnFzbHJaRGpjbGM1WTM="
+  },
+  "pilihanC": {
+    "message": "MDhlYTkxODE2NzQ0OTY5MTcwZTc4N2Q5OTVmMmViOGU=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf0"
+    },
+    "iv": "OHNhaDB5N1hTVjIxdG9LWg==",
+    "key": "MTY0NDE1MDU4MGVGaUpUZUdidGlXaTRjcmk4OVRTb2Y="
+  },
+  "pilihanD": {
+    "message": "NjMyODViYjY0YTMyMjM3YmJiYzA3NWZjNTVlM2IxY2U=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf1"
+    },
+    "iv": "WWRPZE1uU1BISUZ4dGxWTg==",
+    "key": "MTY0NDE1MDU4MHA4UkZMc09hdmI5bnlvZFJlVlJrMGg="
+  },
+  "pilihanE": {
+    "message": "NWE5N2M0NTJkNDQzZmExOGYwZTJjYTQ0NDhiMWNmMmI=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf2"
+    },
+    "iv": "cFZVSjNZOXlFTG03Z3RHMQ==",
+    "key": "MTY0NDE1MDU4MGpGVElQOWJqZFZ5WU5RSnRBZFlCRTE="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf3"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf4"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf5"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf6"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf7"
+    }
+  },
+  "kunciJawaban": {
+    "message": "OTEzZDkxNmUyYjNkNDg0ZmM0YWRiZGY0YjhmMmIxMWY=",
+    "_id": {
+      "$oid": "61ffbf349259dce936eaddf8"
+    },
+    "iv": "emhuWTBtelkzNWtpYm5BeA==",
+    "key": "MTY0NDE1MDU4MHV2RklEbGU4ZHN0dW42SHhvVzB3SDk="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbf789259dce936eae056"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae057"
+    }
+  },
+  "soal": {
+    "message": "NTBkZWViMWE5NDgyNmU4NGZiOWYyNGRmMzIxOWRkZjE4MGIxNjgxMDUyZmNmM2U2ZDBiNmY5MTY0ZGNjZGM4N2FhNDUxNGNmNWM2YzhjZGM1Yjg3MmFmODMzMmYwN2M1MTkzNWViOGJmNjg0NmFkMzU0MjIzMGY1MzgwNThmMDljYjdkOWI5MDE3ZDcwMjQzMDdkZjZhMTE3NzQ5NTk2NTc0NjAwZTlhMWRhYjZhMGY1NDIwYmNmNmQzNzYyYTdjMzllYTEwYjhkNzdmNjQ2M2Y1MGZkZGEwZTVmZTM5NjU=",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae058"
+    },
+    "iv": "WHJaQmlnWURHUDlIUW80Yw==",
+    "key": "MTY0NDE1MDY0OGJ3bXRVVm1IanhyTENRWjZYOXczcEY="
+  },
+  "pilihanA": {
+    "message": "MTRkYWI5OWU5Y2U1Y2QzNzYxNTZjYTY5MmM4YWM2MjMyNjAzMWI0YjhmYzBkZGJiYjgyYzM5ZjVjODUzODk0OTFhYmI4YjhjYTdmMTdmODllNTgxNmI4ODM0ODAwNGJk",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae059"
+    },
+    "iv": "VFZXWGxpSmVMdzd3bTBxZQ==",
+    "key": "MTY0NDE1MDY0OFdoalg3UUZVbVUySnNzeTRBVVpzWG8="
+  },
+  "pilihanB": {
+    "message": "OTczMmIzNTIzNjcyNTMwY2VlODk1MjU5NmIyZDI3OTVlZTY0ZjMzMWFmZTlkNmJmMzJkMmYzYjk5NjAwNDg2OTMyMmZiM2QyZGIxYzNlYjk5ZGViMjI0YTc4NmE0MjQ4",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05a"
+    },
+    "iv": "c2FZQzFkWWJFZHh3Y1h0cQ==",
+    "key": "MTY0NDE1MDY0OFRZcEx0c3lUblJyMlpsQ0p6R1BtcHc="
+  },
+  "pilihanC": {
+    "message": "NzBmNWFhZjA2NTliMWE2MmY0NTIwZTQ4MDkyZWFlNTcyNzk1OWM2YTE2YmM1NjNlMzg3MzlkNTNmYzQ0MDNhZg==",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05b"
+    },
+    "iv": "eldPTjJaalZhU0VibFZxTA==",
+    "key": "MTY0NDE1MDY0OHk4UlQ1ZDBZWGpINWM5SmZ5b0hoMno="
+  },
+  "pilihanD": {
+    "message": "MjJiMTUxZWQzZTczZGNkMzIzZGU5YTMzOGYwY2VlYzQ5MmRjNmNhYWQ1NzY4MmI0YWVjMjhiZDUzYzNlN2NlMjRlM2JiMjY1YWRiMTk4NGM1Zjg0MDFiMmNjMTJlYTZh",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05c"
+    },
+    "iv": "cUtYMHZlRUlvcUxCdnpmMQ==",
+    "key": "MTY0NDE1MDY0ODJFVlFreHlJRFp3TzVaNHFvQ0pQcUw="
+  },
+  "pilihanE": {
+    "message": "NjkxNzlhZjIyOGVkODk3OWRjOTc3NWY1ZjVkYTRhMWY2ODgyYzcxYmNjODE1ZjcyYTliZWQ1YTk4NzNiNzExMA==",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05d"
+    },
+    "iv": "d2Rza0VHQ0RoT05TREtiRQ==",
+    "key": "MTY0NDE1MDY0OEFrSHBqYk1RMDFaQmtlQk0yUmdsMzU="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05e"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae05f"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae060"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae061"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae062"
+    }
+  },
+  "kunciJawaban": {
+    "message": "MTM1MTYzNGFjY2E3YzE5Mzc0NTE1MjVjNWRkZjc4NmQ=",
+    "_id": {
+      "$oid": "61ffbf789259dce936eae063"
+    },
+    "iv": "VGhaTXVxUGpTbnFpeEw0SQ==",
+    "key": "MTY0NDE1MDY0OEJPVGMwMVdLTDE2RmRyQzJXMks4UEk="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbfbe9259dce936eae2ce"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2cf"
+    }
+  },
+  "soal": {
+    "message": "ZTliODkwYTM0NzU5ZDNiOTRjMTdmMGQ4NDlmYTI5ZWNjYjI4MmEyYmEyMzljM2E4ODc3OTIwZTkxOWY1MjljYWFkMjJmMjQzNGZkYTgxYmM3NTY1NDM3M2RkMGQ3N2JhYTg2MjViNjgyZmU5MmNkZmFlMDA3M2I3YzQzZTZlYTY2MzMwMWE3NGMzNDlhNDU3Mjc4ZjE4Nzk3MDllZTcyY2I2ZjQ4ZWI1MGIyYjZmZThkNTQ2OGU3MzE5YzBmNjM1ZjA0MzNiOTYwNDUxNmUwMDE0NmRlYzlhNTQyZGRjMDIzMDBlZDc4MjFiNzhjMWQxM2UyOTYxZTg4OTRhNGE4Zg==",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d0"
+    },
+    "iv": "aU9jVFNTUjQ5QXhQTGNjcA==",
+    "key": "MTY0NDE1MDcxOHF6ZUxaZnduczJ4dGxJT2JGNlZnOWU="
+  },
+  "pilihanA": {
+    "message": "ZmU0OTk0M2Q4MWU5NjhjNDQ5MGFjOTEyYmNlMDMwN2IyYWRlMTZjNzFhMDIyYzk5OGQyOGQzOThiN2Q3NWEyMQ==",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d1"
+    },
+    "iv": "ZEw3VVIzNEM4Z052UWhscQ==",
+    "key": "MTY0NDE1MDcxOE4zbUV4QXZjSkphZUM0SjlIdHp2OTc="
+  },
+  "pilihanB": {
+    "message": "NGFiZmNmM2NkMmZmYTQ4NDE1NjdmYjZjZWUxNTJiNjU=",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d2"
+    },
+    "iv": "MDM5NW40RHVMdjR5NFAzTw==",
+    "key": "MTY0NDE1MDcxOFRwRkRaM1dVRTlEUTBwQldrUTJWa0s="
+  },
+  "pilihanC": {
+    "message": "MzRjMWMyNTVlNWE0NWQ5ZWVlODMwOTdkNDVmMDhiOTk1Njg2MjQ5ZmNlZWRkZDljOTJhNWFkYjc5ZDQwZGRjMg==",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d3"
+    },
+    "iv": "Zmk1ZVlVdnZUODljR1JUZQ==",
+    "key": "MTY0NDE1MDcxODRUS1REMGdJRnh5UEFZQjNoY1VFQWs="
+  },
+  "pilihanD": {
+    "message": "NzgxYzExYWRjZDQyMzk0YjE3Yzc5YmYzZGNiNGY4YzA=",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d4"
+    },
+    "iv": "MEJtdVZWa21yU0xmZ2VEUg==",
+    "key": "MTY0NDE1MDcxOE8zVUhiOHdtanpKVnFiOXVURzFMNWY="
+  },
+  "pilihanE": {
+    "message": "ZDYyZjYyZTQ2NTY2OGRlOTBjYmI5ZDFiZGRlYTA5OWI=",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d5"
+    },
+    "iv": "YXpDdzNBb3FITUxVVnlXMw==",
+    "key": "MTY0NDE1MDcxODRJYVNkVFkxNlRGdUFaYXZJN3lxTXA="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d6"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d7"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d8"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2d9"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2da"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZGQ1MmFjMTExNDQ3MWEwODM1NGZiMmYxZDdjMTNkODY=",
+    "_id": {
+      "$oid": "61ffbfbe9259dce936eae2db"
+    },
+    "iv": "aEJQZHVicDBnVU1hMTcyMQ==",
+    "key": "MTY0NDE1MDcxODZ0NWZWaDk3MjZNeTVkeU5nMlNKOUQ="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffbff39259dce936eae553"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae554"
+    }
+  },
+  "soal": {
+    "message": "OWNhMmExZTU4YWI5NjVlNDc1MTMxNDE3OGNiZjM1NTgxZDY4ZmIyMGE5ZDQyYTFhMGQ4NmJjOTM3NjVjMWM4YzNiZmI3ZDYzMjQ5Y2U5YjI2ODlkMjdjOWQzODI4NGVhMjVkNGNiNjJkZDk0YWMwMWNmZjYzZTBiNjkxZTJhMWU=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae555"
+    },
+    "iv": "cXRVOWxPN2FySHNyQm9vSA==",
+    "key": "MTY0NDE1MDc3MVIwWGd0NXNSSFZta3N3enJ0VVdXNDk="
+  },
+  "pilihanA": {
+    "message": "ZGJjZTgwMDYxMTg2ZjQxNDU4ZTUzYWFmYzRkMDAzZDI=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae556"
+    },
+    "iv": "eFNWTkhEUWxSVlhyVk9ORQ==",
+    "key": "MTY0NDE1MDc3MWMzOE5WRmRYMTB0RVJGcDJUdWlub2c="
+  },
+  "pilihanB": {
+    "message": "MWMzZTllYmVmZjIzZDY2MDZjZGFkMmMxYzQzOWIwM2U=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae557"
+    },
+    "iv": "YkNra0RNU3VXanREYXl2Yw==",
+    "key": "MTY0NDE1MDc3MWh0Uno2UkZoWk5pa2lHSld2bXlVVkI="
+  },
+  "pilihanC": {
+    "message": "NGE1NGQ3NWI1NzE4NWEwMDY1NTNkNDAxNjY0M2VmOTQ=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae558"
+    },
+    "iv": "V2FodlUwTWhkZDQ4aGFpRA==",
+    "key": "MTY0NDE1MDc3MTFuZW82bFpVWEo0dk9tMGZzcWhHekk="
+  },
+  "pilihanD": {
+    "message": "NGFmNDI0ZDUwNTM5ZTNhM2E0Y2EwNjg3MDQxNTAzMjE=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae559"
+    },
+    "iv": "eU56V1huYkxrNkl1T2dVZw==",
+    "key": "MTY0NDE1MDc3MUFYenRkdnFiWFA4N1BDeVpPQWJzcmQ="
+  },
+  "pilihanE": {
+    "message": "MDRhYjA1MThlNTFjZTcxZTg5OGMwYjA5OGQ4ZTA2YTk=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55a"
+    },
+    "iv": "Z3Vvcmw0MlJvWnV0dFNMbA==",
+    "key": "MTY0NDE1MDc3MVdmbnExODBrQUNLTTI3T3ZoUU1Ta3A="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55b"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55c"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55d"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55e"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae55f"
+    }
+  },
+  "kunciJawaban": {
+    "message": "Y2Y1MTFiMmMxMmRhNmNhMWZlMjNjMmNiNjUwMDU2YmM=",
+    "_id": {
+      "$oid": "61ffbff39259dce936eae560"
+    },
+    "iv": "emhuZ25jVWFrRXhHZjBrYg==",
+    "key": "MTY0NDE1MDc3MU9HQlhGOVRETnd4bVRrbXJUU0pDWkQ="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ffc02e9259dce936eae7e5"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "bobot": 10,
+  "soalGambar": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7e6"
+    }
+  },
+  "soal": {
+    "message": "MmY1MjgwNmFkMTY3ZjA3MzliMWQwY2Q2YjFhOWZmMWVlNjBlNWQxNjIyNzU0N2ZkYjAwMGFlYTk1ZjBkMzUxMTQ3MWZiZDViZjY3Y2Y2NDlmMWE3ZjFjYTVmMmI5N2EyNzFmNDEyMTU1ZWQxMDlkY2UzYjNjYjQ5YzZmNWYxYWNjNjhkZjA4NjQ3YmUwZWVkODk1ZmEyZGRhY2NmNDEzNDZlOWI1NzBjMjA3OWZlNGI2YjY2NmFlODI1NTU0ZGEyY2VlNjkwMDkzZTczYTU2YjFiMDcyZjc4MmE3MzZlZDcyNmE2MzBmMThlNWQ1ZWUyNTZiOGJjZGZmMGExMDIzMWM1ZDY1MGFjZjhiOGZjOTJmYzUzM2YwNjU2NjU4N2RkZDg1MDEwMDI3NjczNTczN2UyZmZmMTUwYjhmMzUwMzQ5M2ZjMWJjODEwYWIwZWE5MDgwZmZjZGM3OTBmNmQzNw==",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7e7"
+    },
+    "iv": "UkJzQzFOOFBQa1RBVzdDYw==",
+    "key": "MTY0NDE1MDgzMDlIVEY1bmlxeFhDNHFlNGJSM0o5bDQ="
+  },
+  "pilihanA": {
+    "message": "OTNhMWI0NTk3M2VlOWUzOGNiZGVhMGQ2YzY5M2ExZGMwMzJhZWNmYTc3ZjVjY2E4NjBjNmYxNDA2Y2YxYzBhOA==",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7e8"
+    },
+    "iv": "OTRTbm81SWx6TEFoMEZ1Tg==",
+    "key": "MTY0NDE1MDgzMHBKUWxac1FjTUJqUWw4WWxhRnVEQ0E="
+  },
+  "pilihanB": {
+    "message": "YTM5YWM2NTBkOGRhODNkYjA3MDY1OTE1YWQwYzk3NDY=",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7e9"
+    },
+    "iv": "dkdBY2p5cUpzSHJKYjJTSQ==",
+    "key": "MTY0NDE1MDgzMHFTYjdtb2I5cmxObGpndXB6cUpXdEE="
+  },
+  "pilihanC": {
+    "message": "ZjA3N2NmOTc1MDRmZDljMjMwZTMxNmIwYzM5NDAwYWYzZWEyNzVkY2Q0YTFhZmRkNjE4MTQ4ZDYwMmNkMmRhYw==",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7ea"
+    },
+    "iv": "a0pmdHRvSFhZcWgzVDh4bg==",
+    "key": "MTY0NDE1MDgzMEdOcEpLeDM2OENnUmphV1hHalg1N2Q="
+  },
+  "pilihanD": {
+    "message": "NGViYzUyZTBkMTU5NmM1NTY1NTBjMGJmMzBkZjk5YjI=",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7eb"
+    },
+    "iv": "bWhQbmdCMEs0QWl0aFN0cA==",
+    "key": "MTY0NDE1MDgzMGxwbzJlc3VvSExndHBVajhpVXBXNEc="
+  },
+  "pilihanE": {
+    "message": "NTlhNTA2YzNlMzBkNjM5NGM1MTk3MmUyZGY4OTMzYzkwNTBiNDliMjY4NTJkZGM1ZTdkZjkxMmExZjNjOWJlMA==",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7ec"
+    },
+    "iv": "dktTeXVOSnBqUWRxN0FxMg==",
+    "key": "MTY0NDE1MDgzMDdHNEs1RW9QeDQ4NVVOdnZ0WHIxNVQ="
+  },
+  "pilihanGambarA": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7ed"
+    }
+  },
+  "pilihanGambarB": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7ee"
+    }
+  },
+  "pilihanGambarC": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7ef"
+    }
+  },
+  "pilihanGambarD": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7f0"
+    }
+  },
+  "pilihanGambarE": {
+    "message": "",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7f1"
+    }
+  },
+  "kunciJawaban": {
+    "message": "ZmQ0M2FmYzIxZjgyNGU0ZmZlNTE5NWZmZWMyODk2NzU=",
+    "_id": {
+      "$oid": "61ffc02e9259dce936eae7f2"
+    },
+    "iv": "a0NFY2dFWmJIUFpyZ0tIRw==",
+    "key": "MTY0NDE1MDgzMFY0VHRlYTVoMzNnZnVZckNyRTR2MXQ="
+  },
+  "createdAt": "Sunday, 6 February 2022 12:52:28",
+  "__v": 0
+}]

@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "616fd46da2a972f45b5ec953"
+  },
+  "nama": "Admin Ujian Online",
+  "password": {
+    "iv": "M3NHNGY0QURRUU5ZQ1g4dQ==",
+    "key": "MTYzNjIwMDA1M1g0MFQ0U1dyVEFnVnVkTXJsNjlhcFQ=",
+    "message": "MWRiMDZkZWY2NGM1MThhZmQ1NmZmYmM0ZTdlMTI0Y2Q=",
+    "_id": {
+      "$oid": "61866fb4b495c83f0ccdbc60"
+    }
+  },
+  "email": "onlineexams.superuser@gmail.com",
+  "role": 1,
+  "createdAt": "Wednesday, 20 October 2021 15:31:29",
+  "updatedAt": "Thursday, 6 January 2022 00:31:31",
+  "__v": 0
+}]

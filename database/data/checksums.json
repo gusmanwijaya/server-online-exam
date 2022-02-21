@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "6201040558b00625dc52aa28"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "digest": {
+    "message": "MmY3Nzg2OTJlZGQwZWU1YjQ0ZGI2NGU3NzRiYzdhYTFjYmY4ZmY3YWQ2MTQ2M2UxYmU4ZTFiMzk4YzUzNmJiNmIzZGY1ZmRmMDdmYWJkMjhkYmNmMmM0ZGJjYzVlODYxODgwN2UwZThiNTk1Yzc5YmFiZDQwOTJkNjk0NDY5NTk1OTc3MjM1MzdlYzAyZTFlY2QxNWFjZDg1NWRmNjQ4Ng==",
+    "_id": {
+      "$oid": "6201040558b00625dc52aa29"
+    },
+    "iv": "VVYwcnFsN1ZXUVp1SEFFeA==",
+    "key": "MTY0NDIyODI4ODF5UnB0RkoyYkhXak93cHljZ3d6VlA="
+  },
+  "createdAt": "Monday, 7 February 2022 17:04:48",
+  "__v": 0
+}]

@@ -1,0 +1,616 @@
+[{
+  "_id": {
+    "$oid": "61fa5ca2c82d06f24706246e"
+  },
+  "nama": "Drs. Boko Susilo, M.Kom",
+  "nip": "195904241986021002",
+  "email": "bokosusilo@unib.ac.id",
+  "password": {
+    "message": "OTg5NTViM2Q1MGZjNzQzMzgyZGMxMzYyZmZmZjJhOTg=",
+    "_id": {
+      "$oid": "61fa5ca2c82d06f24706246f"
+    },
+    "iv": "YlhleUlqTUVSOGd3NG00aA==",
+    "key": "MTY0Mzc4NzI5ODE5NTkwNDI0MTk4NjAyMTAwMm5NRUw="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa58dac82d06f247062349"
+    },
+    {
+      "$oid": "61fa54b4c82d06f247062261"
+    },
+    {
+      "$oid": "61fa5501c82d06f247062281"
+    },
+    {
+      "$oid": "61fa572ec82d06f2470622e1"
+    },
+    {
+      "$oid": "61fa5868c82d06f247062319"
+    },
+    {
+      "$oid": "61fa5955c82d06f247062389"
+    },
+    {
+      "$oid": "61fa592cc82d06f247062371"
+    },
+    {
+      "$oid": "61fa5a0ec82d06f2470623cc"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5e15c82d06f247062493"
+  },
+  "nama": "Rusdi Efendi, S.T., M.Kom",
+  "nip": "198101122005011002",
+  "email": "rusdi.efendi@unib.ac.id",
+  "password": {
+    "message": "MWJjZTgwN2VmZjMyZGU3OTE4YzQ5NWZkMDA2NzgxZjc=",
+    "_id": {
+      "$oid": "61fa5e15c82d06f247062494"
+    },
+    "iv": "RXNCVlV0RldkOXlzQllxOQ==",
+    "key": "MTY0Mzc4NzI5ODE5ODEwMTEyMjAwNTAxMTAwMndHbXY="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa559ec82d06f2470622d1"
+    },
+    {
+      "$oid": "61fa5567c82d06f2470622b1"
+    },
+    {
+      "$oid": "61fa58a6c82d06f247062331"
+    },
+    {
+      "$oid": "61fa5882c82d06f247062321"
+    },
+    {
+      "$oid": "61fa5590c82d06f2470622c9"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa601fc82d06f2470624a4"
+  },
+  "nama": "Desi Andreswari, S.T., M.Cs",
+  "nip": "197812072005012001",
+  "email": "desiandreswari@unib.ac.id",
+  "password": {
+    "message": "NmYxZGI2NmViMmEzMzcyYTNhMTFkYzkyMmY3ZjVlZmQ=",
+    "_id": {
+      "$oid": "61fa601fc82d06f2470624a5"
+    },
+    "iv": "U0VRdkdiUzVmbnZ5ZFR5Tw==",
+    "key": "MTY0Mzc4NzI5ODE5NzgxMjA3MjAwNTAxMjAwMXRFb08="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5b06c82d06f247062437"
+    },
+    {
+      "$oid": "61fa5414c82d06f24706222e"
+    },
+    {
+      "$oid": "61fa578cc82d06f247062311"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa609cc82d06f2470624b1"
+  },
+  "nama": "Ernawati, S.T., M.Cs",
+  "nip": "197308142006042001",
+  "email": "ernawati@unib.ac.id",
+  "password": {
+    "message": "ZDBmN2EwYTA2MmQxYzYxM2NmY2MzMTE2MmFmOGFjZmU=",
+    "_id": {
+      "$oid": "61fa609cc82d06f2470624b2"
+    },
+    "iv": "VVUzcDlDQ2czemtxaVdJNQ==",
+    "key": "MTY0Mzc4NzI5ODE5NzMwODE0MjAwNjA0MjAwMVljM3I="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa59ddc82d06f2470623bc"
+    },
+    {
+      "$oid": "61fa5a29c82d06f2470623d4"
+    },
+    {
+      "$oid": "61fa54f1c82d06f247062279"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa6135c82d06f2470624bf"
+  },
+  "nama": "Arie Vatresia, S.T., M.T.I.,Ph.D",
+  "nip": "198502042008122002",
+  "email": "arie.vatresia@unib.ac.id",
+  "password": {
+    "message": "Y2YzNDhjZDQ4NjY1YTUyNjY3ODcxZTVhZWM2Y2E2ZTc=",
+    "_id": {
+      "$oid": "61fa6135c82d06f2470624c0"
+    },
+    "iv": "RjNFV3pYWXlSSDR3QkQwNw==",
+    "key": "MTY0Mzc4NzI5ODE5ODUwMjA0MjAwODEyMjAwMm5zT1U="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5acec82d06f247062421"
+    },
+    {
+      "$oid": "61fa599cc82d06f2470623a4"
+    },
+    {
+      "$oid": "61fa5955c82d06f247062389"
+    },
+    {
+      "$oid": "61fa5758c82d06f2470622f9"
+    },
+    {
+      "$oid": "61fa5b18c82d06f24706243f"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "nama": "Funny Farady Coastera, S.Kom., M.T",
+  "nip": "198205172008121004",
+  "email": "ffcoastera@gmail.com",
+  "password": {
+    "message": "OTRiMDliNWYzMWY4MDc1ZDAyNzJiNjczMjhkMDU4YjY=",
+    "_id": {
+      "$oid": "61fa61f2c82d06f2470624cf"
+    },
+    "iv": "N3EyRHRZRHRabWVVdDZqYw==",
+    "key": "MTY0Mzc4NzI5ODE5ODIwNTE3MjAwODEyMTAwNE9WcTQ="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5766c82d06f247062301"
+    },
+    {
+      "$oid": "61fa59a8c82d06f2470623ac"
+    },
+    {
+      "$oid": "61fa58b7c82d06f247062339"
+    },
+    {
+      "$oid": "61fa591ec82d06f247062369"
+    },
+    {
+      "$oid": "61fa5ab1c82d06f247062411"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa629ac82d06f2470624de"
+  },
+  "nama": "Mochammad Yusa, S.Kom.,M.Kom",
+  "nip": "199201042019031015",
+  "email": "mochyusa@unib.ac.id",
+  "password": {
+    "message": "YmI4MzcwOWFiY2VhNDIwN2FjNjI5OGI3OTFmZDU4YjM=",
+    "_id": {
+      "$oid": "61fa629ac82d06f2470624df"
+    },
+    "iv": "ajdhdlplSFVJcEsybWFKeA==",
+    "key": "MTY0Mzc4NzI5ODE5OTIwMTA0MjAxOTAzMTAxNW56UDU="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa599cc82d06f2470623a4"
+    },
+    {
+      "$oid": "61fa5a71c82d06f2470623f3"
+    },
+    {
+      "$oid": "61fa5b47c82d06f247062457"
+    },
+    {
+      "$oid": "61fa5583c82d06f2470622c1"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa6340c82d06f2470624fd"
+  },
+  "nama": "Ruvita Faurina, S.T., M.Eng",
+  "nip": "198411292008122000",
+  "email": "ruvitafaurina@unib.ac.id",
+  "password": {
+    "message": "MzQ1MjU1MDAxOTdlZTU0ZmVmZDBmMWU3OWU5YWZjYWI=",
+    "_id": {
+      "$oid": "61fa6340c82d06f2470624fe"
+    },
+    "iv": "VG9ZQ2NpWGFiaDIxVEh0bQ==",
+    "key": "MTY0Mzc4NzI5ODE5ODQxMTI5MjAwODEyMjAwMG0wSGE="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5557c82d06f2470622a9"
+    },
+    {
+      "$oid": "61fa5904c82d06f247062361"
+    },
+    {
+      "$oid": "61fa5a71c82d06f2470623f3"
+    },
+    {
+      "$oid": "61fa5758c82d06f2470622f9"
+    },
+    {
+      "$oid": "61fa58e7c82d06f247062351"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa63c2c82d06f24706250f"
+  },
+  "nama": "Widhia Oktoberza, Kz,. S.T., M.Eng",
+  "nip": "199010182020122012",
+  "email": "widhiakz@unib.ac.id",
+  "password": {
+    "message": "ODA2NmUxZmMzNTA3YTdlMTk0OWE0ZTljMDMzY2RkY2Y=",
+    "_id": {
+      "$oid": "61fa63c2c82d06f247062510"
+    },
+    "iv": "cTFOa05Ta0hpZEdzeUlDdg==",
+    "key": "MTY0Mzc4NzI5ODE5OTAxMDE4MjAyMDEyMjAxMkZBakc="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5892c82d06f247062329"
+    },
+    {
+      "$oid": "61fa54b4c82d06f247062261"
+    },
+    {
+      "$oid": "61fa5501c82d06f247062281"
+    },
+    {
+      "$oid": "61fa572ec82d06f2470622e1"
+    },
+    {
+      "$oid": "61fa5868c82d06f247062319"
+    },
+    {
+      "$oid": "61fa5a83c82d06f2470623fb"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624ad5a8c06bc6c184420"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa6448c82d06f247062522"
+  },
+  "nama": "Drs. Asahar Johar, M.Kom.",
+  "nip": "195803051986031007",
+  "email": "asaharjohar@unib.ac.id",
+  "password": {
+    "message": "NmFiYzhhYWU2NDMwYTI0ZjkxZDdmOGY2Yjc2ZWZmY2M=",
+    "_id": {
+      "$oid": "61fa6448c82d06f247062523"
+    },
+    "iv": "V21PVnVyNGx1ZFdtbnpySQ==",
+    "key": "MTY0Mzc4NzI5ODE5NTgwMzA1MTk4NjAzMTAwN2lIUkE="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5b24c82d06f247062447"
+    },
+    {
+      "$oid": "61fa5574c82d06f2470622b9"
+    },
+    {
+      "$oid": "61fa5b39c82d06f24706244f"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa6536c82d06f247062536"
+  },
+  "nama": "Aan Erlansari, S.T., M.Eng",
+  "nip": "198112222008011011",
+  "email": "erlansay@gmail.com",
+  "password": {
+    "message": "MmI4MDI1YmRjZmEyZTMzYjZiNzkwNGFkMGU3YWZmN2M=",
+    "_id": {
+      "$oid": "61fa6536c82d06f247062537"
+    },
+    "iv": "SDBZaHE3WEpBSllleG5zZA==",
+    "key": "MTY0Mzc4NzI5ODE5ODExMjIyMjAwODAxMTAxMVJwQjU="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5514c82d06f247062289"
+    },
+    {
+      "$oid": "61fa59b5c82d06f2470623b4"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa659bc82d06f24706254b"
+  },
+  "nama": "Endina Putri Purwandari, S.T., M.Kom",
+  "nip": "198701272012122001",
+  "email": "endinaputrip@gmail.com",
+  "password": {
+    "message": "M2UxNmU2MTU3ZGVlMzdlNjNlYzE3NzUxNDExNzVhYWM=",
+    "_id": {
+      "$oid": "61fa659bc82d06f24706254c"
+    },
+    "iv": "bURCS1M4MUI2SklvQWYxOA==",
+    "key": "MTY0Mzc4NzI5ODE5ODcwMTI3MjAxMjEyMjAwMWQ0TFg="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa59fbc82d06f2470623c4"
+    },
+    {
+      "$oid": "61fa5a0ec82d06f2470623cc"
+    },
+    {
+      "$oid": "61fa5a5ec82d06f2470623eb"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa667fc82d06f247062561"
+  },
+  "nama": "Yudi Setiawan, S.T., M.Eng",
+  "nip": "198909032015041004",
+  "email": "yudisetiawan@unib.ac.id",
+  "password": {
+    "message": "MDEwMDdiYWRjYjI3ZmNjM2U4OTViNDVkZjNhODMyMjQ=",
+    "_id": {
+      "$oid": "61fa667fc82d06f247062562"
+    },
+    "iv": "dkZTRGs2bEtYNGVob1lBNA==",
+    "key": "MTY0Mzc4NzI5ODE5ODkwOTAzMjAxNTA0MTAwNFN2dzM="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa546fc82d06f247062251"
+    },
+    {
+      "$oid": "61fa54a2c82d06f247062259"
+    },
+    {
+      "$oid": "61fa574ac82d06f2470622f1"
+    },
+    {
+      "$oid": "61fa5ab1c82d06f247062411"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa66e0c82d06f247062578"
+  },
+  "nama": "Ferzha Putra Utama, S.T., M.Eng",
+  "nip": "198906232018031002",
+  "email": "fputama.edu@unib.ac.id",
+  "password": {
+    "message": "NTUzNTJhZWJmOTA2NjY4NjBhMzQzMzVkZGQ4ODAyMWU=",
+    "_id": {
+      "$oid": "61fa66e0c82d06f247062579"
+    },
+    "iv": "WlBaVXpIclZoSERjMFU4NA==",
+    "key": "MTY0Mzc4NzI5ODE5ODkwNjIzMjAxODAzMTAwMm9yN0M="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa58f7c82d06f247062359"
+    },
+    {
+      "$oid": "61fa5778c82d06f247062309"
+    },
+    {
+      "$oid": "61fa5892c82d06f247062329"
+    },
+    {
+      "$oid": "61fa5938c82d06f247062379"
+    },
+    {
+      "$oid": "61fa5b18c82d06f24706243f"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa672bc82d06f247062590"
+  },
+  "nama": "Andang Wijanarko, S.Kom., M.Kom",
+  "nip": "199201312019031010",
+  "email": "andangwj@unib.ac.id",
+  "password": {
+    "message": "OTVjMDNmZWU3NTRkOTc5NjAyODA3M2IxMDRiYTdjMzE=",
+    "_id": {
+      "$oid": "61fa672bc82d06f247062591"
+    },
+    "iv": "VmZMWlFPWlhENWpkRGFKeQ==",
+    "key": "MTY0Mzc4NzI5ODE5OTIwMTMxMjAxOTAzMTAxMFVxcE8="
+  },
+  "jenisKelamin": "L",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5947c82d06f247062381"
+    },
+    {
+      "$oid": "61fa54d0c82d06f247062269"
+    },
+    {
+      "$oid": "61fa573cc82d06f2470622e9"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa67a0c82d06f2470625a9"
+  },
+  "nama": "Julia Purnama Sari, S.T., M.Kom",
+  "nip": "199007092019032025",
+  "email": "juliapurnamasari@unib.ac.id",
+  "password": {
+    "message": "ZThjODk0MjZkNzM5ODk1MDcxY2ZiMjNjYTdlYzU2NjQ=",
+    "_id": {
+      "$oid": "61fa67a0c82d06f2470625aa"
+    },
+    "iv": "UGdpS0NyRVJrQmRuUFlqMg==",
+    "key": "MTY0Mzc4NzI5ODE5OTAwNzA5MjAxOTAzMjAyNWNsWFk="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa559ec82d06f2470622d1"
+    },
+    {
+      "$oid": "61fa573cc82d06f2470622e9"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa6822c82d06f2470625c3"
+  },
+  "nama": "Nurul Renaningtias, S.T., M.Kom",
+  "nip": "199411232020122021",
+  "email": "renaningtiasnurul@gmail.com",
+  "password": {
+    "message": "NzgxYzM3Y2EzNmM1NDljMjg5MjEyZjliMjVkNWVjYzk=",
+    "_id": {
+      "$oid": "61fa6822c82d06f2470625c4"
+    },
+    "iv": "SGJ0ZjJIaUhOUnVJcmRKZg==",
+    "key": "MTY0Mzc4NzI5ODE5OTQxMTIzMjAyMDEyMjAyMXQ5Wko="
+  },
+  "jenisKelamin": "P",
+  "mataKuliah": [
+    {
+      "$oid": "61fa5b24c82d06f247062447"
+    },
+    {
+      "$oid": "61fa59b5c82d06f2470623b4"
+    },
+    {
+      "$oid": "61fa5b39c82d06f24706244f"
+    }
+  ],
+  "programStudi": {
+    "$oid": "618624b15a8c06bc6c184424"
+  },
+  "role": 0,
+  "createdAt": "Wednesday, 2 February 2022 14:34:58",
+  "__v": 0
+}]

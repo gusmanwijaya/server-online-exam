@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "61ffd26b09062c13ce03803a"
+  },
+  "dosen": {
+    "$oid": "61fa61f2c82d06f2470624ce"
+  },
+  "mataKuliah": {
+    "$oid": "61fa5766c82d06f247062301"
+  },
+  "namaUjian": "UAS",
+  "jumlahSoal": 10,
+  "durasiUjian": 10,
+  "mulaiUjian": "06-02-2022 20:52",
+  "terlambatUjian": "07-02-2022 23:59",
+  "token": "JFDKKF",
+  "createdAt": "Sunday, 6 February 2022 20:48:06",
+  "__v": 0
+}]
