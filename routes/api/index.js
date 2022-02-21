@@ -14,20 +14,19 @@ const {
   getKunciJawaban,
   postHasilUjian,
   getHasilUjian,
-  getPengujianAlgoritmaAES256CBCandBase64,
-  getPengujianAlgoritmaSHA256,
+  postPengujianAlgoritmaAES256CBCandBase64,
+  postPengujianAlgoritmaSHA256,
 } = require("../../controllers/api/apiController");
 const { isMahasiswa } = require("../../middlewares");
 
-router.get(
+router.post(
   "/pengujian-aes-256-cbc-base-64",
-  multer({ dest: os.tmpdir() }).single("file"),
-  getPengujianAlgoritmaAES256CBCandBase64
+  postPengujianAlgoritmaAES256CBCandBase64
 );
-router.get(
+router.post(
   "/pengujian-sha-256",
   multer({ dest: os.tmpdir() }).single("file"),
-  getPengujianAlgoritmaSHA256
+  postPengujianAlgoritmaSHA256
 );
 
 router.post("/sign-in", signIn);
