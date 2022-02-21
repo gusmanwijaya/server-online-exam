@@ -11,9 +11,9 @@ const dateAndTime = require("date-and-time");
 const sha256File = require("sha256-file");
 
 module.exports = {
-  postPengujianAlgoritmaAES256CBCandBase64: async (req, res) => {
+  getPengujianAlgoritmaAES256CBCandBase64: async (req, res) => {
     try {
-      const { plaintext, iv, key } = req.body;
+      const { plaintext, iv, key } = req.query;
       const algorithm = "aes-256-cbc";
 
       if (plaintext === "") {
