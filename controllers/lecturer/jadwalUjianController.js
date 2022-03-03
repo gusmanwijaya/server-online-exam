@@ -1,11 +1,15 @@
 const BankSoal = require("../../models/bank-soal");
 const Dosen = require("../../models/dosen");
 const JadwalUjian = require("../../models/jadwal-ujian");
+const HasilUjian = require("../../models/hasil-ujian");
+const Checksum = require("../../models/checksum");
 
 const dateAndTime = require("date-and-time");
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 const randomString = require("randomstring");
+const config = require("../../config");
+const fs = require("fs");
 
 module.exports = {
   jadwalUjian: async (req, res) => {
@@ -270,7 +274,34 @@ module.exports = {
       } else {
         const idArray = valueList.split(",");
 
+        const jadwalUjian = await JadwalUjian.find({
+          _id: { $in: idArray },
+        }).populate("mataKuliah");
+        jadwalUjian.forEach(async (jdwl) => {
+          let fileName = `Hasil Ujian - ${jdwl.mataKuliah.nama}.pdf`;
+          let filePath = `${config.rootPath}/public/docs/${fileName}`;
+          if (fs.existsSync(filePath)) {
+            fs.unlinkSync(filePath);
+            await Checksum.findOneAndDelete({
+              mataKuliah: jdwl.mataKuliah._id,
+            });
+          }
+        });
+
         await JadwalUjian.deleteMany({ _id: { $in: idArray } });
+
+        const hasilUjian = await HasilUjian.find({
+          jadwalUjian: {
+            $in: idArray,
+          },
+        });
+        if (hasilUjian.length > 0) {
+          await HasilUjian.deleteMany({
+            jadwalUjian: {
+              $in: idArray,
+            },
+          });
+        }
 
         req.flash("alertStatus", "success");
         req.flash("alertMessage", `Jadwal ujian berhasil dihapus!`);
