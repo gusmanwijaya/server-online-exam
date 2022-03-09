@@ -50,7 +50,7 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message,
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
@@ -74,13 +74,25 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message,
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
   signIn: async (req, res, next) => {
     try {
       const { email, password } = req.body;
+
+      if (!email)
+        return res.status(400).json({
+          status: "error",
+          message: "Email tidak boleh kosong!",
+        });
+
+      if (!password)
+        return res.status(400).json({
+          status: "error",
+          message: "Password tidak boleh kosong!",
+        });
 
       await Mahasiswa.findOne({ email: email })
         .populate("mataKuliah")
@@ -160,7 +172,7 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
@@ -182,17 +194,41 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
   getTokenUjian: async (req, res) => {
     try {
-      const { idUjian } = req.params;
+      const { idUjian, token } = req.query;
+
+      if (!idUjian)
+        return res.status(400).json({
+          status: "error",
+          message: "Query params idUjian tidak boleh kosong!",
+        });
 
       const data = await JadwalUjian.findOne({ _id: idUjian }).select(
         "token mulaiUjian terlambatUjian"
       );
+
+      if (!data)
+        return res.status(404).json({
+          status: "error",
+          message: "Jadwal ujian tidak dapat ditemukan!",
+        });
+
+      if (!token)
+        return res.status(400).json({
+          status: "error",
+          message: "Silahkan masukkan token untuk mengikuti ujian!",
+        });
+
+      if (token !== data.token)
+        return res.status(400).json({
+          status: "error",
+          message: "Token yang Anda miliki tidak sesuai!",
+        });
 
       let dateNow = new Date();
       const terlambatUjian = dateAndTime.parse(
@@ -201,38 +237,48 @@ module.exports = {
       );
       const mulaiUjian = dateAndTime.parse(data.mulaiUjian, "DD-MM-YYYY HH:mm");
 
-      if (dateNow < mulaiUjian) {
-        res.status(403).json({
+      if (dateNow < mulaiUjian)
+        return res.status(403).json({
           status: "error",
           message: "Ujian belum mulai, mohon tunggu dan bersabar!",
         });
-      } else {
-        if (dateNow > terlambatUjian) {
-          res.status(403).json({
-            status: "error",
-            message: "Maaf, Anda terlambat dan tidak bisa mengikuti ujian!",
-          });
-        } else {
-          res.status(200).json({
-            status: "success",
-            data,
-          });
-        }
-      }
+
+      if (dateNow > terlambatUjian)
+        return res.status(403).json({
+          status: "error",
+          message: "Maaf, Anda terlambat dan tidak bisa mengikuti ujian!",
+        });
+
+      res.status(200).json({
+        status: "success",
+        data,
+      });
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
   getSoalUjian: async (req, res) => {
     try {
-      const { idUjian } = req.params;
+      const { idUjian } = req.query;
+
+      if (!idUjian)
+        return res.status(400).json({
+          status: "error",
+          message: "Query params idUjian tidak boleh kosong!",
+        });
 
       const jadwalUjian = await JadwalUjian.findOne({
         _id: idUjian,
       });
+
+      if (!jadwalUjian)
+        return res.status(404).json({
+          status: "error",
+          message: "Jadwal ujian tidak dapat ditemukan!",
+        });
 
       BankSoal.findRandom(
         {
@@ -442,7 +488,7 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
@@ -450,248 +496,242 @@ module.exports = {
     try {
       const { q } = req.query;
 
-      if (q === "") {
-        res.status(400).json({
+      if (!q)
+        return res.status(400).json({
           status: "error",
           message: "Anda tidak memasukkan query params!",
         });
-      } else {
-        const soalUjian = await BankSoal.findOne({ _id: q })
-          .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
-          .populate("mataKuliah", "_id nama", "MataKuliah");
 
-        const abjads = ["A", "B", "C", "D", "E"];
-        let algorithm = "aes-256-cbc";
+      const soalUjian = await BankSoal.findOne({ _id: q })
+        .populate("dosen", "_id nama nip email jenisKelamin", "Dosen")
+        .populate("mataKuliah", "_id nama", "MataKuliah");
 
-        if (soalUjian.soal.message !== "") {
-          let ivSoal = base64decode(soalUjian.soal.iv);
-          let keySoal = base64decode(soalUjian.soal.key);
-          let messageSoal = base64decode(soalUjian.soal.message);
+      if (!soalUjian)
+        return res.status(404).json({
+          status: "error",
+          message: "Soal ujian tidak dapat ditemukan!",
+        });
 
-          let decipherSoal = crypto.createDecipheriv(
-            algorithm,
-            keySoal,
-            ivSoal
+      const abjads = ["A", "B", "C", "D", "E"];
+      let algorithm = "aes-256-cbc";
+
+      if (soalUjian.soal.message !== "") {
+        let ivSoal = base64decode(soalUjian.soal.iv);
+        let keySoal = base64decode(soalUjian.soal.key);
+        let messageSoal = base64decode(soalUjian.soal.message);
+
+        let decipherSoal = crypto.createDecipheriv(algorithm, keySoal, ivSoal);
+        let dataDecryptedSoal = decipherSoal.update(
+          messageSoal,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
+
+        soalUjian.soal.message = decryptedSoal.replace(`\r\n`, "");
+      }
+
+      if (soalUjian.soalGambar.message !== "") {
+        let ivSoalGambar = base64decode(soalUjian.soalGambar.iv);
+        let keySoalGambar = base64decode(soalUjian.soalGambar.key);
+        let messageSoalGambar = base64decode(soalUjian.soalGambar.message);
+
+        let decipherSoalGambar = crypto.createDecipheriv(
+          algorithm,
+          keySoalGambar,
+          ivSoalGambar
+        );
+        let dataDecryptedSoalGambar = decipherSoalGambar.update(
+          messageSoalGambar,
+          "hex",
+          "utf-8"
+        );
+        let decryptedSoalGambar =
+          dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
+
+        soalUjian.soalGambar.message = decryptedSoalGambar.replace(`\r\n`, "");
+      }
+
+      abjads.forEach((abjad) => {
+        if (soalUjian["pilihan" + abjad].message !== "") {
+          let ivPilihan = base64decode(soalUjian["pilihan" + abjad].iv);
+          let keyPilihan = base64decode(soalUjian["pilihan" + abjad].key);
+          let messagePilihan = base64decode(
+            soalUjian["pilihan" + abjad].message
           );
-          let dataDecryptedSoal = decipherSoal.update(
-            messageSoal,
+
+          let decipherPilihan = crypto.createDecipheriv(
+            algorithm,
+            keyPilihan,
+            ivPilihan
+          );
+          let dataDecryptedPilihan = decipherPilihan.update(
+            messagePilihan,
             "hex",
             "utf-8"
           );
-          let decryptedSoal = dataDecryptedSoal + decipherSoal.final("utf-8");
+          let decryptedPilihan =
+            dataDecryptedPilihan + decipherPilihan.final("utf-8");
 
-          soalUjian.soal.message = decryptedSoal.replace(`\r\n`, "");
-        }
-
-        if (soalUjian.soalGambar.message !== "") {
-          let ivSoalGambar = base64decode(soalUjian.soalGambar.iv);
-          let keySoalGambar = base64decode(soalUjian.soalGambar.key);
-          let messageSoalGambar = base64decode(soalUjian.soalGambar.message);
-
-          let decipherSoalGambar = crypto.createDecipheriv(
-            algorithm,
-            keySoalGambar,
-            ivSoalGambar
-          );
-          let dataDecryptedSoalGambar = decipherSoalGambar.update(
-            messageSoalGambar,
-            "hex",
-            "utf-8"
-          );
-          let decryptedSoalGambar =
-            dataDecryptedSoalGambar + decipherSoalGambar.final("utf-8");
-
-          soalUjian.soalGambar.message = decryptedSoalGambar.replace(
+          soalUjian["pilihan" + abjad].message = decryptedPilihan.replace(
             `\r\n`,
             ""
           );
         }
 
-        abjads.forEach((abjad) => {
-          if (soalUjian["pilihan" + abjad].message !== "") {
-            let ivPilihan = base64decode(soalUjian["pilihan" + abjad].iv);
-            let keyPilihan = base64decode(soalUjian["pilihan" + abjad].key);
-            let messagePilihan = base64decode(
-              soalUjian["pilihan" + abjad].message
-            );
-
-            let decipherPilihan = crypto.createDecipheriv(
-              algorithm,
-              keyPilihan,
-              ivPilihan
-            );
-            let dataDecryptedPilihan = decipherPilihan.update(
-              messagePilihan,
-              "hex",
-              "utf-8"
-            );
-            let decryptedPilihan =
-              dataDecryptedPilihan + decipherPilihan.final("utf-8");
-
-            soalUjian["pilihan" + abjad].message = decryptedPilihan.replace(
-              `\r\n`,
-              ""
-            );
-          }
-
-          if (soalUjian["pilihanGambar" + abjad].message !== "") {
-            let ivPilihanGambar = base64decode(
-              soalUjian["pilihanGambar" + abjad].iv
-            );
-            let keyPilihanGambar = base64decode(
-              soalUjian["pilihanGambar" + abjad].key
-            );
-            let messagePilihanGambar = base64decode(
-              soalUjian["pilihanGambar" + abjad].message
-            );
-
-            let decipherPilihanGambar = crypto.createDecipheriv(
-              algorithm,
-              keyPilihanGambar,
-              ivPilihanGambar
-            );
-            let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
-              messagePilihanGambar,
-              "hex",
-              "utf-8"
-            );
-            let decryptedPilihanGambar =
-              dataDecryptedPilihanGambar + decipherPilihanGambar.final("utf-8");
-
-            soalUjian["pilihanGambar" + abjad].message =
-              decryptedPilihanGambar.replace(`\r\n`, "");
-          }
-        });
-
-        if (soalUjian.kunciJawaban.message !== "") {
-          let ivKunciJawaban = base64decode(soalUjian.kunciJawaban.iv);
-          let keyKunciJawaban = base64decode(soalUjian.kunciJawaban.key);
-          let messageKunciJawaban = base64decode(
-            soalUjian.kunciJawaban.message
+        if (soalUjian["pilihanGambar" + abjad].message !== "") {
+          let ivPilihanGambar = base64decode(
+            soalUjian["pilihanGambar" + abjad].iv
+          );
+          let keyPilihanGambar = base64decode(
+            soalUjian["pilihanGambar" + abjad].key
+          );
+          let messagePilihanGambar = base64decode(
+            soalUjian["pilihanGambar" + abjad].message
           );
 
-          let decipherKunciJawaban = crypto.createDecipheriv(
+          let decipherPilihanGambar = crypto.createDecipheriv(
             algorithm,
-            keyKunciJawaban,
-            ivKunciJawaban
+            keyPilihanGambar,
+            ivPilihanGambar
           );
-          let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
-            messageKunciJawaban,
+          let dataDecryptedPilihanGambar = decipherPilihanGambar.update(
+            messagePilihanGambar,
             "hex",
             "utf-8"
           );
-          let decryptedKunciJawaban =
-            dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
+          let decryptedPilihanGambar =
+            dataDecryptedPilihanGambar + decipherPilihanGambar.final("utf-8");
 
-          soalUjian.kunciJawaban.message = decryptedKunciJawaban;
+          soalUjian["pilihanGambar" + abjad].message =
+            decryptedPilihanGambar.replace(`\r\n`, "");
         }
-
-        delete soalUjian.soalGambar._doc._id;
-        delete soalUjian.soalGambar._doc.iv;
-        delete soalUjian.soalGambar._doc.key;
-
-        delete soalUjian.soal._doc._id;
-        delete soalUjian.soal._doc.iv;
-        delete soalUjian.soal._doc.key;
-
-        abjads.forEach((abjad) => {
-          delete soalUjian["pilihan" + abjad]._doc._id;
-          delete soalUjian["pilihan" + abjad]._doc.iv;
-          delete soalUjian["pilihan" + abjad]._doc.key;
-
-          delete soalUjian["pilihanGambar" + abjad]._doc._id;
-          delete soalUjian["pilihanGambar" + abjad]._doc.iv;
-          delete soalUjian["pilihanGambar" + abjad]._doc.key;
-        });
-
-        delete soalUjian.kunciJawaban._doc._id;
-        delete soalUjian.kunciJawaban._doc.iv;
-        delete soalUjian.kunciJawaban._doc.key;
-
-        delete soalUjian._doc.createdAt;
-        delete soalUjian._doc.updatedAt;
-        delete soalUjian._doc.__v;
-
-        res.status(200).json({
-          status: "success",
-          data: soalUjian,
-        });
-      }
-    } catch (error) {
-      res.status(500).json({
-        status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
       });
-    }
-  },
-  getKunciJawaban: async (req, res) => {
-    try {
-      const { q } = req.query;
 
-      if (!q) {
-        res.status(400).json({
-          status: "error",
-          message: "Anda tidak memasukkan query params!",
-        });
-      } else {
-        const jawabanUjian = await BankSoal.find({
-          _id: { $in: q },
-        }).select("_id kunciJawaban");
+      if (soalUjian.kunciJawaban.message !== "") {
+        let ivKunciJawaban = base64decode(soalUjian.kunciJawaban.iv);
+        let keyKunciJawaban = base64decode(soalUjian.kunciJawaban.key);
+        let messageKunciJawaban = base64decode(soalUjian.kunciJawaban.message);
 
-        let algorithm = "aes-256-cbc";
+        let decipherKunciJawaban = crypto.createDecipheriv(
+          algorithm,
+          keyKunciJawaban,
+          ivKunciJawaban
+        );
+        let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
+          messageKunciJawaban,
+          "hex",
+          "utf-8"
+        );
+        let decryptedKunciJawaban =
+          dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
 
-        jawabanUjian.forEach((jwbUjian) => {
-          if (jwbUjian.kunciJawaban.message !== "") {
-            let ivKunciJawaban = base64decode(jwbUjian.kunciJawaban.iv);
-            let keyKunciJawaban = base64decode(jwbUjian.kunciJawaban.key);
-            let messageKunciJawaban = base64decode(
-              jwbUjian.kunciJawaban.message
-            );
-
-            let decipherKunciJawaban = crypto.createDecipheriv(
-              algorithm,
-              keyKunciJawaban,
-              ivKunciJawaban
-            );
-            let dataDecryptedKunciJawaban = decipherKunciJawaban.update(
-              messageKunciJawaban,
-              "hex",
-              "utf-8"
-            );
-            let decryptedKunciJawaban =
-              dataDecryptedKunciJawaban + decipherKunciJawaban.final("utf-8");
-
-            jwbUjian.kunciJawaban.message = decryptedKunciJawaban;
-          }
-
-          delete jwbUjian.kunciJawaban._doc._id;
-          delete jwbUjian.kunciJawaban._doc.iv;
-          delete jwbUjian.kunciJawaban._doc.key;
-        });
-
-        res.status(200).json({
-          status: "success",
-          data: jawabanUjian,
-        });
+        soalUjian.kunciJawaban.message = decryptedKunciJawaban;
       }
+
+      delete soalUjian.soalGambar._doc._id;
+      delete soalUjian.soalGambar._doc.iv;
+      delete soalUjian.soalGambar._doc.key;
+
+      delete soalUjian.soal._doc._id;
+      delete soalUjian.soal._doc.iv;
+      delete soalUjian.soal._doc.key;
+
+      abjads.forEach((abjad) => {
+        delete soalUjian["pilihan" + abjad]._doc._id;
+        delete soalUjian["pilihan" + abjad]._doc.iv;
+        delete soalUjian["pilihan" + abjad]._doc.key;
+
+        delete soalUjian["pilihanGambar" + abjad]._doc._id;
+        delete soalUjian["pilihanGambar" + abjad]._doc.iv;
+        delete soalUjian["pilihanGambar" + abjad]._doc.key;
+      });
+
+      delete soalUjian.kunciJawaban._doc._id;
+      delete soalUjian.kunciJawaban._doc.iv;
+      delete soalUjian.kunciJawaban._doc.key;
+
+      delete soalUjian._doc.createdAt;
+      delete soalUjian._doc.updatedAt;
+      delete soalUjian._doc.__v;
+
+      res.status(200).json({
+        status: "success",
+        data: soalUjian,
+      });
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
   postHasilUjian: async (req, res) => {
     try {
-      const { jadwalUjian, listJawaban, jumlahBenar, nilai, masuk, selesai } =
-        req.body;
-
-      const data = await HasilUjian.create({
+      const {
         jadwalUjian,
-        mahasiswa: req.mahasiswa._id,
+        mahasiswa,
         listJawaban,
         jumlahBenar,
         nilai,
+        masuk,
+        selesai,
+      } = req.body;
+
+      if (!jadwalUjian)
+        return res.status(400).json({
+          status: "error",
+          message: "Jadwal ujian tidak boleh kosong!",
+        });
+
+      if (!mahasiswa)
+        return res.status(400).json({
+          status: "error",
+          message: "Mahasiswa tidak boleh kosong!",
+        });
+
+      if (!listJawaban)
+        return res.status(400).json({
+          status: "error",
+          message: "List jawaban tidak boleh kosong!",
+        });
+
+      if (!jumlahBenar)
+        return res.status(400).json({
+          status: "error",
+          message: "Jumlah benar tidak boleh kosong!",
+        });
+
+      if (!nilai)
+        return res.status(400).json({
+          status: "error",
+          message: "Nilai tidak boleh kosong!",
+        });
+
+      if (!masuk)
+        return res.status(400).json({
+          status: "error",
+          message: "Waktu masuk tidak boleh kosong!",
+        });
+
+      if (!selesai)
+        return res.status(400).json({
+          status: "error",
+          message: "Waktu selesai ujian tidak boleh kosong!",
+        });
+
+      const data = await HasilUjian.create({
+        jadwalUjian,
+        mahasiswa,
+        listJawaban: {
+          message: listJawaban,
+        },
+        jumlahBenar: {
+          message: jumlahBenar,
+        },
+        nilai: {
+          message: nilai,
+        },
         masuk,
         selesai,
       });
@@ -703,7 +743,7 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
@@ -720,13 +760,22 @@ module.exports = {
         let hasilUjian = await HasilUjian.findOne({
           mahasiswa: idMahasiswa,
         })
-          .populate("jadwalUjian", "_id namaUjian", "JadwalUjian")
+          .populate({
+            path: "jadwalUjian",
+            select: "_id mataKuliah namaUjian",
+            model: "JadwalUjian",
+            populate: {
+              path: "mataKuliah",
+              select: "_id nama",
+              model: "MataKuliah",
+            },
+          })
           .populate("mahasiswa", "_id nama npm", "Mahasiswa");
 
         if (!hasilUjian) {
-          res.status(200).json({
+          res.status(404).json({
             status: "error",
-            message: "Hasil ujian tidak tersedia!",
+            message: "Hasil ujian mahasiswa tersebut tidak tersedia!",
           });
         } else {
           const algorithm = "aes-256-cbc";
@@ -813,7 +862,7 @@ module.exports = {
     } catch (error) {
       res.status(500).json({
         status: "error",
-        message: error.message ?? "Mohon maaf, terjadi kesalahan pada server!",
+        message: error.message || "Mohon maaf, terjadi kesalahan pada server!",
       });
     }
   },
