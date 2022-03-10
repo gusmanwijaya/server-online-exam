@@ -7,7 +7,9 @@ Script:
 <br />
 
 - npm run build:css : Build tailwind css
-- npm start : Run web server
+- npm start : Run web server mode development
+- npm run prod : Run web server mode production
+
   <br />
   <br />
 

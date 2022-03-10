@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "env-cmd -f./.env.local nodemon ./bin/www",
+    "start": "env-cmd -f./.env.dev nodemon ./bin/www",
     "build:css": "postcss public/stylesheets/tailwind.css -o public/stylesheets/style.css",
-    "prod": "env-cmd -f./.env nodemon ./bin/www"
+    "prod": "env-cmd -f./.env.prod nodemon ./bin/www"
   },
   "dependencies": {
     "connect-flash": "^0.1.1",
