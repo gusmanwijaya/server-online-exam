@@ -33,7 +33,6 @@ const {
   mataKuliahHasilUjian,
   hasilUjian,
   detailHasilUjian,
-  generatePdf,
   downloadPdf,
 } = require("../../controllers/lecturer/hasilUjianController");
 const {
@@ -89,7 +88,6 @@ router.get(
   "/hasil-ujian/:idMatkul/detail-hasil-ujian/:idHasilUjian",
   detailHasilUjian
 );
-router.get("/hasil-ujian/:idMatkul/generate-pdf", generatePdf);
 router.get("/hasil-ujian/:idMatkul/download-pdf", downloadPdf);
 
 router.get("/checksum", checksumMataKuliah);
