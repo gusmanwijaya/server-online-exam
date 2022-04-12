@@ -33,12 +33,14 @@ const {
   mataKuliahHasilUjian,
   hasilUjian,
   detailHasilUjian,
+  konfirmasiSelesaiUjian,
   downloadPdf,
 } = require("../../controllers/lecturer/hasilUjianController");
 const {
   checksum,
   storeChecksum,
   checksumMataKuliah,
+  periksaChecksum,
 } = require("../../controllers/lecturer/checksumController");
 
 router.use(isLecturer);
@@ -88,17 +90,15 @@ router.get(
   "/hasil-ujian/:idMatkul/detail-hasil-ujian/:idHasilUjian",
   detailHasilUjian
 );
+router.get(
+  "/hasil-ujian/:idMatkul/konfirmasi-selesai-ujian",
+  konfirmasiSelesaiUjian
+);
 router.get("/hasil-ujian/:idMatkul/download-pdf", downloadPdf);
 
 router.get("/checksum", checksumMataKuliah);
 router.get("/checksum/:idMatkul", checksum);
-router.post(
-  "/checksum/:idMatkul/store",
-  multer({
-    dest: os.tmpdir(),
-  }).single("file"),
-  storeChecksum
-);
+router.get("/checksum/:idMatkul/periksa-checksum", periksaChecksum);
 
 router.get("/profile", profile);
 router.get("/ubah-email", ubahEmail);

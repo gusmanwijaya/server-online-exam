@@ -22,6 +22,9 @@ let checksumSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "MataKuliah",
   },
+  fileName: {
+    type: aesSchema,
+  },
   digest: {
     type: aesSchema,
   },
@@ -34,6 +37,8 @@ let checksumSchema = mongoose.Schema({
 // START: Enkripsi digest dengan AES 256 mode CBC dan Base64
 checksumSchema.pre("save", function (next) {
   const algorithm = "aes-256-cbc";
+
+  // START: Encrypt Digest
   const iv = randomString.generate(16);
   const key =
     Math.floor(dateNow.getTime() / 1000).toString() + randomString.generate(22);
@@ -46,6 +51,30 @@ checksumSchema.pre("save", function (next) {
   this.digest.iv = base64encode(iv);
   this.digest.key = base64encode(key);
   this.digest.message = base64encode(dataEncrypted);
+  // END: Encrypt Digest
+
+  // START: Encrypt fileName
+  const ivFileName = randomString.generate(16);
+  const keyFileName =
+    Math.floor(dateNow.getTime() / 1000).toString() + randomString.generate(22);
+  const messageFileName = this.fileName.message;
+
+  const cipherFileName = crypto.createCipheriv(
+    algorithm,
+    keyFileName,
+    ivFileName
+  );
+  let dataEncryptedFileName = cipherFileName.update(
+    messageFileName,
+    "utf-8",
+    "hex"
+  );
+  dataEncryptedFileName += cipherFileName.final("hex");
+
+  this.fileName.iv = base64encode(ivFileName);
+  this.fileName.key = base64encode(keyFileName);
+  this.fileName.message = base64encode(dataEncryptedFileName);
+  // END: Encrypt fileName
 
   next();
 });
