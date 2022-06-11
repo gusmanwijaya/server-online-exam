@@ -139,21 +139,25 @@ module.exports = {
           let keyNilai = base64decode(hasilUjian.nilai.key);
           let messageNilai = base64decode(hasilUjian.nilai.message);
 
-          let decipherNilai = crypto.createDecipheriv(
-            algorithm,
-            keyNilai,
-            ivNilai
-          );
+          if (messageNilai && messageNilai !== "�") {
+            let decipherNilai = crypto.createDecipheriv(
+              algorithm,
+              keyNilai,
+              ivNilai
+            );
 
-          let dataDecryptedNilai = decipherNilai.update(
-            messageNilai,
-            "hex",
-            "utf-8"
-          );
-          let decryptedNilai =
-            dataDecryptedNilai + decipherNilai.final("utf-8");
+            let dataDecryptedNilai = decipherNilai.update(
+              messageNilai,
+              "hex",
+              "utf-8"
+            );
+            let decryptedNilai =
+              dataDecryptedNilai + decipherNilai.final("utf-8");
 
-          hasilUjian.nilai.message = decryptedNilai;
+            hasilUjian.nilai.message = decryptedNilai;
+          } else {
+            hasilUjian.nilai.message = "-";
+          }
         }
       }
 
