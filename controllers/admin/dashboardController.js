@@ -1,5 +1,10 @@
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
+const Dosen = require("../../models/dosen");
+const Kelas = require("../../models/kelas");
+const Mahasiswa = require("../../models/mahasiswa");
+const MataKuliah = require("../../models/mata-kuliah");
+const ProgramStudi = require("../../models/program-studi");
 
 module.exports = {
   dashboard: async (req, res) => {
@@ -17,11 +22,22 @@ module.exports = {
         message: alertMessage,
       };
 
+      const lengthDosen = await Dosen.countDocuments();
+      const lengthKelas = await Kelas.countDocuments();
+      const lengthMahasiswa = await Mahasiswa.countDocuments();
+      const lengthMataKuliah = await MataKuliah.countDocuments();
+      const lengthProgramStudi = await ProgramStudi.countDocuments();
+
       res.render("admin/dashboard/index", {
         alert,
         url: originalUrl[2],
         title: "Dashboard",
         payload,
+        lengthDosen,
+        lengthKelas,
+        lengthMahasiswa,
+        lengthMataKuliah,
+        lengthProgramStudi,
       });
     } catch (error) {
       req.flash("alertStatus", "error");

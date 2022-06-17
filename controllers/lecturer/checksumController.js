@@ -1,18 +1,13 @@
 const Checksum = require("../../models/checksum");
 const MataKuliah = require("../../models//mata-kuliah");
 const Dosen = require("../../models/dosen");
-const JadwalUjian = require("../../models/jadwal-ujian");
-const HasilUjian = require("../../models/hasil-ujian");
 const config = require("../../config");
-const options = require("../../helpers/options");
 
 const jwt_decode = require("jwt-decode");
 const { base64decode } = require("nodejs-base64");
 const sha256File = require("sha256-file");
 const crypto = require("crypto");
 const fs = require("fs");
-const path = require("path");
-const pdf = require("pdf-creator-node");
 
 module.exports = {
   checksumMataKuliah: async (req, res) => {
